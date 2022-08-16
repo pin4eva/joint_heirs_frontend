@@ -1,9 +1,10 @@
 import React from "react";
+import HomePageComp from "./home/HomePageComp";
 
 const HeaderComp = () => {
 	return (
 		<header>
-			<nav>This is the header</nav>
+			<HomePageComp />
 		</header>
 	);
 };
