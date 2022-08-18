@@ -49,11 +49,11 @@
 			.nav {
 				display: flex;
 				flex-direction: column;
-				gap: 1.5rem;
+				gap: 0.8rem;
 				align-items: flex-start;
 				flex: 1;
 				width: 50%;
-				height: 60vh;
+				height: 65vh;
 				position: absolute;
 				top: 81px;
 				left: -100%;
@@ -74,8 +74,9 @@
 		}
 		.fa-bars,
 		.fa-times {
+			margin-top: 5px;
 			display: block;
-			font-size: 25px;
+			font-size: 30px;
 			color: white;
 			float: left;
 			transition: all 1s ease-in-out;

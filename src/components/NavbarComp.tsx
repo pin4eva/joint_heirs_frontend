@@ -20,8 +20,10 @@ function NavbarComp() {
 				<ul className={click ? "nav active" : "nav"}>
 					{navData.map((nav, i) => (
 						<li className="nav-item" key={i}>
-							<Link href={nav.link} className="nav-link fw-500" onClick={closeMobileMenu}>
-								{nav.name}
+							<Link href={nav.link}>
+								<a className="nav-link fw-500" onClick={closeMobileMenu}>
+									{nav.name}
+								</a>
 							</Link>
 						</li>
 					))}

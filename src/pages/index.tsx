@@ -2,6 +2,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
+import CommunityCardComp from "../components/cards/CommunityCardComp";
 import SermonNavComp from "../components/SermonNavComp";
 import FrontLayout from "../layouts/FrontLayout";
 
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
 								<div className="right">
 									<div className="video">
 										<img src="/images/svg/video.svg" alt="" />
-										<p className="text-secondary mb-0">
+										<p className="text-secondary">
 											Watch and listen to <br /> Sermons
 										</p>
 									</div>
@@ -53,6 +54,30 @@ const Home: NextPage = () => {
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="page-3">
+						<div className="container">
+							<div className="prayer">
+								<h1 className="text-light">
+									Need <br /> Prayers ?
+								</h1>
+								<Link href="/">
+									<a>Request</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<CommunityCardComp />
+				</section>
+				<section>
+					<div className="resurrect">
+						<div className="blend-mode">
+							<div className="container"></div>
 						</div>
 					</div>
 				</section>
