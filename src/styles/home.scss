@@ -20,9 +20,9 @@
 			}
 			.welcome {
 				margin-top: 3rem;
-				padding: 1rem 2rem;
+				padding: 1rem 1.5rem;
 				background: #f66800;
-				width: 12rem;
+				width: 13rem;
 				border-radius: 10px;
 				font-weight: 600;
 				font-size: 20px;
@@ -165,7 +165,7 @@
 		height: 90vh;
 		width: 100%;
 		.text-center {
-			height: 80vh;
+			// height: 80vh;
 			.upcoming {
 				font-family: "Rochester", cursive;
 				color: $warning;
@@ -270,6 +270,187 @@
 			color: #fff;
 			border: none;
 			text-decoration: none;
+		}
+	}
+
+	.resurrect {
+		background-image: url("../../public/images/flower.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 70vh;
+		position: relative;
+		.resurect-content {
+			display: flex;
+			width: 100%;
+			height: 70vh;
+			flex-direction: column;
+			justify-content: center;
+			.playlet-list {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				.samon {
+					margin-top: 2rem;
+					text-align: center;
+					padding: 1rem 2rem;
+					background: $warning;
+					padding: 10px 1rem;
+					width: 12rem;
+					border-radius: 10px;
+					color: #fff;
+					text-decoration: none;
+				}
+				i {
+					margin-top: 2rem;
+					padding: 0.6rem 0.8rem;
+					border: none;
+					display: flex;
+					justify-content: center;
+					border-radius: 5px;
+					background: $warning;
+					color: #ffffff;
+				}
+				img {
+					height: 2.5rem;
+					@extend i;
+				}
+			}
+			.more-samon {
+				margin-top: 1.5rem;
+				text-align: center;
+				padding: 1rem 2rem;
+				background: transparent;
+				padding: 10px 1rem;
+				width: 12rem;
+				border-radius: 10px;
+				font-size: 16px;
+				color: #fff;
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					color: #fff;
+					border: 1px solid #ffffff;
+				}
+				@media screen and (max-width: 900px) {
+					border: 1px solid #ffffff;
+				}
+			}
+		}
+	}
+
+	.bible-mission {
+		height: 80vh;
+		width: 100%;
+		.mission-content {
+			height: 80vh;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.left {
+				width: 529px;
+				height: 379px;
+				img {
+					@extend.left;
+				}
+			}
+			.right {
+				height: auto;
+				h4 {
+					font-family: "Rochester", cursive;
+					color: $warning;
+				}
+				div {
+					margin-top: 3rem;
+					a {
+						margin-top: 2rem;
+						text-align: center;
+						padding: 1rem 2rem;
+						background: #f66800;
+						padding: 10px 1rem;
+						width: 12rem;
+						border-radius: 10px;
+						font-size: 16px;
+						color: #fff;
+						border: none;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	.sermons-audio {
+		height: 100vh;
+		width: 100%;
+		background: #ededed;
+		@media screen and (max-width: 900px) {
+			height: 70vh;
+		}
+		.sermon-content {
+			height: 100vh;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@media screen and (max-width: 900px) {
+				height: 70vh;
+			}
+			.right {
+				height: 30rem;
+				width: 25rem;
+				img {
+					@extend.right;
+				}
+			}
+			.left {
+				height: 30rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.text-warning {
+					margin-top: 2rem;
+					border: 1px solid $warning;
+					border-radius: 10px;
+					text-align: center;
+					width: 10rem;
+					padding: 0.8rem;
+				}
+				.audios {
+					display: flex;
+					flex-direction: column;
+
+					.audio-hold {
+						display: flex;
+						gap: 1rem;
+						.audio-play-icons {
+							padding: 5px;
+							width: 3rem;
+							height: 6.5rem;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: space-between;
+							border-radius: 10px;
+							background: #ccceff;
+							hr {
+								transform: rotate(180deg);
+								width: 1.4rem;
+								border: 1px solid $secondary;
+								margin: 0;
+							}
+						}
+						.audio-playing {
+							width: 25rem;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							height: 6.9rem;
+							border-top: 1px solid $tetiary;
+							border-bottom: 1px solid $tetiary;
+						}
+					}
+				}
+			}
 		}
 	}
 }
