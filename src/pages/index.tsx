@@ -224,13 +224,21 @@ const Home: NextPage = () => {
 										<label className="mt-4 mb-2" htmlFor="name">
 											Yourn Name
 										</label>
-										<input type="text" className="form-control shadow-none" />
+										<input
+											type="text"
+											placeholder="Enter your name"
+											className="form-control shadow-none"
+										/>
 									</div>
 									<div className="form-group">
 										<label className="mt-4 mb-2" htmlFor="email">
 											Contact Email
 										</label>
-										<input type="text" className="form-control shadow-none" />
+										<input
+											type="text"
+											placeholder="bentucker43@gmail.com"
+											className="form-control shadow-none"
+										/>
 									</div>
 								</div>
 								<div className="form-split form-group">
@@ -238,7 +246,11 @@ const Home: NextPage = () => {
 										<label className="mt-4 mb-2" htmlFor="name">
 											Phone no
 										</label>
-										<input type="text" className="form-control shadow-none" />
+										<input
+											type="text"
+											placeholder="9012624162"
+											className="form-control shadow-none"
+										/>
 									</div>
 									<div className="form-group">
 										<label className="mt-4 mb-2" htmlFor="email">
@@ -257,14 +269,14 @@ const Home: NextPage = () => {
 									<label className="mt-4 mb-3" htmlFor="">
 										Your Message
 									</label>
-									<textarea className="form-control" />
+									<textarea className="form-control" placeholder="Type your Message" />
 								</div>
 								<p className="mt-4">
 									We are called to eat, drink, speak, think and work to the glory of God. We worship
 									God by remembering the <br /> gospel through preaching, teaching, singing, praying
 									and celebrating baptism and communion.
 								</p>
-								<button className="btn btn-warning mt-3" type="submit">
+								<button className="btn btn-warning text-light mt-3" type="submit">
 									Send
 								</button>
 							</form>
