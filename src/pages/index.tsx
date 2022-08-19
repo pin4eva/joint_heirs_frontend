@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
 import CommunityCardComp from "../components/cards/CommunityCardComp";
+import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
 import SermonNavComp from "../components/SermonNavComp";
 import FrontLayout from "../layouts/FrontLayout";
@@ -143,6 +144,167 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 					</div>
+				</section>
+				<section>
+					<div className="bible-vers">
+						<div className="container">
+							<div className="text-center">
+								<BibleVersComp />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="church-branchs">
+						<div className="container">
+							<div className="branch-content">
+								<h1 className="text-secondary fw-bold">Church Branches</h1>
+								<div className="branch-holder">
+									<div className="children-branch">
+										<img src="/images/children.png" alt="" />
+										<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
+										<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
+									</div>
+									<div className="men-branch">
+										<img src="/images/men.png" alt="" />
+										<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
+										<p className="mb-0 text-secondary">Airforce Branch</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="donation-page">
+						<div className="container">
+							<div className="donation-content">
+								<h4>Donate</h4>
+								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
+								<div className="donate">
+									<img src="/images/donate.png" alt="" />
+									<div className="donate-content">
+										<h3>
+											Your Generousity is Making a <br /> Difference
+										</h3>
+										<p>
+											We are happy to get any support from members of this assemblly <br /> and the
+											community at large! <br /> Thank you so much for staying with us, and for all
+											your help, <br /> Donations
+										</p>
+										<div className="price-donate">
+											<div>
+												<h2>$ 75.00</h2>
+												<hr />
+											</div>
+											<Link href="/">
+												<a>Donate</a>
+											</Link>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="contact-us">
+						<div className="top">
+							<h1 className="text-light fw-bold text-center ">Get in Contact with Us</h1>
+							<p className="text-light text-center ">
+								We are called to eat, drink, speak, think and work to the glory of God. We worship
+								God by remembering the <br /> gospel through preaching, teaching, singing, praying
+								and celebrating baptism and communion.
+							</p>
+						</div>
+						<div className="container">
+							<form>
+								<div className="form-split form-group">
+									<div className="form-group">
+										<label className="mt-4 mb-2" htmlFor="name">
+											Yourn Name
+										</label>
+										<input type="text" className="form-control shadow-none" />
+									</div>
+									<div className="form-group">
+										<label className="mt-4 mb-2" htmlFor="email">
+											Contact Email
+										</label>
+										<input type="text" className="form-control shadow-none" />
+									</div>
+								</div>
+								<div className="form-split form-group">
+									<div className="form-group">
+										<label className="mt-4 mb-2" htmlFor="name">
+											Phone no
+										</label>
+										<input type="text" className="form-control shadow-none" />
+									</div>
+									<div className="form-group">
+										<label className="mt-4 mb-2" htmlFor="email">
+											Church Branch
+										</label>
+										<select name="" className="form-select">
+											<option value=""></option>
+											<option value="">First</option>
+											<option value="">First</option>
+											<option value="">First</option>
+											<option value="">First</option>
+										</select>
+									</div>
+								</div>
+								<div className="form-group">
+									<label className="mt-4 mb-3" htmlFor="">
+										Your Message
+									</label>
+									<textarea className="form-control" />
+								</div>
+								<p className="mt-4">
+									We are called to eat, drink, speak, think and work to the glory of God. We worship
+									God by remembering the <br /> gospel through preaching, teaching, singing, praying
+									and celebrating baptism and communion.
+								</p>
+								<button className="btn btn-warning mt-3" type="submit">
+									Send
+								</button>
+							</form>
+							<div className="botom">
+								<div className="message">
+									<Link href="/">
+										<a>
+											<i className="fa-solid fa-envelope mb-2"></i>
+											<p className="text-secondary fw-bold m-0">Email Us</p>
+										</a>
+									</Link>
+									<p className="text-center">
+										Email us for general Queries <br /> including mentorship and spiritual <br />
+										counselling
+									</p>
+									<Link href="https://jointheirs5@gmail.com">
+										<a>jointheirs5@gmail.com</a>
+									</Link>
+								</div>
+								<div className="call">
+									<Link href="/">
+										<a>
+											<img src="/images/phone.png" alt="" />
+											<p className="text-secondary fw-bold m-0">Call Us</p>
+										</a>
+									</Link>
+									<p className="text-center">
+										Youncan also calll us for general <br /> Queries including mentorship and <br />
+										spiritual counselling
+									</p>
+									<Link href="https://jointheirs5@gmail.com">
+										<a>jointheirs5@gmail.com</a>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="map-page"></div>
 				</section>
 			</div>
 		</FrontLayout>

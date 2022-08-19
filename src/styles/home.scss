@@ -162,7 +162,7 @@
 
 	.joint-heirs_community {
 		background: #ffffff;
-		height: 90vh;
+		height: 100vh;
 		width: 100%;
 		.text-center {
 			// height: 80vh;
@@ -452,5 +452,236 @@
 				}
 			}
 		}
+	}
+	.bible-vers {
+		height: 50vh;
+		background: #ccceff;
+
+		.text-center {
+			height: 50vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.biles-pages {
+				width: 60%;
+				padding-bottom: 4rem;
+				.bible-verses {
+					text-align: center;
+					padding: 2rem;
+					border-radius: 2rem;
+					user-select: none;
+					background: #ccceff;
+					.caps {
+						font-family: "Rochester", cursive;
+						color: $warning;
+					}
+					.the-words {
+						color: $secondary;
+						font-weight: 500;
+						display: block;
+						width: 80%;
+						margin: 0.8rem auto 0;
+					}
+					.text-start {
+						height: 1rem;
+						margin-left: 3rem;
+						display: flex;
+						width: 90%;
+						justify-content: flex-start;
+					}
+					.text-end {
+						height: 1rem;
+						display: flex;
+						width: 90%;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+	}
+
+	.church-branchs {
+		height: 90vh;
+		width: 100%;
+		@media screen and (max-width: 900px) {
+			margin-top: 2rem;
+			height: 50vh;
+		}
+		.branch-content {
+			height: inherit;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			.branch-holder {
+				display: flex;
+				gap: 2rem;
+				.children-branch {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					img {
+						width: 18rem;
+						height: 15rem;
+					}
+				}
+				.men-branch {
+					@extend.children-branch;
+				}
+			}
+		}
+	}
+
+	.donation-page {
+		height: 100vh;
+		width: 100%;
+		background: #ffffff;
+		.donation-content {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			h4 {
+				font-family: "Rochester", cursive;
+				color: $warning;
+				margin: 0;
+				align-self: center;
+			}
+			.donate {
+				display: flex;
+				justify-content: center;
+				img {
+					width: 27rem;
+					height: 23rem;
+				}
+				.donate-content {
+					padding: 2rem;
+					display: flex;
+					flex-direction: column;
+					background: $tetiary;
+					.price-donate {
+						display: flex;
+						align-items: center;
+						gap: 4rem;
+						div {
+							h2 {
+								margin: 0;
+								font-size: 48px;
+								font-weight: 700;
+							}
+							hr {
+								margin: 0;
+							}
+						}
+						a {
+							margin-top: 2rem;
+							text-align: center;
+							padding: 1rem 2rem;
+							background: #f66800;
+							padding: 10px 1rem;
+							width: 10rem;
+							border-radius: 10px;
+							font-size: 16px;
+							color: #fff;
+							border: none;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-us {
+		width: 100%;
+		height: auto;
+		background: #ededed;
+		.top {
+			padding-top: 3rem;
+			width: 100%;
+			height: 70vh;
+			background-image: url("../../public/images/contactBG.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			z-index: -1000;
+		}
+		.container {
+			form {
+				z-index: 1000;
+				margin-top: -14rem;
+				width: 100%;
+				background: #ffffff;
+				padding: 3rem;
+				border-radius: 20px;
+				.form-split {
+					display: flex;
+					gap: 1rem;
+					.form-control {
+						height: 3rem;
+						width: 100%;
+					}
+					.form-select {
+						height: 3rem;
+					}
+					.form-group {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.botom {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5rem;
+			height: 50vh;
+			.message {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				a {
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					text-decoration: none;
+					color: $secondary;
+					font-weight: 500;
+					.fa-solid {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: #ffffff;
+						width: 2.5rem;
+						height: 2.5rem;
+						border-radius: 5px;
+						background: $dark-blue;
+					}
+				}
+			}
+			.call {
+				@extend.message;
+				a {
+					img {
+						background: $dark-blue;
+						padding: 8px;
+						width: 2.5rem;
+						height: 2.5rem;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.map-page {
+		width: 100%;
+		height: 50vh;
+		background-image: url("../../public/images/map.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 	}
 }

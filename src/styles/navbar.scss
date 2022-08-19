@@ -15,7 +15,7 @@
 			align-items: center;
 			height: inherit;
 			li {
-				margin-right: 1.5rem;
+				margin-right: 1rem;
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -32,6 +32,11 @@
 			a {
 				color: $warning;
 				text-decoration: none;
+			}
+			@media screen and (max-width: 800px) {
+				a {
+					margin-right: 15rem;
+				}
 			}
 		}
 	}
