@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 							<div className="wraper">
 								<div className="left">
 									<h5>Welcome</h5>
-									<h1 className="text-secondary">
+									<h1 className="text-secondary m-0">
 										You Matter To <br /> God. You Matter <br /> to Us
 									</h1>
 									<p>
@@ -41,7 +41,9 @@ const Home: NextPage = () => {
 									</div>
 									<div className="dates">
 										<img src="/images/svg/date.svg" alt="" />
-										<p className="text-secondary">Make Donations</p>
+										<p className="text-secondary">
+											Make <br /> Donations
+										</p>
 									</div>
 									<div className="events">
 										<img src="/images/svg/events.svg" alt="" />
@@ -158,7 +160,7 @@ const Home: NextPage = () => {
 					<div className="church-branchs">
 						<div className="container">
 							<div className="branch-content">
-								<h1 className="text-secondary fw-bold">Church Branches</h1>
+								<h1 className="text-secondary fw-bold mt-5">Church Branches</h1>
 								<div className="branch-holder">
 									<div className="children-branch">
 										<img src="/images/children.png" alt="" />
@@ -210,12 +212,14 @@ const Home: NextPage = () => {
 				<section>
 					<div className="contact-us">
 						<div className="top">
-							<h1 className="text-light fw-bold text-center ">Get in Contact with Us</h1>
-							<p className="text-light text-center ">
-								We are called to eat, drink, speak, think and work to the glory of God. We worship
-								God by remembering the <br /> gospel through preaching, teaching, singing, praying
-								and celebrating baptism and communion.
-							</p>
+							<div className="container">
+								<h1 className="text-light fw-bold text-center ">Get in Contact with Us</h1>
+								<p className="text-light text-center ">
+									We are called to eat, drink, speak, think and work to the glory of God. We worship
+									God by remembering the <br /> gospel through preaching, teaching, singing, praying
+									and celebrating baptism and communion.
+								</p>
+							</div>
 						</div>
 						<div className="container">
 							<form>
@@ -315,8 +319,24 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
+				{/* <section> 
+				<div className="map-page"></div>
+				</section>  */}
 				<section>
-					<div className="map-page"></div>
+					<div className="footer-subscribe">
+						<div className="container">
+							<div className="footer-sub">
+								<div className="sub-text">
+									<h2 className="text-secondary mb-0">Subscribe</h2>
+									<p className="text-dark mb-0">To Our NewsLetter</p>
+								</div>
+								<form>
+									<input type="text" placeholder="Enter Email" className="form-control" />
+									<button className="btn btn-warning text-light">Subscribe Now</button>
+								</form>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</FrontLayout>

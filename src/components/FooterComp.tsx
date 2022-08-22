@@ -6,20 +6,6 @@ import { navData } from "../shearing/navData";
 const FooterComp = () => {
 	return (
 		<footer>
-			<div className="footer-subscribe">
-				<div className="container">
-					<div className="footer-sub">
-						<div className="sub-text">
-							<h2 className="text-secondary mb-0">Subscribe</h2>
-							<p className="text-dark mb-0">To Our NewsLetter</p>
-						</div>
-						<form>
-							<input type="text" placeholder="Enter Email" className="form-control" />
-							<button className="btn btn-warning text-light">Subscribe Now</button>
-						</form>
-					</div>
-				</div>
-			</div>
 			<div className="footer-main">
 				<div className="container">
 					<div className="footer-main-content">
@@ -34,7 +20,9 @@ const FooterComp = () => {
 								))}
 							</ul>
 							<div className="nav-active">
-								<Link href="/">JOIN US</Link>
+								<Link href="/">
+									<a>JOIN US</a>
+								</Link>
 							</div>
 						</div>
 						<div className="text-center d-flex">
@@ -44,9 +32,9 @@ const FooterComp = () => {
 							</h5>
 						</div>
 						<div className="requests">
-							<h5>PRAYER REQUEST</h5>
-							<h5>BIBLE READING </h5>
-							<h5>TESTIMONY</h5>
+							<button className="btn btn-outline-light">PRAYER REQUEST</button>
+							<button className="btn btn-outline-light">BIBLE READING </button>
+							<button className="btn btn-outline-light">TESTIMONY</button>
 						</div>
 						<div className="footer-icons">
 							<Link href="/">
@@ -73,7 +61,7 @@ const FooterComp = () => {
 					</div>
 					<hr className="text-light mt-5" />
 					<div className="text-center">
-						<p className="text-light ">
+						<p className="text-light mb-0 ">
 							<big className="fw-bold">JointHeirs</big> {new Date().getFullYear()}. All Rights
 							Reserved
 						</p>

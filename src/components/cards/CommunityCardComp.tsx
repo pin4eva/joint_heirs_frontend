@@ -12,7 +12,7 @@ const CommunityCardComp = () => {
 						<div className="children">
 							<div className="children-content">
 								<small className="text-secondary  mt-4">May 27th</small>
-								<h4 className="text-dark mb-4">Childrens Day Celebration</h4>
+								<h4 className="text-dark fs-5 mb-4">Childrens Day Celebration</h4>
 								<div>
 									<p className="text-secondary mb-3">
 										Men only we welcome all men who <br /> wish to spend the breakfast time eating{" "}
