@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
-import { navData } from "../shearing/navData";
+import { navList } from "./HeaderComp";
 
 const FooterComp = () => {
 	return (
@@ -11,7 +11,7 @@ const FooterComp = () => {
 					<div className="footer-main-content">
 						<div className="text-centa">
 							<ul className="nav">
-								{navData.map((nav, i) => (
+								{navList.map((nav, i) => (
 									<li className="nav-item" key={i}>
 										<Link href={nav.link}>
 											<a className="nav-link fw-500">{nav.name}</a>

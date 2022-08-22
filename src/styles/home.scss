@@ -1,24 +1,35 @@
 .home {
 	display: flex;
 	flex-direction: column;
-	.header {
-		background-image: url("../../public/images/preaching.png");
+
+	.hero {
+		background-image: url("/images/preaching.png");
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		width: 100%;
-		height: 100vh;
+		background-size: auto 100%;
+		min-height: 75vh;
+
+		&-inner {
+			min-height: 70vh;
+			display: grid;
+
+
+		}
+
 		.welcome-text {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-top: 5rem;
+
+
+
 			.jhai-text {
 				margin-top: 1rem;
 				color: #ffffff;
 				font-family: "Rochester", cursive;
 			}
-			.welcome {
+
+			.btn {
 				margin-top: 3rem;
 				padding: 1rem 1.5rem;
 				background: #f66800;
@@ -31,6 +42,7 @@
 				text-decoration: none;
 			}
 		}
+
 		@media screen and (max-width: 900px) {
 			height: 80vh;
 		}
@@ -40,16 +52,16 @@
 		display: flex;
 		align-items: center;
 		background: #ccceff;
-		height: 30vh;
+		min-height: 10vh;
 
 		.sermon-text {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
 			.sermon-link {
-				margin-right: 3rem;
 				font-weight: 600;
-				font-size: 20px;
+				font-size: 1.25rem;
 				text-decoration: none;
 				color: #fff;
 				padding: 1rem 1.5rem;
@@ -57,11 +69,13 @@
 				background: $warning;
 			}
 		}
+
 		@media screen and (max-width: 900px) {
 			.sermon-text {
 				display: flex;
 				flex-direction: column;
 				gap: 1.5rem;
+
 				.sermon-link {
 					margin-right: auto;
 				}
@@ -70,9 +84,11 @@
 	}
 
 	.page-2 {
-		height: 90vh;
+		// height: 90vh;
 		width: 100%;
 		background: linear-gradient(256.96deg, rgba(255, 255, 255, 0.7) 14.57%, #c4c4c4 172.73%);
+		padding-block: 2rem;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 			padding-bottom: 1rem;
@@ -82,41 +98,48 @@
 			display: grid;
 			gap: 2rem;
 			grid-template-columns: 1fr 1fr;
+
 			@media screen and (max-width: 900px) {
 				display: grid;
 				grid-template-columns: 1fr;
 				gap: 1.5rem;
 				height: auto;
 			}
+
 			.left {
 				display: flex;
 				flex-direction: column;
-				h5 {
+
+				.page-2-welcome {
 					margin-top: 3rem;
 					font-family: "Rochester", cursive;
 					color: $warning;
 				}
+
+				.page-2-large-text {
+					font-size: 3rem;
+					font-weight: 700;
+					line-height: 56px;
+					max-width: 441px;
+					margin-bottom: 1.5rem;
+				}
+
 				a {
 					text-align: center;
 					margin-top: 1rem;
-					background: #f66800;
-					height: 3rem;
-					padding: 10px 1rem;
-					width: 12rem;
-					border-radius: 10px;
 					font-weight: 600;
-					font-size: 20px;
+					font-size: 1.25rem;
 					color: #fff;
-					border: none;
-					text-decoration: none;
 				}
 			}
+
 			.right {
 				margin-top: 2rem;
 				display: grid;
 				column-gap: 1rem;
 				row-gap: 1rem;
 				grid-template-columns: 1fr 1fr;
+
 				.video {
 					display: flex;
 					flex-direction: column;
@@ -128,12 +151,15 @@
 					border-radius: 10px;
 					padding: 1rem;
 				}
+
 				.dates {
 					@extend.video;
 				}
+
 				.events {
 					@extend.video;
 				}
+
 				.tracker {
 					@extend.video;
 				}
@@ -142,62 +168,44 @@
 	}
 
 	.page-3 {
-		background-image: url("../../public/images/prayer.png");
+		background-image: url("/images/prayer.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		width: 100%;
-		height: 61vh;
-		@media screen and (max-width: 900px) {
-			height: 40vh;
-		}
+		min-height: 40vh;
+		display: grid;
+		align-items: center;
 
-		.prayer {
-			height: 60vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			gap: 3rem;
-			@media screen and (max-width: 900px) {
-				height: 40vh;
-			}
 
-			a {
-				background: $warning;
-				width: 10rem;
-				height: 3.5rem;
-				padding: 20px 50px;
-				border-radius: 10px;
-				color: #ffffff;
-				text-decoration: none;
-			}
-		}
+
 	}
 
 	.joint-heirs_community {
 		background: #ffffff;
-		height: 100vh;
+		min-height: 70vh;
 		width: 100%;
-		@media screen and (max-width: 900px) {
-			height: auto;
-			padding-bottom: 2rem;
-		}
+		display: grid;
+		align-items: center;
+		margin-bottom: 2rem;
 
 		.text-center {
 			.upcoming {
 				font-family: "Rochester", cursive;
 				color: $warning;
 			}
+
 			@media screen and (max-width: 900px) {
 				margin-top: 3rem;
 				height: auto;
 			}
 		}
+
 		.cards {
 			// height: 60vh;
 			margin: 3rem 0 2rem 0;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1.5rem;
+
 			@media screen and (max-width: 900px) {
 				display: flex;
 				flex-direction: column;
@@ -206,91 +214,47 @@
 				margin-bottom: 2rem;
 			}
 
-			.children {
+			&-item {
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-end;
 				border-radius: 10px;
 				height: 24rem;
-				background-image: url("../../public/images/children.png");
 				background-repeat: no-repeat;
 				background-size: cover;
 				width: 100%;
-				.children-content {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					background: rgba(204, 206, 255, 0.67);
-					backdrop-filter: blur(33px);
-					div {
-						display: none;
-						@media screen and (max-width: 900px) {
-							display: contents;
-						}
-					}
-					&:hover {
-						div {
-							display: contents;
-						}
-					}
-				}
-			}
-			.men-week {
-				@extend.children;
-				background-image: url("../../public/images/men.png");
-				@media screen and (max-width: 900px) {
-					height: 24rem;
-				}
 
-				.men-content {
+				&-content {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					background: rgba(204, 206, 255, 0.67);
 					backdrop-filter: blur(33px);
-					div {
-						display: none;
-						@media screen and (max-width: 900px) {
-							display: contents;
-						}
+
+					.content-box {
+						height: 5px;
+						overflow: hidden;
 					}
+
 					&:hover {
-						div {
-							display: contents;
+						.content-box {
+							animation: 0.5s animate-content-box ease-in-out;
+							height: 100%;
+							padding-block: 1rem;
 						}
 					}
+
+
 				}
 			}
-			.singles {
-				@extend.children;
-				background-image: url("../../public/images/singles.png");
-				@media screen and (max-width: 900px) {
-					height: 24rem;
-				}
-				.singles-content {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					background: rgba(204, 206, 255, 0.67);
-					backdrop-filter: blur(33px);
-					div {
-						display: none;
-						@media screen and (max-width: 900px) {
-							display: contents;
-						}
-					}
-					&:hover {
-						div {
-							display: contents;
-						}
-					}
-				}
-			}
+
+
 			a {
 				color: $warning;
 				text-decoration: none;
 			}
 		}
+
 		.event-btn {
 			text-align: center;
 			background: #f66800;
@@ -309,16 +273,19 @@
 		width: 100%;
 		height: 70vh;
 		position: relative;
+
 		.resurect-content {
 			display: flex;
 			width: 100%;
 			height: 70vh;
 			flex-direction: column;
 			justify-content: center;
+
 			.playlet-list {
 				display: flex;
 				align-items: center;
 				gap: 1rem;
+
 				.samon {
 					margin-top: 2rem;
 					text-align: center;
@@ -330,6 +297,7 @@
 					color: #fff;
 					text-decoration: none;
 				}
+
 				i {
 					margin-top: 2rem;
 					padding: 0.6rem 0.8rem;
@@ -340,11 +308,13 @@
 					background: $warning;
 					color: #ffffff;
 				}
+
 				img {
 					height: 2.5rem;
 					@extend i;
 				}
 			}
+
 			.more-samon {
 				margin-top: 1.5rem;
 				text-align: center;
@@ -357,10 +327,12 @@
 				color: #fff;
 				text-decoration: none;
 				transition: all 0.2s ease-in-out;
+
 				&:hover {
 					color: #fff;
 					border: 1px solid #ffffff;
 				}
+
 				@media screen and (max-width: 900px) {
 					border: 1px solid #ffffff;
 				}
@@ -371,14 +343,17 @@
 	.bible-mission {
 		height: 60vh;
 		width: 100%;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
+
 		.mission-content {
 			margin-top: 3rem;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 3rem;
+
 			@media screen and (max-width: 900px) {
 				grid-template-columns: 1fr;
 				height: auto;
@@ -388,18 +363,23 @@
 			.left {
 				width: 529px;
 				height: 379px;
+
 				img {
 					@extend.left;
 				}
 			}
+
 			.right {
 				height: auto;
+
 				h4 {
 					font-family: "Rochester", cursive;
 					color: $warning;
 				}
+
 				div {
 					margin-top: 3rem;
+
 					a {
 						margin-top: 2rem;
 						text-align: center;
@@ -422,28 +402,34 @@
 		height: 90vh;
 		width: 100%;
 		background: #ededed;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
+
 		.sermon-content {
 			height: 80vh;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 4rem;
+
 			@media screen and (max-width: 900px) {
 				grid-template-columns: 1fr;
 				height: auto;
 				margin-top: 3rem;
 			}
+
 			.right {
 				margin-top: 2rem;
 				height: inherit;
 				width: 100%;
+
 				img {
 					height: inherit;
 					width: 100%;
 				}
 			}
+
 			.left {
 				margin-top: 2rem;
 				width: 100%;
@@ -451,6 +437,7 @@
 				display: flex;
 				flex-direction: column;
 				gap: 2rem;
+
 				.text-warning {
 					margin-top: 1rem;
 					border: 1px solid $warning;
@@ -459,6 +446,7 @@
 					width: 10rem;
 					padding: 0.8rem;
 				}
+
 				.audios {
 					display: flex;
 					flex-direction: column;
@@ -466,6 +454,7 @@
 					.audio-hold {
 						display: flex;
 						gap: 1rem;
+
 						.audio-play-icons {
 							padding: 5px;
 							width: 3rem;
@@ -476,6 +465,7 @@
 							justify-content: space-between;
 							border-radius: 10px;
 							background: #ccceff;
+
 							hr {
 								transform: rotate(180deg);
 								width: 1.4rem;
@@ -483,6 +473,7 @@
 								margin: 0;
 							}
 						}
+
 						.audio-playing {
 							width: 100%;
 							display: flex;
@@ -497,9 +488,11 @@
 			}
 		}
 	}
+
 	.bible-vers {
 		height: 40vh;
 		background: #ccceff;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
@@ -511,16 +504,19 @@
 
 			.biles-pages {
 				width: 60%;
+
 				.bible-verses {
 					text-align: center;
 					padding: 2rem;
 					border-radius: 2rem;
 					user-select: none;
 					background: #ccceff;
+
 					.caps {
 						font-family: "Rochester", cursive;
 						color: $warning;
 					}
+
 					.the-words {
 						color: $secondary;
 						font-weight: 500;
@@ -528,12 +524,14 @@
 						width: 100%;
 						margin: 0.8rem auto 0;
 					}
+
 					.text-start {
 						height: 1rem;
 						display: flex;
 						width: 100%;
 						justify-content: flex-start;
 					}
+
 					.text-end {
 						height: 1rem;
 						display: flex;
@@ -549,22 +547,27 @@
 		height: 100vh;
 		width: 100%;
 		background: #ededed;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
+
 		.branch-content {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			gap: 2rem;
+
 			@media screen and (max-width: 900px) {
 				height: auto;
 			}
+
 			.branch-holder {
 				width: 100%;
 				display: flex;
 				gap: 2rem;
+
 				@media screen and (max-width: 900px) {
 					flex-direction: column;
 					height: auto;
@@ -577,11 +580,13 @@
 					align-items: center;
 					width: 100%;
 					gap: 10px;
+
 					img {
 						width: 100%;
 						// height: 15rem;
 					}
 				}
+
 				.men-branch {
 					@extend.children-branch;
 				}
@@ -593,50 +598,61 @@
 		height: 100vh;
 		width: 100%;
 		background: #ffffff;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
+
 		.donation-content {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
+
 			h4 {
 				font-family: "Rochester", cursive;
 				color: $warning;
 				margin: 0;
 				align-self: center;
 			}
+
 			.donate {
 				display: flex;
 				justify-content: center;
+
 				@media screen and (max-width: 900px) {
 					flex-direction: column;
 					height: auto;
+
 					img {
 						width: 100%;
 						height: 23rem;
 					}
 				}
+
 				.donate-content {
 					width: 100%;
 					padding: 2rem;
 					display: flex;
 					flex-direction: column;
 					background: $tetiary;
+
 					.price-donate {
 						display: flex;
 						align-items: center;
 						gap: 4rem;
+
 						div {
 							h2 {
 								margin-top: 6px;
 								font-size: 48px;
 								font-weight: 700;
 							}
+
 							hr {
 								margin: 0;
 							}
 						}
+
 						a {
 							margin-top: 2rem;
 							text-align: center;
@@ -660,6 +676,7 @@
 		width: 100%;
 		height: auto;
 		background: #ededed;
+
 		.top {
 			padding-top: 3rem;
 			width: 100%;
@@ -669,6 +686,7 @@
 			background-size: 100% 100%;
 			z-index: -1000;
 		}
+
 		.container {
 			form {
 				z-index: 1000;
@@ -677,40 +695,49 @@
 				background: #ffffff;
 				padding: 3rem;
 				border-radius: 20px;
+
 				@media screen and (max-width: 900px) {
 					width: 80%;
 					margin-left: 3.5rem;
 				}
+
 				.form-split {
 					display: flex;
 					gap: 1rem;
+
 					.form-control {
 						height: 3rem;
 						width: 100%;
 					}
+
 					.form-select {
 						height: 3rem;
 					}
+
 					.form-group {
 						width: 100%;
 					}
 				}
 			}
+
 			.btn {
 				padding: 0.4rem 2rem;
 			}
 		}
+
 		.botom {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 5rem;
 			height: 50vh;
+
 			.message {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+
 				a {
 					display: flex;
 					align-items: center;
@@ -718,6 +745,7 @@
 					text-decoration: none;
 					color: $secondary;
 					font-weight: 500;
+
 					.fa-solid {
 						display: flex;
 						align-items: center;
@@ -731,8 +759,10 @@
 					}
 				}
 			}
+
 			.call {
 				@extend.message;
+
 				a {
 					img {
 						background: $dark-blue;
@@ -758,25 +788,39 @@
 		height: 30vh;
 		width: 100%;
 		background: #ccceff;
+
 		.footer-sub {
 			width: 100%;
 			height: 30vh;
 			display: flex;
 			align-items: center;
 			gap: 3rem;
+
 			.sub-text {
 				display: flex;
 				flex-direction: column;
 			}
+
 			form {
 				width: 80%;
 				display: flex;
 				justify-content: space-between;
 				gap: 2rem;
+
 				.form-control {
 					width: 70%;
 				}
 			}
 		}
+	}
+}
+
+@keyframes animate-content-box {
+	0% {
+		height: 5px;
+	}
+
+	100% {
+		height: 100%;
 	}
 }

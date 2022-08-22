@@ -2,35 +2,62 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import Link from "next/link";
-import React from "react";
 import CommunityCardComp from "../components/cards/CommunityCardComp";
+import HeaderComp from "../components/HeaderComp";
 import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
-import SermonNavComp from "../components/SermonNavComp";
 import FrontLayout from "../layouts/FrontLayout";
 
 const Home: NextPage = () => {
 	return (
-		<FrontLayout title="Joint Heirs Assembly Int'l">
+		<FrontLayout title="Joint Heirs Assembly Int'l" showHeader={false}>
 			<div className="home">
-				<SermonNavComp />
+				<div className="hero">
+					<HeaderComp />
+					<div className="container hero-inner text-center">
+						<div className="welcome-text">
+							<h1 className=" text-light">
+								Welcome To Our <br /> Church
+							</h1>
+							<h4 className="jhai-text">Joint Heirs Assembly...</h4>
+							<Link href="/">
+								<a className="btn">Im New Here</a>
+							</Link>
+						</div>
+					</div>
+				</div>
+				<section className="sermon-section">
+					<div className="container">
+						<div className="sermon-text">
+							<div className="text-start">
+								<p className="text-dark mb-0">Upcoming Sermon</p>
+								<h4 className="text-secondary">“The Law of Giving” -Rev. Joe Simeon</h4>
+							</div>
+							<Link href="/">
+								<a className="sermon-link">Sermon Details</a>
+							</Link>
+						</div>
+					</div>
+				</section>
 				<section>
 					<div className="page-2">
 						<div className="container">
 							<div className="wraper">
 								<div className="left">
-									<h5>Welcome</h5>
-									<h1 className="text-secondary m-0">
-										You Matter To <br /> God. You Matter <br /> to Us
-									</h1>
-									<p>
-										See how we view God, Jesus, the Bible, man, and many <br /> significant aspects
-										of our faith. Firmly rooted in Scripture, the <br /> beliefs of Joint Heirs
-										Assembly guide our decisions as a church.
-									</p>
-									<Link href="/">
-										<a>Learn More</a>
-									</Link>
+									<div className="left-inner">
+										<p className="page-2-welcome">Welcome</p>
+										<p className="text-secondary  page-2-large-text">
+											You Matter To God. You Matter to Us
+										</p>
+										<p>
+											See how we view God, Jesus, the Bible, man, and many <br /> significant
+											aspects of our faith. Firmly rooted in Scripture, the <br /> beliefs of Joint
+											Heirs Assembly guide our decisions as a church.
+										</p>
+										<Link href="/">
+											<a className="btn btn-warning">Learn More</a>
+										</Link>
+									</div>
 								</div>
 								<div className="right">
 									<div className="video">
@@ -64,14 +91,16 @@ const Home: NextPage = () => {
 				</section>
 				<section>
 					<div className="page-3">
-						<div className="container">
-							<div className="prayer">
-								<h1 className="text-light">
-									Need <br /> Prayers ?
-								</h1>
-								<Link href="/">
-									<a>Request</a>
-								</Link>
+						<div className=" page-3-inner">
+							<div className="prayer container">
+								<div>
+									<h1 className="text-light">
+										Need <br /> Prayers ?
+									</h1>
+									<Link href="/">
+										<a className="btn mt-2 btn-warning fs-5 fw-500">Request</a>
+									</Link>
+								</div>
 							</div>
 						</div>
 					</div>
