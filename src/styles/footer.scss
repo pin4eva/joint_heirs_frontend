@@ -79,13 +79,6 @@ footer {
 				justify-content: center;
 				align-items: center;
 				gap: 2rem;
-				// h5 {
-				// 	padding: 0.7rem 1.5rem;
-				// 	background: transparent;
-				// 	border: 1px solid #ffffff;
-				// 	border-radius: 10px;
-				// 	color: #ffffff;
-				// }
 			}
 			.footer-icons {
 				margin-top: 3rem;
@@ -93,7 +86,7 @@ footer {
 				align-items: center;
 				justify-content: center;
 				gap: 1rem;
-				a {
+				.facebook {
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -105,6 +98,33 @@ footer {
 					border: 1px solid #ffffff;
 					padding: 0.5rem;
 					text-decoration: none;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: #ffffff;
+						color: $primary;
+						border: 2px solid $primary;
+					}
+				}
+				.twitter {
+					@extend.facebook;
+				}
+				.insta {
+					&:hover {
+						background: #ffffff;
+						color: palevioletred;
+						border: 2px solid palevioletred;
+					}
+
+					@extend.facebook;
+				}
+				.youtube {
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: #ffffff;
+						color: red;
+						border: 2px solid red;
+					}
+					@extend.facebook;
 				}
 			}
 		}

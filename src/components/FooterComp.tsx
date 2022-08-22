@@ -38,22 +38,22 @@ const FooterComp = () => {
 						</div>
 						<div className="footer-icons">
 							<Link href="/">
-								<a>
+								<a className="facebook">
 									<i className="fa-brands fa-facebook-f"></i>
 								</a>
 							</Link>
 							<Link href="/">
-								<a>
+								<a className="twitter">
 									<i className="fa-brands fa-twitter"></i>
 								</a>
 							</Link>
 							<Link href="/">
-								<a>
+								<a className="insta">
 									<i className="fa-brands fa-instagram"></i>
 								</a>
 							</Link>
 							<Link href="/">
-								<a>
+								<a className="youtube">
 									<i className="fa-brands fa-youtube"></i>
 								</a>
 							</Link>
