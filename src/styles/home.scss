@@ -1,4 +1,826 @@
 .home {
-  background-color: red;
-  min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+
+	.hero {
+		background-image: url("/images/preaching.png");
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		min-height: 75vh;
+
+		&-inner {
+			min-height: 70vh;
+			display: grid;
+
+
+		}
+
+		.welcome-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+
+
+			.jhai-text {
+				margin-top: 1rem;
+				color: #ffffff;
+				font-family: "Rochester", cursive;
+			}
+
+			.btn {
+				margin-top: 3rem;
+				padding: 1rem 1.5rem;
+				background: #f66800;
+				width: 13rem;
+				border-radius: 10px;
+				font-weight: 600;
+				font-size: 20px;
+				color: #fff;
+				border: none;
+				text-decoration: none;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+			height: 80vh;
+		}
+	}
+
+	.sermon-section {
+		display: flex;
+		align-items: center;
+		background: #ccceff;
+		min-height: 10vh;
+
+		.sermon-text {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.sermon-link {
+				font-weight: 600;
+				font-size: 1.25rem;
+				text-decoration: none;
+				color: #fff;
+				padding: 1rem 1.5rem;
+				border-radius: 10px;
+				background: $warning;
+			}
+		}
+
+		@media screen and (max-width: 900px) {
+			.sermon-text {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+
+				.sermon-link {
+					margin-right: auto;
+				}
+			}
+		}
+	}
+
+	.page-2 {
+		// height: 90vh;
+		width: 100%;
+		background: linear-gradient(256.96deg, rgba(255, 255, 255, 0.7) 14.57%, #c4c4c4 172.73%);
+		padding-block: 2rem;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+			padding-bottom: 1rem;
+		}
+
+		.wraper {
+			display: grid;
+			gap: 2rem;
+			grid-template-columns: 1fr 1fr;
+
+			@media screen and (max-width: 900px) {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+				height: auto;
+			}
+
+			.left {
+				display: flex;
+				flex-direction: column;
+
+				.page-2-welcome {
+					margin-top: 3rem;
+					font-family: "Rochester", cursive;
+					color: $warning;
+				}
+
+				.page-2-large-text {
+					font-size: 3rem;
+					font-weight: 700;
+					line-height: 56px;
+					max-width: 441px;
+					margin-bottom: 1.5rem;
+				}
+
+				a {
+					text-align: center;
+					margin-top: 1rem;
+					font-weight: 600;
+					font-size: 1.25rem;
+					color: #fff;
+				}
+			}
+
+			.right {
+				margin-top: 2rem;
+				display: grid;
+				column-gap: 1rem;
+				row-gap: 1rem;
+				grid-template-columns: 1fr 1fr;
+
+				.video {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					gap: 1rem;
+					background: #ffffff;
+					box-shadow: 0px 3px 54px rgba(0, 0, 0, 0.06);
+					border-radius: 10px;
+					padding: 1rem;
+				}
+
+				.dates {
+					@extend.video;
+				}
+
+				.events {
+					@extend.video;
+				}
+
+				.tracker {
+					@extend.video;
+				}
+			}
+		}
+	}
+
+	.page-3 {
+		background-image: url("/images/prayer.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		min-height: 40vh;
+		display: grid;
+		align-items: center;
+
+
+
+	}
+
+	.joint-heirs_community {
+		background: #ffffff;
+		min-height: 70vh;
+		width: 100%;
+		display: grid;
+		align-items: center;
+		margin-bottom: 2rem;
+
+		.text-center {
+			.upcoming {
+				font-family: "Rochester", cursive;
+				color: $warning;
+			}
+
+			@media screen and (max-width: 900px) {
+				margin-top: 3rem;
+				height: auto;
+			}
+		}
+
+		.cards {
+			// height: 60vh;
+			margin: 3rem 0 2rem 0;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.5rem;
+
+			@media screen and (max-width: 900px) {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				height: auto;
+				margin-bottom: 2rem;
+			}
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				border-radius: 10px;
+				height: 24rem;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 100%;
+
+				&-content {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					background: rgba(204, 206, 255, 0.67);
+					backdrop-filter: blur(33px);
+
+					.content-box {
+						height: 5px;
+						overflow: hidden;
+					}
+
+					&:hover {
+						.content-box {
+							animation: 0.5s animate-content-box ease-in-out;
+							height: 100%;
+							padding-block: 1rem;
+						}
+					}
+
+
+				}
+			}
+
+
+			a {
+				color: $warning;
+				text-decoration: none;
+			}
+		}
+
+		.event-btn {
+			text-align: center;
+			background: #f66800;
+			padding: 10px 1rem;
+			border-radius: 10px;
+			font-size: 16px;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.resurrect {
+		background-image: url("../../public/images/flower.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 70vh;
+		position: relative;
+
+		.resurect-content {
+			display: flex;
+			width: 100%;
+			height: 70vh;
+			flex-direction: column;
+			justify-content: center;
+
+			.playlet-list {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				.samon {
+					margin-top: 2rem;
+					text-align: center;
+					padding: 1rem 2rem;
+					background: $warning;
+					padding: 10px 1rem;
+					width: 12rem;
+					border-radius: 10px;
+					color: #fff;
+					text-decoration: none;
+				}
+
+				i {
+					margin-top: 2rem;
+					padding: 0.6rem 0.8rem;
+					border: none;
+					display: flex;
+					justify-content: center;
+					border-radius: 5px;
+					background: $warning;
+					color: #ffffff;
+				}
+
+				img {
+					height: 2.5rem;
+					@extend i;
+				}
+			}
+
+			.more-samon {
+				margin-top: 1.5rem;
+				text-align: center;
+				padding: 1rem 2rem;
+				background: transparent;
+				padding: 10px 1rem;
+				width: 12rem;
+				border-radius: 10px;
+				font-size: 16px;
+				color: #fff;
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;
+
+				&:hover {
+					color: #fff;
+					border: 1px solid #ffffff;
+				}
+
+				@media screen and (max-width: 900px) {
+					border: 1px solid #ffffff;
+				}
+			}
+		}
+	}
+
+	.bible-mission {
+		height: 60vh;
+		width: 100%;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.mission-content {
+			margin-top: 3rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 3rem;
+
+			@media screen and (max-width: 900px) {
+				grid-template-columns: 1fr;
+				height: auto;
+				// margin: 0;
+			}
+
+			.left {
+				width: 529px;
+				height: 379px;
+
+				img {
+					@extend.left;
+				}
+			}
+
+			.right {
+				height: auto;
+
+				h4 {
+					font-family: "Rochester", cursive;
+					color: $warning;
+				}
+
+				div {
+					margin-top: 3rem;
+
+					a {
+						margin-top: 2rem;
+						text-align: center;
+						padding: 1rem 2rem;
+						background: #f66800;
+						padding: 10px 1rem;
+						width: 12rem;
+						border-radius: 10px;
+						font-size: 16px;
+						color: #fff;
+						border: none;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	.sermons-audio {
+		height: 90vh;
+		width: 100%;
+		background: #ededed;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.sermon-content {
+			height: 80vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 4rem;
+
+			@media screen and (max-width: 900px) {
+				grid-template-columns: 1fr;
+				height: auto;
+				margin-top: 3rem;
+			}
+
+			.right {
+				margin-top: 2rem;
+				height: inherit;
+				width: 100%;
+
+				img {
+					height: inherit;
+					width: 100%;
+				}
+			}
+
+			.left {
+				margin-top: 2rem;
+				width: 100%;
+				height: inherit;
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+
+				.text-warning {
+					margin-top: 1rem;
+					border: 1px solid $warning;
+					border-radius: 10px;
+					text-align: center;
+					width: 10rem;
+					padding: 0.8rem;
+				}
+
+				.audios {
+					display: flex;
+					flex-direction: column;
+
+					.audio-hold {
+						display: flex;
+						gap: 1rem;
+
+						.audio-play-icons {
+							padding: 5px;
+							width: 3rem;
+							height: 6.5rem;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: space-between;
+							border-radius: 10px;
+							background: #ccceff;
+
+							hr {
+								transform: rotate(180deg);
+								width: 1.4rem;
+								border: 1px solid $secondary;
+								margin: 0;
+							}
+						}
+
+						.audio-playing {
+							width: 100%;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							height: 6.9rem;
+							border-top: 1px solid $tetiary;
+							border-bottom: 1px solid $tetiary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bible-vers {
+		height: 40vh;
+		background: #ccceff;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.text-center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.biles-pages {
+				width: 60%;
+
+				.bible-verses {
+					text-align: center;
+					padding: 2rem;
+					border-radius: 2rem;
+					user-select: none;
+					background: #ccceff;
+
+					.caps {
+						font-family: "Rochester", cursive;
+						color: $warning;
+					}
+
+					.the-words {
+						color: $secondary;
+						font-weight: 500;
+						display: block;
+						width: 100%;
+						margin: 0.8rem auto 0;
+					}
+
+					.text-start {
+						height: 1rem;
+						display: flex;
+						width: 100%;
+						justify-content: flex-start;
+					}
+
+					.text-end {
+						height: 1rem;
+						display: flex;
+						width: 100%;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+	}
+
+	.church-branchs {
+		height: 100vh;
+		width: 100%;
+		background: #ededed;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.branch-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+
+			@media screen and (max-width: 900px) {
+				height: auto;
+			}
+
+			.branch-holder {
+				width: 100%;
+				display: flex;
+				gap: 2rem;
+
+				@media screen and (max-width: 900px) {
+					flex-direction: column;
+					height: auto;
+				}
+
+				.children-branch {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					gap: 10px;
+
+					img {
+						width: 100%;
+						// height: 15rem;
+					}
+				}
+
+				.men-branch {
+					@extend.children-branch;
+				}
+			}
+		}
+	}
+
+	.donation-page {
+		height: 100vh;
+		width: 100%;
+		background: #ffffff;
+
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.donation-content {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+
+			h4 {
+				font-family: "Rochester", cursive;
+				color: $warning;
+				margin: 0;
+				align-self: center;
+			}
+
+			.donate {
+				display: flex;
+				justify-content: center;
+
+				@media screen and (max-width: 900px) {
+					flex-direction: column;
+					height: auto;
+
+					img {
+						width: 100%;
+						height: 23rem;
+					}
+				}
+
+				.donate-content {
+					width: 100%;
+					padding: 2rem;
+					display: flex;
+					flex-direction: column;
+					background: $tetiary;
+
+					.price-donate {
+						display: flex;
+						align-items: center;
+						gap: 4rem;
+
+						div {
+							h2 {
+								margin-top: 6px;
+								font-size: 48px;
+								font-weight: 700;
+							}
+
+							hr {
+								margin: 0;
+							}
+						}
+
+						a {
+							margin-top: 2rem;
+							text-align: center;
+							padding: 1rem 2rem;
+							background: #f66800;
+							padding: 10px 1rem;
+							width: 10rem;
+							border-radius: 10px;
+							font-size: 16px;
+							color: #fff;
+							border: none;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-us {
+		width: 100%;
+		height: auto;
+		background: #ededed;
+
+		.top {
+			padding-top: 3rem;
+			width: 100%;
+			height: 70vh;
+			background-image: url("../../public/images/contactBG.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			z-index: -1000;
+		}
+
+		.container {
+			form {
+				z-index: 1000;
+				margin-top: -14rem;
+				width: 100%;
+				background: #ffffff;
+				padding: 3rem;
+				border-radius: 20px;
+
+				@media screen and (max-width: 900px) {
+					width: 80%;
+					margin-left: 3.5rem;
+				}
+
+				.form-split {
+					display: flex;
+					gap: 1rem;
+
+					.form-control {
+						height: 3rem;
+						width: 100%;
+					}
+
+					.form-select {
+						height: 3rem;
+					}
+
+					.form-group {
+						width: 100%;
+					}
+				}
+			}
+
+			.btn {
+				padding: 0.4rem 2rem;
+			}
+		}
+
+		.botom {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5rem;
+			height: 50vh;
+
+			.message {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				a {
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					text-decoration: none;
+					color: $secondary;
+					font-weight: 500;
+
+					.fa-solid {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 20px;
+						color: #ffffff;
+						width: 2.5rem;
+						height: 2.5rem;
+						border-radius: 5px;
+						background: $dark-blue;
+					}
+				}
+			}
+
+			.call {
+				@extend.message;
+
+				a {
+					img {
+						background: $dark-blue;
+						padding: 8px;
+						width: 2.5rem;
+						height: 2.5rem;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.map-page {
+		width: 100%;
+		height: 50vh;
+		background-image: url("../../public/images/map.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.footer-subscribe {
+		height: 30vh;
+		width: 100%;
+		background: #ccceff;
+
+		.footer-sub {
+			width: 100%;
+			height: 30vh;
+			display: flex;
+			align-items: center;
+			gap: 3rem;
+
+			.sub-text {
+				display: flex;
+				flex-direction: column;
+			}
+
+			form {
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				gap: 2rem;
+
+				.form-control {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+@keyframes animate-content-box {
+	0% {
+		height: 5px;
+	}
+
+	100% {
+		height: 100%;
+	}
 }

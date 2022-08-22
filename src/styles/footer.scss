@@ -1,0 +1,132 @@
+footer {
+	width: 100%;
+	height: auto;
+	@media screen and (max-width: 900px) {
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+		}
+		a {
+			font-size: 28px;
+			letter-spacing: 2px;
+		}
+		h4 {
+			font-size: 30px;
+			letter-spacing: 2px;
+		}
+	}
+	.footer-main {
+		height: 70vh;
+		width: 100%;
+		background-image: url("../../public/images/footer.png");
+		@media screen and (max-width: 900px) {
+			height: auto;
+		}
+
+		.footer-main-content {
+			@media screen and (max-width: 900px) {
+				height: auto;
+			}
+
+			.text-center {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 4rem;
+			}
+			.text-centa {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 6rem;
+				width: 100%;
+				@media screen and (max-width: 900px) {
+					height: auto;
+					flex-direction: column-reverse;
+					gap: 1rem;
+					justify-content: space-between;
+					a {
+						margin-top: 2rem;
+					}
+				}
+				ul {
+					display: flex;
+					align-items: center;
+					height: inherit;
+					@media screen and (max-width: 900px) {
+						margin-bottom: 2rem;
+					}
+
+					li {
+						a {
+							text-decoration: none;
+							color: #fff;
+							transition: all 0.4s ease-in-out;
+						}
+					}
+				}
+				.nav-active {
+					a {
+						display: flex;
+						color: $warning;
+						text-decoration: none;
+					}
+				}
+			}
+			.requests {
+				margin-top: 3rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 2rem;
+			}
+			.footer-icons {
+				margin-top: 3rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+				.facebook {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #ffffff;
+					height: 3rem;
+					font-size: 2rem;
+					width: 3rem;
+					border-radius: 50%;
+					border: 1px solid #ffffff;
+					padding: 0.5rem;
+					text-decoration: none;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: #ffffff;
+						color: $primary;
+						border: 2px solid $primary;
+					}
+				}
+				.twitter {
+					@extend.facebook;
+				}
+				.insta {
+					&:hover {
+						background: #ffffff;
+						color: palevioletred;
+						border: 2px solid palevioletred;
+					}
+
+					@extend.facebook;
+				}
+				.youtube {
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background: #ffffff;
+						color: red;
+						border: 2px solid red;
+					}
+					@extend.facebook;
+				}
+			}
+		}
+	}
+}
