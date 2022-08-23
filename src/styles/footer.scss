@@ -1,24 +1,10 @@
 footer {
 	width: 100%;
-	height: auto;
-	@media screen and (max-width: 900px) {
-		p {
-			font-size: 20px;
-			letter-spacing: 2px;
-		}
-		a {
-			font-size: 28px;
-			letter-spacing: 2px;
-		}
-		h4 {
-			font-size: 30px;
-			letter-spacing: 2px;
-		}
-	}
+	min-height: 50vh;
+
 	.footer-main {
-		height: 70vh;
 		width: 100%;
-		background-image: url("../../public/images/footer.png");
+		background-image: url("/images/footer.png");
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
@@ -38,23 +24,28 @@ footer {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 6rem;
+				height: 4rem;
 				width: 100%;
 				@media screen and (max-width: 900px) {
 					height: auto;
 					flex-direction: column-reverse;
-					gap: 1rem;
 					justify-content: space-between;
 					a {
-						margin-top: 2rem;
+						margin-top: 1rem;
 					}
 				}
 				ul {
 					display: flex;
 					align-items: center;
-					height: inherit;
 					@media screen and (max-width: 900px) {
 						margin-bottom: 2rem;
+						display: flex;
+						justify-content: center;
+						width: 100%;
+						a {
+							padding: 7px;
+							align-items: center;
+						}
 					}
 
 					li {
@@ -74,7 +65,7 @@ footer {
 				}
 			}
 			.requests {
-				margin-top: 3rem;
+				margin-top: 2rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;

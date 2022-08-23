@@ -59,7 +59,7 @@ const FooterComp = () => {
 							</Link>
 						</div>
 					</div>
-					<hr className="text-light mt-5" />
+					<hr className="text-light mt-4" />
 					<div className="text-center">
 						<p className="text-light mb-0 ">
 							<big className="fw-bold">JointHeirs</big> {new Date().getFullYear()}. All Rights
