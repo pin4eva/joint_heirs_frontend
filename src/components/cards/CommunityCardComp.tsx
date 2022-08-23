@@ -6,8 +6,8 @@ const CommunityCardComp = () => {
 		<div className="joint-heirs_community">
 			<div className="container community-inner">
 				<div className="text-center">
-					<h5 className="upcoming">Upcoming Events</h5>
-					<h1 className="text-secondary">Join Our Community</h1>
+					<p className="upcoming">Upcoming Events</p>
+					<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
 					<div className="cards">
 						{events.map((event, i) => (
 							<SingleItem key={i} event={event} />
