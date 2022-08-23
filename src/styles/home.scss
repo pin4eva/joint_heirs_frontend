@@ -39,9 +39,7 @@
 			}
 		}
 
-		@media screen and (max-width: 900px) {
-			height: 80vh;
-		}
+
 	}
 
 	.sermon-section {
@@ -50,6 +48,7 @@
 		background: #ccceff;
 		min-height: 10vh;
 		padding: 2rem 0;
+
 
 		.sermon-text {
 			display: flex;
