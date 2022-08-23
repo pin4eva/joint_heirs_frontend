@@ -1,9 +1,9 @@
 footer {
 	width: 100%;
-	min-height: 50vh;
 
 	.footer-main {
-		width: 100%;
+		min-height: 50vh;
+		padding: 1rem 0;
 		background-image: url("/images/footer.png");
 		@media screen and (max-width: 900px) {
 			height: auto;
@@ -30,8 +30,8 @@ footer {
 					height: auto;
 					flex-direction: column-reverse;
 					justify-content: space-between;
-					a {
-						margin-top: 1rem;
+					.nav-active {
+						margin-bottom: 1rem;
 					}
 				}
 				ul {

@@ -32,9 +32,9 @@ const FooterComp = () => {
 							</h5>
 						</div>
 						<div className="requests">
-							<button className="btn btn-outline-light">PRAYER REQUEST</button>
-							<button className="btn btn-outline-light">BIBLE READING </button>
-							<button className="btn btn-outline-light">TESTIMONY</button>
+							<button className="btn btn-outline-light fw-bold">PRAYER REQUEST</button>
+							<button className="btn btn-outline-light fw-bold">BIBLE READING </button>
+							<button className="btn btn-outline-light fw-bold">TESTIMONY</button>
 						</div>
 						<div className="footer-icons">
 							<Link href="/">
