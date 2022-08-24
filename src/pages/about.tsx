@@ -11,10 +11,13 @@ const AboutPage = () => {
 					<img src="images/ellipse.png" className="img" alt="" />
 				</div>
 
-				<div className="section-two">
-				<p>Welcome</p>
-				<h2>We exist to connect people to Jesus and each other</h2>
-				.section-two-image
+				<div className="section-two container">
+					<p>Welcome</p>
+
+					<h2>We exist to connect people to Jesus and each other</h2>
+					<div className="section-two-image">
+						<img src="images/playButton.png" alt="" />
+					</div>
 				</div>
 
 				<div>2</div>

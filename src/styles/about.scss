@@ -33,4 +33,17 @@
             overflow: hidden;
         }
 	}
+
+    .section-two {
+        p{
+            font-weight: 400;
+            font-size: 3rem;
+            font-family: $rochester;
+            color: $warning;
+        }
+
+        .section-two-image {
+            background-image: url("../assets/Rectangle76.png");
+        }
+    }
 }
