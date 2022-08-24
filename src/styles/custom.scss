@@ -1,6 +1,16 @@
 @import "./variables";
+@import "./helpers";
 @import "./front-layout.scss";
 @import "./home.scss";
 @import "./header.scss";
 @import "./footer.scss";
+
 @import "./about.scss";
+@import "./branches.scss";
+
+
+// animations
+@import "./animations.scss";
+
+// components
+@import "./event.scss";
