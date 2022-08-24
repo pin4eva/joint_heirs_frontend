@@ -4,6 +4,7 @@
         margin: 0;
         box-sizing: border-box;
     }
+    position: relative;
 	.top-section {
 		background-image: url("../assets/background.png");
         height: 20rem;
@@ -25,6 +26,11 @@
             font-weight: 400;
             font-size: 3rem;
             color: #ffffff;
+        }
+        .img {
+            position: absolute;
+            right: 0;
+            overflow: hidden;
         }
 	}
 }
