@@ -80,6 +80,12 @@
 			}
 		}
 	}
+	&-location {
+		margin-block: 3rem;
+		&-inner {
+			// display: flex;
+		}
+	}
 }
 
 .event-card {

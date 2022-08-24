@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
 import Link from "next/link";
@@ -108,6 +109,39 @@ const EventsPage = () => {
 								return <EventCard key={i} event={item} />;
 							})}
 				</div>
+			</section>
+			<section className="events-location">
+				<div className="events-location-inner">
+					<div className="events-location-text">
+						<h3 className="rochester">Our Location</h3>
+						<h3>Plan a Visit</h3>
+						<p>
+							Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
+							magna a ut tempus odio. In dictum tmetus. Proin ut tempus odio. In dictum tincidunt
+							egestm elit, in commodo sem pretium eu.tmetus. Proin ut tempus odio. In dictum
+							tincidunt egestm elit, in commodo sem pretium e
+						</p>
+						<div className="location-info">
+							<div className="address">
+								<img src="/images/location.png" alt="" />
+								<div className="address-text">
+									<p>Address:</p>
+									<p>23, Aggrey Road, Aba Port Harcourt, Rivers State.</p>
+								</div>
+							</div>
+							<div className="time">
+								<img src="/images/location.png" alt="" />
+								<div className="time-text">
+									<p>Service Time</p>
+									<p>Saturdays - 5:30 pm </p>
+									<p>Sundays - 9:00 & 10:30 am</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="events-location-map"></div>
+				</div>
+				{/* <img src="/images/events-location-img.png" alt="" /> */}
 			</section>
 		</div>
 		// </FrontLayout>
