@@ -1,8 +1,10 @@
 .about-team {
 	&-hero {
 		z-index: 5;
+		width: 100vw;
 		height: 426px;
 		background: url(../../../public/images/About-Team/hero.png) no-repeat center;
+		background-size: cover;
 		position: relative;
 
 		.hero-desc {

@@ -1,11 +1,11 @@
 .team-card {
-	width: 380px;
+	max-width: 340px;
+	min-width: 340px;
 	box-shadow: 0px 4px 23px 1px rgba(167, 167, 167, 0.29);
-	cursor: pointer;
 	z-index: 1;
 
 	&-img {
-		height: 300px;
+		// height: 300px;
 
 		img {
 			width: 100%;
@@ -16,7 +16,7 @@
 
 	&-desc {
 		text-align: center;
-		height: 355px;
+		// height: 355px;
 		padding: 2em 3em 2em;
 		background: white;
 		p {
@@ -43,4 +43,7 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 768px) {
 }

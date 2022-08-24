@@ -22,7 +22,7 @@ const TeamPage = () => {
 					<p id="rochester-p">Leadership</p>
 					<h4>Pastors & Elders</h4>
 				</div>
-				<section className="department">
+				<section className="department container">
 					{departmentsData.map((elem) => {
 						if (elem.department == DepartmentsEnum.LEADERSHIP)
 							return <TeamCard {...elem} key={elem.id} />;
@@ -33,7 +33,7 @@ const TeamPage = () => {
 					<p id="rochester-p">Staff</p>
 					<h4>Technicals</h4>
 				</div>
-				<section className="department">
+				<section className="department container">
 					{departmentsData.map((elem) => {
 						if (elem.department == DepartmentsEnum.TECHNICALS)
 							return <TeamCard {...elem} key={elem.id} />;
@@ -43,7 +43,7 @@ const TeamPage = () => {
 				<div className="desc">
 					<h4>Music Department</h4>
 				</div>
-				<section className="department">
+				<section className="department container">
 					{departmentsData.map((elem) => {
 						if (elem.department == DepartmentsEnum.MUSIC_DEPARTMENT)
 							return <TeamCard {...elem} key={elem.id} />;
@@ -53,7 +53,7 @@ const TeamPage = () => {
 				<div className="desc">
 					<h4>Workers</h4>
 				</div>
-				<section className="department">
+				<section className="department container">
 					{departmentsData.map((elem) => {
 						if (elem.department == DepartmentsEnum.WORKERS)
 							return <TeamCard {...elem} key={elem.id} />;
