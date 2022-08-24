@@ -15,7 +15,7 @@ const CommunityCardComp = () => {
 							<EventCard key={i} event={event} />
 						))}
 					</div>
-					<Link href="/">
+					<Link href="/events/Index">
 						<a className="event-btn">More Events</a>
 					</Link>
 				</div>

@@ -60,6 +60,10 @@
 				}
 			}
 		}
+		&-cards {
+			display: grid;
+			gap: 1.5rem;
+		}
 	}
 }
 
@@ -79,7 +83,7 @@
 		justify-content: center;
 		background: rgba(204, 206, 255, 0.67);
 		backdrop-filter: blur(33px);
-
+		border-radius: 10px;
 		.content-box {
 			height: 5px;
 			overflow: hidden;
