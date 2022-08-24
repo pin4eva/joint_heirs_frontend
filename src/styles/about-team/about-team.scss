@@ -1,0 +1,49 @@
+@import "./about-team-hero";
+@import "./team-card.scss";
+@import "./helpers.scss";
+@import "./subscription-form.scss";
+
+.about-team {
+	.team-categories {
+		// border: 1px solid red;
+		padding-left: 3.2em;
+		padding-bottom: 6em;
+		background: #ededed;
+		position: relative;
+
+		.strokes {
+			#ellipse-right {
+				position: absolute;
+				left: 0;
+				top: -70px;
+			}
+			#ellipse-left {
+				position: absolute;
+				right: 0;
+				top: 15%;
+				z-index: -1;
+			}
+		}
+
+		.desc {
+			text-align: center;
+			padding-top: 6em;
+
+			h4 {
+				font-weight: 700;
+				font-size: 48px;
+				margin-top: -12px;
+				margin-bottom: 1em;
+			}
+		}
+	}
+}
+
+// grouped styles
+.about-team {
+	.department {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 3em;
+	}
+}

@@ -1,0 +1,25 @@
+.about-team {
+	&-hero {
+		z-index: 5;
+		height: 426px;
+		background: url(../../../public/images/About-Team/hero.png) no-repeat center;
+		position: relative;
+
+		.hero-desc {
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			color: white;
+			text-align: center;
+			h1 {
+				font-size: 64px;
+				font-weight: 700;
+			}
+			p {
+				color: white;
+			}
+		}
+	}
+}

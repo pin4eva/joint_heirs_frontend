@@ -1,0 +1,18 @@
+#rochester-p {
+	font-family: $rochester;
+	font-size: 48px;
+	font-weight: 400;
+	color: $warning;
+}
+#underline {
+	width: 100%;
+	height: 2px;
+	border: 1px solid #c4c4c4;
+	margin: 2em 0;
+}
+.justify-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}

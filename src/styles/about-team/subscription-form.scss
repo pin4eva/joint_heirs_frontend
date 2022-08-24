@@ -1,0 +1,45 @@
+.subscription-wrapper {
+	height: 192px;
+	background: #ccceff;
+	// margin-top: 6em;
+
+	.text {
+		width: 20%;
+		h1 {
+			font-size: 40px;
+			font-weight: 700;
+		}
+		h5 {
+			font-size: 24px;
+			font-weight: 500;
+		}
+	}
+	input {
+		width: 729px;
+		height: 65px;
+		border: 1px solid #ededed;
+		border-radius: 10px;
+		font-size: 24px;
+		padding-left: 1.2em;
+		margin-left: -1em;
+
+		&::placeholder {
+			color: #c4c4c4;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	button {
+		width: 217px;
+		height: 60px;
+		font-size: 20px;
+		background: #f66800;
+		color: white;
+		border-radius: 10px;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		margin-left: 1.5em;
+	}
+}
