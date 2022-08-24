@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const CommunityCardComp = () => {
+	const communityEvents = events.slice(0, 3);
 	return (
 		<div className="joint-heirs_community">
 			<div className="container community-inner">
@@ -9,7 +10,7 @@ const CommunityCardComp = () => {
 					<p className="upcoming">Upcoming Events</p>
 					<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
 					<div className="cards">
-						{events.map((event, i) => (
+						{events.slice(0, 3).map((event, i) => (
 							<SingleItem key={i} event={event} />
 						))}
 					</div>
@@ -44,6 +45,7 @@ const SingleItem: React.FC<{ event: IEvent }> = ({ event }) => {
 interface IEvent {
 	date: string;
 	title: string;
+	category: string;
 	description: string;
 	image: string;
 }
@@ -52,6 +54,7 @@ const events = [
 	{
 		date: "May 27th",
 		title: "Children Day Celeberation",
+		category: "children",
 		image: "/images/children.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
@@ -62,6 +65,7 @@ about important things like news
 	{
 		date: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
+		category: "men",
 		image: "/images/men.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
@@ -72,6 +76,73 @@ about important things like news
 	{
 		date: "May 5th",
 		title: "Singles All Night",
+		category: "youth",
+		image: "/images/singles.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "May 27th",
+		title: "Children Day Celeberation",
+		category: "children",
+		image: "/images/children.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "Friday 15th - 20th August",
+		title: "Mens Prayer Week",
+		category: "men",
+		image: "/images/men.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "May 5th",
+		title: "Singles All Night",
+		category: "youth",
+		image: "/images/singles.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "May 27th",
+		title: "Children Day Celeberation",
+		category: "children",
+		image: "/images/children.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "Friday 15th - 20th August",
+		title: "Mens Prayer Week",
+		category: "men",
+		image: "/images/men.png",
+		description: `Men only we welcome all men who
+wish to spend the breakfast time eating
+delicious homemade food and talk
+about important things like news
+`,
+	},
+	{
+		date: "May 5th",
+		title: "Singles All Night",
+		category: "youth",
 		image: "/images/singles.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
