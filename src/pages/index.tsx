@@ -90,7 +90,7 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section>
-					<div className="page-3">
+					<div className="need-prayer-page">
 						<div className=" page-3-inner">
 							<div className="prayer container">
 								<div>
@@ -109,13 +109,11 @@ const Home: NextPage = () => {
 					<CommunityCardComp />
 				</section>
 				<section>
-					<div className="resurrect">
+					<div className="resurrection">
 						<div className="container">
 							<div className="resurect-content">
 								<p className="text-light">Latest Sermon</p>
-								<h1 className="text-light">
-									The Resurrection <br /> of Jesus
-								</h1>
+								<p className="resurrection-text-big">The Resurrection of Jesus</p>
 								<div className="playlet-list">
 									<Link href="/">
 										<a className="samon">Watch Sermon</a>
@@ -147,12 +145,12 @@ const Home: NextPage = () => {
 									<img src="/images/girl.png" alt="" />
 								</div>
 								<div className="right">
-									<h4>Beliefs</h4>
-									<h1 className="text-secondary fw-bold">Our Mission</h1>
+									<p className="belief-text">Beliefs</p>
+									<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
 									<p className="text-secondary mt-4 mb-4 ">
-										We are called to eat, drink, speak, think and work to the <br /> glory of God.
-										We worship God by remembering the gospel <br /> through preaching, teaching,
-										singing, praying and <br /> celebrating baptism and communion.
+										We are called to eat, drink, speak, think and work to the glory of God. We
+										worship God by remembering the gospel through preaching, teaching, singing,
+										praying and celebrating baptism and communion.
 									</p>
 									<div>
 										<Link href="/">
@@ -189,7 +187,7 @@ const Home: NextPage = () => {
 					<div className="church-branchs">
 						<div className="container">
 							<div className="branch-content">
-								<h1 className="text-secondary fw-bold mt-5">Church Branches</h1>
+								<h1 className="text-secondary fw-bold m-0">Church Branches</h1>
 								<div className="branch-holder">
 									<div className="children-branch">
 										<img src="/images/children.png" alt="" />
@@ -215,13 +213,11 @@ const Home: NextPage = () => {
 								<div className="donate">
 									<img src="/images/donate.png" alt="" />
 									<div className="donate-content">
-										<h3>
-											Your Generousity is Making a <br /> Difference
-										</h3>
+										<h3>Your Generousity is Making a Difference</h3>
 										<p>
-											We are happy to get any support from members of this assemblly <br /> and the
-											community at large! <br /> Thank you so much for staying with us, and for all
-											your help, <br /> Donations
+											We are happy to get any support from members of this assemblly and the
+											community at large! Thank you so much for staying with us, and for all your
+											help, Donations
 										</p>
 										<div className="price-donate">
 											<div>
