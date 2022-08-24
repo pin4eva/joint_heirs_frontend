@@ -62,3 +62,35 @@
 		}
 	}
 }
+
+.event-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 10px;
+	height: 24rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: rgba(204, 206, 255, 0.67);
+		backdrop-filter: blur(33px);
+
+		.content-box {
+			height: 5px;
+			overflow: hidden;
+		}
+
+		&:hover {
+			.content-box {
+				animation: 0.5s animate-content-box ease-in-out;
+				height: 100%;
+				padding-block: 1rem;
+			}
+		}
+	}
+}
