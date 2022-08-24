@@ -12,18 +12,18 @@ const OurBranch = () => {
 				<div className="branches-hero">
 					<HeaderComp />
 
-					<div className="branches-text ">
-						<div className="branches-text-inner">
+					<div className="branches-inner ">
+						<div className="branches-inner-text">
 							<h1 className="text-light">Our Branches</h1>
-							<h4 className="jhai-text">Joint Heirs Assembly...</h4>
+							<h4 className="rochester text-light">Joint Heirs Assembly...</h4>
 						</div>
 					</div>
 				</div>
-                 
-				 <div className="pst-branch ">
-				 <PastorBranchComp/>
-				 </div>
-				 
+
+				<div className="pst-branch ">
+					<PastorBranchComp />
+				</div>
+
 				<div className="footer-subscribe">
 					<div className="container">
 						<div className="footer-sub">

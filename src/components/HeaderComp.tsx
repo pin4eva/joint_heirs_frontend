@@ -20,7 +20,7 @@ const HeaderComp = () => {
 						{navList.map((nav, i) => (
 							<li className="nav-item" key={i}>
 								<Link href={nav.link}>
-									<a className="nav-link fw-500" onClick={() => setOpen(false)}>
+									<a className="nav-link fw-500 text-uppercase" onClick={() => setOpen(false)}>
 										{nav.name}
 									</a>
 								</Link>
@@ -35,7 +35,6 @@ const HeaderComp = () => {
 					</div>
 				</div>
 			</nav>
-			{/* <HomePageComp /> */}
 		</header>
 	);
 };
@@ -44,8 +43,8 @@ export default HeaderComp;
 
 export const navList = [
 	{ name: "Home", link: "/" },
-	{ name: "SERMON", link: "/sermon/SermonsPage" },
-	{ name: "BRANCHES", link: "/branch/OurBranch" },
-	{ name: "ABOUT", link: "/about/About" },
-	{ name: "CONTACT", link: "/contact" },
+	{ name: "Sermon", link: "/sermons" },
+	{ name: "Branches", link: "/branches" },
+	{ name: "About", link: "/about" },
+	{ name: "Contact", link: "/contact" },
 ];
