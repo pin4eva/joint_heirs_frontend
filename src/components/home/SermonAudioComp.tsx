@@ -6,7 +6,7 @@ import React from "react";
 const SermonAudioComp = () => {
 	return (
 		<div className="left">
-			<h1 className="text-dark text-center mb-4 fw-bold">Sermons</h1>
+			<h1 className="text-dark text-center mt-4 fw-bold">Sermons</h1>
 			<div className="audios">
 				<div className="audio-hold">
 					<div className="audio-play-icons">
@@ -91,7 +91,7 @@ const SermonAudioComp = () => {
 				</div>
 			</div>
 			<Link href="/">
-				<a className="text-warning pd-2 text-decoration-none">View More</a>
+				<a className=" pd-2 text-decoration-none">View More</a>
 			</Link>
 		</div>
 	);
