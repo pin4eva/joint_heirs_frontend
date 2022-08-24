@@ -1,49 +1,99 @@
 .about-page {
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    position: relative;
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	position: relative;
 	.top-section {
 		background-image: url("../assets/background.png");
-        height: 20rem;
-        display: flex;
-        align-items: center;
-        padding-top: 9rem;
-        flex-direction: column;
-        gap: 0.6rem;
+		height: 20rem;
+		display: flex;
+		align-items: center;
+		padding-top: 9rem;
+		flex-direction: column;
+		gap: 0.6rem;
+		z-index: 20;
 
-        h1{
-            font-weight: $poppins;
-            font-weight: 700;
-            font-size: 4rem;
-            z-index: 5;
-            color: $light-gray;
-        }
-        p {
-            font-family: $rochester;
+		h1 {
+			font-weight: $poppins;
+			font-weight: 700;
+			font-size: 4rem;
+			z-index: 5;
+			color: $light-gray;
+		}
+		p {
+			font-family: $rochester;
+			font-weight: 400;
+			font-size: 3rem;
+			color: #ffffff;
+		}
+		.img {
+			position: absolute;
+			right: 0;
+			overflow: hidden;
+            z-index: -10;
+            opacity: 0.4;
+		}
+	}
+//========END OF SECTION ONE=======
+
+	.section-two {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        padding-top: 3rem;
+		p {
+			font-weight: 400;
+			font-size: 3rem;
+			font-family: $rochester;
+			color: $warning;
+		}
+		h2 {
+			font-weight: 700;
+			font-size: 3rem;
+			width: 56%;
+			text-align: center;
+            padding-top: 2rem;
+            @media screen and (max-width: $md) {
+                width: 60%;
+                font-size: 30px
+            }
+            @media screen and (max-width: $mobile) {
+                width: 80%;
+            }
+		}
+
+		.section-two-image {
+			position: relative;
+            margin-top: 2rem;
+			.playButton {
+				z-index: 3;
+				display: none;
+				position: fixed;
+				right: 30rem;
+				bottom: 11rem;
+			}
+
+			& > div {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+        article {
+            margin-top: 2rem;
+            width: 60%;
             font-weight: 400;
-            font-size: 3rem;
-            color: #ffffff;
-        }
-        .img {
-            position: absolute;
-            right: 0;
-            overflow: hidden;
+            font-size: 1rem;
+            font-family: $poppins;
+            text-align: center;
+            @media screen and (max-width: $md) {
+                width: 90%;
+            }
         }
 	}
-
-    .section-two {
-        p{
-            font-weight: 400;
-            font-size: 3rem;
-            font-family: $rochester;
-            color: $warning;
-        }
-
-        .section-two-image {
-            background-image: url("../assets/Rectangle76.png");
-        }
-    }
 }
