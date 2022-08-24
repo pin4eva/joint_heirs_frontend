@@ -1,0 +1,30 @@
+.about-page {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+	.top-section {
+		background-image: url("../assets/background.png");
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        padding-top: 9rem;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        h1{
+            font-weight: $poppins;
+            font-weight: 700;
+            font-size: 4rem;
+            z-index: 5;
+            color: $light-gray;
+        }
+        p {
+            font-family: $rochester;
+            font-weight: 400;
+            font-size: 3rem;
+            color: #ffffff;
+        }
+	}
+}
