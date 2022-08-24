@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-const VideoComp: React.FC<{ sermonData: ISermon }> = ({ sermonData }) => {
+const VideoComp = () => {
 	return (
 		<div className="Videos">
 			<div className="videos-wrapper">

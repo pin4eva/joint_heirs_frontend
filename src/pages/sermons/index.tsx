@@ -1,6 +1,7 @@
 import React from "react";
 import FooterComp from "../../components/FooterComp";
 import HeaderComp from "../../components/HeaderComp";
+import AudioComp from "./aduioComp";
 import VideoComp from "./videoComp";
 
 const SermonsPage = () => {
@@ -29,6 +30,7 @@ const SermonsPage = () => {
 			</div>
 
 			<VideoComp />
+			<AudioComp />
 
 			<FooterComp />
 		</div>
