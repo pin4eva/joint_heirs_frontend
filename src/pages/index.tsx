@@ -98,7 +98,7 @@ const Home: NextPage = () => {
 										Need <br /> Prayers ?
 									</h1>
 									<Link href="/">
-										<a className="btn mt-2 btn-warning fs-5 fw-500">Request</a>
+										<a className="btn mt-2 btn-warning fs-5 text-light fw-500">Request</a>
 									</Link>
 								</div>
 							</div>
@@ -344,9 +344,10 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				{/* <section> 
-				<div className="map-page"></div>
-				</section>  */}
+				{/* <section>
+					<div className="map-page">
+					</div>
+				</section> */}
 				<section>
 					<div className="footer-subscribe">
 						<div className="container">
