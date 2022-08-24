@@ -32,9 +32,9 @@ const FooterComp = () => {
 							</h5>
 						</div>
 						<div className="requests">
-							<button className="btn btn-outline-light">PRAYER REQUEST</button>
-							<button className="btn btn-outline-light">BIBLE READING </button>
-							<button className="btn btn-outline-light">TESTIMONY</button>
+							<button className="btn btn-outline-light fw-bold">PRAYER REQUEST</button>
+							<button className="btn btn-outline-light fw-bold">BIBLE READING </button>
+							<button className="btn btn-outline-light fw-bold">TESTIMONY</button>
 						</div>
 						<div className="footer-icons">
 							<Link href="/">
@@ -59,7 +59,7 @@ const FooterComp = () => {
 							</Link>
 						</div>
 					</div>
-					<hr className="text-light mt-5" />
+					<hr className="text-light mt-4" />
 					<div className="text-center">
 						<p className="text-light mb-0 ">
 							<big className="fw-bold">JointHeirs</big> {new Date().getFullYear()}. All Rights
