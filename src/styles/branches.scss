@@ -1,0 +1,99 @@
+.branches {
+	flex-direction: column;
+
+	&-hero {
+		background-image: url("/images/branches-img.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 40vh;
+		display: grid;
+		grid-template-rows: auto 1fr;
+	}
+
+	.branches-inner {
+		display: grid;
+		place-items: center;
+
+	}
+}
+
+.branch-pastor {
+	margin-bottom: 7rem;
+	margin-top: 5rem;
+
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+
+	h3 {
+		color: #022162;
+	}
+
+	h4 {
+		color: #030ce0;
+	}
+
+	@media screen and (max-width: 900px) {
+		flex-direction: column;
+
+	}
+
+	&-ken {
+		background-color: #ededed;
+		width: 30rem;
+		height: 45rem;
+
+		&-img {
+			background-image: url("/images/pst-ken.png");
+			background-repeat: no-repeat;
+			min-width: 30rem;
+			width: 100%;
+			min-height: 24rem;
+		}
+	}
+
+	&-john {
+		background-color: #ededed;
+		width: 30rem;
+		height: 45rem;
+
+		&-img {
+			background-image: url("/images/pst-john.png");
+			background-repeat: no-repeat;
+			min-width: 30rem;
+			width: 100%;
+			min-height: 24rem;
+		}
+	}
+}
+
+.footer-subscribe {
+	height: 30vh;
+	width: 100%;
+	background: #ccceff;
+
+	.footer-sub {
+		width: 100%;
+		height: 30vh;
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+
+		.sub-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		form {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			gap: 2rem;
+
+			.form-control {
+				flex: 1;
+			}
+
+		}
+	}
+}
