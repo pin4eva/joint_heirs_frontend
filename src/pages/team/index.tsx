@@ -49,6 +49,16 @@ const TeamPage = () => {
 							return <TeamCard {...elem} key={elem.id} />;
 					})}
 				</section>
+
+				<div className="desc">
+					<h4>Workers</h4>
+				</div>
+				<section className="department">
+					{departmentsData.map((elem) => {
+						if (elem.department == DepartmentsEnum.WORKERS)
+							return <TeamCard {...elem} key={elem.id} />;
+					})}
+				</section>
 			</main>
 
 			<SubscriptionForm />
