@@ -62,7 +62,11 @@ about important things like news
 	{
 		date: "May 5th",
 		title: "Singles All Night",
+<<<<<<< HEAD
 		image: "/images/children.png",
+=======
+		image: "/images/singles.png",
+>>>>>>> 8a5d61c8c0d225411ad4d21a9b1185c2710e1a3b
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
 delicious homemade food and talk
@@ -72,7 +76,11 @@ about important things like news
 	{
 		date: "May 5th",
 		title: "Singles All Night",
+<<<<<<< HEAD
 		image: "/images/men.png",
+=======
+		image: "/images/singles.png",
+>>>>>>> 8a5d61c8c0d225411ad4d21a9b1185c2710e1a3b
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
 delicious homemade food and talk
