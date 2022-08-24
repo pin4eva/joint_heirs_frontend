@@ -13,7 +13,7 @@ about important things like news
 	{
 		date: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
-		category: "men,",
+		category: "men",
 		image: "/images/men.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
@@ -46,7 +46,7 @@ about important things like news
 	{
 		date: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
-		category: "men,",
+		category: "men",
 		image: "/images/men.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
@@ -79,7 +79,7 @@ about important things like news
 	{
 		date: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
-		category: "men,",
+		category: "men",
 		image: "/images/men.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating

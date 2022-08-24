@@ -48,27 +48,27 @@ const EventsPage = () => {
 			<section className="events-content">
 				<nav className="events-content-nav">
 					<ul className="container">
-						<Link href="/events/Index">
+						<Link href="/events">
 							<a className={`event-navlink ${currentLink.general && "active"}`}>
 								<li onClick={generalEventsHandler}>General</li>
 							</a>
 						</Link>
-						<Link href="/events/Index">
+						<Link href="/events">
 							<a className={`event-navlink ${currentLink.childrenEvents && "active"}`}>
 								<li onClick={childrenEventsHandler}>Children</li>
 							</a>
 						</Link>
-						<Link href="/events/Index">
+						<Link href="/events">
 							<a className={`event-navlink ${currentLink.men && "active"}`}>
 								<li onClick={menEventsHandler}>Men</li>
 							</a>
 						</Link>
-						<Link href="/events/Index">
+						<Link href="/events">
 							<a className={`event-navlink ${currentLink.women && "active"}`}>
 								<li onClick={womenEventsHandler}>Women</li>
 							</a>
 						</Link>
-						<Link href="/events/Index">
+						<Link href="/events">
 							<a className={`event-navlink ${currentLink.youth && "active"}`}>
 								<li onClick={youthEventsHandler}>Youth</li>
 							</a>
@@ -80,10 +80,33 @@ const EventsPage = () => {
 						events.map((item, i) => {
 							return <EventCard key={i} event={item} />;
 						})}
-					{currentLink.childrenEvents && <p>children selected</p>}
-					{currentLink.men && <p>men selected</p>}
-					{currentLink.women && <p>women selected</p>}
-					{currentLink.youth && <p>youth selected</p>}
+					{currentLink.childrenEvents &&
+						events
+							.filter((item) => item.category === "children")
+							.map((item, i) => {
+								return <EventCard key={i} event={item} />;
+							})}
+					{currentLink.men &&
+						events
+							.filter((item) => item.category === "men")
+							.map((item, i) => {
+								return <EventCard key={i} event={item} />;
+							})}
+					{/* {currentLink.women &&
+						events
+							.filter((item) => item.category === "women")
+							.map((item, i) => {
+								return <EventCard key={i} event={item} />;
+							})} */}
+					{currentLink.women && (
+						<p className="fallback-text">THERE ARE NO UPCOMING EVENTS FOR WOMEN</p>
+					)}
+					{currentLink.youth &&
+						events
+							.filter((item) => item.category === "youth")
+							.map((item, i) => {
+								return <EventCard key={i} event={item} />;
+							})}
 				</div>
 			</section>
 		</div>
