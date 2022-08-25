@@ -3,16 +3,28 @@
 		background-image: url("../../public/images/PreacherBg.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 55vh;
+		min-height: 60vh;
 		.div {
-			background-color: red;
-
-			height: 4rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			place-content: center;
+			text-align: center;
+			margin: 5rem auto;
 			color: #ffffff;
+			p {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 60px;
+				line-height: 73px;
+				text-align: center;
+				color: $light-gray;
+				margin: 0;
+			}
+			.text-style {
+				font-family: "Rochester";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 48px;
+				line-height: 73px;
+			}
 		}
 	}
 	.sermon {
@@ -86,7 +98,16 @@
 	// VIDEOCOMP STYLINGS
 	.videos {
 		background-color: #ffffff;
-		width: 100%;
+		.text-style {
+			font-family: "Rochester";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 73px;
+			color: $warning;
+			background-color: $light-gray;
+		}
+
 		&-wrapper {
 			width: 80%;
 			margin: 5rem auto;
@@ -205,9 +226,19 @@
 	// AUDIOCOMP STYLING
 
 	.audio {
+		.text-style {
+			font-family: "Rochester";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 73px;
+			color: $warning;
+			background-color: $light-gray;
+		}
 		&-container {
 			width: 80%;
 			margin: 5rem auto;
+
 			@media screen and (max-width: $md) {
 				width: 90%;
 			}

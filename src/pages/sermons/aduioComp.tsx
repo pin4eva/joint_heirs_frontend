@@ -3,6 +3,9 @@ import Link from "next/link";
 const AudioComp = () => {
 	return (
 		<div className="audio">
+			<p className="text-style" style={{ paddingLeft: "2rem" }}>
+				All Recorded Sermons
+			</p>
 			<div className="audio-container">
 				<div className="audio-container-wrapper">
 					<p className="febuary-text">Febuary</p>

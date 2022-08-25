@@ -25,8 +25,10 @@ const SermonsPage = () => {
 			<header className="heade">
 				<HeaderComp />
 				<div className="div">
-					<p>Our Sermons</p>
-					<p>Written Text Version</p>
+					<p>
+						Our <br /> Sermons
+					</p>
+					<p className=" text-style">Joint Heirs Assembly...</p>
 				</div>
 			</header>
 
@@ -48,7 +50,6 @@ const SermonsPage = () => {
 						</div>
 					</div>
 				</div>
-				<p style={{ marginLeft: "2rem" }}>All Video Sermons</p>
 			</div>
 			{videos && <VideoComp />}
 			{audios && <AudioComp />}

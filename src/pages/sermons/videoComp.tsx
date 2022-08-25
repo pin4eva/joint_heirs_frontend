@@ -3,6 +3,9 @@
 const VideoComp = () => {
 	return (
 		<div className="Videos">
+			<p className="text-style" style={{ paddingLeft: "2rem" }}>
+				All Recorded Sermons
+			</p>
 			<div className="videos-wrapper">
 				<div className="febuary">
 					<p className="febuary-txt">February, 2020</p>
