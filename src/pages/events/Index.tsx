@@ -149,8 +149,8 @@ const EventsPage = () => {
 								loading="lazy"
 							/>
 						</div>
+						<img src="/images/events-location-img.png" alt="" className="circle-img" />
 					</div>
-					{/* <img src="/images/events-location-img.png" alt="" /> */}
 				</section>
 				<section className="subscribe">
 					<div className="footer-subscribe">
