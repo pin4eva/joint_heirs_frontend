@@ -202,7 +202,7 @@
 
 		&:hover {
 			.content-box {
-				animation: 0.5s animate-content-box ease-in-out;
+				animation: 0.5s animate-content-box forwards ease-out;
 				height: 100%;
 				padding-block: 1rem;
 			}
