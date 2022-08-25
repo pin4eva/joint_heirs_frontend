@@ -348,4 +348,82 @@
 			}
 		}
 	}
+	// RECORDINGS STYLING
+
+	.recording {
+		background-color: $light-gray;
+		.text-style {
+			font-family: "Rochester";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 73px;
+			color: $warning;
+		}
+		&-container {
+			width: 90%;
+			margin: 2rem auto;
+			background-color: $light-gray;
+			.recording-container-wrapper {
+				.febuary-text {
+					font-family: $poppins;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 25px;
+					line-height: 31px;
+					color: $tetiary;
+				}
+				.record {
+					width: 100%;
+					background-color: #ffffff;
+					height: 232px;
+					left: 83px;
+					top: 877px;
+					border-radius: 20px;
+					padding: 2.3rem 5rem;
+					&-wrapper {
+						p {
+							margin: 0;
+						}
+						.record-icon {
+							display: flex;
+							align-items: center;
+							i {
+								font-size: 42px;
+								color: $warning;
+								list-style: 30px;
+							}
+							.record-text {
+								margin-left: 2.5rem;
+								.pastor {
+									font-family: $poppins;
+									font-style: normal;
+									font-weight: 500;
+									font-size: 16px;
+									line-height: 24px;
+									color: $tetiary;
+								}
+								.Feb {
+									font-family: $poppins;
+									font-style: normal;
+									font-weight: 500;
+									font-size: 25px;
+									line-height: 31px;
+									color: $dark-blue;
+								}
+							}
+						}
+						.record-space {
+							i {
+								font-size: 22px;
+								color: $primary;
+								background-color: $line-bg;
+								padding: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

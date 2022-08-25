@@ -35,6 +35,7 @@ const SermonsPage = () => {
 			<div className="sermon">
 				<div className="sermon-navi">
 					<div className="sermon-flex">
+						{" "}
 						<div className="sermom-navi-toggle">
 							<i onClick={handleVideos} className="fa-solid fa-video"></i>
 
@@ -42,7 +43,6 @@ const SermonsPage = () => {
 
 							<i onClick={handleAudios} className="fa-solid fa-book-open"></i>
 						</div>
-
 						<div className="sermon-navi-search">
 							<i className="fa-solid fa-magnifying-glass"></i>
 

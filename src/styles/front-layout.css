@@ -1,0 +1,7 @@
+.front {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+/*# sourceMappingURL=front-layout.css.map */

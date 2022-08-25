@@ -4,7 +4,7 @@ const AudioComp = () => {
 	return (
 		<div className="audio">
 			<p className="text-style" style={{ paddingLeft: "2rem" }}>
-				All Recorded Sermons
+				All Written Sermons
 			</p>
 			<div className="audio-container">
 				<div className="audio-container-wrapper">
