@@ -273,6 +273,9 @@
 				flex-direction: column;
 				width: 40%;
                 justify-content: center;
+                h2{
+                    font-weight: 700;
+                }
                 @media screen and (max-width: $md) {
                     width:90%;
                     margin: 0 auto;
@@ -283,6 +286,7 @@
 
 			.section-five-image {
 				width: 50%;
+                margin-block: 3rem;
                 @media screen and (max-width: $md) {
                     width: 90%;
                     padding-top: 1rem;
@@ -291,6 +295,94 @@
                 
 				img {
 					width: 100%;
+				}
+			}
+		}
+	}
+    //===========END OF SECTION FIVE============
+
+    .section-six{
+        padding-inline: 3rem;
+        .section-six-text {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            padding-block: 3rem;
+
+            .desc{
+                margin-top: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        .section-six-images {
+            display: flex;
+            justify-content: space-between;
+
+            .image1 {
+                width: 30%;
+                height: 46%;
+                background: $light-gray;
+                position: relative;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+
+                img {
+                    width: 100%;
+                    // height: 20%;
+                }
+
+                span{
+                    position: absolute;
+
+                }
+
+                div{
+                    padding: 2rem 2rem 2rem 2rem;
+                    text-align: center;
+                    transform: all 400ms ease;
+                   
+                    &:hover {
+                        background: $warning;
+                        color: white;
+                        transition: all 400ms ease;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        line-height: 1.5rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    //========END OF SECTION SIX============
+
+    .footer-subscribe {
+		min-height: 10vh;
+		background: #ccceff;
+        align-items: center;
+        margin-top: 2rem;
+		.footer-sub {
+			width: 100%;
+			height: 15vh;
+			display: flex;
+			align-items: center;
+			gap: 3rem;
+
+			.sub-text {
+				display: flex;
+				flex-direction: column;
+			}
+
+			form {
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				gap: 2rem;
+
+				.form-control {
+					width: 70%;
 				}
 			}
 		}

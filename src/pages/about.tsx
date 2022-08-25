@@ -105,12 +105,74 @@ const AboutPage = () => {
 						</div>
 					</div>
 				</div>
+				{/* =============SECTION SIX============ */}
+				<div className="section-six">
+					<div className="section-six-text">
+						<p className="rochester">Whats Next?</p>
+						<h2>Next Steps</h2>
+						<p className="desc">
+							Congratulations! You have decided to dedicate your life to following Jesus. You may be
+							wondering what’s next on your journey. We want to help! Join us as we guide you toward
+							the next steps in your walk with Christ.
+						</p>
+					</div>
 
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
-				<div>5</div>
+					<div className="section-six-images">
+						<div className="image1">
+							<img src="images/Rectangle27.png" alt="" />
+							<span>1</span>
+							<div>
+								<h6>Get Involved</h6>
+								<p>
+									Congratulations! You have decided to dedicate your life to following Jesus. You
+									may be wondering what’s next ant to help! Join us as we guide you toward the next
+									steps in your walk with Christ.
+								</p>
+							</div>
+						</div>
+						<div className="image1">
+							<img src="images/Rectangle28.png" alt="" />
+							<span>1</span>
+							<div>
+								<h6>Get Involved</h6>
+								<p>
+									Congratulations! You have decided to dedicate your life to following Jesus. You
+									may be wondering what’s next ant to help! Join us as we guide you toward the next
+									steps in your walk with Christ.
+								</p>
+							</div>
+						</div>
+						<div className="image1">
+							<img src="images/Rectangle29.png" alt="" />
+							<span>1</span>
+							<div>
+								<h6>Get Involved</h6>
+								<p>
+									Congratulations! You have decided to dedicate your life to following Jesus. You
+									may be wondering what’s next ant to help! Join us as we guide you toward the next
+									steps in your walk with Christ.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section>
+					<div className="footer-subscribe">
+						<div className="container">
+							<div className="footer-sub">
+								<div className="sub-text">
+									<h2 className="text-secondary mb-0">Subscribe</h2>
+									<p className="text-dark mb-0">To Our NewsLetter</p>
+								</div>
+								<form>
+									<input type="text" placeholder="Enter Email" className="form-control" />
+									<button className="btn btn-warning text-light">Subscribe Now</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</FrontLayout>
 	);
