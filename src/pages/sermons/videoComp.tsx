@@ -12,9 +12,7 @@ const VideoComp = () => {
 							<div className="febuary-videos" key={i}>
 								<div className="overlay">
 									<div className="image">
-										<a href="">
-											<img src="/images/logo.png" alt="" />
-										</a>
+										<i className="fa-solid fa-play"></i>
 									</div>
 
 									<div className="txtflex">

@@ -15,14 +15,17 @@ const SermonsPage = () => {
 				<div className="sermon-navi">
 					<div className="sermon-flex">
 						<div className="sermom-navi-toggle">
-							<div className="video">vedio</div>
-							<div className="video">record</div>
-							<div className="video">text</div>
+							<i className="fa-solid fa-video"></i>
+
+							<i className="fa-solid fa-microphone"></i>
+
+							<i className="fa-solid fa-book-open"></i>
 						</div>
 
 						<div className="sermon-navi-search">
-							<div className="video">sreach</div>
-							<div className="video">filter</div>
+							<i className="fa-solid fa-magnifying-glass"></i>
+
+							<i className="fa-solid fa-magnifying-glass"></i>
 						</div>
 					</div>
 				</div>
@@ -31,6 +34,22 @@ const SermonsPage = () => {
 
 			<VideoComp />
 			<AudioComp />
+			<section>
+				<div className="footer-subscribe">
+					<div className="container">
+						<div className="footer-sub">
+							<div className="sub-text">
+								<h2 className="text-secondary mb-0">Subscribe</h2>
+								<p className="text-dark mb-0">To Our NewsLetter</p>
+							</div>
+							<form>
+								<input type="text" placeholder="Enter Email" className="form-control" />
+								<button className="btn btn-warning text-light">Subscribe Now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<FooterComp />
 		</div>
