@@ -352,6 +352,7 @@
 
 	.recording {
 		background-color: $light-gray;
+		padding: 2rem 0;
 		.text-style {
 			font-family: "Rochester";
 			font-style: normal;
@@ -365,6 +366,7 @@
 			margin: 2rem auto;
 			background-color: $light-gray;
 			.recording-container-wrapper {
+				margin-bottom: 4rem;
 				.febuary-text {
 					font-family: $poppins;
 					font-style: normal;
@@ -381,6 +383,7 @@
 					top: 877px;
 					border-radius: 20px;
 					padding: 2.3rem 5rem;
+					margin-bottom: 1rem;
 					&-wrapper {
 						p {
 							margin: 0;
@@ -388,13 +391,14 @@
 						.record-icon {
 							display: flex;
 							align-items: center;
+							gap: 5rem;
+							margin-bottom: 3rem;
 							i {
-								font-size: 42px;
+								font-size: 38px;
 								color: $warning;
 								list-style: 30px;
 							}
 							.record-text {
-								margin-left: 2.5rem;
 								.pastor {
 									font-family: $poppins;
 									font-style: normal;
@@ -414,11 +418,56 @@
 							}
 						}
 						.record-space {
-							i {
-								font-size: 22px;
-								color: $primary;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 2rem;
+
+							.record-space-icon {
+								width: 44px;
+								height: 44px;
 								background-color: $line-bg;
-								padding: 1rem;
+								border-radius: 50%;
+								padding: 0.7rem 1rem;
+								cursor: pointer;
+
+								i {
+									font-size: 18px;
+									color: $primary;
+								}
+							}
+							.record-space-cont {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								gap: 2rem;
+								width: 100%;
+								p {
+									margin: 0;
+								}
+								input {
+									width: 100%;
+									background: $primary;
+									cursor: pointer;
+								}
+								i {
+									font-size: 24px;
+									color: $dark-blue;
+									cursor: pointer;
+								}
+								.record-space-shortline {
+									width: 10%;
+									height: 10px;
+									background-color: $line-bg;
+									border-radius: 14px;
+									cursor: pointer;
+									.blue-rgb {
+										width: 50%;
+										height: 10px;
+										background-color: $primary;
+										border-radius: 14px;
+									}
+								}
 							}
 						}
 					}
