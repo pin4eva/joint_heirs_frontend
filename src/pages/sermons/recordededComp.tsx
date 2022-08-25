@@ -1,5 +1,7 @@
 import React from "react";
 
-export const recordededComp = () => {
-	return <div>recordededComp</div>;
+const RecordedComp = () => {
+	return <div>RecordedComp</div>;
 };
+
+export default RecordedComp;

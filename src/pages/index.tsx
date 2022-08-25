@@ -344,9 +344,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				{/* <section> 
-				<div className="map-page"></div>
-				</section>  */}
+
 				<section>
 					<div className="footer-subscribe">
 						<div className="container">

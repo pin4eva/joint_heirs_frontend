@@ -4,6 +4,7 @@ import HeaderComp from "../../components/HeaderComp";
 import AudioComp from "./aduioComp";
 import VideoComp from "./videoComp";
 import { useState } from "react";
+import RecordedComp from "./recordededComp";
 
 const SermonsPage = () => {
 	const [videos, setVideos] = useState(true);
@@ -21,8 +22,12 @@ const SermonsPage = () => {
 
 	return (
 		<div className="wrapper">
-			<header>
+			<header className="heade">
 				<HeaderComp />
+				<div className="div">
+					<p>Our Sermons</p>
+					<p>Written Text Version</p>
+				</div>
 			</header>
 
 			<div className="sermon">
@@ -31,9 +36,9 @@ const SermonsPage = () => {
 						<div className="sermom-navi-toggle">
 							<i onClick={handleVideos} className="fa-solid fa-video"></i>
 
-							<i onClick={handleAudios} className="fa-solid fa-microphone"></i>
+							<i onClick={handleRecordings} className="fa-solid fa-microphone"></i>
 
-							<i onClick={handleRecordings} className="fa-solid fa-book-open"></i>
+							<i onClick={handleAudios} className="fa-solid fa-book-open"></i>
 						</div>
 
 						<div className="sermon-navi-search">
@@ -47,6 +52,7 @@ const SermonsPage = () => {
 			</div>
 			{videos && <VideoComp />}
 			{audios && <AudioComp />}
+			{recordings && <RecordedComp />}
 
 			<section>
 				<div className="footer-subscribe">
