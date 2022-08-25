@@ -32,17 +32,17 @@
 			position: absolute;
 			right: 0;
 			overflow: hidden;
-            z-index: -10;
-            opacity: 0.4;
+			z-index: -10;
+			opacity: 0.4;
 		}
 	}
-//========END OF SECTION ONE=======
+	//========END OF SECTION ONE=======
 
 	.section-two {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-        padding-top: 3rem;
+		padding-top: 3rem;
 		p {
 			font-weight: 400;
 			font-size: 3rem;
@@ -54,19 +54,19 @@
 			font-size: 3rem;
 			width: 56%;
 			text-align: center;
-            padding-top: 2rem;
-            @media screen and (max-width: $md) {
-                width: 60%;
-                font-size: 30px
-            }
-            @media screen and (max-width: $mobile) {
-                width: 80%;
-            }
+			padding-top: 2rem;
+			@media screen and (max-width: $md) {
+				width: 60%;
+				font-size: 30px;
+			}
+			@media screen and (max-width: $mobile) {
+				width: 80%;
+			}
 		}
 
 		.section-two-image {
 			position: relative;
-            margin-top: 2rem;
+			margin-top: 2rem;
 			.playButton {
 				z-index: 3;
 				display: none;
@@ -84,16 +84,215 @@
 			}
 		}
 
-        article {
-            margin-top: 2rem;
-            width: 60%;
-            font-weight: 400;
-            font-size: 1rem;
-            font-family: $poppins;
-            text-align: center;
+		article {
+			margin-top: 2rem;
+			width: 60%;
+			font-weight: 400;
+			font-size: 1rem;
+			font-family: $poppins;
+			text-align: center;
+			@media screen and (max-width: $md) {
+				width: 90%;
+			}
+		}
+	}
+	//===============END OF SECTION TWO==============
+
+	.section-three {
+		background: $light-gray;
+		margin-top: 6rem;
+		padding-block: 4.7rem;
+
+		.container {
+			display: flex;
+			gap: 8rem;
+			justify-content: center;
+
+			@media screen and (max-width: $md) {
+				display: block;
+			}
+
+			.section-three-image {
+				width: 38%;
+
+				@media screen and (max-width: 1200px) {
+					width: 50%;
+				}
+				@media screen and (max-width: $md) {
+					width: 90%;
+					margin: auto;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.section-three-text {
+				width: 40%;
+				display: flex;
+				flex-direction: column;
+				gap: 0.8rem;
+				padding-top: 2rem;
+				@media screen and (max-width: 1200px) {
+					width: 50%;
+					gap: 0.7rem;
+					padding-top: 0;
+				}
+				@media screen and (max-width: $md) {
+					width: 90%;
+					margin: auto;
+					text-align: center;
+					gap: 0.8rem;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 3rem;
+					line-height: 73px;
+				}
+				h2 {
+					font-size: 2rem;
+					font-family: $poppins;
+					line-height: 56px;
+                    font-weight: 700;
+				}
+				article {
+					font-weight: 400;
+					font-size: 1rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
+	//==========END OF SECTION THREE==============
+
+	.section-four {
+		display: flex;
+		padding-inline: 3rem;
+		padding-block: 4.5rem;
+
+		@media screen and (max-width: $md) {
+			display: block;
+		}
+
+		.section-four-images {
+			display: flex;
+			width: 60%;
+			gap: 2rem;
+			height: 100%;
+			@media screen and (max-width: $md) {
+				width: 100%;
+				justify-content: center;
+			}
+
+			.pastor-john {
+				width: 40%;
+				// height: auto;
+
+				.fit {
+					width: 100%;
+					position: relative;
+					img {
+						width: 100%;
+					}
+					.overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: #022162;
+						width: 100%;
+						height: 100%;
+						opacity: 0;
+						transition: all 400ms ease;
+
+						&:hover {
+							opacity: 0.74;
+							transition: all 400ms ease;
+						}
+					}
+				}
+				.fit-text {
+					width: 100%;
+					background: $light-gray;
+					padding-top: 1rem;
+					padding-bottom: 1.5rem;
+					padding-inline: 1.5rem;
+					text-align: center;
+				}
+			}
+		}
+
+		.section-four-text {
+			width: 60%;
+
+			@media screen and (max-width: $md) {
+				width: 100%;
+				text-align: center;
+			}
+
+			h2 {
+				font-size: 2rem;
+				font-weight: 700;
+				margin-top: 0.1rem;
+			}
+
+			.team-desc {
+				font-weight: 400;
+				font-size: 1rem;
+				margin-top: 1.2rem;
+			}
+			.btn {
+				background: $warning;
+				border: none;
+				color: #ffffff;
+				margin-top: 1rem;
+				&:hover {
+					background: transparent;
+					outline: $warning;
+					color: #000;
+					border: 1px solid $warning;
+				}
+			}
+		}
+	}
+	//=============END OF SECTION FOUR===========
+	.section-five {
+        background: #CCCEFF;
+        .container {
+            display: flex;
+            justify-content: space-between;
+
             @media screen and (max-width: $md) {
-                width: 90%;
+                display: block;
+               
             }
-        }
+			.section-five-text {
+				display: flex;
+				gap: 2rem;
+				flex-direction: column;
+				width: 40%;
+                justify-content: center;
+                @media screen and (max-width: $md) {
+                    width:90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    gap: 1rem;
+                }
+			}
+
+			.section-five-image {
+				width: 50%;
+                @media screen and (max-width: $md) {
+                    width: 90%;
+                    padding-top: 1rem;
+                    margin: 0 auto;
+                }
+                
+				img {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
