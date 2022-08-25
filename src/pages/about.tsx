@@ -105,6 +105,7 @@ const AboutPage = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* =============SECTION SIX============ */}
 				<div className="section-six">
 					<div className="section-six-text">
@@ -120,7 +121,7 @@ const AboutPage = () => {
 					<div className="section-six-images">
 						<div className="image1">
 							<img src="images/Rectangle27.png" alt="" />
-							<span>1</span>
+							<span className="one">1</span>
 							<div>
 								<h6>Get Involved</h6>
 								<p>
@@ -132,9 +133,9 @@ const AboutPage = () => {
 						</div>
 						<div className="image1">
 							<img src="images/Rectangle28.png" alt="" />
-							<span>1</span>
+							<span className="two">1</span>
 							<div>
-								<h6>Get Involved</h6>
+								<h6>Attend Services</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
 									may be wondering what’s next ant to help! Join us as we guide you toward the next
@@ -144,9 +145,9 @@ const AboutPage = () => {
 						</div>
 						<div className="image1">
 							<img src="images/Rectangle29.png" alt="" />
-							<span>1</span>
+							<span className="three">1</span>
 							<div>
-								<h6>Get Involved</h6>
+								<h6>Questions</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
 									may be wondering what’s next ant to help! Join us as we guide you toward the next
