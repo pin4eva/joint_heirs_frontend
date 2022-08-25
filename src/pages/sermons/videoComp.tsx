@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
 
 const VideoComp = () => {
 	return (
@@ -33,9 +32,7 @@ const VideoComp = () => {
 							<div className="febuary-videos" key={i}>
 								<div className="overlay">
 									<div className="image">
-										<a href="">
-											<img src="/images/logo.png" alt="" />
-										</a>
+										<i className="fa-solid fa-play"></i>
 									</div>
 
 									<div className="txtflex">
@@ -56,9 +53,7 @@ const VideoComp = () => {
 							<div className="febuary-videos" key={i}>
 								<div className="overlay">
 									<div className="image">
-										<a href="">
-											<img src="/images/logo.png" alt="" />
-										</a>
+										<i className="fa-solid fa-play"></i>
 									</div>
 
 									<div className="txtflex">
@@ -79,9 +74,7 @@ const VideoComp = () => {
 							<div className="febuary-videos" key={i}>
 								<div className="overlay">
 									<div className="image">
-										<a href="">
-											<img src="/images/logo.png" alt="" />
-										</a>
+										<i className="fa-solid fa-play"></i>
 									</div>
 
 									<div className="txtflex">
@@ -121,35 +114,35 @@ const sermonDatas = [
 	{
 		img: "/public/images/logo.png",
 		topic: "The Resurrecton of Jesus",
-		text: "Part Two",
+		text: "-Part Two",
 		name: "Pastor John Emmanuel",
 		date: "10/02/2022",
 	},
 	{
 		img: "/public/images/logo.png",
 		topic: "The Resurrecton of Jesus",
-		text: "Part Three",
+		text: "-Part Three",
 		name: "Pastor John Emmanuel",
 		date: "10/02/2022",
 	},
 	{
 		img: "/public/images/logo.png",
 		topic: "The Resurrecton of Jesus",
-		text: "Part Four",
+		text: "-Part Four",
 		name: "Pastor John Emmanuel",
 		date: "10/02/2022",
 	},
 	{
 		img: "/public/images/logo.png",
 		topic: "The Resurrecton of Jesus",
-		text: "Part Five",
+		text: "-Part Five",
 		name: "Pastor John Emmanuel",
 		date: "10/02/2022",
 	},
 	{
 		img: "/public/images/logo.png",
 		topic: "The Resurrecton of Jesus",
-		text: "Part Six",
+		text: "-Part Six",
 		name: "Pastor John Emmanuel",
 		date: "10/02/2022",
 	},
