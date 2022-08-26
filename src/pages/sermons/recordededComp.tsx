@@ -8,8 +8,8 @@ const RecordedComp = () => {
 			</p>
 
 			<div className="recording-container">
-				{recordDatas.map((recordData, i) => (
-					<div className="recording-container-wrapper" key={i}>
+				{recordDatas.map((recordData, id) => (
+					<div className="recording-container-wrapper" key={id}>
 						<p className="febuary-text">{recordData.month}</p>
 						<div className="record">
 							<div className="record-wrapper">
@@ -29,7 +29,7 @@ const RecordedComp = () => {
 										<p className="record-space-time">{recordData.time}</p>
 										<input type="range" name="" id="" />
 
-										<p className="record-space-duration">{recordData.duration}</p>
+										<p className="record-space-time">{recordData.duration}</p>
 
 										<i className="fa-solid fa-volume-high"></i>
 
@@ -58,7 +58,7 @@ const RecordedComp = () => {
 										<p className="record-space-time">55:13</p>
 										<input type="range" name="" id="" />
 
-										<p className="record-space-duration">1:39:13</p>
+										<p className="record-space-time">1:39:13</p>
 
 										<i className="fa-solid fa-volume-high"></i>
 
@@ -88,6 +88,7 @@ export interface IRecord {
 
 export const recordDatas = [
 	{
+		id: 1,
 		month: "Febuary",
 		pastor: "Sermon By Pastor Eric",
 		title: "Feb 5 -The Ressurrection of Jesus (Part One)",
@@ -95,6 +96,7 @@ export const recordDatas = [
 		duration: "1:39:13",
 	},
 	{
+		id: 2,
 		month: "March",
 		pastor: "Sermon By Pastor Eric",
 		title: "Feb 5 -The Ressurrection of Jesus (Part One)",
@@ -102,6 +104,7 @@ export const recordDatas = [
 		duration: "1:39:13",
 	},
 	{
+		id: 3,
 		month: "April",
 		pastor: "Sermon By Pastor Eric",
 		title: "Feb 5 -The Ressurrection of Jesus (Part One)",
@@ -109,6 +112,7 @@ export const recordDatas = [
 		duration: "1:39:13",
 	},
 	{
+		id: 4,
 		month: "May",
 		pastor: "Sermon By Pastor Eric",
 		title: "Feb 5 -The Ressurrection of Jesus (Part One)",

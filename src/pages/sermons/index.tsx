@@ -8,18 +8,19 @@ import RecordedComp from "./recordededComp";
 
 const SermonsPage = () => {
 	const [videos, setVideos] = useState(true);
-	const [audios, setAudios] = useState(false);
-	const [recordings, setRecording] = useState(false);
-	const handleVideos = () => {
-		setVideos(!videos);
-	};
-	const handleAudios = () => {
-		setAudios(!audios);
-	};
-	const handleRecordings = () => {
-		setRecording(!recordings);
-	};
+	const handleVideos = () => setVideos(!videos);
 
+	const [audios, setAudios] = useState(false);
+	const handleAudios = () => setAudios(!audios);
+
+	const [recordings, setRecording] = useState(false);
+	const handleRecordings = () => setRecording(!recordings);
+
+	const [search, setSearch] = useState(false);
+	const handleSearch = () => setSearch(!search);
+
+	const [filter, setFilter] = useState(false);
+	const handleFilter = () => setFilter(!filter);
 	return (
 		<div className="wrapper">
 			<header className="heade">
@@ -44,10 +45,29 @@ const SermonsPage = () => {
 							<i onClick={handleAudios} className="fa-solid fa-book-open"></i>
 						</div>
 						<div className="sermon-navi-search">
-							<i className="fa-solid fa-magnifying-glass"></i>
+							<i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
 
-							<i className="fa-solid fa-magnifying-glass"></i>
+							<i onClick={handleFilter} className="fa-solid fa-magnifying-glass"></i>
 						</div>
+						{search && (
+							<form action="" className="search">
+								<input type="text" placeholder="search here... " />
+								<i onClick={handleSearch} className="fa-solid fa-times"></i>
+							</form>
+						)}
+						{filter && (
+							<div className="sort">
+								<div className="sort-close">
+									<span>Sort</span>
+									<i onClick={handleFilter} className="fa-solid fa-times "></i>
+								</div>
+								<ul>
+									<li>Names</li>
+									<li>Date</li>
+									<li>Size</li>
+								</ul>
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

@@ -6,8 +6,16 @@
 		min-height: 60vh;
 		.div {
 			text-align: center;
+			// justify-content: center;
 			margin: 5rem auto;
 			color: #ffffff;
+			@media screen and (max-width: $md) {
+				margin: 8rem auto;
+			}
+			@media screen and (max-width: $mobile) {
+				width: 90%;
+			}
+
 			p {
 				font-family: "Poppins";
 				font-style: normal;
@@ -17,6 +25,18 @@
 				text-align: center;
 				color: $light-gray;
 				margin: 0;
+				@media screen and (max-width: $md) {
+					font-size: 58px;
+					line-height: 68px;
+				}
+				@media screen and (max-width: $mobile) {
+					font-size: 60px;
+					line-height: 73px;
+				}
+				@media screen and (max-width: 400px) {
+					font-size: 40px;
+					line-height: 50px;
+				}
 			}
 			.text-style {
 				font-family: "Rochester";
@@ -24,6 +44,10 @@
 				font-weight: 400;
 				font-size: 48px;
 				line-height: 73px;
+				@media screen and (max-width: $mobile) {
+					font-size: 40px;
+					line-height: 50px;
+				}
 			}
 		}
 	}
@@ -55,7 +79,7 @@
 					align-items: flex-start;
 					gap: 0.5rem;
 					i {
-						font-size: 20px;
+						font-size: 18px;
 						padding: 0.4rem 1.2rem;
 						background-color: #ffffff;
 						border-radius: 3px;
@@ -72,7 +96,7 @@
 
 					gap: 0.5rem;
 					i {
-						font-size: 20px;
+						font-size: 18px;
 						padding: 0.4rem 0.8rem;
 						background-color: #ffffff;
 						border-radius: 3px;
@@ -83,15 +107,117 @@
 						}
 					}
 				}
+				.search {
+					padding: 0 1rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					position: absolute;
+					top: 63.7%;
+					left: 37%;
+					width: 50%;
+					font-size: 0.6rem;
+					border-radius: 20px;
+					font-size: 1rem;
+					border: none;
+					color: #000000;
+					background-color: #ffffff;
+					transition-delay: 0.1s ease-out;
+					@media screen and (max-width: $md) {
+						top: 62.4%;
+						left: 7%;
+						width: 75%;
+					}
+					@media screen and (max-width: $mobile) {
+						top: 63%;
+						left: 6%;
+						width: 75%;
+					}
+
+					@media screen and (max-width: 400px) {
+						top: 63%;
+						left: 1%;
+						width: 70%;
+					}
+					.fa-times {
+						font-size: 12px;
+						cursor: pointer;
+					}
+
+					input {
+						padding: 0.5rem 0rem;
+						width: 95%;
+						border: none;
+						font-size: 0.9rem;
+
+						&:focus {
+							outline: none;
+						}
+						&:placeholder {
+							font-size: 0.6rem;
+						}
+					}
+				}
+				.sort {
+					background-color: #ffffff;
+					position: absolute;
+					width: 15%;
+					height: 160px;
+					top: 68.7%;
+					right: 1%;
+
+					@media screen and (max-width: $md) {
+						top: 66%;
+						right: 3%;
+						width: 20%;
+					}
+					@media screen and (max-width: $mobile) {
+						top: 67%;
+						right: 3%;
+						width: 22%;
+					}
+
+					@media screen and (max-width: 400px) {
+						top: 68%;
+						right: 5%;
+						width: 40%;
+						height: 137.5px;
+					}
+					.sort-close {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0.5rem;
+						color: #ffffff;
+						background-color: $primary;
+						cursor: pointer;
+						font-size: 15px;
+						margin-bottom: 0.5rem;
+						i,
+						span {
+							font-size: 14px;
+						}
+					}
+					ul {
+						padding: 0;
+						margin: 0;
+						list-style: none;
+						li {
+							font-size: 14px;
+							margin-bottom: 0.4rem;
+							padding: 0.4rem;
+							@media screen and (max-width: 400px) {
+								margin-bottom: 0.3rem;
+								padding: 0.35rem;
+								font-size: 13px;
+							}
+							&:hover {
+								background-color: $line-bg;
+							}
+						}
+					}
+				}
 			}
-		}
-		p {
-			font-family: $rochester;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 48px;
-			line-height: 73px;
-			color: $warning;
 		}
 	}
 
@@ -106,6 +232,20 @@
 			line-height: 73px;
 			color: $warning;
 			background-color: $light-gray;
+			@media screen and (max-width: $md) {
+				width: 100%;
+				font-size: 50px;
+				line-height: 70px;
+			}
+			@media screen and (max-width: $mobile) {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 400px) {
+				width: 100%;
+				font-size: 40px;
+				line-height: 65px;
+			}
 		}
 
 		&-wrapper {
@@ -113,14 +253,15 @@
 			margin: 5rem auto;
 
 			@media screen and (max-width: $md) {
-				width: 80%;
+				width: 90%;
 			}
 			@media screen and (max-width: $mobile) {
-				width: 80%;
+				width: 95%;
+				margin: 5rem auto;
 			}
 
 			@media screen and (max-width: 400px) {
-				width: 80%;
+				width: 95%;
 			}
 
 			.febuary {
@@ -132,6 +273,10 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
+					@media screen and (max-width: 400px) {
+						font-size: 20px;
+						line-height: 28px;
+					}
 				}
 				.febuary-cont {
 					display: grid;
@@ -141,6 +286,9 @@
 						grid-template-columns: repeat(2, 1fr);
 					}
 					@media screen and (max-width: $mobile) {
+						grid-template-columns: repeat(1, 1fr);
+					}
+					@media screen and (max-width: 400px) {
 						grid-template-columns: repeat(1, 1fr);
 					}
 
@@ -155,12 +303,7 @@
 						@media screen and (max-width: $md) {
 							width: 100%;
 						}
-						@media screen and (max-width: $mobile) {
-							width: 100%;
-						}
-						@media screen and (max-width: 400px) {
-							width: 100%;
-						}
+
 						.overlay {
 							background: linear-gradient(180deg, rgba(196, 196, 196, 0.2) 0%, #000000 100%);
 							border-radius: 15px;
@@ -170,15 +313,25 @@
 							flex-direction: column;
 							justify-content: end;
 
+							@media screen and (max-width: 400px) {
+								width: 100%;
+								height: 100%;
+								border-radius: 15px;
+							}
+
 							p {
 								font-family: "Poppins";
 								font-style: normal;
 								font-weight: 400;
 								font-size: 16px;
-
 								margin: 0;
-
 								color: #ffffff;
+								@media screen and (max-width: $md) {
+									font-size: 14px;
+								}
+								@media screen and (max-width: $mobile) {
+									font-size: 14px;
+								}
 							}
 							.bold {
 								font-family: "Poppins";
@@ -189,12 +342,16 @@
 								margin: 0;
 								font-weight: 600;
 								color: #ffffff;
+								@media screen and (max-width: $mobile) {
+									font-size: 16px;
+								}
 							}
 
 							.image {
 								width: 59.41px;
 								height: 49.85px;
 								margin: 0 auto;
+								cursor: pointer;
 
 								i {
 									font-size: 18px;
@@ -234,10 +391,27 @@
 			line-height: 73px;
 			color: $warning;
 			background-color: $light-gray;
+			@media screen and (max-width: $md) {
+				width: 100%;
+				font-size: 50px;
+				line-height: 70px;
+			}
+			@media screen and (max-width: $mobile) {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 400px) {
+				width: 100%;
+				font-size: 40px;
+				line-height: 65px;
+			}
 		}
 		&-container {
-			width: 80%;
+			width: 90%;
 			margin: 5rem auto;
+			@media screen and (max-width: 400px) {
+				margin: 4rem auto;
+			}
 
 			@media screen and (max-width: $md) {
 				width: 90%;
@@ -245,7 +419,13 @@
 			@media screen and (max-width: $mobile) {
 				width: 95%;
 			}
+			@media screen and (max-width: 400px) {
+				width: 100%;
+			}
 			.audio-container-wrapper {
+				@media screen and (max-width: 400px) {
+					width: 100%;
+				}
 				margin-bottom: 3rem;
 				.febuary-text {
 					font-family: $poppins;
@@ -254,15 +434,24 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
+					@media screen and (max-width: 400px) {
+						margin-left: 1.5rem;
+						font-size: 22px;
+					}
 				}
 				.audio-container-flex {
 					display: flex;
+
 					.audio-container-left {
-						padding: 2rem 1rem;
+						padding: 2rem 2rem;
 						background: $dark-blue;
-						width: 30%;
+						width: 20%;
 						@media screen and (max-width: $md) {
 							width: 30%;
+						}
+						@media screen and (max-width: 400px) {
+							display: none;
+							width: 100%;
 						}
 						h6 {
 							font-family: "Montserrat";
@@ -273,7 +462,7 @@
 
 							color: #ffffff;
 							@media screen and (max-width: $md) {
-								font-size: 36px;
+								font-size: 30px;
 							}
 							@media screen and (max-width: $mobile) {
 								font-size: 30px;
@@ -286,6 +475,9 @@
 							font-size: 18px;
 							line-height: 30px;
 							color: #ffffff;
+							@media screen and (max-width: $md) {
+								font-size: 16px;
+							}
 						}
 					}
 					.audio-container-right {
@@ -294,7 +486,11 @@
 						padding: 2.5rem 3rem;
 						@media screen and (max-width: $md) {
 							width: 90%;
-							padding: 2.5rem 2rem;
+							padding: 2.5rem 3rem;
+						}
+						@media screen and (max-width: 400px) {
+							width: 100%;
+							padding: 2.5rem 1rem;
 						}
 						.bold {
 							font-family: $poppins;
@@ -302,24 +498,21 @@
 							font-weight: 500;
 							font-size: 38px;
 							line-height: 30px;
-
 							text-align: center;
+							margin-bottom: 1rem;
+							border-bottom: 1.5px solid $tetiary;
 							@media screen and (max-width: $md) {
 								font-size: 24px;
 								font-weight: 600;
 								line-height: 38px;
 							}
-						}
-						hr {
-							background-color: $tetiary;
-							margin: 0 1.5rem 1rem 0;
-							margin-bottom: 2rem;
-							border: solid 1.5px $secondary;
-							padding: 0;
-							@media screen and (max-width: $md) {
-								margin: 0 0 1rem 0;
+							@media screen and (max-width: 400px) {
+								font-size: 18px;
+								text-align: start;
+								line-height: 38px;
 							}
 						}
+
 						.audio-bibletext {
 							margin-bottom: 2.5rem;
 							.audio-bibletext-blue {
@@ -353,6 +546,7 @@
 	.recording {
 		background-color: $light-gray;
 		padding: 2rem 0;
+
 		.text-style {
 			font-family: "Rochester";
 			font-style: normal;
@@ -360,11 +554,31 @@
 			font-size: 48px;
 			line-height: 73px;
 			color: $warning;
+			@media screen and (max-width: $md) {
+				width: 100%;
+				font-size: 50px;
+				line-height: 70px;
+			}
+			@media screen and (max-width: $mobile) {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 400px) {
+				width: 100%;
+				font-size: 40px;
+				line-height: 65px;
+			}
 		}
 		&-container {
 			width: 90%;
 			margin: 2rem auto;
 			background-color: $light-gray;
+			@media screen and (max-width: $md) {
+				width: 95%;
+			}
+
+			@media screen and (max-width: 400px) {
+			}
 			.recording-container-wrapper {
 				margin-bottom: 4rem;
 				.febuary-text {
@@ -374,16 +588,27 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
+					@media screen and (max-width: $md) {
+					}
+					@media screen and (max-width: 400px) {
+						font-size: 22px;
+					}
 				}
 				.record {
 					width: 100%;
 					background-color: #ffffff;
-					height: 232px;
-					left: 83px;
-					top: 877px;
+					height: 200px;
 					border-radius: 20px;
-					padding: 2.3rem 5rem;
+					padding: 1.5rem 5rem;
 					margin-bottom: 1rem;
+					@media screen and (max-width: $md) {
+						padding: 1.5rem 3rem;
+					}
+					@media screen and (max-width: 400px) {
+						padding: 1rem 1rem;
+						height: 140px;
+						margin-bottom: 0.7rem;
+					}
 					&-wrapper {
 						p {
 							margin: 0;
@@ -393,10 +618,22 @@
 							align-items: center;
 							gap: 5rem;
 							margin-bottom: 3rem;
+							@media screen and (max-width: $md) {
+								margin-bottom: 2.5rem;
+							}
+							@media screen and (max-width: 400px) {
+								margin-bottom: 0.5rem;
+							}
 							i {
-								font-size: 38px;
+								font-size: 42px;
 								color: $warning;
 								list-style: 30px;
+								@media screen and (max-width: $md) {
+									font-size: 40px;
+								}
+								@media screen and (max-width: 400px) {
+									display: none;
+								}
 							}
 							.record-text {
 								.pastor {
@@ -406,6 +643,9 @@
 									font-size: 16px;
 									line-height: 24px;
 									color: $tetiary;
+									@media screen and (max-width: 15px) {
+										font-size: 15px;
+									}
 								}
 								.Feb {
 									font-family: $poppins;
@@ -414,6 +654,15 @@
 									font-size: 25px;
 									line-height: 31px;
 									color: $dark-blue;
+									@media screen and (max-width: $md) {
+										font-size: 20px;
+									}
+									@media screen and (max-width: $mobile) {
+										width: 100%;
+									}
+									@media screen and (max-width: 400px) {
+										font-size: 14px;
+									}
 								}
 							}
 						}
@@ -422,18 +671,31 @@
 							align-items: center;
 							justify-content: center;
 							gap: 2rem;
+							@media screen and (max-width: $md) {
+								gap: 1rem;
+							}
+							@media screen and (max-width: 400px) {
+								gap: 1rem;
+							}
 
 							.record-space-icon {
-								width: 44px;
-								height: 44px;
+								width: 48px;
+								height: 48px;
 								background-color: $line-bg;
 								border-radius: 50%;
-								padding: 0.7rem 1rem;
 								cursor: pointer;
+								@media screen and (max-width: 400px) {
+									width: 40px;
+									height: 40px;
+								}
 
 								i {
+									padding: 0.9rem 1.2rem;
 									font-size: 18px;
 									color: $primary;
+									@media screen and (max-width: 400px) {
+										padding: 0.71rem 1rem;
+									}
 								}
 							}
 							.record-space-cont {
@@ -442,6 +704,10 @@
 								justify-content: center;
 								gap: 2rem;
 								width: 100%;
+								@media screen and (max-width: 400px) {
+									gap: 0.8rem;
+								}
+
 								p {
 									margin: 0;
 								}
@@ -450,22 +716,46 @@
 									background: $primary;
 									cursor: pointer;
 								}
+								.record-space-time {
+									color: $dark-blue;
+									@media screen and (max-width: $md) {
+										font-size: 14px;
+									}
+									@media screen and (max-width: 400px) {
+										font-size: 13px;
+									}
+								}
 								i {
-									font-size: 24px;
+									font-size: 16px;
 									color: $dark-blue;
 									cursor: pointer;
+									@media screen and (max-width: 400px) {
+										font-size: 14px;
+									}
 								}
 								.record-space-shortline {
-									width: 10%;
-									height: 10px;
+									width: 6%;
+									height: 9px;
 									background-color: $line-bg;
 									border-radius: 14px;
+									@media screen and (max-width: $md) {
+										width: 12%;
+									}
+									@media screen and (max-width: 400px) {
+										width: 15%;
+									}
 									cursor: pointer;
 									.blue-rgb {
 										width: 50%;
-										height: 10px;
+										height: 9px;
 										background-color: $primary;
 										border-radius: 14px;
+										@media screen and (max-width: $md) {
+											width: 50%;
+										}
+										@media screen and (max-width: 400px) {
+											width: 65%;
+										}
 									}
 								}
 							}
