@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // import React from "react";
 import FrontLayout from "layouts/FrontLayout";
 
@@ -6,9 +7,11 @@ const AboutPage = () => {
 		<FrontLayout>
 			<div className="about-page">
 				<div className="top-section">
-					<h1>About Us</h1>
-					<p>Joint Heirs Assembly</p>
-					<img src="images/ellipse.png" className="img" alt="" />
+					<div className="top-section-inner container">
+						<h1>About Us</h1>
+						<p>Joint Heirs Assembly</p>
+						<img src="images/ellipse.png" className="img" alt="" />
+					</div>
 				</div>
 				{/* ==============SECTION TwO=================== */}
 				<div className="section-two container">
@@ -52,39 +55,41 @@ const AboutPage = () => {
 
 				{/* ===============SECTION FOUR================ */}
 				<div className="section-four">
-					<div className="section-four-images">
-						<div className="pastor-john">
-							<div className="fit">
-								<img src="images/pst-john.png" alt="" />
-								<div className="overlay"></div>
+					<div className="section-four inner container">
+						<div className="section-four-images">
+							<div className="pastor-john">
+								<div className="fit">
+									<img src="images/pst-john.png" alt="" />
+									<div className="overlay"></div>
+								</div>
+								<div className="fit-text">
+									<p>Pastor John Kingsley </p>
+									<p>Senior Pastor</p>
+								</div>
 							</div>
-							<div className="fit-text">
-								<p>Pastor John Kingsley </p>
-								<p>Senior Pastor</p>
+
+							<div className="pastor-john">
+								<div className="fit">
+									<img src="images/pst-john.png" alt="" />
+									<div className="overlay"></div>
+								</div>
+								<div className="fit-text">
+									<p>Pastor John Kingsley </p>
+									<p>Senior Pastor</p>
+								</div>
 							</div>
 						</div>
 
-						<div className="pastor-john">
-							<div className="fit">
-								<img src="images/pst-john.png" alt="" />
-								<div className="overlay"></div>
-							</div>
-							<div className="fit-text">
-								<p>Pastor John Kingsley </p>
-								<p>Senior Pastor</p>
-							</div>
+						<div className="section-four-text">
+							<p className="rochester">Our Team</p>
+							<h2>Desciples</h2>
+							<p className="team-desc">
+								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
+								magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas
+								enim elit, in commodo sem pretium eu.
+							</p>
+							<button className="btn btn-$warning">view Our Team</button>
 						</div>
-					</div>
-
-					<div className="section-four-text">
-						<p className="rochester">Our Team</p>
-						<h2>Desciples</h2>
-						<p className="team-desc">
-							Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
-							magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas enim
-							elit, in commodo sem pretium eu.
-						</p>
-						<button className="btn btn-$warning">view Our Team</button>
 					</div>
 				</div>
 				{/* ===============SECTION FIVE=========== */}

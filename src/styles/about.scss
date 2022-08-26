@@ -1,41 +1,40 @@
 .about-page {
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
+
 	position: relative;
+
 	.top-section {
 		background-image: url("../assets/background.png");
-		height: 20rem;
-		display: flex;
-		align-items: center;
-		padding-top: 9rem;
-		flex-direction: column;
+		min-height: 40vh;
+		display: grid;
+		place-items: center;
+		justify-content: center;
 		gap: 0.6rem;
-		z-index: 20;
+
 
 		h1 {
 			font-weight: $poppins;
 			font-weight: 700;
 			font-size: 4rem;
-			z-index: 5;
+
 			color: $light-gray;
 		}
+
 		p {
 			font-family: $rochester;
 			font-weight: 400;
 			font-size: 3rem;
 			color: #ffffff;
 		}
+
 		.img {
 			position: absolute;
 			right: 0;
 			overflow: hidden;
-			z-index: -10;
+			z-index: -1;
 			opacity: 0.4;
 		}
 	}
+
 	//========END OF SECTION ONE=======
 
 	.section-two {
@@ -43,22 +42,26 @@
 		flex-direction: column;
 		align-items: center;
 		padding-top: 3rem;
+
 		p {
 			font-weight: 400;
 			font-size: 3rem;
 			font-family: $rochester;
 			color: $warning;
 		}
+
 		h2 {
 			font-weight: 700;
 			font-size: 3rem;
 			width: 56%;
 			text-align: center;
 			padding-top: 2rem;
+
 			@media screen and (max-width: $md) {
 				width: 60%;
 				font-size: 30px;
 			}
+
 			@media screen and (max-width: $mobile) {
 				width: 80%;
 			}
@@ -67,6 +70,7 @@
 		.section-two-image {
 			position: relative;
 			margin-top: 2rem;
+
 			.playButton {
 				z-index: 3;
 				display: none;
@@ -75,7 +79,7 @@
 				bottom: 11rem;
 			}
 
-			& > div {
+			&>div {
 				width: 100%;
 
 				img {
@@ -91,21 +95,23 @@
 			font-size: 1rem;
 			font-family: $poppins;
 			text-align: center;
+
 			@media screen and (max-width: $md) {
 				width: 90%;
 			}
 		}
 	}
+
 	//===============END OF SECTION TWO==============
 
 	.section-three {
 		background: $light-gray;
-		margin-top: 6rem;
+		margin-top: 6rem; // this is wrong
 		padding-block: 4.7rem;
 
 		.container {
 			display: flex;
-			gap: 8rem;
+			gap: 8rem; //This is wrong
 			justify-content: center;
 
 			@media screen and (max-width: $md) {
@@ -118,6 +124,7 @@
 				@media screen and (max-width: 1200px) {
 					width: 50%;
 				}
+
 				@media screen and (max-width: $md) {
 					width: 90%;
 					margin: auto;
@@ -134,11 +141,13 @@
 				flex-direction: column;
 				gap: 0.8rem;
 				padding-top: 2rem;
+
 				@media screen and (max-width: 1200px) {
 					width: 50%;
 					gap: 0.7rem;
 					padding-top: 0;
 				}
+
 				@media screen and (max-width: $md) {
 					width: 90%;
 					margin: auto;
@@ -151,12 +160,14 @@
 					font-size: 3rem;
 					line-height: 73px;
 				}
+
 				h2 {
 					font-size: 2rem;
 					font-family: $poppins;
 					line-height: 56px;
-                    font-weight: 700;
+					font-weight: 700;
 				}
+
 				article {
 					font-weight: 400;
 					font-size: 1rem;
@@ -165,27 +176,23 @@
 			}
 		}
 	}
+
 	//==========END OF SECTION THREE==============
 
 	.section-four {
-		display: flex;
-		padding-inline: 3rem;
-		padding-block: 4.5rem;
-
-		@media screen and (max-width: $md) {
-			display: block;
-		}
 
 		.section-four-images {
 			display: flex;
 			width: 60%;
 			gap: 2rem;
-			height: 100%;
+			height: 100%; //this height is not doing anything
+
 			@media screen and (max-width: $md) {
 				width: 100%;
 				justify-content: center;
 			}
 
+			// change this className
 			.pastor-john {
 				width: 40%;
 				// height: auto;
@@ -193,9 +200,11 @@
 				.fit {
 					width: 100%;
 					position: relative;
+
 					img {
 						width: 100%;
 					}
+
 					.overlay {
 						position: absolute;
 						top: 0;
@@ -212,7 +221,9 @@
 						}
 					}
 				}
+
 				.fit-text {
+					//change this className
 					width: 100%;
 					background: $light-gray;
 					padding-top: 1rem;
@@ -242,11 +253,13 @@
 				font-size: 1rem;
 				margin-top: 1.2rem;
 			}
+
 			.btn {
 				background: $warning;
 				border: none;
 				color: #ffffff;
 				margin-top: 1rem;
+
 				&:hover {
 					background: transparent;
 					outline: $warning;
@@ -256,138 +269,153 @@
 			}
 		}
 	}
+
 	//=============END OF SECTION FOUR===========
 	.section-five {
-        background: #CCCEFF;
-        .container {
-            display: flex;
-            justify-content: space-between;
+		background: #CCCEFF;
 
-            @media screen and (max-width: $md) {
-                display: block;
-                padding-block: 3rem;
-               
-            }
+		.container {
+			display: flex;
+			justify-content: space-between;
+
+			@media screen and (max-width: $md) {
+				display: block;
+				padding-block: 3rem;
+
+			}
+
 			.section-five-text {
 				display: flex;
 				gap: 2rem;
 				flex-direction: column;
 				width: 40%;
-                justify-content: center;
-                h2{
-                    font-weight: 700;
-                }
-                @media screen and (max-width: $md) {
-                    width:90%;
-                    margin: 0 auto;
-                    text-align: center;
-                    gap: 1rem;
-                }
+				justify-content: center;
+
+				h2 {
+					font-weight: 700;
+				}
+
+				@media screen and (max-width: $md) {
+					width: 90%;
+					margin: 0 auto;
+					text-align: center;
+					gap: 1rem;
+				}
 			}
 
 			.section-five-image {
 				width: 50%;
-                margin-block: 3rem;
-                @media screen and (max-width: $md) {
-                    width: 90%;
-                    padding-top: 1rem;
-                    margin: 0 auto;
-                }
-                
+				margin-block: 3rem;
+
+				@media screen and (max-width: $md) {
+					//mobile first design
+					width: 90%;
+					padding-top: 1rem;
+					margin: 0 auto;
+				}
+
 				img {
 					width: 100%;
 				}
 			}
 		}
 	}
-    //===========END OF SECTION FIVE============
 
-    .section-six{
-        padding-inline: 3rem;
-        .section-six-text {
-            text-align: center;
-            width: 50%;
-            margin: 0 auto;
-            padding-block: 3rem;
-            
-            @media screen and (max-width: $md){
-                width: 90%;
-            }
+	//===========END OF SECTION FIVE============
 
-            .desc{
-                margin-top: 1rem;
-                font-weight: 400;
-            }
-        }
+	.section-six {
+		padding-inline: 3rem;
 
-        .section-six-images {
-            display: flex;
-            justify-content: space-between;
+		.section-six-text {
+			text-align: center;
+			width: 50%;
+			margin: 0 auto;
+			padding-block: 3rem;
 
-            @media screen and (max-width: $md){
-                display: block;
-               
-            }
+			@media screen and (max-width: $md) {
+				//mobile first
+				width: 90%;
+			}
 
-            .image1 {
-                width: 30%;
-                height: 46%;
-                background: $light-gray;
-                position: relative;
-                border-top-left-radius: 7px;
-                border-top-right-radius: 7px;
-                @media screen and (max-width: $md){
-                    width: 90%;
-                    margin: 0 auto;
-                    margin-block: 2rem;
-                }
+			.desc {
+				margin-top: 1rem;
+				font-weight: 400;
+			}
+		}
 
-                img {
-                    width: 100%;
-                    // height: 20%;
-                }
+		.section-six-images {
+			display: flex;
+			justify-content: space-between;
 
-                span{
-                    position: absolute;
-                    background-color: $primary;
-                    border-radius: 50%;
-                    width: 5rem;
-                    aspect-ratio: 1/1;
-                    padding: 1.5rem 0;
-                    text-align: center;
-                    top: 20rem;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    left: 1rem;
-                    display: none;
-                }
+			@media screen and (max-width: $md) {
+				display: block;
 
-                div{
-                    padding: 2rem 2rem 2rem 2rem;
-                    text-align: center;
-                    transform: all 400ms ease;
-                   
-                    &:hover {
-                        background: $warning;
-                        color: white;
-                        transition: all 400ms ease;
-                    }
-                    p{
-                        margin-top: 1rem;
-                        line-height: 1.5rem;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
-    }
-    //========END OF SECTION SIX============
+			}
 
-    .footer-subscribe {
+			.image1 {
+				width: 30%;
+				height: 46%;
+				background: $light-gray;
+				position: relative;
+				border-top-left-radius: 7px;
+				border-top-right-radius: 7px;
+
+				@media screen and (max-width: $md) {
+					width: 90%;
+					margin: 0 auto;
+					margin-block: 2rem;
+				}
+
+				img {
+					width: 100%;
+					// height: 20%;
+				}
+
+				span {
+					position: absolute;
+					background-color: $primary;
+					border-radius: 50%;
+					width: 5rem;
+					aspect-ratio: 1/1;
+					padding: 1.5rem 0;
+					text-align: center;
+					top: 20rem;
+					font-size: 1.5rem;
+					font-weight: 600;
+					left: 1rem;
+					display: none;
+				}
+
+				div {
+					//why style an entire div. give it a class instead
+					padding: 2rem 2rem 2rem 2rem;
+					text-align: center;
+					transform: all 400ms ease;
+
+					&:hover {
+						background: $warning;
+						color: white;
+						transition: all 400ms ease;
+					}
+
+					p {
+						margin-top: 1rem;
+						line-height: 1.5rem;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+
+	//========END OF SECTION SIX============
+
+	.footer-subscribe {
 		min-height: 10vh;
 		background: #ccceff;
-        align-items: center;
-        margin-top: 4rem;
+		align-items: center;
+		margin-top: 4rem;
+
 		.footer-sub {
 			width: 100%;
 			height: 15vh;
