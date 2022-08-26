@@ -11,19 +11,23 @@ const TeamCard: React.FC<TeamCardI> = ({ image, name, position, description, soc
 			</div>
 			<div className="team-card-desc">
 				<h5>
-					<Link href="/team/hdhdhd">
+					<Link href="/team/DummyComp">
 						<a className="link-dark text-decoration-none">{name}</a>
 					</Link>
 				</h5>
 				<h6>{position}</h6>
 				<p>{description}</p>
 				<div id="underline"></div>
-				<div className="justify-center team-card-socials">
+				<div
+					className="justify-center
+				team-card-socials"
+				>
 					<div className="icon-holder">
 						<a href={socials.facebook_url}>
 							<img src="/images/About-Team/fb.png" alt="" />
 						</a>
 					</div>
+
 					<div className="icon-holder">
 						<a href={socials.twitter_url}>
 							<img src="/images/About-Team/tw.png" alt="" />

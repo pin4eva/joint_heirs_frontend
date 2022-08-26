@@ -4,8 +4,25 @@
 @import "./subscription-form.scss";
 
 .about-team {
+	.department {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-end: auto;
+		grid-gap: 3em;
+
+		// border: 2px solid blue;
+
+		@media screen and (max-width: 991px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media screen and (max-width: 768px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
 	.team-categories {
 		// border: 2px solid red;
+		// width: 100%;
 		padding-bottom: 6em;
 		background: #ededed;
 		position: relative;
@@ -38,19 +55,21 @@
 	}
 }
 
-// grouped styles
-.about-team {
-	.department {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-column-end: auto;
-		grid-gap: 3em;
+@media screen and (max-width: 768px) {
+	.about-team {
+		max-width: 100%;
 
-		// border: 2px solid blue;
+		.team-categories {
+			// border: 2px solid red;
 
-		@media screen and (max-width: 768px) {
-			grid-template-columns: repeat(1, 1fr);
-			// margin: auto;
+			.department {
+				// border: 1px solid yellow;
+				// width: 100vw;
+			}
+
+			.desc h4 {
+				font-size: 38px;
+			}
 		}
 	}
 }
