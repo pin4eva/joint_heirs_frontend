@@ -1,40 +1,24 @@
 .about-team {
 	&-hero {
-		z-index: 5;
-		// width: 100vw;
-		height: 426px;
-		background: url(../../../public/images/About-Team/hero.png) no-repeat center;
+		z-index: 2;
+		min-height: 40vh;
+		background: url("/images/About-Team/hero.png") no-repeat center;
 		background-size: cover;
-		position: relative;
+		display: grid;
+
+		h1 {
+			font-size: 4rem;
+			font-weight: 700;
+		}
 
 		.hero-desc {
-			position: absolute;
-			bottom: 10px;
-			left: 50%;
-			transform: translateX(-50%);
-
 			color: white;
 			text-align: center;
-			h1 {
-				font-size: 64px;
-				font-weight: 700;
-			}
+
 			p {
 				color: white;
 			}
 		}
 
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.about-team-hero{
-		height: 350px;
-		.hero-desc{
-			h1{
-				font-size: 45px;
-			}
-		
-		}
 	}
 }
