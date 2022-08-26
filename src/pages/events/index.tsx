@@ -11,6 +11,9 @@ const EventsPage = () => {
 	const router = useRouter();
 	const activeTab = router.query?.tab || ("General" as string | undefined);
 
+	const categoriesObj = new Set(events.map((event) => event.category));
+
+	const tabItems = ["General", ...Array.from(categoriesObj)];
 	const stateEvents = useMemo(() => {
 		if (activeTab === "General") return events;
 		else return events.filter((event) => event.category === String(activeTab)?.toLowerCase());
@@ -113,10 +116,8 @@ const TabNav: React.FC<{ isActive: boolean; tab: string }> = ({ isActive, tab })
 	return (
 		<li>
 			<Link href={`/events?tab=${tab}`}>
-				<a className={`event-navlink ${isActive ? "active" : ""}`}>{tab}</a>
+				<a className={`event-navlink text-capitalize ${isActive ? "active" : ""}`}>{tab}</a>
 			</Link>
 		</li>
 	);
 };
-
-const tabItems = ["General", "Children", "Men", "Women", "Youth"];

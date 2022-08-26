@@ -6,6 +6,8 @@ footer {
 		justify-content: center;
 		align-items: center;
 		background-image: url("/images/footer.png");
+		background-repeat: no-repeat;
+		background-size: cover;
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
