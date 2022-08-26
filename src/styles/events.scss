@@ -1,21 +1,25 @@
 .events {
-	overflow: hidden;
+
+
 	&-hero {
 		background-image: url("/images/events_hero.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		min-height: 45vh;
+
 		&-inner {
 			min-height: 40vh;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
 			h1 {
 				font-weight: 700;
 				color: $light-gray;
 			}
+
 			h4 {
 				color: #fff;
 				font-weight: 400;
@@ -23,60 +27,77 @@
 			}
 		}
 	}
+
 	&-content {
 		&-nav {
 			margin-block: 2rem;
+
 			@media screen and (min-width: $mobile) {
 				margin-block: 2rem 4rem;
 			}
+
 			ul {
 				display: flex;
 				justify-content: space-around;
 				list-style-type: none;
 				gap: 2%;
+
+
 				.event-navlink {
 					text-decoration: none;
-					flex: 1;
+
 					color: #000;
 					font-weight: 500;
+					padding: 0.6rem;
+
 					&:hover {
 						color: $primary;
 					}
+
 					&.active {
 						background-color: $primary;
 						color: #fff;
 						border-radius: 10px;
 					}
+
 					li {
-						text-align: center;
-						padding-block: 0.6rem;
+						flex: 1;
 					}
+
 				}
+
 				@media screen and (min-width: $md) {
 					width: 60%;
 					margin: 0 auto;
 					gap: 5%;
+
 					.event-navlink {
 						font-size: 1.2rem;
 					}
 				}
 			}
 		}
+
 		&-cards {
 			display: grid;
 			gap: 2rem;
+
 			@media screen and (min-width: $mobile) {
 				grid-template-columns: 1fr 1fr;
+
 				.fallback-text {
 					grid-column: 1/3;
 				}
+
 				@media screen and (min-width: $md) {
 					grid-template-columns: 1fr 1fr 1fr;
+
 					.fallback-text {
 						grid-column: 1/4;
 					}
 				}
 			}
+
 			.fallback-text {
 				text-align: center;
 				font-weight: 700;
@@ -84,31 +105,40 @@
 			}
 		}
 	}
+
 	&-location {
 		padding-block: 5rem;
+		overflow: hidden;
+		position: relative;
+
 		&-inner {
 			display: grid;
 			gap: 2rem;
-			position: relative;
+
 			@media screen and (min-width: $md) {
 				grid-template-columns: 1fr 1fr;
 			}
+
 			&_text {
 				h3 {
 					font-size: 2.5rem;
+
 					&.inner-text-heading {
 						font-weight: 700;
 						color: $secondary;
 						margin-bottom: 1.5rem;
 					}
+
 					@media screen and (min-width: $mobile) and (max-width: $md) {
 						text-align: center;
 					}
 				}
+
 				.location-info {
 					display: flex;
 					margin-top: 2rem;
 					gap: 0.5rem;
+
 					.address {
 						display: flex;
 						flex-direction: column;
@@ -119,11 +149,13 @@
 							width: 1.1875rem;
 							height: 1.6875rem;
 						}
+
 						.info-text {
 							h6 {
 								color: #4f4f4f;
 								font-weight: 500;
 							}
+
 							p {
 								color: #4f4f4f;
 								font-weight: 300;
@@ -131,37 +163,44 @@
 							}
 						}
 					}
+
 					.time {
 						@extend .address;
 					}
+
 					@media screen and (min-width: $mobile) {
 						gap: 1.5rem;
+
 						.address {
 							flex-direction: row;
 						}
 					}
 				}
 			}
+
 			&_map {
 				height: 100%;
 				z-index: 5;
 			}
+
 			.circle-img {
 				display: none;
+
 				@media screen and (min-width: $md) {
 					display: block;
 					position: absolute;
 					width: 20rem;
 					height: 20rem;
 					right: -5rem;
-					top: -7rem;
+					// top: -5rem;
 					// bottom: 13vh;
-					z-index: 3;
-					overflow-x: hidden;
+					// z-index: 3;
+					// overflow-x: hidden;
 				}
 			}
 		}
 	}
+
 	.subscribe {
 		.footer-subscribe {
 			min-height: 15vh;
@@ -205,6 +244,7 @@
 	width: 100%;
 	text-align: center;
 	z-index: 5;
+
 	&-content {
 		display: flex;
 		flex-direction: column;
@@ -212,6 +252,7 @@
 		background: rgba(204, 206, 255, 0.67);
 		backdrop-filter: blur(33px);
 		border-radius: 10px;
+
 		.content-box {
 			height: 5px;
 			overflow: hidden;
@@ -225,6 +266,7 @@
 			}
 		}
 	}
+
 	a {
 		color: $warning;
 		text-decoration: none;

@@ -2,42 +2,22 @@
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useMemo } from "react";
 import HeaderComp from "../../components/HeaderComp";
 import FrontLayout from "../../layouts/FrontLayout";
 
 const EventsPage = () => {
-	const activeLink = {
-		general: false,
-		childrenEvents: false,
-		men: false,
-		women: false,
-		youth: false,
-	};
-	const [currentLink, setCurrentLink] = useState({
-		general: true,
-		childrenEvents: false,
-		men: false,
-		women: false,
-		youth: false,
-	});
-	const generalEventsHandler = () => {
-		setCurrentLink({ ...activeLink, general: true });
-	};
-	const childrenEventsHandler = () => {
-		setCurrentLink({ ...activeLink, childrenEvents: true });
-	};
-	const menEventsHandler = () => {
-		setCurrentLink({ ...activeLink, men: true });
-	};
-	const womenEventsHandler = () => {
-		setCurrentLink({ ...activeLink, women: true });
-	};
-	const youthEventsHandler = () => {
-		setCurrentLink({ ...activeLink, youth: true });
-	};
+	const router = useRouter();
+	const activeTab = router.query?.tab || ("General" as string | undefined);
+
+	const stateEvents = useMemo(() => {
+		if (activeTab === "General") return events;
+		else return events.filter((event) => event.category === String(activeTab)?.toLowerCase());
+	}, [activeTab]);
+
 	return (
-		<FrontLayout title="Joint Heirs Assembly Int'l" showHeader={false}>
+		<FrontLayout title="Events" showHeader={false}>
 			<div className="events">
 				<section className="events-hero">
 					<HeaderComp />
@@ -49,65 +29,19 @@ const EventsPage = () => {
 				<section className="events-content">
 					<nav className="events-content-nav">
 						<ul className="container">
-							<Link href="/events">
-								<a className={`event-navlink ${currentLink.general && "active"}`}>
-									<li onClick={generalEventsHandler}>General</li>
-								</a>
-							</Link>
-							<Link href="/events">
-								<a className={`event-navlink ${currentLink.childrenEvents && "active"}`}>
-									<li onClick={childrenEventsHandler}>Children</li>
-								</a>
-							</Link>
-							<Link href="/events">
-								<a className={`event-navlink ${currentLink.men && "active"}`}>
-									<li onClick={menEventsHandler}>Men</li>
-								</a>
-							</Link>
-							<Link href="/events">
-								<a className={`event-navlink ${currentLink.women && "active"}`}>
-									<li onClick={womenEventsHandler}>Women</li>
-								</a>
-							</Link>
-							<Link href="/events">
-								<a className={`event-navlink ${currentLink.youth && "active"}`}>
-									<li onClick={youthEventsHandler}>Youth</li>
-								</a>
-							</Link>
+							{tabItems.map((tab) => (
+								<TabNav key={tab} isActive={Boolean(activeTab === tab)} tab={tab} />
+							))}
 						</ul>
 					</nav>
 					<div className="events-content-cards container">
-						{currentLink.general &&
-							events.map((item, i) => {
-								return <EventCard key={i} event={item} />;
-							})}
-						{currentLink.childrenEvents &&
-							events
-								.filter((item) => item.category === "children")
-								.map((item, i) => {
-									return <EventCard key={i} event={item} />;
-								})}
-						{currentLink.men &&
-							events
-								.filter((item) => item.category === "men")
-								.map((item, i) => {
-									return <EventCard key={i} event={item} />;
-								})}
-						{/* {currentLink.women &&
-						events
-							.filter((item) => item.category === "women")
-							.map((item, i) => {
-								return <EventCard key={i} event={item} />;
-							})} */}
-						{currentLink.women && (
-							<p className="fallback-text">THERE ARE NO UPCOMING EVENTS FOR WOMEN</p>
+						{stateEvents.length > 0 ? (
+							stateEvents?.map((item, i) => <EventCard key={i} event={item} />)
+						) : (
+							<p className="fallback-text text-uppercase">
+								THERE ARE NO UPCOMING EVENTS FOR {activeTab}
+							</p>
 						)}
-						{currentLink.youth &&
-							events
-								.filter((item) => item.category === "youth")
-								.map((item, i) => {
-									return <EventCard key={i} event={item} />;
-								})}
 					</div>
 				</section>
 				<section className="events-location">
@@ -174,3 +108,15 @@ const EventsPage = () => {
 };
 
 export default EventsPage;
+
+const TabNav: React.FC<{ isActive: boolean; tab: string }> = ({ isActive, tab }) => {
+	return (
+		<li>
+			<Link href={`/events?tab=${tab}`}>
+				<a className={`event-navlink ${isActive ? "active" : ""}`}>{tab}</a>
+			</Link>
+		</li>
+	);
+};
+
+const tabItems = ["General", "Children", "Men", "Women", "Youth"];
