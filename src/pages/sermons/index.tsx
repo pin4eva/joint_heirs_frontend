@@ -47,7 +47,7 @@ const SermonsPage = () => {
 						<div className="sermon-navi-search">
 							<i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
 
-							<i onClick={handleFilter} className="fa-solid fa-magnifying-glass"></i>
+							<i onClick={handleFilter} className="fa-solid fa-sliders"></i>
 						</div>
 						{search && (
 							<form action="" className="search">
