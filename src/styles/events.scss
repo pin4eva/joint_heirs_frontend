@@ -1,6 +1,4 @@
 .events {
-
-
 	&-hero {
 		background-image: url("/images/events_hero.png");
 		background-repeat: no-repeat;
@@ -42,7 +40,6 @@
 				list-style-type: none;
 				gap: 2%;
 
-
 				.event-navlink {
 					text-decoration: none;
 
@@ -63,7 +60,6 @@
 					li {
 						flex: 1;
 					}
-
 				}
 
 				@media screen and (min-width: $md) {
@@ -252,15 +248,15 @@
 		background: rgba(204, 206, 255, 0.67);
 		backdrop-filter: blur(33px);
 		border-radius: 10px;
-
 		.content-box {
 			height: 5px;
 			overflow: hidden;
+			transition: all 0.5s linear;
 		}
 
 		&:hover {
 			.content-box {
-				animation: 0.5s animate-content-box forwards ease-out;
+				animation: 0.1s animate-content-box forwards;
 				height: 100%;
 				padding-block: 1rem;
 			}
