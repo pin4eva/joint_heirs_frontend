@@ -109,28 +109,28 @@ const AboutPage = () => {
 				{/* ===============SECTION FIVE=========== */}
 
 				<div className="section-five ">
-					<div className="container">
-						<div className="section-five-text">
+					<div className="section-five-inner container">
+						<div className="section-five-inner_left">
 							<p className="rochester">Sunday</p>
-							<h2>Gatherings</h2>
+							<h2 className="huge-text">Gatherings</h2>
 							<p className="description">
 								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
 								magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas
 								enim elit, in commodo sem pretium eu.
 							</p>
 						</div>
-						<div className="section-five-image">
+						<div className="section-five-inner_right">
 							<img src="images/Rectangle79.png" alt="" />
 						</div>
 					</div>
 				</div>
 
 				{/* =============SECTION SIX============ */}
-				<div className="section-six">
+				<div className="section-six container">
 					<div className="section-six-text">
 						<p className="rochester">Whats Next?</p>
 						<h2>Next Steps</h2>
-						<p className="desc">
+						<p className="description">
 							Congratulations! You have decided to dedicate your life to following Jesus. You may be
 							wondering what’s next on your journey. We want to help! Join us as we guide you toward
 							the next steps in your walk with Christ.
@@ -140,8 +140,8 @@ const AboutPage = () => {
 					<div className="section-six-images">
 						<div className="image1">
 							<img src="images/Rectangle27.png" alt="" />
-							<span className="one">1</span>
-							<div>
+							<span>1</span>
+							<div className="image-description">
 								<h6>Get Involved</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
@@ -152,8 +152,8 @@ const AboutPage = () => {
 						</div>
 						<div className="image1">
 							<img src="images/Rectangle28.png" alt="" />
-							<span className="two">1</span>
-							<div>
+							<span>1</span>
+							<div className="image-description">
 								<h6>Attend Services</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
@@ -164,8 +164,8 @@ const AboutPage = () => {
 						</div>
 						<div className="image1">
 							<img src="images/Rectangle29.png" alt="" />
-							<span className="three">1</span>
-							<div>
+							<span>1</span>
+							<div className="image-description">
 								<h6>Questions</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You

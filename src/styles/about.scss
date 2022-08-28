@@ -88,6 +88,7 @@
 			.section-three-inner_left {
 				width: 100%;
 				height: 55vh;
+
 				img {
 					width: 100%;
 					height: 100%;
@@ -98,13 +99,12 @@
 					font-weight: 400;
 					font-size: 1rem;
 					line-height: 1.5rem;
-					@media screen and (min-width: 1200px){
+					@media screen and (min-width: 1200px) {
 						margin-top: 1.5rem;
 					}
 				}
 			}
 		}
-
 	}
 
 	//==========END OF SECTION THREE==============
@@ -155,8 +155,11 @@
 								color: #ffffff;
 								font-size: 0.8rem;
 								cursor: pointer;
+								@media screen and (min-width: $md) {
+									font-size: 1rem;
+								}
 								i {
-									border: 1px solid white;
+									border: 2px solid white;
 									border-radius: 50%;
 									padding: 1rem;
 								}
@@ -213,45 +216,21 @@
 	.section-five {
 		background: #ccceff;
 
-		.container {
-			display: flex;
-			justify-content: space-between;
-
-			@media screen and (max-width: $md) {
-				display: block;
-				padding-block: 3rem;
+		.section-five-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			text-align: center;
+			padding-block: 2rem;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 50% 45%;
+				justify-content: space-between;
 			}
 
-			.section-five-text {
-				display: flex;
-				gap: 2rem;
-				flex-direction: column;
-				width: 40%;
-				justify-content: center;
-
-				h2 {
-					font-weight: 700;
-				}
-
-				@media screen and (max-width: $md) {
-					width: 90%;
-					margin: 0 auto;
-					text-align: center;
-					gap: 1rem;
-				}
+			.section-five-inner_left {
+				width: 100%;
 			}
-
-			.section-five-image {
-				width: 50%;
-				margin-block: 3rem;
-
-				@media screen and (max-width: $md) {
-					//mobile first design
-					width: 90%;
-					padding-top: 1rem;
-					margin: 0 auto;
-				}
-
+			.section-five-inner_right {
+				width: 100%;
 				img {
 					width: 100%;
 				}
@@ -262,87 +241,119 @@
 	//===========END OF SECTION FIVE============
 
 	.section-six {
-		padding-inline: 3rem;
+		
 
 		.section-six-text {
 			text-align: center;
-			width: 50%;
-			margin: 0 auto;
-			padding-block: 3rem;
 
-			@media screen and (max-width: $md) {
-				//mobile first
+			.description {
 				width: 90%;
-			}
-
-			.desc {
-				margin-top: 1rem;
-				font-weight: 400;
+				margin: 0.8rem auto;
 			}
 		}
 
 		.section-six-images {
-			display: flex;
-			justify-content: space-between;
-
-			@media screen and (max-width: $md) {
-				display: block;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			text-align: center;
+			margin-top: 1rem;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 1fr 1fr 1fr;
 			}
 
 			.image1 {
-				width: 30%;
-				height: 46%;
-				background: $light-gray;
-				position: relative;
+				width: 100%;
 				border-top-left-radius: 7px;
 				border-top-right-radius: 7px;
 
-				@media screen and (max-width: $md) {
-					width: 90%;
-					margin: 0 auto;
-					margin-block: 2rem;
-				}
-
 				img {
 					width: 100%;
-					// height: 20%;
 				}
-
-				span {
-					position: absolute;
-					background-color: $primary;
-					border-radius: 50%;
-					width: 5rem;
-					aspect-ratio: 1/1;
-					padding: 1.5rem 0;
-					text-align: center;
-					top: 20rem;
-					font-size: 1.5rem;
-					font-weight: 600;
-					left: 1rem;
+				span{
 					display: none;
 				}
 
-				div {
-					//why style an entire div. give it a class instead
-					padding: 2rem 2rem 2rem 2rem;
+				.image-description {
+					width: 100%;
+					padding: 2rem;
 					text-align: center;
 					transform: all 400ms ease;
-
+					line-height: 1.5rem;
+					font-weight: 400;
+					background: $light-gray;
 					&:hover {
 						background: $warning;
 						color: white;
 						transition: all 400ms ease;
 					}
-
-					p {
-						margin-top: 1rem;
-						line-height: 1.5rem;
-						font-weight: 400;
-					}
 				}
 			}
 		}
+
+		// padding-inline: 3rem;
+
+		// .section-six-text {
+		// 	text-align: center;
+		// 	width: 50%;
+		// 	margin: 0 auto;
+		// 	padding-block: 3rem;
+
+		// 	@media screen and (max-width: $md) {
+		// 		//mobile first
+		// 		width: 90%;
+		// 	}
+
+		// 	.desc {
+		// 		margin-top: 1rem;
+		// 		font-weight: 400;
+		// 	}
+		// }
+
+		// .section-six-images {
+		// 	display: flex;
+		// 	justify-content: space-between;
+
+		// 	@media screen and (max-width: $md) {
+		// 		display: block;
+		// 	}
+
+		// 	.image1 {
+		// 		width: 30%;
+		// 		height: 46%;
+		// 		background: $light-gray;
+		// 		position: relative;
+		// 		border-top-left-radius: 7px;
+		// 		border-top-right-radius: 7px;
+
+		// 		@media screen and (max-width: $md) {
+		// 			width: 90%;
+		// 			margin: 0 auto;
+		// 			margin-block: 2rem;
+		// 		}
+
+		// 		img {
+		// 			width: 100%;
+		// 			// height: 20%;
+		// 		}
+
+		// 		span {
+		// 			position: absolute;
+		// 			background-color: $primary;
+		// 			border-radius: 50%;
+		// 			width: 5rem;
+		// 			aspect-ratio: 1/1;
+		// 			padding: 1.5rem 0;
+		// 			text-align: center;
+		// 			top: 20rem;
+		// 			font-size: 1.5rem;
+		// 			font-weight: 600;
+		// 			left: 1rem;
+		// 			display: none;
+		// 		}
+
+		// 	}
+		// }
 	}
 
 	//========END OF SECTION SIX============
