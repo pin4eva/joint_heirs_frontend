@@ -14,15 +14,16 @@ const AboutPage = () => {
 					</div>
 				</div>
 				{/* ==============SECTION TwO=================== */}
+
 				<div className="section-two container">
-					<p>Welcome</p>
-					<h2>We exist to connect people to Jesus and each other</h2>
+					<p className="rochester">Welcome</p>
+					<h2 className="huge-text">We exist to connect people to Jesus and each other</h2>
 
 					<div className="section-two-image">
 						<div>
 							<img src="images/Rectangle76.png" alt="" />
 						</div>
-						<img className="playButton" src="images/playButton.png" alt="" />
+						{/* <img className="playButton" src="images/playButton.png" alt="" /> */}
 					</div>
 
 					<article>
@@ -55,32 +56,42 @@ const AboutPage = () => {
 
 				{/* ===============SECTION FOUR================ */}
 				<div className="section-four">
-					<div className="section-four inner container">
-						<div className="section-four-images">
-							<div className="pastor-john">
-								<div className="fit">
+					<div className="section-four-inner container">
+						<div className="section-four-inner_left">
+							<div className="section-four-image_container">
+								<div className="section-four-inner-image">
 									<img src="images/pst-john.png" alt="" />
-									<div className="overlay"></div>
+									<div className="overlay">
+										<span>
+											<i className="fa-brands fa-facebook-f"></i>
+											<i className="fa-brands fa-twitter"></i>
+										</span>
+									</div>
 								</div>
-								<div className="fit-text">
+								<div className="section-four-image_caption">
 									<p>Pastor John Kingsley </p>
 									<p>Senior Pastor</p>
 								</div>
 							</div>
 
-							<div className="pastor-john">
-								<div className="fit">
+							<div className="section-four-image_container">
+								<div className="section-four-inner-image">
 									<img src="images/pst-john.png" alt="" />
-									<div className="overlay"></div>
+									<div className="overlay">
+										<span>
+											<i className="fa-brands fa-facebook-f"></i>
+											<i className="fa-brands fa-twitter"></i>
+										</span>
+									</div>
 								</div>
-								<div className="fit-text">
+								<div className="section-four-image_caption">
 									<p>Pastor John Kingsley </p>
 									<p>Senior Pastor</p>
 								</div>
 							</div>
 						</div>
 
-						<div className="section-four-text">
+						<div className="section-four-inner_right">
 							<p className="rochester">Our Team</p>
 							<h2>Desciples</h2>
 							<p className="team-desc">
@@ -92,6 +103,7 @@ const AboutPage = () => {
 						</div>
 					</div>
 				</div>
+
 				{/* ===============SECTION FIVE=========== */}
 
 				<div className="section-five ">

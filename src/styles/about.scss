@@ -1,106 +1,77 @@
 .about-page {
-
+	
 	position: relative;
 
 	.top-section {
 		background-image: url("../assets/background.png");
-		min-height: 40vh;
+		min-height: 45vh;
 		display: grid;
 		place-items: center;
 		justify-content: center;
 		gap: 0.6rem;
+		text-align: center;
 
+		.top-section-inner {
+			padding-top: 3rem;
+			h1 {
+				font-weight: $poppins;
+				font-weight: 700;
+				font-size: 4rem;
 
-		h1 {
-			font-weight: $poppins;
-			font-weight: 700;
-			font-size: 4rem;
+				color: $light-gray;
+			}
 
-			color: $light-gray;
-		}
+			p {
+				font-family: $rochester;
+				font-weight: 400;
+				font-size: 3rem;
+				color: #ffffff;
+			}
 
-		p {
-			font-family: $rochester;
-			font-weight: 400;
-			font-size: 3rem;
-			color: #ffffff;
-		}
-
-		.img {
-			position: absolute;
-			right: 0;
-			overflow: hidden;
-			z-index: -1;
-			opacity: 0.4;
+			.img {
+				position: absolute;
+				right: 0;
+				overflow: hidden;
+				z-index: -1;
+				opacity: 0.4;
+			}
 		}
 	}
 
 	//========END OF SECTION ONE=======
 
 	.section-two {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 3rem;
-
-		p {
-			font-weight: 400;
-			font-size: 3rem;
-			font-family: $rochester;
-			color: $warning;
-		}
-
-		h2 {
-			font-weight: 700;
-			font-size: 3rem;
-			width: 56%;
-			text-align: center;
+		text-align: center;
+		p{
 			padding-top: 2rem;
-
-			@media screen and (max-width: $md) {
-				width: 60%;
-				font-size: 30px;
-			}
-
-			@media screen and (max-width: $mobile) {
-				width: 80%;
+		}
+		.huge-text{
+			@media screen and (min-width: $md) {
+				width: 70%;
+				margin: 1rem auto;
 			}
 		}
 
-		.section-two-image {
-			position: relative;
-			margin-top: 2rem;
-
-			.playButton {
-				z-index: 3;
-				display: none;
-				position: fixed;
-				right: 30rem;
-				bottom: 11rem;
-			}
-
-			&>div {
+		.section-two-image{
+			margin-top: 1.5rem;
+			width: 100%;
+			img{
 				width: 100%;
-
-				img {
-					width: 100%;
-				}
 			}
 		}
-
-		article {
-			margin-top: 2rem;
-			width: 60%;
+		article{
+			margin-top: 1rem;
 			font-weight: 400;
-			font-size: 1rem;
-			font-family: $poppins;
-			text-align: center;
-
-			@media screen and (max-width: $md) {
+		    font-size: 1rem;
+		    font-family: $poppins;
+			@media screen and (min-width: $md){
 				width: 90%;
+				margin: 1.5rem auto;
 			}
 		}
 	}
+				
+		
 
 	//===============END OF SECTION TWO==============
 
@@ -180,99 +151,113 @@
 	//==========END OF SECTION THREE==============
 
 	.section-four {
-
-		.section-four-images {
-			display: flex;
-			width: 60%;
-			gap: 2rem;
-			height: 100%; //this height is not doing anything
-
-			@media screen and (max-width: $md) {
-				width: 100%;
-				justify-content: center;
+		.section-four-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 2rem;
+			text-align: center;
+			padding-block: 2.5rem;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 55% 45%;
+				gap: 2rem;
 			}
-
-			// change this className
-			.pastor-john {
-				width: 40%;
-				// height: auto;
-
-				.fit {
+			.section-four-inner_left {
+				display: grid;
+				gap: 1.5rem;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 48% 48%;
+					justify-content: space-between;
+				}
+				.section-four-image_container {
 					width: 100%;
-					position: relative;
-
-					img {
-						width: 100%;
-					}
-
-					.overlay {
-						position: absolute;
-						top: 0;
-						left: 0;
-						background: #022162;
-						width: 100%;
-						height: 100%;
-						opacity: 0;
-						transition: all 400ms ease;
-
-						&:hover {
-							opacity: 0.74;
+					background: $light-gray;
+					.section-four-inner-image {
+						position: relative;
+						width: inherit;
+						img {
+							width: inherit;
+						}
+						.overlay {
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: #022162;
+							width: 100%;
+							height: 100%;
+							opacity: 0;
 							transition: all 400ms ease;
+							display: flex;
+							gap: 1rem;
+							span {
+								margin: auto auto;
+								display: flex;
+								gap: 2rem;
+								text-align: center;
+								color: #ffffff;
+								font-size: 0.8rem;
+								cursor: pointer;
+								i {
+									border: 1px solid white;
+									border-radius: 50%;
+									padding: 1rem;
+								}
+							}
+							&:hover {
+								opacity: 0.89;
+								transition: all 400ms ease;
+							}
+						}
+					}
+					.section-four-image_caption {
+						background: $light-gray;
+						& > p:first-child {
+							font-weight: 500;
+							font-size: 1.5rem;
+						}
+						& > p:nth-child(2) {
+							font-size: 1.3rem;
 						}
 					}
 				}
+			}
 
-				.fit-text {
-					//change this className
-					width: 100%;
-					background: $light-gray;
-					padding-top: 1rem;
-					padding-bottom: 1.5rem;
-					padding-inline: 1.5rem;
-					text-align: center;
+			.section-four-inner_right {
+				@media screen and (min-width: $md) {
+					width: 90%;
+				}
+				h2 {
+					font-size: 2rem;
+					font-weight: 700;
+				}
+
+				.team-desc,
+				.btn {
+					@media screen and (min-width: 1400px) {
+						margin-top: 2rem;
+					}
+				}
+				.btn {
+					background: $warning;
+					border: none;
+					color: #ffffff;
+					margin-top: 1rem;
+					padding: 1rem 1.5rem;
+
+					&:hover {
+						background: transparent;
+						outline: $warning;
+						color: #000;
+						border: 1px solid $warning;
+					}
 				}
 			}
 		}
 
-		.section-four-text {
-			width: 60%;
-
-			@media screen and (max-width: $md) {
-				width: 100%;
-				text-align: center;
-			}
-
-			h2 {
-				font-size: 2rem;
-				font-weight: 700;
-				margin-top: 0.1rem;
-			}
-
-			.team-desc {
-				font-weight: 400;
-				font-size: 1rem;
-				margin-top: 1.2rem;
-			}
-
-			.btn {
-				background: $warning;
-				border: none;
-				color: #ffffff;
-				margin-top: 1rem;
-
-				&:hover {
-					background: transparent;
-					outline: $warning;
-					color: #000;
-					border: 1px solid $warning;
-				}
-			}
-		}
 	}
 
 	//=============END OF SECTION FOUR===========
 	.section-five {
-		background: #CCCEFF;
+		background: #ccceff;
 
 		.container {
 			display: flex;
@@ -281,7 +266,6 @@
 			@media screen and (max-width: $md) {
 				display: block;
 				padding-block: 3rem;
-
 			}
 
 			.section-five-text {
@@ -349,7 +333,6 @@
 
 			@media screen and (max-width: $md) {
 				display: block;
-
 			}
 
 			.image1 {
