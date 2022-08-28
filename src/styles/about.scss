@@ -1,5 +1,4 @@
 .about-page {
-	
 	position: relative;
 
 	.top-section {
@@ -42,110 +41,70 @@
 
 	.section-two {
 		text-align: center;
-		p{
-			padding-top: 2rem;
-		}
-		.huge-text{
+		padding-block: 2.5rem;
+
+		.huge-text {
 			@media screen and (min-width: $md) {
 				width: 70%;
 				margin: 1rem auto;
 			}
 		}
 
-		.section-two-image{
+		.section-two-image {
 			margin-top: 1.5rem;
 			width: 100%;
-			img{
+			img {
 				width: 100%;
 			}
 		}
-		article{
+		article {
 			margin-top: 1rem;
 			font-weight: 400;
-		    font-size: 1rem;
-		    font-family: $poppins;
-			@media screen and (min-width: $md){
+			font-size: 1rem;
+			font-family: $poppins;
+			@media screen and (min-width: $md) {
 				width: 90%;
 				margin: 1.5rem auto;
 			}
 		}
 	}
-				
-		
 
 	//===============END OF SECTION TWO==============
 
 	.section-three {
 		background: $light-gray;
-		margin-top: 6rem; // this is wrong
-		padding-block: 4.7rem;
+		padding-block: 2.5rem;
+		.section-three-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			text-align: center;
 
-		.container {
-			display: flex;
-			gap: 8rem; //This is wrong
-			justify-content: center;
-
-			@media screen and (max-width: $md) {
-				display: block;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 45% 45%;
+				justify-content: space-between;
 			}
 
-			.section-three-image {
-				width: 38%;
-
-				@media screen and (max-width: 1200px) {
-					width: 50%;
-				}
-
-				@media screen and (max-width: $md) {
-					width: 90%;
-					margin: auto;
-				}
-
+			.section-three-inner_left {
+				width: 100%;
+				height: 55vh;
 				img {
 					width: 100%;
+					height: 100%;
 				}
 			}
-
-			.section-three-text {
-				width: 40%;
-				display: flex;
-				flex-direction: column;
-				gap: 0.8rem;
-				padding-top: 2rem;
-
-				@media screen and (max-width: 1200px) {
-					width: 50%;
-					gap: 0.7rem;
-					padding-top: 0;
-				}
-
-				@media screen and (max-width: $md) {
-					width: 90%;
-					margin: auto;
-					text-align: center;
-					gap: 0.8rem;
-				}
-
-				p {
-					font-weight: 400;
-					font-size: 3rem;
-					line-height: 73px;
-				}
-
-				h2 {
-					font-size: 2rem;
-					font-family: $poppins;
-					line-height: 56px;
-					font-weight: 700;
-				}
-
+			.section-three-inner_right {
 				article {
 					font-weight: 400;
 					font-size: 1rem;
 					line-height: 1.5rem;
+					@media screen and (min-width: 1200px){
+						margin-top: 1.5rem;
+					}
 				}
 			}
 		}
+
 	}
 
 	//==========END OF SECTION THREE==============
@@ -203,7 +162,7 @@
 								}
 							}
 							&:hover {
-								opacity: 0.89;
+								opacity: 0.78;
 								transition: all 400ms ease;
 							}
 						}
@@ -224,10 +183,6 @@
 			.section-four-inner_right {
 				@media screen and (min-width: $md) {
 					width: 90%;
-				}
-				h2 {
-					font-size: 2rem;
-					font-weight: 700;
 				}
 
 				.team-desc,
@@ -252,7 +207,6 @@
 				}
 			}
 		}
-
 	}
 
 	//=============END OF SECTION FOUR===========

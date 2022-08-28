@@ -10,7 +10,7 @@ const AboutPage = () => {
 					<div className="top-section-inner container">
 						<h1>About Us</h1>
 						<p>Joint Heirs Assembly</p>
-						<img src="images/ellipse.png" className="img" alt="" />
+						<img src="images/ellipse.png" className="img d-sm-none d-md-block" alt="" />
 					</div>
 				</div>
 				{/* ==============SECTION TwO=================== */}
@@ -37,18 +37,20 @@ const AboutPage = () => {
 
 				{/* ===============SECTION THREE=============== */}
 				<div className="section-three">
-					<div className="container">
-						<div className="section-three-image">
+					<div className="section-three-inner container">
+						<div className="section-three-inner_left">
 							<img src="images/Rectangle78.png" alt="" />
 						</div>
 
-						<div className="section-three-text">
+						<div className="section-three-inner_right">
 							<p className="rochester">Spiritual</p>
-							<h2>Connect</h2>
+							<h2 className="huge-text">Connect</h2>
 							<article>
 								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
 								magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas
 								enim elit, in commodo sem pretium eu.
+								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
+								magna a metus. Proin ut tempus odio.
 							</article>
 						</div>
 					</div>
@@ -60,7 +62,7 @@ const AboutPage = () => {
 						<div className="section-four-inner_left">
 							<div className="section-four-image_container">
 								<div className="section-four-inner-image">
-									<img src="images/pst-john.png" alt="" />
+									<img src="images/pst-ken.png" alt="" />
 									<div className="overlay">
 										<span>
 											<i className="fa-brands fa-facebook-f"></i>
@@ -93,7 +95,7 @@ const AboutPage = () => {
 
 						<div className="section-four-inner_right">
 							<p className="rochester">Our Team</p>
-							<h2>Desciples</h2>
+							<h2 className="huge-text">Desciples</h2>
 							<p className="team-desc">
 								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
 								magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas
