@@ -153,15 +153,21 @@
 								gap: 2rem;
 								text-align: center;
 								color: #ffffff;
-								font-size: 0.8rem;
 								cursor: pointer;
+								margin-bottom: 3rem;
 								@media screen and (min-width: $md) {
-									font-size: 1rem;
+									// font-size: 2rem;
+									// padding: 1rem;
+									margin-bottom: 1rem;
 								}
 								i {
 									border: 2px solid white;
 									border-radius: 50%;
 									padding: 1rem;
+									font-size: 2rem;
+									@media screen and (min-width: $md){
+										font-size: 1rem;
+									}
 								}
 							}
 							&:hover {
@@ -172,6 +178,7 @@
 					}
 					.section-four-image_caption {
 						background: $light-gray;
+					
 						& > p:first-child {
 							font-weight: 500;
 							font-size: 1.5rem;
@@ -241,8 +248,6 @@
 	//===========END OF SECTION FIVE============
 
 	.section-six {
-		
-
 		.section-six-text {
 			text-align: center;
 
@@ -262,7 +267,7 @@
 				grid-template-columns: 1fr 1fr 1fr;
 			}
 
-			.image1 {
+			.image {
 				width: 100%;
 				border-top-left-radius: 7px;
 				border-top-right-radius: 7px;
@@ -270,8 +275,13 @@
 				img {
 					width: 100%;
 				}
-				span{
+				span {
 					display: none;
+				}
+				.title {
+					font-weight: 500;
+					font-size: 1.5rem;
+					line-height: 44px;
 				}
 
 				.image-description {
@@ -290,7 +300,6 @@
 				}
 			}
 		}
-
 	}
 
 	//========END OF SECTION SIX============

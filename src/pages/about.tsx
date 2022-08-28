@@ -129,7 +129,7 @@ const AboutPage = () => {
 				<div className="section-six container">
 					<div className="section-six-text">
 						<p className="rochester">Whats Next?</p>
-						<h2>Next Steps</h2>
+						<h2 className="huge-text">Next Steps</h2>
 						<p className="description">
 							Congratulations! You have decided to dedicate your life to following Jesus. You may be
 							wondering what’s next on your journey. We want to help! Join us as we guide you toward
@@ -138,11 +138,11 @@ const AboutPage = () => {
 					</div>
 
 					<div className="section-six-images">
-						<div className="image1">
+						<div className="image">
 							<img src="images/Rectangle27.png" alt="" />
 							<span>1</span>
 							<div className="image-description">
-								<h6>Get Involved</h6>
+								<h6 className="title">Get Involved</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
 									may be wondering what’s next ant to help! Join us as we guide you toward the next
@@ -150,11 +150,11 @@ const AboutPage = () => {
 								</p>
 							</div>
 						</div>
-						<div className="image1">
+						<div className="image">
 							<img src="images/Rectangle28.png" alt="" />
 							<span>1</span>
 							<div className="image-description">
-								<h6>Attend Services</h6>
+								<h6 className="title">Attend Services</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
 									may be wondering what’s next ant to help! Join us as we guide you toward the next
@@ -162,11 +162,11 @@ const AboutPage = () => {
 								</p>
 							</div>
 						</div>
-						<div className="image1">
+						<div className="image">
 							<img src="images/Rectangle29.png" alt="" />
 							<span>1</span>
 							<div className="image-description">
-								<h6>Questions</h6>
+								<h6 className="title">Questions</h6>
 								<p>
 									Congratulations! You have decided to dedicate your life to following Jesus. You
 									may be wondering what’s next ant to help! Join us as we guide you toward the next
