@@ -98,7 +98,7 @@ const Home: NextPage = () => {
 										Need <br /> Prayers ?
 									</h1>
 									<Link href="/">
-										<a className="btn mt-2 btn-warning fs-5 fw-500">Request</a>
+										<a className="btn mt-2 btn-warning fs-5 text-light fw-500">Request</a>
 									</Link>
 								</div>
 							</div>
@@ -344,7 +344,16 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-
+				<section>
+					<div className="map-page">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.4652530003385!2d7.034835007340241!3d4.865018300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d27198c56a95%3A0x4bf2d3ebd3c1a2dd!2sJoint%20Heirs%20Assembly%20Int&#39;l%20Inc.!5e0!3m2!1sen!2sng!4v1661352144829!5m2!1sen!2sng"
+							width="100%"
+							height="100%"
+							loading="lazy"
+						/>
+					</div>
+				</section>
 				<section>
 					<div className="footer-subscribe">
 						<div className="container">

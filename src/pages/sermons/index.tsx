@@ -52,7 +52,7 @@ const SermonsPage = () => {
 						{search && (
 							<form action="" className="search">
 								<input type="text" placeholder="search here... " />
-								<i onClick={handleSearch} className="fa-solid fa-times"></i>
+								<i onClick={handleSearch} className="fa-solid fa-search"></i>
 							</form>
 						)}
 						{filter && (
@@ -61,7 +61,7 @@ const SermonsPage = () => {
 									<span>Sort</span>
 									<i onClick={handleFilter} className="fa-solid fa-times "></i>
 								</div>
-								<ul>
+								<ul onClick={handleFilter}>
 									<li>Names</li>
 									<li>Date</li>
 									<li>Size</li>

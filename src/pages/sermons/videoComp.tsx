@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 
 const VideoComp = () => {
 	return (
 		<div className="videos">
 			<p className="text-style" style={{ paddingLeft: "2rem" }}>
-				All Sermons Videos
+				All Sermon Videos
 			</p>
 			<div className="videos-wrapper">
 				<div className="febuary">
@@ -14,7 +15,9 @@ const VideoComp = () => {
 							<div className="febuary-videos" key={id}>
 								<div className="overlay">
 									<div className="image">
-										<i className="fa-solid fa-play"></i>
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
 									</div>
 
 									<div className="txtflex">
