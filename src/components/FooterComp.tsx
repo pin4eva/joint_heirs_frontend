@@ -6,6 +6,22 @@ import { navList } from "./HeaderComp";
 const FooterComp = () => {
 	return (
 		<footer>
+			<section>
+				<div className="footer-subscribe">
+					<div className="container">
+						<div className="footer-sub">
+							<div className="sub-text">
+								<h2 className="text-secondary mb-0">Subscribe</h2>
+								<p className="text-dark mb-0">To Our NewsLetter</p>
+							</div>
+							<form>
+								<input type="text" placeholder="Enter Email" className="form-control" />
+								<button className="btn btn-warning text-light">Subscribe Now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div className="footer-main">
 				<div className="container">
 					<div className="footer-main-content">

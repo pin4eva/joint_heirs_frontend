@@ -4,9 +4,8 @@ import React, { useState } from "react";
 
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
-
 	return (
-		<header>
+		<header className="app-header">
 			<nav className="navbar">
 				<div className="container nav-inner">
 					<Link href="/">
@@ -26,10 +25,10 @@ const HeaderComp = () => {
 								</Link>
 							</li>
 						))}
+						<div className="nav-active" onClick={() => setOpen(false)}>
+							<Link href="/">JOIN US</Link>
+						</div>
 					</ul>
-					<div className="nav-active">
-						<Link href="/">JOIN US</Link>
-					</div>
 					<div className="menu-icon" onClick={() => setOpen(!open)}>
 						<i className={open ? "fas fa-times" : "fas fa-bars"} />
 					</div>
@@ -44,6 +43,7 @@ export default HeaderComp;
 export const navList = [
 	{ name: "Home", link: "/" },
 	{ name: "Sermon", link: "/sermons" },
+	{ name: "Events", link: "/events" },
 	{ name: "Branches", link: "/branches" },
 	{ name: "About", link: "/about" },
 	{ name: "Contact", link: "/contact" },
