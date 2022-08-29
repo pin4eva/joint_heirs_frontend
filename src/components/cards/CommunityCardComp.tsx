@@ -8,13 +8,13 @@ const CommunityCardComp = () => {
 		<div className="joint-heirs_community">
 			<div className="container community-inner">
 				<div className="text-center">
-					<p className="upcoming">Upcoming Events</p>
+					<p className="upcoming fs-2">Upcoming Events</p>
 					<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
-					<div className="cards">
+					<section className="cards">
 						{events?.splice(0, 3)?.map((event, i) => (
 							<EventCard key={i} event={event} />
 						))}
-					</div>
+					</section>
 					<Link href="/">
 						<a className="event-btn">More Events</a>
 					</Link>

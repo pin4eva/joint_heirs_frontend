@@ -143,10 +143,10 @@
 					border-radius: 10px;
 					padding: 1rem;
 					box-shadow: 5px 5px 30px 5px $tetiary;
-					transition: all 0.4s ease-in-out;
-					&:hover {
-						transform: scale(1.05);
-					}
+					transition: all 0.5s ease-in-out;
+					// &:hover {
+					// 	transform: scale(1.02);
+					// }
 				}
 
 				.dates {

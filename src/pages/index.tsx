@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 							<div className="wraper">
 								<div className="left">
 									<div className="left-inner">
-										<p className="page-2-welcome">Welcome</p>
+										<p className="page-2-welcome fs-3">Welcome</p>
 										<p className="text-secondary  page-2-large-text">
 											You Matter To God. You Matter to Us
 										</p>
@@ -208,7 +208,7 @@ const Home: NextPage = () => {
 					<div className="donation-page">
 						<div className="container">
 							<div className="donation-content">
-								<h4>Donate</h4>
+								<h4 className="fs-3">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
 									<img src="/images/donate.png" alt="" />
