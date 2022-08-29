@@ -207,6 +207,7 @@
 				color: $warning;
 				text-decoration: none;
 			}
+
 		}
 
 		.event-btn {
@@ -677,12 +678,14 @@
 		opacity: 0;
 		right: -20%;
 	}
+
 	.showToggle {
 		visibility: visible;
 		opacity: 1;
 		right: 0;
 		transition: right 1s ease-in-out;
 	}
+
 	.fas {
 		color: #ffffff;
 	}
