@@ -1,36 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
-import AboutTeamHero from "components/team/TeamHero";
+import { departmentsData } from "components/team/team-data";
+import { TeamCardI } from "components/team/team-interfaces";
+import TeamHero from "components/team/TeamHero";
 import FrontLayout from "layouts/FrontLayout";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const SingleTeam = () => {
-	const data = useRouter().query;
-	// destructuring all received props
-	const { image, name, position, description, email, phone, address, facebook_url, twitter_url } =
-		data;
+	const query = useRouter().query;
+	const [team, setTeam] = useState<TeamCardI>();
+
+	useEffect(() => {
+		if (query?.id) {
+			const team = departmentsData.find((department) => department?.id === Number(query?.id));
+			setTeam(team);
+		}
+	}, [query?.id]);
+
+	if (!team) return <p>loading...</p>;
 
 	return (
 		<FrontLayout showHeader={false}>
 			<div className="team">
 				<div className="single-team">
-					<AboutTeamHero heroTitle={name as string} />
+					<TeamHero heroTitle={team?.name} />
 
 					<section className="single-team-info p-5">
 						<div className="img">
-							<img src={image as string} alt="" />
+							<img src={team?.image} alt="" />
 						</div>
 						<div className="info">
-							<h4>{position}</h4>
-							<p>Email: {email}</p>
-							<p>Phone: {phone}</p>
-							<p>Address: {address}</p>
-							<p className="pe-4">{description}</p>
+							<h4>{team?.position}</h4>
+							<p>Email: {team?.email}</p>
+							<p>Phone: {team?.phone}</p>
+							<p>Address: {team?.address}</p>
+							<p className="pe-4">{team?.description}</p>
 							<div className="socials">
-								<a href={facebook_url as string} style={{ marginRight: "2em" }}>
+								<a href={team?.socials?.facebook_url} style={{ marginRight: "2em" }}>
 									<img src="/images/Team/fb.png" alt="" />
 								</a>
-								<a href={twitter_url as string}>
+								<a href={team?.socials?.twitter_url}>
 									<img src="/images/Team/tw.png" alt="" />
 								</a>
 							</div>

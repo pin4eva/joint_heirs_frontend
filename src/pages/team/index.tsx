@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import TeamHero from "../../components/team/TeamHero";
-import TeamCard from "../../components/team/TeamCard";
-import { departmentsData } from "../../components/team/team-data";
-import FooterComp from "../../components/FooterComp";
 import { DepartmentsEnum } from "components/team/team-interfaces";
-import SubscriptionForm from "components/team/SubscriptionForm";
+import FooterComp from "components/FooterComp";
+import { departmentsData } from "components/team/team-data";
+import TeamCard from "components/team/TeamCard";
+import TeamHero from "components/team/TeamHero";
 
 const TeamPage = () => {
 	return (
@@ -26,7 +24,7 @@ const TeamPage = () => {
 					{departmentsData
 						.filter((elem) => elem.department == DepartmentsEnum.LEADERSHIP)
 						.map((elem) => (
-							<TeamCard {...elem} key={elem.id} />
+							<TeamCard team={elem} key={elem.id} />
 						))}
 				</section>
 
@@ -38,7 +36,7 @@ const TeamPage = () => {
 					{departmentsData
 						.filter((elem) => elem.department == DepartmentsEnum.TECHNICALS)
 						.map((elem) => (
-							<TeamCard {...elem} key={elem.id} />
+							<TeamCard team={elem} key={elem.id} />
 						))}
 				</section>
 
@@ -49,7 +47,7 @@ const TeamPage = () => {
 					{departmentsData
 						.filter((elem) => elem.department == DepartmentsEnum.MUSIC_DEPARTMENT)
 						.map((elem) => (
-							<TeamCard {...elem} key={elem.id} />
+							<TeamCard team={elem} key={elem.id} />
 						))}
 				</section>
 
@@ -60,7 +58,7 @@ const TeamPage = () => {
 					{departmentsData
 						.filter((elem) => elem.department == DepartmentsEnum.WORKERS)
 						.map((elem) => (
-							<TeamCard {...elem} key={elem.id} />
+							<TeamCard team={elem} key={elem.id} />
 						))}
 				</section>
 			</main>
