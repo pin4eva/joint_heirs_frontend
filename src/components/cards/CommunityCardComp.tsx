@@ -10,11 +10,11 @@ const CommunityCardComp = () => {
 				<div className="text-center">
 					<p className="upcoming fs-2">Upcoming Events</p>
 					<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
-					<section className="cards">
+					<div className="cards">
 						{events?.splice(0, 3)?.map((event, i) => (
 							<EventCard key={i} event={event} />
 						))}
-					</section>
+					</div>
 					<Link href="/">
 						<a className="event-btn">More Events</a>
 					</Link>
