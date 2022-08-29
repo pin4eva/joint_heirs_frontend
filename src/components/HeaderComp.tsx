@@ -43,6 +43,7 @@ export default HeaderComp;
 export const navList = [
 	{ name: "Home", link: "/" },
 	{ name: "Sermon", link: "/sermons" },
+	{ name: "Events", link: "/events" },
 	{ name: "Branches", link: "/branches" },
 	{ name: "About", link: "/about" },
 	{ name: "Contact", link: "/contact" },

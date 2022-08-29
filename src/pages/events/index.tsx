@@ -4,7 +4,6 @@ import EventCard from "components/events/EventCard";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
-import HeaderComp from "../../components/HeaderComp";
 import FrontLayout from "../../layouts/FrontLayout";
 
 const EventsPage = () => {
@@ -20,10 +19,9 @@ const EventsPage = () => {
 	}, [activeTab]);
 
 	return (
-		<FrontLayout title="Events" showHeader={false}>
+		<FrontLayout title="Events">
 			<div className="events">
 				<section className="events-hero">
-					<HeaderComp />
 					<div className="container events-hero-inner">
 						<h1>Our Annual Events</h1>
 						<h4>Joint Heirs Assembly...</h4>

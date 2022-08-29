@@ -4,14 +4,13 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		min-height: 45vh;
+		min-height: 40vh;
+		display: grid;
+		align-items: center;
+		justify-content: center;
 
 		&-inner {
-			min-height: 40vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			text-align: center;
 
 			h1 {
 				font-weight: 700;
