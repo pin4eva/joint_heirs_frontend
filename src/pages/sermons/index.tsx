@@ -32,7 +32,7 @@ const SermonsPage = () => {
 					</div>
 				</header>
 
-				<div className="sermon">
+				<div className="sermon-2">
 					<div className="sermon-navi">
 						<div className="sermon-flex">
 							{" "}
