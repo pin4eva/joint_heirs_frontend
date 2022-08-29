@@ -4,7 +4,6 @@ import HeaderComp from "../HeaderComp";
 const TeamHero = ({ heroTitle }: { heroTitle: string }) => {
 	return (
 		<div className="team-hero">
-			<HeaderComp />
 			<div className="hero-desc">
 				<h1>{heroTitle}</h1>
 				<p id="rochester-p" style={{ color: "white" }}>

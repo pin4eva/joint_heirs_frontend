@@ -4,7 +4,6 @@ import EventCard from "components/events/EventCard";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
-import HeaderComp from "../../components/HeaderComp";
 import FrontLayout from "../../layouts/FrontLayout";
 
 const EventsPage = () => {
@@ -20,10 +19,9 @@ const EventsPage = () => {
 	}, [activeTab]);
 
 	return (
-		<FrontLayout title="Events" showHeader={false}>
+		<FrontLayout title="Events">
 			<div className="events">
 				<section className="events-hero">
-					<HeaderComp />
 					<div className="container events-hero-inner">
 						<h1>Our Annual Events</h1>
 						<h4>Joint Heirs Assembly...</h4>
@@ -87,22 +85,6 @@ const EventsPage = () => {
 							/>
 						</div>
 						<img src="/images/events-location-img.png" alt="" className="circle-img" />
-					</div>
-				</section>
-				<section className="subscribe">
-					<div className="footer-subscribe">
-						<div className="container">
-							<div className="footer-sub">
-								<div className="sub-text">
-									<h2 className="text-secondary mb-0">Subscribe</h2>
-									<p className="text-dark mb-0">To Our NewsLetter</p>
-								</div>
-								<form>
-									<input type="text" placeholder="Enter Email" className="form-control" />
-									<button className="btn btn-warning text-light">Subscribe Now</button>
-								</form>
-							</div>
-						</div>
 					</div>
 				</section>
 			</div>

@@ -48,9 +48,8 @@ const AboutPage = () => {
 							<article>
 								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
 								magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas
-								enim elit, in commodo sem pretium eu.
-								Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
-								magna a metus. Proin ut tempus odio.
+								enim elit, in commodo sem pretium eu. Aliquam fringilla, turpis et tempor molestie,
+								urna nunc commodo ex, et finibus diam magna a metus. Proin ut tempus odio.
 							</article>
 						</div>
 					</div>
