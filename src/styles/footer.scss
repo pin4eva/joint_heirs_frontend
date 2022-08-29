@@ -1,6 +1,6 @@
 footer {
 	.footer-subscribe {
-		min-height: 15vh;
+
 		background: #ccceff;
 		display: grid;
 
@@ -9,6 +9,7 @@ footer {
 			display: flex;
 			align-items: center;
 			gap: 1rem;
+			padding-block: 1.5rem;
 
 			.sub-text {
 				display: flex;
@@ -16,14 +17,10 @@ footer {
 			}
 
 			form {
-				width: 80%;
+				flex: 1;
 				display: flex;
 				justify-content: space-between;
-				gap: 2rem;
-
-				.form-control {
-					width: 70%;
-				}
+				gap: 1rem
 			}
 		}
 	}
@@ -37,6 +34,7 @@ footer {
 		background-image: url("/images/footer.png");
 		background-repeat: no-repeat;
 		background-size: cover;
+
 		@media screen and (max-width: 900px) {
 			height: auto;
 		}
@@ -50,30 +48,35 @@ footer {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 4rem;
 			}
+
 			.text-centa {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 4rem;
+
 				width: 100%;
+
 				@media screen and (max-width: 900px) {
 					height: auto;
 					flex-direction: column-reverse;
 					justify-content: space-between;
+
 					.nav-active {
 						margin-bottom: 1rem;
 					}
 				}
+
 				ul {
 					display: flex;
 					align-items: center;
+
 					@media screen and (max-width: 900px) {
 						margin-bottom: 2rem;
 						display: flex;
 						justify-content: center;
 						width: 100%;
+
 						a {
 							padding: 7px;
 							align-items: center;
@@ -88,6 +91,7 @@ footer {
 						}
 					}
 				}
+
 				.nav-active {
 					a {
 						display: flex;
@@ -96,6 +100,7 @@ footer {
 					}
 				}
 			}
+
 			.requests {
 				margin-top: 2rem;
 				display: flex;
@@ -103,12 +108,14 @@ footer {
 				align-items: center;
 				gap: 2rem;
 			}
+
 			.footer-icons {
 				margin-top: 3rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				gap: 1rem;
+
 				.facebook {
 					display: flex;
 					align-items: center;
@@ -122,15 +129,18 @@ footer {
 					padding: 0.5rem;
 					text-decoration: none;
 					transition: all 0.3s ease-in-out;
+
 					&:hover {
 						background: #ffffff;
 						color: $primary;
 						border: 2px solid $primary;
 					}
 				}
+
 				.twitter {
 					@extend.facebook;
 				}
+
 				.insta {
 					&:hover {
 						background: #ffffff;
@@ -140,13 +150,16 @@ footer {
 
 					@extend.facebook;
 				}
+
 				.youtube {
 					transition: all 0.3s ease-in-out;
+
 					&:hover {
 						background: #ffffff;
 						color: red;
 						border: 2px solid red;
 					}
+
 					@extend.facebook;
 				}
 			}
