@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { DepartmentsEnum } from "components/team/team-interfaces";
-import FooterComp from "components/FooterComp";
 import { departmentsData } from "components/team/team-data";
 import TeamCard from "components/team/TeamCard";
 import TeamHero from "components/team/TeamHero";
@@ -14,12 +13,12 @@ const TeamPage = () => {
 
 				<main className="container-fluid team-categories">
 					<div className="strokes">
-						<img src="/images/Team/Ellipse-right.png" alt="" id="ellipse-right" />
-						<img src="/images/Team/Ellipse-left.png" alt="" id="ellipse-left" />
+						<img src="/images/Team/Ellipse-right.png" alt="" className="ellipse-right" />
+						<img src="/images/Team/Ellipse-left.png" alt="" className="ellipse-left" />
 					</div>
 
 					<div className="desc">
-						<p id="rochester-p">Leadership</p>
+						<p className="rochester-p">Leadership</p>
 						<h4>Pastors & Elders</h4>
 					</div>
 					<section className="department container-sm">
