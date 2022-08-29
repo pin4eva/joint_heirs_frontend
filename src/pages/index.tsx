@@ -10,16 +10,15 @@ import FrontLayout from "../layouts/FrontLayout";
 
 const Home: NextPage = () => {
 	return (
-		<FrontLayout title="Joint Heirs Assembly Int'l" showHeader={false}>
+		<FrontLayout title="Joint Heirs Assembly Int'l">
 			<div className="home">
 				<div className="hero">
-					<HeaderComp />
 					<div className="container hero-inner text-center">
 						<div className="welcome-text">
 							<h1 className=" text-light">
 								Welcome To Our <br /> Church
 							</h1>
-							<h4 className="jhai-text">Joint Heirs Assembly...</h4>
+							<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
 							<Link href="/">
 								<a className="btn">Im New Here</a>
 							</Link>
@@ -30,8 +29,8 @@ const Home: NextPage = () => {
 					<div className="container">
 						<div className="sermon-text">
 							<div className="text-start">
-								<p className="text-dark mb-0">Upcoming Sermon</p>
-								<h4 className="text-secondary">“The Law of Giving” -Rev. Joe Simeon</h4>
+								<p className="text-dark fw-semibold mb-0">Upcoming Sermon</p>
+								<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
 							</div>
 							<Link href="/">
 								<a className="sermon-link">Sermon Details</a>
@@ -45,11 +44,11 @@ const Home: NextPage = () => {
 							<div className="wraper">
 								<div className="left">
 									<div className="left-inner">
-										<p className="page-2-welcome fs-3">Welcome</p>
+										<p className="page-2-welcome  rochester">Welcome</p>
 										<p className="text-secondary  page-2-large-text">
 											You Matter To God. You Matter to Us
 										</p>
-										<p>
+										<p className="text-dark">
 											See how we view God, Jesus, the Bible, man, and many <br /> significant
 											aspects of our faith. Firmly rooted in Scripture, the <br /> beliefs of Joint
 											Heirs Assembly guide our decisions as a church.
@@ -94,11 +93,11 @@ const Home: NextPage = () => {
 						<div className=" page-3-inner">
 							<div className="prayer container">
 								<div>
-									<h1 className="text-light">
+									<h1 className="text-light huge-text">
 										Need <br /> Prayers ?
 									</h1>
 									<Link href="/">
-										<a className="btn mt-2 btn-warning fs-5 text-light fw-500">Request</a>
+										<a className="btn mt-4 btn-warning fs-5 text-light fw-500">Request</a>
 									</Link>
 								</div>
 							</div>

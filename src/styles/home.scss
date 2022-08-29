@@ -6,7 +6,7 @@
 		background-image: url("/images/preaching.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 75vh;
+		min-height: 80vh;
 
 		&-inner {
 			min-height: 70vh;
@@ -18,11 +18,13 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-
+			h1 {
+				font-size: 3rem;
+				font-weight: 700;
+			}
 			.jhai-text {
 				margin-top: 1rem;
 				color: #ffffff;
-				font-family: "Rochester", cursive;
 			}
 
 			.btn {
@@ -44,7 +46,7 @@
 		display: flex;
 		align-items: center;
 		background: #ccceff;
-		min-height: 10vh;
+		min-height: 20vh;
 		padding: 2rem 0;
 
 		.sermon-text {
@@ -126,7 +128,7 @@
 			}
 
 			.right {
-				margin-top: 2rem;
+				margin-block: 3rem;
 				display: grid;
 				column-gap: 1rem;
 				row-gap: 1rem;
@@ -139,10 +141,9 @@
 					justify-content: center;
 					gap: 1rem;
 					background: #ffffff;
-					box-shadow: 0px 3px 54px rgba(0, 0, 0, 0.06);
 					border-radius: 10px;
 					padding: 1rem;
-					box-shadow: 5px 5px 30px 5px $tetiary;
+					box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.06);
 					transition: all 0.5s ease-in-out;
 					// &:hover {
 					// 	transform: scale(1.02);
@@ -167,8 +168,9 @@
 	.need-prayer-page {
 		background-image: url("/images/prayer.png");
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		min-height: 40vh;
+		background-size: cover;
+		background-position: center;
+		min-height: 60vh;
 		display: grid;
 		align-items: center;
 	}
@@ -212,7 +214,6 @@
 				color: $warning;
 				text-decoration: none;
 			}
-
 		}
 
 		.event-btn {
@@ -230,9 +231,10 @@
 		background-image: url("/images/flower.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		min-height: 50vh;
+		min-height: 60vh;
 		position: relative;
-		padding: 2rem 0;
+		// padding: 2rem 0;
+		display: grid;
 		align-items: center;
 
 		.resurect-content {
@@ -280,7 +282,7 @@
 				color: #ffffff;
 				line-height: 56px;
 				max-width: 441px;
-				margin-bottom: 1.5rem;
+				margin-bottom: 1rem;
 			}
 
 			.more-samon {
@@ -294,10 +296,10 @@
 				color: #fff;
 				text-decoration: none;
 				transition: all 0.2s ease-in-out;
+				border: 1px solid #ffffff;
 
 				&:hover {
 					color: #fff;
-					border: 1px solid #ffffff;
 				}
 
 				@media screen and (max-width: 900px) {
@@ -308,15 +310,15 @@
 	}
 
 	.bible-mission {
-		min-height: 50vh;
+		min-height: 65vh;
 		width: 100%;
-
+		display: grid;
+		align-items: center;
 		.mission-content {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 3rem;
 			padding: 3rem 0;
-
 			@media screen and (max-width: 900px) {
 				grid-template-columns: 1fr;
 				height: auto;
