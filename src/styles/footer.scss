@@ -1,4 +1,33 @@
 footer {
+	.footer-subscribe {
+		min-height: 15vh;
+		background: #ccceff;
+		display: grid;
+
+		.footer-sub {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			.sub-text {
+				display: flex;
+				flex-direction: column;
+			}
+
+			form {
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				gap: 2rem;
+
+				.form-control {
+					width: 70%;
+				}
+			}
+		}
+	}
+
 	.footer-main {
 		// min-height: 50vh;
 		padding: 1.5rem 0;

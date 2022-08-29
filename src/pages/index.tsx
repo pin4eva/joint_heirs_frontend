@@ -345,29 +345,13 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section>
-					<div className="map-page">
+					<div className="map-page p-3">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.4652530003385!2d7.034835007340241!3d4.865018300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d27198c56a95%3A0x4bf2d3ebd3c1a2dd!2sJoint%20Heirs%20Assembly%20Int&#39;l%20Inc.!5e0!3m2!1sen!2sng!4v1661352144829!5m2!1sen!2sng"
 							width="100%"
 							height="100%"
 							loading="lazy"
 						/>
-					</div>
-				</section>
-				<section>
-					<div className="footer-subscribe">
-						<div className="container">
-							<div className="footer-sub">
-								<div className="sub-text">
-									<h2 className="text-secondary mb-0">Subscribe</h2>
-									<p className="text-dark mb-0">To Our NewsLetter</p>
-								</div>
-								<form>
-									<input type="text" placeholder="Enter Email" className="form-control" />
-									<button className="btn btn-warning text-light">Subscribe Now</button>
-								</form>
-							</div>
-						</div>
 					</div>
 				</section>
 			</div>
