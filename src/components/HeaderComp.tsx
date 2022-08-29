@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
-
 	return (
 		<header>
 			<nav className="navbar">
