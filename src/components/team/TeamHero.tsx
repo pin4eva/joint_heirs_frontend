@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderComp from "../../HeaderComp";
+import HeaderComp from "../HeaderComp";
 
-const AboutTeamHero = ({ heroTitle }: { heroTitle: string }) => {
+const TeamHero = ({ heroTitle }: { heroTitle: string }) => {
 	return (
-		<div className="about-team-hero">
+		<div className="team-hero">
 			<HeaderComp />
 			<div className="hero-desc">
 				<h1>{heroTitle}</h1>
@@ -15,4 +15,4 @@ const AboutTeamHero = ({ heroTitle }: { heroTitle: string }) => {
 	);
 };
 
-export default AboutTeamHero;
+export default TeamHero;

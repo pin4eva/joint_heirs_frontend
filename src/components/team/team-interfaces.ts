@@ -9,6 +9,9 @@ export interface TeamCardI {
 		facebook_url: string;
 		twitter_url: string;
 	};
+	email: string;
+	phone: string;
+	address: string;
 }
 
 export enum DepartmentsEnum {

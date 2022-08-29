@@ -2,10 +2,12 @@
 import Link from "next/link";
 import React from "react";
 import { navList } from "./HeaderComp";
+import SubscriptionForm from "./team/SubscriptionForm";
 
 const FooterComp = () => {
 	return (
 		<footer>
+			<SubscriptionForm />
 			<div className="footer-main">
 				<div className="container">
 					<div className="footer-main-content">
