@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
+	const router = useRouter();
 	return (
 		<header className="app-header">
 			<nav className="navbar">
@@ -19,7 +21,12 @@ const HeaderComp = () => {
 						{navList.map((nav, i) => (
 							<li className="nav-item" key={i}>
 								<Link href={nav.link}>
-									<a className="nav-link fw-500 text-uppercase" onClick={() => setOpen(false)}>
+									<a
+										className={`nav-link fw-500 text-uppercase ${
+											router.pathname === nav.link ? "active" : ""
+										}`}
+										onClick={() => setOpen(false)}
+									>
 										{nav.name}
 									</a>
 								</Link>
