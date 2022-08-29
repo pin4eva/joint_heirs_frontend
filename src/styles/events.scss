@@ -175,7 +175,7 @@
 
 			&_map {
 				height: 100%;
-				z-index: 5;
+				z-index: 2;
 			}
 
 			.circle-img {
@@ -187,10 +187,7 @@
 					width: 20rem;
 					height: 20rem;
 					right: -5rem;
-					// top: -5rem;
-					// bottom: 13vh;
-					// z-index: 3;
-					// overflow-x: hidden;
+
 				}
 			}
 		}
@@ -208,7 +205,7 @@
 	background-size: cover;
 	width: 100%;
 	text-align: center;
-	z-index: 5;
+
 
 	&-content {
 		display: flex;
