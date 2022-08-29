@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const SingleTeam = () => {
-	const router = useRouter();
-	const {
-		query: { image, name, position, description, email, phone, address, facebook_url, twitter_url },
-	} = router;
+	const data = useRouter().query;
+	// destructuring all received props
+	const { image, name, position, description, email, phone, address, facebook_url, twitter_url } =
+		data;
 
 	return (
 		<FrontLayout showHeader={false}>
@@ -25,7 +25,7 @@ const SingleTeam = () => {
 							<p>Email: {email}</p>
 							<p>Phone: {phone}</p>
 							<p>Address: {address}</p>
-							<p className="pe-3">{description}</p>
+							<p className="pe-4">{description}</p>
 							<div className="socials">
 								<a href={facebook_url as string} style={{ marginRight: "2em" }}>
 									<img src="/images/Team/fb.png" alt="" />
