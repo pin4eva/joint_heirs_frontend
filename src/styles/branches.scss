@@ -66,34 +66,3 @@
 		}
 	}
 }
-
-.footer-subscribe {
-	height: 30vh;
-	width: 100%;
-	background: #ccceff;
-
-	.footer-sub {
-		width: 100%;
-		height: 30vh;
-		display: flex;
-		align-items: center;
-		gap: 3rem;
-
-		.sub-text {
-			display: flex;
-			flex-direction: column;
-		}
-
-		form {
-			width: 80%;
-			display: flex;
-			justify-content: space-between;
-			gap: 2rem;
-
-			.form-control {
-				flex: 1;
-			}
-
-		}
-	}
-}

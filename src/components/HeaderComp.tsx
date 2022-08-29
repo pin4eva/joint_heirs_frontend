@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
-
 	return (
 		<header>
 			<nav className="navbar">
@@ -26,10 +25,10 @@ const HeaderComp = () => {
 								</Link>
 							</li>
 						))}
+						<div className="nav-active" onClick={() => setOpen(false)}>
+							<Link href="/">JOIN US</Link>
+						</div>
 					</ul>
-					<div className="nav-active">
-						<Link href="/">JOIN US</Link>
-					</div>
 					<div className="menu-icon" onClick={() => setOpen(!open)}>
 						<i className={open ? "fas fa-times" : "fas fa-bars"} />
 					</div>
