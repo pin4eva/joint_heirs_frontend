@@ -1,7 +1,6 @@
 import React from "react";
-import FooterComp from "../../components/FooterComp";
-import HeaderComp from "../../components/HeaderComp";
-import AudioComp from "./aduioComp";
+
+import WrittenComp from "./writtenComp";
 import VideoComp from "./videoComp";
 import { useState } from "react";
 import RecordedComp from "./recordededComp";
@@ -71,7 +70,7 @@ const SermonsPage = () => {
 					</div>
 				</div>
 				{videos && <VideoComp />}
-				{audios && <AudioComp />}
+				{audios && <WrittenComp />}
 				{recordings && <RecordedComp />}
 			</div>
 		</FrontLayout>

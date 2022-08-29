@@ -1,6 +1,6 @@
 #sermon {
 	.sermon-header {
-		background-image: url("../../public/images/PreacherBg.png");
+		background-image: url("/images/PreacherBg.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 40vh;
@@ -9,8 +9,6 @@
 			text-align: center;
 
 			color: #ffffff;
-
-
 
 			p {
 				font-family: "Poppins";
@@ -21,8 +19,6 @@
 				text-align: center;
 				color: $light-gray;
 				margin: 0;
-
-
 			}
 
 			.text-style {
@@ -31,11 +27,6 @@
 				font-weight: 400;
 				font-size: 48px;
 				line-height: 73px;
-
-				@media screen and (max-width: $mobile) {
-					font-size: 40px;
-					line-height: 50px;
-				}
 			}
 		}
 	}
@@ -56,7 +47,6 @@
 				justify-content: space-between;
 				width: 60%;
 
-
 				.sermom-navi-toggle {
 					display: flex;
 					align-items: flex-start;
@@ -69,8 +59,6 @@
 						border-radius: 3px;
 						transition: ease-in-out 0.3s;
 						cursor: pointer;
-
-
 
 						&:hover {
 							background-color: $primary;
@@ -91,8 +79,6 @@
 						transition: ease-in-out 0.3s;
 						background-color: #ffffff;
 						border-radius: 3px;
-
-
 
 						cursor: pointer;
 
@@ -119,10 +105,6 @@
 					color: #000000;
 					background-color: #ffffff;
 					transition-delay: 0.1s ease-out;
-
-
-
-
 
 					.fa-search {
 						font-size: 13px;
@@ -153,7 +135,6 @@
 					top: 68.7%;
 					right: 1%;
 
-
 					.sort-close {
 						display: flex;
 						align-items: center;
@@ -181,8 +162,6 @@
 							margin-bottom: 0.4rem;
 							padding: 0.4rem;
 
-
-
 							&:hover {
 								background-color: $line-bg;
 							}
@@ -205,26 +184,11 @@
 			line-height: 73px;
 			color: $warning;
 			background-color: $light-gray;
-
-
 		}
 
 		&-wrapper {
 			width: 80%;
 			margin: 5rem auto;
-
-			@media screen and (max-width: $md) {
-				width: 90%;
-			}
-
-			@media screen and (max-width: $mobile) {
-				width: 95%;
-				margin: 5rem auto;
-			}
-
-			@media screen and (max-width: 400px) {
-				width: 95%;
-			}
 
 			.febuary {
 				margin: 3rem 0;
@@ -236,8 +200,6 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
-
-
 				}
 
 				.febuary-cont {
@@ -245,18 +207,14 @@
 					grid-template-columns: repeat(3, 1fr);
 					gap: 1rem;
 
-
-
 					.febuary-videos {
 						position: relative;
-						background-image: url("../../public/images/pst-thomas.png");
+						background-image: url("/images/pst-thomas.png");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: cover;
 						width: 100%;
 						height: 36vh;
-
-
 
 						.overlay {
 							background: linear-gradient(180deg, rgba(196, 196, 196, 0.2) 0%, #000000 100%);
@@ -267,8 +225,6 @@
 							flex-direction: column;
 							justify-content: end;
 
-
-
 							p {
 								font-family: "Poppins";
 								font-style: normal;
@@ -276,8 +232,6 @@
 								font-size: 16px;
 								margin: 0;
 								color: #ffffff;
-
-
 							}
 
 							.bold {
@@ -289,8 +243,6 @@
 								margin: 0;
 								font-weight: 600;
 								color: #ffffff;
-
-
 							}
 
 							.image {
@@ -306,8 +258,6 @@
 									border-radius: 7px;
 									text-align: center;
 									color: #ffffff;
-
-
 								}
 							}
 
@@ -316,8 +266,6 @@
 								margin-top: 3rem;
 								align-items: center;
 								justify-content: space-between;
-
-
 							}
 						}
 					}
@@ -337,19 +285,13 @@
 			line-height: 73px;
 			color: $warning;
 			background-color: $light-gray;
-
-
 		}
 
 		&-container {
 			width: 90%;
 			margin: 5rem auto;
 
-
-
 			.audio-container-wrapper {
-
-
 				margin-bottom: 3rem;
 
 				.febuary-text {
@@ -359,7 +301,6 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
-
 				}
 
 				.audio-container-flex {
@@ -370,8 +311,6 @@
 						background: $dark-blue;
 						width: 20%;
 
-
-
 						h6 {
 							font-family: "Montserrat";
 							font-style: normal;
@@ -380,8 +319,6 @@
 							line-height: 60px;
 
 							color: #ffffff;
-
-
 						}
 
 						p {
@@ -399,8 +336,6 @@
 						width: 90%;
 						padding: 2.5rem 3rem;
 
-
-
 						.bold {
 							font-family: $poppins;
 							font-style: normal;
@@ -410,8 +345,6 @@
 							text-align: center;
 							margin-bottom: 1rem;
 							border-bottom: 1.5px solid $tetiary;
-
-
 						}
 
 						.audio-bibletext {
@@ -459,8 +392,6 @@
 			font-size: 48px;
 			line-height: 73px;
 			color: $warning;
-
-
 		}
 
 		&-container {
@@ -478,8 +409,6 @@
 					font-size: 25px;
 					line-height: 31px;
 					color: $tetiary;
-
-
 				}
 
 				.record {
@@ -489,8 +418,6 @@
 					border-radius: 20px;
 					padding: 1.5rem 5rem;
 					margin-bottom: 1rem;
-
-
 
 					&-wrapper {
 						p {
@@ -503,14 +430,10 @@
 							gap: 5rem;
 							margin-bottom: 3rem;
 
-
-
 							i {
 								font-size: 42px;
 								color: $warning;
 								list-style: 30px;
-
-
 							}
 
 							.record-text {
@@ -521,8 +444,6 @@
 									font-size: 16px;
 									line-height: 24px;
 									color: $tetiary;
-
-
 								}
 
 								.Feb {
@@ -532,8 +453,6 @@
 									font-size: 25px;
 									line-height: 31px;
 									color: $dark-blue;
-
-
 								}
 							}
 						}
@@ -544,8 +463,6 @@
 							justify-content: center;
 							gap: 2rem;
 
-
-
 							.record-space-icon {
 								width: 48px;
 								height: 48px;
@@ -553,14 +470,10 @@
 								border-radius: 50%;
 								cursor: pointer;
 
-
-
 								i {
 									padding: 0.9rem 1.2rem;
 									font-size: 18px;
 									color: $primary;
-
-
 								}
 							}
 
@@ -570,8 +483,6 @@
 								justify-content: center;
 								gap: 2rem;
 								width: 100%;
-
-
 
 								p {
 									margin: 0;
@@ -585,16 +496,12 @@
 
 								.record-space-time {
 									color: $dark-blue;
-
-
 								}
 
 								i {
 									font-size: 16px;
 									color: $dark-blue;
 									cursor: pointer;
-
-
 								}
 
 								.record-space-shortline {
@@ -603,8 +510,6 @@
 									background-color: $line-bg;
 									border-radius: 14px;
 
-
-
 									cursor: pointer;
 
 									.blue-rgb {
@@ -612,8 +517,6 @@
 										height: 9px;
 										background-color: $primary;
 										border-radius: 14px;
-
-
 									}
 								}
 							}

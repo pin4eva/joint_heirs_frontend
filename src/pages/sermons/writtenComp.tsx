@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const AudioComp = () => {
+const WrittenComp = () => {
 	return (
 		<div className="audio">
 			<p className="text-style" style={{ paddingLeft: "2rem" }}>
@@ -45,7 +45,7 @@ const AudioComp = () => {
 	);
 };
 
-export default AudioComp;
+export default WrittenComp;
 export interface IAudio {
 	id: number;
 	month: string;
