@@ -20,7 +20,7 @@ const SingleTeam = () => {
 	if (!team) return <p>loading...</p>;
 
 	return (
-		<FrontLayout showHeader={false}>
+		<FrontLayout title="Team">
 			<div className="team">
 				<div className="single-team">
 					<TeamHero heroTitle={team?.name} />

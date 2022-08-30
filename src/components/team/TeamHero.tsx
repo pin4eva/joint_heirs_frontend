@@ -5,7 +5,7 @@ const TeamHero = ({ heroTitle }: { heroTitle: string }) => {
 		<div className="team-hero">
 			<div className="hero-desc">
 				<h1>{heroTitle}</h1>
-				<p id="rochester-p" style={{ color: "white" }}>
+				<p className="rochester fs-3" style={{ color: "white" }}>
 					Joint Heirs Assembly...
 				</p>
 			</div>

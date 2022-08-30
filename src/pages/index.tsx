@@ -154,7 +154,7 @@ const Home: NextPage = () => {
 									</p>
 									<div>
 										<Link href="/">
-											<a>Team Us</a>
+											<a>About Us</a>
 										</Link>
 									</div>
 								</div>
