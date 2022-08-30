@@ -29,7 +29,7 @@ const SermonAudioComp = () => {
 						</Link>
 					</div>
 					<div className="audio-playing">
-						<h6 className="text-secondary fw-bold mb-0 ms-2">The Death of Jesus - Part One</h6>
+						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
 						<p className="mb-0 ms-2">
 							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Pastor John Mark
 						</p>
@@ -56,7 +56,7 @@ const SermonAudioComp = () => {
 						</Link>
 					</div>
 					<div className="audio-playing">
-						<h6 className="text-secondary fw-bold mb-0 ms-2">The Death of Jesus - Part One</h6>
+						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
 						<p className="mb-0 ms-2">
 							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Pastor John Mark
 						</p>
@@ -83,7 +83,7 @@ const SermonAudioComp = () => {
 						</Link>
 					</div>
 					<div className="audio-playing">
-						<h6 className="text-secondary fw-bold mb-0 ms-2">The Death of Jesus - Part One</h6>
+						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
 						<p className="mb-0 ms-2">
 							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Pastor John Mark
 						</p>

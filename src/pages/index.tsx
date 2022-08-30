@@ -186,7 +186,7 @@ const Home: NextPage = () => {
 					<div className="church-branchs">
 						<div className="container">
 							<div className="branch-content">
-								<h1 className="text-secondary fw-bold m-0">Church Branches</h1>
+								<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
 								<div className="branch-holder">
 									<div className="children-branch">
 										<img src="/images/children.png" alt="" />
@@ -207,17 +207,19 @@ const Home: NextPage = () => {
 					<div className="donation-page">
 						<div className="container">
 							<div className="donation-content">
-								<h4 className="fs-3">Donate</h4>
+								<h4 className="rochester">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
 									<img src="/images/donate.png" alt="" />
 									<div className="donate-content">
-										<h3>Your Generousity is Making a Difference</h3>
-										<p>
-											We are happy to get any support from members of this assemblly and the
-											community at large! Thank you so much for staying with us, and for all your
-											help, Donations
-										</p>
+										<h3 className="donate-heading">Your Generousity is Making a Difference</h3>
+										<div className="donate-text">
+											<p>
+												We are happy to get any support from members of this assemblly and the
+												community at large!
+											</p>
+											<p>Thank you so much for staying with us, and for all your help, Donations</p>
+										</div>
 										<div className="price-donate">
 											<div>
 												<h2>$ 75.00</h2>
@@ -237,7 +239,7 @@ const Home: NextPage = () => {
 					<div className="contact-us">
 						<div className="top">
 							<div className="container">
-								<h1 className="text-light fw-bold text-center ">Get in Contact with Us</h1>
+								<h1 className="text-light fw-bold text-center mb-3">Get in Contact with Us</h1>
 								<p className="text-light text-center ">
 									We are called to eat, drink, speak, think and work to the glory of God. We worship
 									God by remembering the <br /> gospel through preaching, teaching, singing, praying
@@ -250,9 +252,10 @@ const Home: NextPage = () => {
 								<div className="form-split form-group">
 									<div className="form-group">
 										<label className="mt-4 mb-2" htmlFor="name">
-											Yourn Name
+											Your Name*
 										</label>
 										<input
+											id="name"
 											type="text"
 											placeholder="Enter your name"
 											className="form-control shadow-none"
@@ -260,9 +263,10 @@ const Home: NextPage = () => {
 									</div>
 									<div className="form-group">
 										<label className="mt-4 mb-2" htmlFor="email">
-											Contact Email
+											Contact Email*
 										</label>
 										<input
+											id="email"
 											type="text"
 											placeholder="bentucker43@gmail.com"
 											className="form-control shadow-none"
@@ -271,20 +275,21 @@ const Home: NextPage = () => {
 								</div>
 								<div className="form-split form-group">
 									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="name">
-											Phone no
+										<label className="mt-4 mb-2" htmlFor="phoneNo">
+											Phone no*
 										</label>
 										<input
+											id="phoneNo"
 											type="text"
 											placeholder="9012624162"
 											className="form-control shadow-none"
 										/>
 									</div>
 									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="email">
-											Church Branch
+										<label className="mt-4 mb-2" htmlFor="branch">
+											Church Branch*
 										</label>
-										<select name="" className="form-select">
+										<select name="" className="form-select" id="branch">
 											<option value=""></option>
 											<option value="">First</option>
 											<option value="">First</option>
@@ -294,10 +299,14 @@ const Home: NextPage = () => {
 									</div>
 								</div>
 								<div className="form-group">
-									<label className="mt-4 mb-3" htmlFor="">
-										Your Message
+									<label className="mt-4 mb-3" htmlFor="message">
+										Your Message*
 									</label>
-									<textarea className="form-control" placeholder="Type your Message" />
+									<textarea
+										className="form-control message-box"
+										placeholder="Type your Message"
+										id="message"
+									/>
 								</div>
 								<p className="mt-4">
 									We are called to eat, drink, speak, think and work to the glory of God. We worship
@@ -317,8 +326,7 @@ const Home: NextPage = () => {
 										</a>
 									</Link>
 									<p className="text-center">
-										Email us for general Queries <br /> including mentorship and spiritual <br />
-										counselling
+										Email us for general Queries including mentorship and spiritual counselling
 									</p>
 									<Link href="https://jointheirs5@gmail.com">
 										<a>jointheirs5@gmail.com</a>
@@ -332,8 +340,8 @@ const Home: NextPage = () => {
 										</a>
 									</Link>
 									<p className="text-center">
-										Youncan also calll us for general <br /> Queries including mentorship and <br />
-										spiritual counselling
+										You can also call us for general Queries including mentorship and spiritual
+										counselling
 									</p>
 									<Link href="https://jointheirs5@gmail.com">
 										<a>jointheirs5@gmail.com</a>
@@ -344,7 +352,7 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section>
-					<div className="map-page p-3">
+					<div className="map-page">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.4652530003385!2d7.034835007340241!3d4.865018300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d27198c56a95%3A0x4bf2d3ebd3c1a2dd!2sJoint%20Heirs%20Assembly%20Int&#39;l%20Inc.!5e0!3m2!1sen!2sng!4v1661352144829!5m2!1sen!2sng"
 							width="100%"

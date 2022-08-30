@@ -383,19 +383,24 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 4rem;
-
+			margin-top: 1rem;
 			@media screen and (max-width: 900px) {
 				grid-template-columns: 1fr;
 				margin-top: 3rem;
 			}
 
 			.right {
-				max-height: 65vh;
-				width: 100%;
+				max-height: 90%;
+				width: 65%;
+				margin-left: auto;
+				@media screen and (max-width: $md) {
+					width: 100%;
+				}
 
 				img {
 					height: 100%;
 					width: 100%;
+					margin-left: auto;
 				}
 			}
 
@@ -429,21 +434,19 @@
 						gap: 1rem;
 
 						.audio-play-icons {
-							padding: 5px;
-							width: 3rem;
-							height: 5.5rem;
+							padding: 10px;
 							display: flex;
 							flex-direction: column;
 							align-items: center;
 							justify-content: space-between;
 							border-radius: 10px;
 							background: #ccceff;
-
+							margin-block: 0.3rem;
 							hr {
 								transform: rotate(180deg);
-								width: 1.4rem;
+								width: 2rem;
 								border: 1px solid $secondary;
-								margin: 0;
+								margin: 0.5rem 0;
 							}
 						}
 
@@ -452,9 +455,12 @@
 							display: flex;
 							flex-direction: column;
 							justify-content: center;
-							height: 6rem;
 							border-top: 1px solid $tetiary;
 							border-bottom: 1px solid $tetiary;
+							h6 {
+								padding-bottom: 1rem;
+								font-size: 1.2rem;
+							}
 						}
 					}
 				}
@@ -478,39 +484,45 @@
 			align-items: center;
 
 			.biles-pages {
-				width: 60%;
-
+				width: 80%;
+				@media screen and (max-width: $md) {
+					width: 100%;
+				}
 				.bible-verses {
 					text-align: center;
-					padding: 2rem;
+					padding: 3rem;
 					border-radius: 2rem;
 					user-select: none;
 					background: #ccceff;
 
 					.caps {
-						font-family: "Rochester", cursive;
 						color: $warning;
 					}
-
-					.the-words {
-						color: $secondary;
-						font-weight: 500;
-						display: block;
-						width: 100%;
-						margin: 0.8rem auto 0;
-					}
-
-					.text-start {
-						height: 1rem;
+					.quotation {
+						font-size: 3.5rem;
 						display: flex;
 						width: 100%;
+						height: 2.5rem;
+						margin: 0;
+					}
+					.the-words {
+						color: $dark;
+						font-weight: 400;
+						font-size: 2rem;
+						display: block;
+						width: 100%;
+					}
+					.b-verse {
+						font-size: 2rem;
+						font-weight: 400;
+						color: $secondary;
+						margin: 0;
+					}
+					.text-start {
 						justify-content: flex-start;
 					}
 
 					.text-end {
-						height: 1rem;
-						display: flex;
-						width: 100%;
 						justify-content: flex-end;
 					}
 				}
@@ -528,17 +540,18 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding: 2rem 0;
+			padding: 3rem 0;
 			gap: 2rem;
-
-			@media screen and (max-width: 900px) {
+			width: 70%;
+			margin-inline: auto;
+			@media screen and (max-width: $md) {
 				height: auto;
 			}
 
 			.branch-holder {
 				width: 100%;
 				display: flex;
-				gap: 2rem;
+				gap: 4rem;
 
 				@media screen and (max-width: 900px) {
 					flex-direction: column;
@@ -555,6 +568,7 @@
 
 					img {
 						width: 100%;
+						margin-bottom: 1rem;
 					}
 				}
 
@@ -573,56 +587,66 @@
 		.donation-content {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;
+			gap: 1rem;
 
 			h4 {
-				font-family: "Rochester", cursive;
-				color: $warning;
 				margin: 0;
 				align-self: center;
 			}
 
 			.donate {
-				display: flex;
-				justify-content: center;
-
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin-block: 2rem;
 				img {
-					width: 25rem;
-					height: 22rem;
+					width: 100%;
+					height: 23rem;
 				}
 
 				@media screen and (max-width: 900px) {
-					flex-direction: column;
+					grid-template-columns: 1fr;
 					height: auto;
-
-					img {
-						width: 100%;
-						height: 23rem;
-					}
 				}
 
 				.donate-content {
 					width: 100%;
-					padding: 2rem;
+					padding: 7%;
 					display: flex;
 					flex-direction: column;
+					justify-content: center;
 					background: $tetiary;
-
+					gap: 1rem;
+					.donate-heading {
+						font-weight: 500;
+						color: $dark;
+						width: 80%;
+						@media screen and (max-width: $md) {
+							width: 100%;
+						}
+					}
+					.donate-text {
+						p {
+							margin: 0;
+						}
+					}
 					.price-donate {
 						display: flex;
 						align-items: center;
 						gap: 4rem;
-
-						@media screen and (max-width: 900px) {
+						margin-top: 1rem;
+						@media screen and (max-width: $md) {
 							justify-content: space-between;
 							gap: 0;
 						}
 
 						div {
 							h2 {
-								margin-top: 6px;
-								font-size: 48px;
 								font-weight: 700;
+								color: $secondary;
+								font-size: 2.7rem;
+								@media screen and (max-width: $md) {
+									font-size: 2rem;
+								}
 							}
 
 							hr {
@@ -631,9 +655,7 @@
 						}
 
 						a {
-							margin-top: 2rem;
 							text-align: center;
-							padding: 1rem 2rem;
 							background: #f66800;
 							padding: 10px 1rem;
 							width: 10rem;
@@ -703,30 +725,26 @@
 
 		.top {
 			padding-top: 3rem;
-			min-height: 55vh;
+			min-height: 65vh;
 			background-image: url("/images/contactBG.png");
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
-			z-index: -1000;
+			z-index: -1;
 		}
 
 		.container {
 			form {
-				z-index: 1000;
-				margin-top: -12rem;
+				z-index: 2;
+				margin-top: -30vh;
 				width: 100%;
 				background: #ffffff;
-				padding: 3rem;
+				padding: 2rem 3rem;
 				border-radius: 20px;
-
-				@media screen and (max-width: 900px) {
-					width: 90%;
-					margin-left: 1.5rem;
-				}
+				margin-inline: auto;
 
 				.form-split {
 					display: flex;
-					gap: 1rem;
+					gap: 1.5rem;
 
 					.form-control {
 						height: 3rem;
@@ -741,6 +759,11 @@
 						width: 100%;
 					}
 				}
+				.message-box {
+					height: 12rem;
+					resize: none;
+					padding: 1rem;
+				}
 			}
 
 			.btn {
@@ -751,8 +774,8 @@
 		.botom {
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			gap: 5rem;
+			justify-content: space-around;
+			gap: 3rem;
 			height: 50vh;
 
 			.message {
@@ -760,6 +783,10 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
+				width: 25%;
+				@media screen and (max-width: $md) {
+					width: 90%;
+				}
 
 				a {
 					display: flex;
@@ -792,6 +819,7 @@
 						padding: 8px;
 						width: 2.5rem;
 						height: 2.5rem;
+						margin-bottom: 0.5rem;
 						border-radius: 5px;
 					}
 				}
@@ -801,6 +829,6 @@
 
 	.map-page {
 		width: 100%;
-		height: 50vh;
+		height: 55vh;
 	}
 }

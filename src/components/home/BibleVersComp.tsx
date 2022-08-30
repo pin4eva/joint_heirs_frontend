@@ -6,11 +6,11 @@ const BibleVersComp = () => {
 			{bibleData.map((b, i) => {
 				return (
 					<div key={i} className="bible-verses testimonial">
-						<h4 className="caps">{b.caps}</h4>
-						<big className="text-start fw-bold fs-2">{b.aposUp}</big>
+						<h4 className="caps rochester">{b.caps}</h4>
+						<p className="text-start fw-bold quotation">{b.aposUp}</p>
 						<p className="the-words">{b.words}</p>
-						<big className="text-end fw-bold fs-2">{b.aposDown}</big>
-						<h6>{b.verses}</h6>
+						<h6 className="b-verse">{b.verses}</h6>
+						<p className="text-end fw-bold quotation">{b.aposDown}</p>
 					</div>
 				);
 			})}
