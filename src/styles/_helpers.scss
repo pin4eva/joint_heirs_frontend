@@ -1,12 +1,28 @@
 .rochester {
-  font-family: $rochester;
-  color: $warning;
-  font-size: 3rem;
+	font-family: $rochester;
 }
 
-.huge-text{
-  font-family: $poppins;
-  font-weight: 700;
-  font-size: 3rem;
-  color: $secondary;
+.rochester-p {
+	font-family: $rochester;
+	font-size: 3rem;
+	font-weight: 400;
+	color: $warning;
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+	}
+}
+
+#underline {
+	width: 100%;
+	height: 2px;
+	border: 1px solid #c4c4c4;
+	margin: 2em 0;
+}
+
+.justify-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
 }
