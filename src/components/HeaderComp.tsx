@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<header>
+		<header className="app-header">
 			<nav className="navbar">
 				<div className="container nav-inner">
 					<Link href="/">

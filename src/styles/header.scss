@@ -1,6 +1,6 @@
 @import "./variables";
 
-header {
+.app-header {
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -107,6 +107,7 @@ header {
 					left: 0;
 					opacity: 1;
 				}
+
 				.nav-active {
 					margin: 0.7rem 0 0 1.8rem;
 				}
