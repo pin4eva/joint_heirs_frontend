@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderComp from "../HeaderComp";
 
 const TeamHero = ({ heroTitle }: { heroTitle: string }) => {
 	return (
