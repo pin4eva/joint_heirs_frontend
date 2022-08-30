@@ -2,8 +2,17 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import girlImg from "../../public/images/girl.png";
+import manImg from "../../public/images/man.png";
+import childrenImg from "../../public/images/children.png";
+import menImg from "../../public/images/men.png";
+import donateImg from "../../public/images/donate.png";
+import videoSvg from "../../public/images/svg/video.svg";
+import dateSvg from "../../public/images/svg/date.svg";
+import eventsSvg from "../../public/images/svg/events.svg";
+import trackerSvg from "../../public/images/svg/tracker.svg";
 import CommunityCardComp from "../components/cards/CommunityCardComp";
-import HeaderComp from "../components/HeaderComp";
 import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
 import FrontLayout from "../layouts/FrontLayout";
@@ -60,25 +69,25 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right">
 									<div className="video">
-										<img src="/images/svg/video.svg" alt="" />
+										<Image src={videoSvg} />
 										<p className="text-secondary">
 											Watch and listen to <br /> Sermons
 										</p>
 									</div>
 									<div className="dates">
-										<img src="/images/svg/date.svg" alt="" />
+										<Image src={dateSvg} />
 										<p className="text-secondary">
 											Make <br /> Donations
 										</p>
 									</div>
 									<div className="events">
-										<img src="/images/svg/events.svg" alt="" />
+										<Image src={eventsSvg} />
 										<p className="text-secondary">
 											Church Up coming <br /> Events
 										</p>
 									</div>
 									<div className="tracker">
-										<img src="/images/svg/tracker.svg" alt="" />
+										<Image src={trackerSvg} />
 										<p className="text-secondary">
 											Find a Church <br /> Location/Branch
 										</p>
@@ -141,7 +150,7 @@ const Home: NextPage = () => {
 						<div className="container">
 							<div className="mission-content">
 								<div className="left">
-									<img src="/images/girl.png" alt="" />
+									<Image src={girlImg} />
 								</div>
 								<div className="right">
 									<p className="belief-text">Beliefs</p>
@@ -167,7 +176,7 @@ const Home: NextPage = () => {
 							<div className="sermon-content">
 								<SermonAudioComp />
 								<div className="right">
-									<img src="/images/man.png" alt="" />
+									<Image src={manImg} />
 								</div>
 							</div>
 						</div>
@@ -189,12 +198,12 @@ const Home: NextPage = () => {
 								<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
 								<div className="branch-holder">
 									<div className="children-branch">
-										<img src="/images/children.png" alt="" />
+										<Image src={childrenImg} className="branch-img" />
 										<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
 										<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
 									</div>
 									<div className="men-branch">
-										<img src="/images/men.png" alt="" />
+										<Image src={menImg} className="branch-img" />
 										<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
 										<p className="mb-0 text-secondary">Airforce Branch</p>
 									</div>
@@ -210,7 +219,7 @@ const Home: NextPage = () => {
 								<h4 className="rochester">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
-									<img src="/images/donate.png" alt="" />
+									<Image src={donateImg} />
 									<div className="donate-content">
 										<h3 className="donate-heading">Your Generousity is Making a Difference</h3>
 										<div className="donate-text">
