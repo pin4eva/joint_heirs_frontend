@@ -20,7 +20,7 @@ const VideoComp = () => {
 										</Link>
 									</div>
 
-									<div className="txtflex">
+									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
 										<p>{sermonData.text}</p>
 									</div>
@@ -36,7 +36,7 @@ const VideoComp = () => {
 										</Link>
 									</div>
 
-									<div className="txtflex">
+									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
 										<p>{sermonData.text}</p>
 									</div>
@@ -52,7 +52,7 @@ const VideoComp = () => {
 										</Link>
 									</div>
 
-									<div className="txtflex">
+									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
 										<p>{sermonData.text}</p>
 									</div>
@@ -68,7 +68,7 @@ const VideoComp = () => {
 										</Link>
 									</div>
 
-									<div className="txtflex">
+									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
 										<p>{sermonData.text}</p>
 									</div>

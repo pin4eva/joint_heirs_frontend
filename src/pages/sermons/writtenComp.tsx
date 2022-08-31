@@ -9,7 +9,7 @@ const WrittenComp = () => {
 			<div className="written-container">
 				{audioDatas.map((audioData, id) => (
 					<div className="written-container-wrapper" key={id}>
-						<p className="febuary-text">{audioData.month}</p>
+						<p className="month-text">{audioData.month}</p>
 						<div className="written-container-flex">
 							<div className="written-container-left">
 								<h6>Bible Text</h6>
@@ -24,17 +24,17 @@ const WrittenComp = () => {
 								<div className="written-bibletext">
 									<p className="written-bibletext-blue">{audioData.txet}</p>
 
-									{audioData.verse}
+									<p className="written-bibletext-verse">{audioData.verse}</p>
 								</div>
 								<div className="written-bibletext">
 									<p className="written-bibletext-blue">{audioData.txet}</p>
 
-									{audioData.verse}
+									<p className="written-bibletext-verse">{audioData.verse}</p>
 								</div>
 								<div className="written-bibletext">
 									<p className="written-bibletext-blue">{audioData.txet}</p>
 
-									{audioData.verse}
+									<p className="written-bibletext-verse">{audioData.verse}</p>
 								</div>
 							</div>
 						</div>
@@ -75,9 +75,9 @@ export const audioDatas = [
 		title: "The Resurrecton of Jesus - Part one",
 		verse: (
 			<p>
-				confidence When the uproar had ended, Paul sent for the disciples and, after encouraging
-				them, said goodbye and set out for Macedonia. 2 He traveled through that area, speaking many
-				words of encouragement to the people, <Link href="#"> Read more</Link>.
+				When the uproar had ended, Paul sent for the disciples and, after encouraging them, said
+				goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words of
+				encouragement to the people, <Link href="#"> Read more</Link>.
 			</p>
 		),
 	},
@@ -88,9 +88,9 @@ export const audioDatas = [
 		title: "The Resurrecton of Jesus - Part one",
 		verse: (
 			<p>
-				barbie When the uproar had ended, Paul sent for the disciples and, after encouraging them,
-				said goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words
-				of encouragement to the people, <Link href="#"> Read more</Link>.
+				When the uproar had ended, Paul sent for the disciples and, after encouraging them, said
+				goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words of
+				encouragement to the people, <Link href="#"> Read more</Link>.
 			</p>
 		),
 	},

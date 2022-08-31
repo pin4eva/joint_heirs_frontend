@@ -31,11 +31,10 @@ const SermonsPage = () => {
 					</div>
 				</header>
 
-				<div className="sermon-2">
-					<div className="sermon-navi">
-						<div className="sermon-flex">
-							{" "}
-							<div className="sermom-navi-toggle">
+				<div className="sermon-navigation">
+					<div className="sermon-navigation-wrapper">
+						<div className="sermon-toggle">
+							<div className="sermon-toggle-flex">
 								<i onClick={handleVideos} className="fa-solid fa-video"></i>
 
 								<i onClick={handleRecordings} className="fa-solid fa-microphone"></i>
@@ -48,13 +47,13 @@ const SermonsPage = () => {
 								<i onClick={handleFilter} className="fa-solid fa-sliders"></i>
 							</div>
 							{search && (
-								<form action="" className="search">
+								<form action="" className="sermon-search">
 									<input type="text" placeholder="search here... " />
 									<i onClick={handleSearch} className="fa-solid fa-search"></i>
 								</form>
 							)}
 							{filter && (
-								<div className="sort">
+								<div className="sermon-sort">
 									<div className="sort-close">
 										<span>Sort</span>
 										<i onClick={handleFilter} className="fa-solid fa-times "></i>
