@@ -22,10 +22,42 @@ const VideoComp = () => {
 
 									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
-										<p>{sermonData.text}</p>
+										<p className="overlay-text-word">{sermonData.text}</p>
 									</div>
-									<p>{sermonData.name}</p>
-									<p>{sermonData.date}</p>
+									<p className="overlay-text-word">{sermonData.name}</p>
+									<p className="overlay-text-word">{sermonData.date}</p>
+								</div>
+							</div>
+							<div className="videos-poster">
+								<div className="overlay">
+									<div className="image">
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
+									</div>
+
+									<div className="overlay-text">
+										<p className="bold">{sermonData.topic}</p>
+										<p className="overlay-text-word">{sermonData.text}</p>
+									</div>
+									<p className="overlay-text-word">{sermonData.name}</p>
+									<p className="overlay-text-word">{sermonData.date}</p>
+								</div>
+							</div>
+							<div className="videos-poster">
+								<div className="overlay">
+									<div className="image">
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
+									</div>
+
+									<div className="overlay-text">
+										<p className="bold">{sermonData.topic}</p>
+										<p className="overlay-text-word">{sermonData.text}</p>
+									</div>
+									<p className="overlay-text-word">{sermonData.name}</p>
+									<p className="overlay-text-word">{sermonData.date}</p>
 								</div>
 							</div>
 							<div className="videos-poster">
@@ -40,40 +72,8 @@ const VideoComp = () => {
 										<p className="bold">{sermonData.topic}</p>
 										<p>{sermonData.text}</p>
 									</div>
-									<p>{sermonData.name}</p>
-									<p>{sermonData.date}</p>
-								</div>
-							</div>
-							<div className="videos-poster">
-								<div className="overlay">
-									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
-									</div>
-
-									<div className="overlay-text">
-										<p className="bold">{sermonData.topic}</p>
-										<p>{sermonData.text}</p>
-									</div>
-									<p>{sermonData.name}</p>
-									<p>{sermonData.date}</p>
-								</div>
-							</div>
-							<div className="videos-poster">
-								<div className="overlay">
-									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
-									</div>
-
-									<div className="overlay-text">
-										<p className="bold">{sermonData.topic}</p>
-										<p>{sermonData.text}</p>
-									</div>
-									<p>{sermonData.name}</p>
-									<p>{sermonData.date}</p>
+									<p className="overlay-text-word">{sermonData.name}</p>
+									<p className="overlay-text-word">{sermonData.date}</p>
 								</div>
 							</div>
 						</div>
