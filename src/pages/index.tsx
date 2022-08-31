@@ -3,14 +3,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import childrenImg from "../../public/images/children.png";
-import donateImg from "../../public/images/donate.png";
-import girlImg from "../../public/images/girl.png";
-import manImg from "../../public/images/man.png";
-import menImg from "../../public/images/men.png";
-import dateSvg from "../../public/images/svg/date.svg";
-import eventsSvg from "../../public/images/svg/events.svg";
-import trackerSvg from "../../public/images/svg/tracker.svg";
 import CommunityCardComp from "../components/cards/CommunityCardComp";
 import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
@@ -79,19 +71,29 @@ const Home: NextPage = () => {
 										</p>
 									</div>
 									<div className="dates">
-										<Image src={dateSvg} />
+										<Image src="/images/svg/date.svg" layout="intrinsic" width={100} height={100} />
 										<p className="text-secondary">
 											Make <br /> Donations
 										</p>
 									</div>
 									<div className="events">
-										<Image src={eventsSvg} />
+										<Image
+											src="/images/svg/events.svg"
+											layout="intrinsic"
+											width={100}
+											height={100}
+										/>
 										<p className="text-secondary">
 											Church Up coming <br /> Events
 										</p>
 									</div>
 									<div className="tracker">
-										<Image src={trackerSvg} />
+										<Image
+											src="/images/svg/tracker.svg"
+											layout="intrinsic"
+											width={100}
+											height={100}
+										/>
 										<p className="text-secondary">
 											Find a Church <br /> Location/Branch
 										</p>
@@ -154,7 +156,7 @@ const Home: NextPage = () => {
 						<div className="container">
 							<div className="mission-content">
 								<div className="left">
-									<Image src={girlImg} />
+									<Image src="/images/girl.png" layout="intrinsic" width={529} height={379} />
 								</div>
 								<div className="right">
 									<p className="belief-text">Beliefs</p>
@@ -180,7 +182,7 @@ const Home: NextPage = () => {
 							<div className="sermon-content">
 								<SermonAudioComp />
 								<div className="right">
-									<Image src={manImg} />
+									<Image src="/images/man.png" layout="intrinsic" width={438} height={603} />
 								</div>
 							</div>
 						</div>
@@ -202,12 +204,24 @@ const Home: NextPage = () => {
 								<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
 								<div className="branch-holder">
 									<div className="children-branch">
-										<Image src={childrenImg} className="branch-img" />
+										<Image
+											src="/images/children.png"
+											layout="intrinsic"
+											width={450}
+											height={420}
+											className="branch-img"
+										/>
 										<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
 										<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
 									</div>
 									<div className="men-branch">
-										<Image src={menImg} className="branch-img" />
+										<Image
+											src="/images/men.png"
+											layout="intrinsic"
+											width={450}
+											height={420}
+											className="branch-img"
+										/>
 										<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
 										<p className="mb-0 text-secondary">Airforce Branch</p>
 									</div>
@@ -223,7 +237,13 @@ const Home: NextPage = () => {
 								<h4 className="rochester">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
-									<Image src={donateImg} />
+									<Image
+										src="/images/donate.png"
+										layout="intrinsic"
+										width={646}
+										height={419}
+										className="branch-img"
+									/>
 									<div className="donate-content">
 										<h3 className="donate-heading">Your Generousity is Making a Difference</h3>
 										<div className="donate-text">
