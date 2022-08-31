@@ -10,15 +10,15 @@ const RecordedComp = () => {
 			<div className="recording-container">
 				{recordDatas.map((recordData, id) => (
 					<div className="recording-container-wrapper" key={id}>
-						<p className="febuary-text">{recordData.month}</p>
+						<p className="month-text">{recordData.month}</p>
 						<div className="record">
 							<div className="record-wrapper">
 								<div className="record-icon">
 									<i className="fa-solid fa-microphone"></i>
 
 									<div className="record-text">
-										<p className="pastor">{recordData.pastor}</p>
-										<p className="Feb">{recordData.title}</p>
+										<p className="record-text-pastor">{recordData.pastor}</p>
+										<p className="record-text-title">{recordData.title}</p>
 									</div>
 								</div>
 								<div className="record-space">
@@ -47,7 +47,9 @@ const RecordedComp = () => {
 
 									<div className="record-text">
 										<p className="pastor">Sermon By Pastor Eric</p>
-										<p className="Feb">Feb 5 -The Ressurrection of Jesus (Part One)</p>
+										<p className="record-text-title">
+											Feb 5 -The Ressurrection of Jesus (Part One)
+										</p>
 									</div>
 								</div>
 								<div className="record-space">

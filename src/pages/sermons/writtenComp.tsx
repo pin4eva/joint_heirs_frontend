@@ -2,37 +2,37 @@ import Link from "next/link";
 
 const WrittenComp = () => {
 	return (
-		<div className="audio">
+		<div className="written">
 			<p className="text-style" style={{ paddingLeft: "2rem" }}>
 				All Written Sermons
 			</p>
-			<div className="audio-container">
+			<div className="written-container">
 				{audioDatas.map((audioData, id) => (
-					<div className="audio-container-wrapper" key={id}>
+					<div className="written-container-wrapper" key={id}>
 						<p className="febuary-text">{audioData.month}</p>
-						<div className="audio-container-flex">
-							<div className="audio-container-left">
+						<div className="written-container-flex">
+							<div className="written-container-left">
 								<h6>Bible Text</h6>
 								<p>{audioData.txet}</p>
 								<p>{audioData.txet}</p>
 								<p>{audioData.txet}</p>
 							</div>
 
-							<div className="audio-container-right">
-								<p className="bold">{audioData.title}</p>
+							<div className="written-container-right">
+								<p className="written-bold">{audioData.title}</p>
 
-								<div className="audio-bibletext">
-									<p className="audio-bibletext-blue">{audioData.txet}</p>
-
-									{audioData.verse}
-								</div>
-								<div className="audio-bibletext">
-									<p className="audio-bibletext-blue">{audioData.txet}</p>
+								<div className="written-bibletext">
+									<p className="written-bibletext-blue">{audioData.txet}</p>
 
 									{audioData.verse}
 								</div>
-								<div className="audio-bibletext">
-									<p className="audio-bibletext-blue">{audioData.txet}</p>
+								<div className="written-bibletext">
+									<p className="written-bibletext-blue">{audioData.txet}</p>
+
+									{audioData.verse}
+								</div>
+								<div className="written-bibletext">
+									<p className="written-bibletext-blue">{audioData.txet}</p>
 
 									{audioData.verse}
 								</div>

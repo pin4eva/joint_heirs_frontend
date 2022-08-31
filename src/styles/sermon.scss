@@ -4,20 +4,23 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 40vh;
+		display: grid;
+		align-items: center;
+		justify-content: center;
 
 		&-inner {
 			text-align: center;
-
 			color: #ffffff;
 
 			p {
 				font-family: "Poppins";
 				font-style: normal;
 				font-weight: 700;
-				font-size: 60px;
-				line-height: 73px;
+				font-size: 3rem;
+				line-height: 65px;
 				text-align: center;
 				color: $light-gray;
+				padding: 0;
 				margin: 0;
 			}
 
@@ -25,8 +28,8 @@
 				font-family: "Rochester";
 				font-style: normal;
 				font-weight: 400;
-				font-size: 48px;
-				line-height: 73px;
+				font-size: 3rem;
+				// line-height: 73px;
 			}
 		}
 	}
@@ -40,6 +43,10 @@
 			height: 10rem;
 			display: flex;
 			justify-content: flex-end;
+			background-color: red;
+			@media screen and (max-width: 400px) {
+				justify-content: flex-start;
+			}
 
 			.sermon-flex {
 				display: flex;
@@ -70,7 +77,6 @@
 				.sermon-navi-search {
 					display: flex;
 					align-items: flex-start;
-
 					gap: 0.5rem;
 
 					i {
@@ -89,7 +95,7 @@
 					}
 				}
 
-				.search {
+				.sermon-search {
 					padding: 0 1rem;
 					display: flex;
 					align-items: center;
@@ -176,21 +182,23 @@
 	.videos {
 		background-color: #ffffff;
 
-		.text-style {
+		.video-text {
 			font-family: "Rochester";
 			font-style: normal;
 			font-weight: 400;
 			font-size: 48px;
 			line-height: 73px;
 			color: $warning;
-			background-color: $light-gray;
 		}
 
 		&-wrapper {
 			width: 80%;
-			margin: 5rem auto;
+			margin: 3rem auto;
+			@media screen and (max-width: $md) {
+				width: 90%;
+			}
 
-			.febuary {
+			&-months {
 				margin: 3rem 0;
 
 				&-txt {
@@ -202,23 +210,25 @@
 					color: $tetiary;
 				}
 
-				.febuary-cont {
+				.months-container {
 					display: grid;
 					grid-template-columns: repeat(3, 1fr);
 					gap: 1rem;
 
-					.febuary-videos {
+					.videos-poster {
 						position: relative;
 						background-image: url("/images/pst-thomas.png");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: cover;
-						width: 100%;
-						height: 36vh;
+						width: 392px;
+						height: 322px;
+						border-radius: 15px;
 
 						.overlay {
 							background: linear-gradient(180deg, rgba(196, 196, 196, 0.2) 0%, #000000 100%);
 							border-radius: 15px;
+							width: 100%;
 							height: 100%;
 							padding: 1rem;
 							display: flex;
@@ -269,14 +279,28 @@
 							}
 						}
 					}
+					@media screen and (max-width: $md) {
+						grid-template-columns: repeat(2, 1fr);
+						.videos-poster {
+							width: 360px;
+							height: 322px;
+						}
+					}
+					@media screen and (max-width: $mobile) {
+						grid-template-columns: repeat(1, 1fr);
+						.videos-poster {
+							width: 100%;
+							height: 322px;
+						}
+					}
 				}
 			}
 		}
 	}
 
-	// AUDIOCOMP STYLING
+	// WRITTENCOMP STYLING
 
-	.audio {
+	.written {
 		.text-style {
 			font-family: "Rochester";
 			font-style: normal;
@@ -284,14 +308,13 @@
 			font-size: 48px;
 			line-height: 73px;
 			color: $warning;
-			background-color: $light-gray;
 		}
 
 		&-container {
 			width: 90%;
 			margin: 5rem auto;
 
-			.audio-container-wrapper {
+			.written-container-wrapper {
 				margin-bottom: 3rem;
 
 				.febuary-text {
@@ -303,10 +326,10 @@
 					color: $tetiary;
 				}
 
-				.audio-container-flex {
+				.written-container-flex {
 					display: flex;
 
-					.audio-container-left {
+					.written-container-left {
 						padding: 2rem 2rem;
 						background: $dark-blue;
 						width: 20%;
@@ -331,12 +354,12 @@
 						}
 					}
 
-					.audio-container-right {
+					.written-container-right {
 						background: $light-gray;
 						width: 90%;
 						padding: 2.5rem 3rem;
 
-						.bold {
+						.written-bold {
 							font-family: $poppins;
 							font-style: normal;
 							font-weight: 500;
@@ -347,10 +370,10 @@
 							border-bottom: 1.5px solid $tetiary;
 						}
 
-						.audio-bibletext {
+						.written-bibletext {
 							margin-bottom: 2.5rem;
 
-							.audio-bibletext-blue {
+							.written-bibletext-blue {
 								color: $primary;
 								font-family: $poppins;
 								font-style: normal;
@@ -400,9 +423,9 @@
 			background-color: $light-gray;
 
 			.recording-container-wrapper {
-				margin-bottom: 4rem;
+				margin-bottom: 2rem;
 
-				.febuary-text {
+				.month-text {
 					font-family: $poppins;
 					font-style: normal;
 					font-weight: 500;
@@ -416,8 +439,12 @@
 					background-color: #ffffff;
 					height: 200px;
 					border-radius: 20px;
-					padding: 1.5rem 5rem;
+					padding: 1.5rem 3rem;
 					margin-bottom: 1rem;
+					@media screen and (max-width: 400px) {
+						padding: 1.5rem 1rem;
+						height: 160px;
+					}
 
 					&-wrapper {
 						p {
@@ -427,7 +454,7 @@
 						.record-icon {
 							display: flex;
 							align-items: center;
-							gap: 5rem;
+							gap: 3rem;
 							margin-bottom: 3rem;
 
 							i {
@@ -437,22 +464,40 @@
 							}
 
 							.record-text {
-								.pastor {
+								.record-text-pastor {
 									font-family: $poppins;
 									font-style: normal;
 									font-weight: 500;
 									font-size: 16px;
-									line-height: 24px;
+									// line-height: 24px;
 									color: $tetiary;
 								}
 
-								.Feb {
+								.record-text-title {
 									font-family: $poppins;
 									font-style: normal;
 									font-weight: 500;
 									font-size: 25px;
 									line-height: 31px;
 									color: $dark-blue;
+								}
+							}
+							@media screen and (max-width: $mobile) {
+								margin-bottom: 2rem;
+								.record-text {
+									.record-text-title {
+										font-size: 22px;
+									}
+								}
+							}
+							@media screen and (max-width: 400px) {
+								i {
+									display: none;
+								}
+								.record-text {
+									.record-text-title {
+										font-size: 14px;
+									}
 								}
 							}
 						}
@@ -470,8 +515,8 @@
 								border-radius: 50%;
 								cursor: pointer;
 
+								padding: 0.9rem 1.2rem;
 								i {
-									padding: 0.9rem 1.2rem;
 									font-size: 18px;
 									color: $primary;
 								}
@@ -518,6 +563,20 @@
 										background-color: $primary;
 										border-radius: 14px;
 									}
+								}
+							}
+							@media screen and (max-width: 400px) {
+								gap: 1rem;
+								.record-space-icon {
+									width: 40px;
+									height: 40px;
+									padding: 0.8rem 1.1rem;
+									i {
+										font-size: 16px;
+									}
+								}
+								.record-space-cont {
+									gap: 1rem;
 								}
 							}
 						}

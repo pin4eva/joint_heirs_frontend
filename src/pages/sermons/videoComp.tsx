@@ -4,15 +4,15 @@ import Link from "next/link";
 const VideoComp = () => {
 	return (
 		<div className="videos">
-			<p className="text-style" style={{ paddingLeft: "2rem" }}>
+			<p className="video-text" style={{ paddingLeft: "2rem" }}>
 				All Sermon Videos
 			</p>
 			<div className="videos-wrapper">
-				<div className="febuary">
-					<p className="febuary-txt">Febuary, 2020</p>
-					<div className="febuary-cont">
-						{sermonDatas.map((sermonData, id) => (
-							<div className="febuary-videos" key={id}>
+				{sermonDatas.map((sermonData, id) => (
+					<div className="videos-wrapper-months" key={id}>
+						<p className="videos-wrapper-months-txt">{sermonData.month}, 2020</p>
+						<div className="months-container">
+							<div className="videos-poster">
 								<div className="overlay">
 									<div className="image">
 										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
@@ -28,17 +28,12 @@ const VideoComp = () => {
 									<p>{sermonData.date}</p>
 								</div>
 							</div>
-						))}
-					</div>
-				</div>
-				<div className="febuary">
-					<p className="febuary-txt">March, 2020</p>
-					<div className="febuary-cont">
-						{sermonDatas.map((sermonData, i) => (
-							<div className="febuary-videos" key={i}>
+							<div className="videos-poster">
 								<div className="overlay">
 									<div className="image">
-										<i className="fa-solid fa-play"></i>
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
 									</div>
 
 									<div className="txtflex">
@@ -49,17 +44,12 @@ const VideoComp = () => {
 									<p>{sermonData.date}</p>
 								</div>
 							</div>
-						))}
-					</div>
-				</div>
-				<div className="febuary">
-					<p className="febuary-txt">April, 2020</p>
-					<div className="febuary-cont">
-						{sermonDatas.map((sermonData, id) => (
-							<div className="febuary-videos" key={id}>
+							<div className="videos-poster">
 								<div className="overlay">
 									<div className="image">
-										<i className="fa-solid fa-play"></i>
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
 									</div>
 
 									<div className="txtflex">
@@ -70,17 +60,12 @@ const VideoComp = () => {
 									<p>{sermonData.date}</p>
 								</div>
 							</div>
-						))}
-					</div>
-				</div>
-				<div className="febuary">
-					<p className="febuary-txt">May, 2020</p>
-					<div className="febuary-cont">
-						{sermonDatas.map((sermonData, i) => (
-							<div className="febuary-videos" key={i}>
+							<div className="videos-poster">
 								<div className="overlay">
 									<div className="image">
-										<i className="fa-solid fa-play"></i>
+										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
+											<i className="fa-solid fa-play"></i>
+										</Link>
 									</div>
 
 									<div className="txtflex">
@@ -91,9 +76,9 @@ const VideoComp = () => {
 									<p>{sermonData.date}</p>
 								</div>
 							</div>
-						))}
+						</div>
 					</div>
-				</div>
+				))}
 			</div>
 		</div>
 	);
