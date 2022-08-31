@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import childrenImg from "../../public/images/children.png";
+import donateImg from "../../public/images/donate.png";
 import girlImg from "../../public/images/girl.png";
 import manImg from "../../public/images/man.png";
-import childrenImg from "../../public/images/children.png";
 import menImg from "../../public/images/men.png";
-import donateImg from "../../public/images/donate.png";
-import videoSvg from "../../public/images/svg/video.svg";
 import dateSvg from "../../public/images/svg/date.svg";
 import eventsSvg from "../../public/images/svg/events.svg";
 import trackerSvg from "../../public/images/svg/tracker.svg";
@@ -69,7 +68,12 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right">
 									<div className="video">
-										<Image src={videoSvg} />
+										<Image
+											src="/images/svg/video.svg"
+											layout="intrinsic"
+											width={100}
+											height={100}
+										/>
 										<p className="text-secondary">
 											Watch and listen to <br /> Sermons
 										</p>
