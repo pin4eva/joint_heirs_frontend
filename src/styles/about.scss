@@ -199,12 +199,12 @@
 					.section-four-image_caption {
 						background: $light-gray;
 
-						&>p:first-child {
+						& > p:first-child {
 							font-weight: 500;
 							font-size: 1.5rem;
 						}
 
-						&>p:nth-child(2) {
+						& > p:nth-child(2) {
 							font-size: 1.3rem;
 						}
 					}
@@ -332,6 +332,4 @@
 	}
 
 	//========END OF SECTION SIX============
-
-
 }

@@ -27,6 +27,7 @@
 			.jhai-text {
 				margin-top: 1rem;
 				color: #ffffff;
+				font-size: 2.5rem;
 			}
 
 			.btn {
@@ -108,8 +109,8 @@
 
 				.page-2-welcome {
 					margin-top: 3rem;
-					font-family: "Rochester", cursive;
 					color: $warning;
+					font-size: 2.5rem;
 				}
 
 				.page-2-large-text {
@@ -188,7 +189,7 @@
 
 		.text-center {
 			.upcoming {
-				font-family: "Rochester", cursive;
+				font-size: 2.5rem;
 				color: $warning;
 			}
 
@@ -342,10 +343,9 @@
 				height: auto;
 
 				.belief-text {
-					font-family: "Rochester", cursive;
 					color: $warning;
 					font-weight: 400;
-					font-size: 36px;
+					font-size: 2.5rem;
 				}
 
 				.mission-text {
@@ -507,6 +507,7 @@
 
 					.caps {
 						color: $warning;
+						font-size: 2.5rem;
 					}
 
 					.quotation {
@@ -607,6 +608,8 @@
 			h4 {
 				margin: 0;
 				align-self: center;
+				font-size: 2.5rem;
+				color: $warning;
 			}
 
 			.donate {

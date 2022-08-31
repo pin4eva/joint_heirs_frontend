@@ -144,7 +144,7 @@ const Home: NextPage = () => {
 									<img src="/images/girl.png" alt="" />
 								</div>
 								<div className="right">
-									<p className="belief-text">Beliefs</p>
+									<p className="belief-text rochester">Beliefs</p>
 									<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
 									<p className="text-secondary mt-4 mb-4 ">
 										We are called to eat, drink, speak, think and work to the glory of God. We
@@ -207,7 +207,7 @@ const Home: NextPage = () => {
 					<div className="donation-page">
 						<div className="container">
 							<div className="donation-content">
-								<h4 className="rochester">Donate</h4>
+								<h4 className="rochester ">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
 									<img src="/images/donate.png" alt="" />
@@ -286,10 +286,8 @@ const Home: NextPage = () => {
 										/>
 									</div>
 									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="branch">
-											Church Branch*
-										</label>
-										<select name="" className="form-select" id="branch">
+										<label className="mt-4 mb-2">Church Branch*</label>
+										<select name="" className="form-select">
 											<option value=""></option>
 											<option value="">First</option>
 											<option value="">First</option>
