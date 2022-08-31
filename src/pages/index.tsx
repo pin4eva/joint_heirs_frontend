@@ -268,7 +268,7 @@ const Home: NextPage = () => {
 											Your Name*
 										</label>
 										<input
-											id="name"
+											name="name"
 											type="text"
 											placeholder="Enter your name"
 											className="form-control shadow-none"
@@ -279,7 +279,7 @@ const Home: NextPage = () => {
 											Contact Email*
 										</label>
 										<input
-											id="email"
+											name="email"
 											type="text"
 											placeholder="bentucker43@gmail.com"
 											className="form-control shadow-none"
@@ -292,7 +292,7 @@ const Home: NextPage = () => {
 											Phone no*
 										</label>
 										<input
-											id="phoneNo"
+											name="phoneNo"
 											type="text"
 											placeholder="9012624162"
 											className="form-control shadow-none"
@@ -302,7 +302,7 @@ const Home: NextPage = () => {
 										<label className="mt-4 mb-2" htmlFor="branch">
 											Church Branch*
 										</label>
-										<select name="" className="form-select" id="branch">
+										<select name="branch" className="form-select">
 											<option value=""></option>
 											<option value="">First</option>
 											<option value="">First</option>
@@ -318,7 +318,7 @@ const Home: NextPage = () => {
 									<textarea
 										className="form-control message-box"
 										placeholder="Type your Message"
-										id="message"
+										name="message"
 									/>
 								</div>
 								<p className="mt-4">
