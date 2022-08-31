@@ -159,7 +159,7 @@ const Home: NextPage = () => {
 									<Image src="/images/girl.png" layout="intrinsic" width={529} height={379} />
 								</div>
 								<div className="right">
-									<p className="belief-text">Beliefs</p>
+									<p className="belief-text rochester">Beliefs</p>
 									<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
 									<p className="text-secondary mt-4 mb-4 ">
 										We are called to eat, drink, speak, think and work to the glory of God. We
@@ -234,7 +234,7 @@ const Home: NextPage = () => {
 					<div className="donation-page">
 						<div className="container">
 							<div className="donation-content">
-								<h4 className="rochester">Donate</h4>
+								<h4 className="rochester ">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
 								<div className="donate">
 									<Image

@@ -18,13 +18,16 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
 			h1 {
 				font-size: 3rem;
 				font-weight: 700;
 			}
+
 			.jhai-text {
 				margin-top: 1rem;
 				color: #ffffff;
+				font-size: 2.5rem;
 			}
 
 			.btn {
@@ -46,7 +49,7 @@
 		display: flex;
 		align-items: center;
 		background: #ccceff;
-		min-height: 20vh;
+		min-height: 10vh;
 		padding: 2rem 0;
 
 		.sermon-text {
@@ -105,8 +108,8 @@
 				align-items: center;
 
 				.page-2-welcome {
-					font-family: "Rochester", cursive;
 					color: $warning;
+					font-size: 2.5rem;
 				}
 
 				.page-2-large-text {
@@ -183,7 +186,7 @@
 
 		.text-center {
 			.upcoming {
-				font-family: "Rochester", cursive;
+				font-size: 2.5rem;
 				color: $warning;
 			}
 
@@ -309,11 +312,13 @@
 		width: 100%;
 		display: grid;
 		align-items: center;
+
 		.mission-content {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 2rem;
 			padding: 3rem 0;
+
 			@media screen and (max-width: $md) {
 				grid-template-columns: 1fr;
 				height: auto;
@@ -328,10 +333,9 @@
 				height: auto;
 
 				.belief-text {
-					font-family: "Rochester", cursive;
 					color: $warning;
 					font-weight: 400;
-					font-size: 36px;
+					font-size: 2.5rem;
 				}
 
 				.mission-text {
@@ -374,6 +378,7 @@
 			grid-template-columns: 1fr 1fr;
 			gap: 4rem;
 			margin-top: 1rem;
+
 			@media screen and (max-width: $md) {
 				grid-template-columns: 1fr;
 				margin-top: 3rem;
@@ -382,6 +387,7 @@
 			.right {
 				width: fit-content;
 				margin-left: auto;
+
 				@media screen and (max-width: $md) {
 					margin-inline: 0 auto;
 				}
@@ -428,6 +434,7 @@
 							border-radius: 10px;
 							background: #ccceff;
 							margin-block: 0.3rem;
+
 							hr {
 								transform: rotate(180deg);
 								width: 2rem;
@@ -443,6 +450,7 @@
 							justify-content: center;
 							border-top: 1px solid $tetiary;
 							border-bottom: 1px solid $tetiary;
+
 							h6 {
 								padding-bottom: 1rem;
 								font-size: 1.2rem;
@@ -471,9 +479,11 @@
 
 			.biles-pages {
 				width: 80%;
+
 				@media screen and (max-width: $md) {
 					width: 100%;
 				}
+
 				.bible-verses {
 					text-align: center;
 					padding: 3rem;
@@ -483,7 +493,9 @@
 
 					.caps {
 						color: $warning;
+						font-size: 2.5rem;
 					}
+
 					.quotation {
 						font-size: 3.5rem;
 						display: flex;
@@ -491,6 +503,7 @@
 						height: 2.5rem;
 						margin: 0;
 					}
+
 					.the-words {
 						color: $dark;
 						font-weight: 400;
@@ -498,12 +511,14 @@
 						display: block;
 						width: 100%;
 					}
+
 					.b-verse {
 						font-size: 2rem;
 						font-weight: 400;
 						color: $secondary;
 						margin: 0;
 					}
+
 					.text-start {
 						justify-content: flex-start;
 					}
@@ -530,6 +545,7 @@
 			gap: 2rem;
 			width: 70%;
 			margin-inline: auto;
+
 			@media screen and (max-width: $md) {
 				height: auto;
 			}
@@ -577,6 +593,8 @@
 			h4 {
 				margin: 0;
 				align-self: center;
+				font-size: 2.5rem;
+				color: $warning;
 			}
 
 			.donate {
@@ -597,24 +615,29 @@
 					justify-content: center;
 					background: $tetiary;
 					gap: 1rem;
+
 					.donate-heading {
 						font-weight: 500;
 						color: $dark;
 						width: 80%;
+
 						@media screen and (max-width: $md) {
 							width: 100%;
 						}
 					}
+
 					.donate-text {
 						p {
 							margin: 0;
 						}
 					}
+
 					.price-donate {
 						display: flex;
 						align-items: center;
 						gap: 4rem;
 						margin-top: 1rem;
+
 						@media screen and (max-width: $md) {
 							justify-content: space-between;
 							gap: 0;
@@ -625,6 +648,7 @@
 								font-weight: 700;
 								color: $secondary;
 								font-size: 2.7rem;
+
 								@media screen and (max-width: $md) {
 									font-size: 2rem;
 								}
@@ -742,6 +766,7 @@
 						width: 100%;
 					}
 				}
+
 				.message-box {
 					height: 12rem;
 					resize: none;
@@ -767,6 +792,7 @@
 				align-items: center;
 				justify-content: center;
 				width: 25%;
+
 				@media screen and (max-width: $md) {
 					width: 90%;
 				}
