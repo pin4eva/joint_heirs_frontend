@@ -9,8 +9,8 @@ const BibleVersComp = () => {
 						<h4 className="caps rochester">{b.caps}</h4>
 						<p className="text-start fw-bold quotation">{b.aposUp}</p>
 						<p className="the-words">{b.words}</p>
-						<h6 className="b-verse">{b.verses}</h6>
 						<p className="text-end fw-bold quotation">{b.aposDown}</p>
+						<h6 className="b-verse">{b.verses}</h6>
 					</div>
 				);
 			})}

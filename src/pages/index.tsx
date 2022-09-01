@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 			<div className="home">
 				<div className="hero">
 					<div className="container hero-inner text-center">
-						<div className="welcome-text">
+						<div className="welcome-text" data-aos="fade-up" data-aos-duration="800">
 							<h1 className=" text-light">
 								Welcome To Our <br /> Church
 							</h1>
@@ -26,7 +26,12 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 				<section className="sermon-section">
-					<div className="container">
+					<div
+						className="container"
+						data-aos="zoom-in-up"
+						data-aos-offset="-10"
+						data-aos-duration="800"
+					>
 						<div className="sermon-text">
 							<div className="text-start">
 								<p className="text-dark fw-semibold mb-0">Upcoming Sermon</p>
@@ -42,7 +47,13 @@ const Home: NextPage = () => {
 					<div className="page-2">
 						<div className="container">
 							<div className="wraper">
-								<div className="left">
+								<div
+									className="left"
+									data-aos="fade-right"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="50"
+									data-aos-duration="500"
+								>
 									<div className="left-inner">
 										<p className="page-2-welcome  rochester">Welcome</p>
 										<p className="text-secondary  page-2-large-text">
@@ -58,7 +69,13 @@ const Home: NextPage = () => {
 										</Link>
 									</div>
 								</div>
-								<div className="right">
+								<div
+									className="right"
+									data-aos="fade-left"
+									data-aos-easing="ease-in-out"
+									data-aos-delay="50"
+									data-aos-duration="500"
+								>
 									<div className="video">
 										<Image
 											src="/images/svg/video.svg"
@@ -112,14 +129,23 @@ const Home: NextPage = () => {
 										Need <br /> Prayers ?
 									</h1>
 									<Link href="/">
-										<a className="btn mt-4 btn-warning fs-5 text-light fw-500">Request</a>
+										<a
+											className="btn mt-4 btn-warning fs-5 text-light fw-500"
+											data-aos="flip-left"
+											data-aos-easing="ease-in-out"
+											data-aos-delay="40"
+											data-aos-duration="700"
+											data-aos-offset="-5"
+										>
+											Request
+										</a>
 									</Link>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section>
+				<section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="800">
 					<CommunityCardComp />
 				</section>
 				<section>
@@ -128,7 +154,14 @@ const Home: NextPage = () => {
 							<div className="resurect-content">
 								<p className="text-light">Latest Sermon</p>
 								<p className="resurrection-text-big">The Resurrection of Jesus</p>
-								<div className="playlet-list">
+								<div
+									className="playlet-list"
+									data-aos="zoom-in-up"
+									data-aos-duration="800"
+									data-aos-delay="30"
+									data-aos-easing="ease-in-out"
+									data-aos-offset="-10"
+								>
 									<Link href="/">
 										<a className="samon">Watch Sermon</a>
 									</Link>
@@ -145,7 +178,16 @@ const Home: NextPage = () => {
 								</div>
 
 								<Link href="/">
-									<a className="more-samon">More Sermons</a>
+									<a
+										className="more-samon"
+										data-aos="zoom-in-up"
+										data-aos-duration="800"
+										data-aos-delay="30"
+										data-aos-easing="ease-in-out"
+										data-aos-offset="-10"
+									>
+										More Sermons
+									</a>
 								</Link>
 							</div>
 						</div>
@@ -155,7 +197,13 @@ const Home: NextPage = () => {
 					<div className="bible-mission">
 						<div className="container">
 							<div className="mission-content">
-								<div className="left">
+								<div
+									className="left"
+									data-aos="flip-up"
+									data-aos-duration="800"
+									data-aos-delay="90"
+									data-aos-easing="ease-in-out"
+								>
 									<Image src="/images/girl.png" layout="intrinsic" width={529} height={379} />
 								</div>
 								<div className="right">
@@ -181,7 +229,13 @@ const Home: NextPage = () => {
 						<div className="container">
 							<div className="sermon-content">
 								<SermonAudioComp />
-								<div className="right">
+								<div
+									className="right"
+									data-aos="zoom-in"
+									data-aos-duration="800"
+									data-aos-delay="90"
+									data-aos-easing="ease-in-out"
+								>
 									<Image src="/images/man.png" layout="intrinsic" width={438} height={603} />
 								</div>
 							</div>
@@ -236,7 +290,14 @@ const Home: NextPage = () => {
 							<div className="donation-content">
 								<h4 className="rochester ">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
-								<div className="donate">
+								<div
+									className="donate"
+									data-aos="zoom-in"
+									data-aos-easing="ease-in-out"
+									data-aos-duration="800"
+									data-aos-delay="20"
+									data-aos-offset="-5"
+								>
 									<Image
 										src="/images/donate.png"
 										layout="intrinsic"
