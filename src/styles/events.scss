@@ -15,12 +15,13 @@
 			h1 {
 				font-weight: 700;
 				color: $light-gray;
+				font-size: 3rem;
 			}
 
 			h4 {
 				color: #fff;
 				font-weight: 400;
-				font-family: $rochester;
+				font-size: 2.5rem;
 			}
 		}
 	}
@@ -28,6 +29,7 @@
 	&-content {
 		&-nav {
 			margin-block: 2rem;
+			display: flex;
 
 			@media screen and (min-width: $mobile) {
 				margin-block: 2rem 4rem;
@@ -35,9 +37,9 @@
 
 			ul {
 				display: flex;
-				justify-content: space-around;
+				justify-content: center;
 				list-style-type: none;
-				gap: 2%;
+				gap: 0.5rem;
 
 				.event-navlink {
 					text-decoration: none;
@@ -54,10 +56,6 @@
 						background-color: $primary;
 						color: #fff;
 						border-radius: 10px;
-					}
-
-					li {
-						flex: 1;
 					}
 				}
 
@@ -187,12 +185,10 @@
 					width: 20rem;
 					height: 20rem;
 					right: -5rem;
-
 				}
 			}
 		}
 	}
-
 }
 
 .event-card {
@@ -205,7 +201,6 @@
 	background-size: cover;
 	width: 100%;
 	text-align: center;
-
 
 	&-content {
 		display: flex;

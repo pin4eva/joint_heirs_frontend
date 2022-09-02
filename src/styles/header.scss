@@ -52,11 +52,14 @@
 						text-decoration: none;
 						color: inherit;
 						transition: all 0.4s ease-in-out;
+						border-radius: 5px;
 
 						&:hover {
+							color: $warning;
+						}
+						&.active {
 							background-color: $warning;
-							padding: 10px 15px;
-							border-radius: 5px;
+							color: #fff;
 						}
 					}
 				}

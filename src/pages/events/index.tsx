@@ -24,7 +24,7 @@ const EventsPage = () => {
 				<section className="events-hero">
 					<div className="container events-hero-inner">
 						<h1>Our Annual Events</h1>
-						<h4>Joint Heirs Assembly...</h4>
+						<h4 className="rochester">Joint Heirs Assembly...</h4>
 					</div>
 				</section>
 				<section className="events-content">
