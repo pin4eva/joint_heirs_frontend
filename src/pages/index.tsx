@@ -51,8 +51,8 @@ const Home: NextPage = () => {
 									className="left"
 									data-aos="fade-right"
 									data-aos-easing="ease-in-out"
-									data-aos-delay="50"
-									data-aos-duration="500"
+									data-aos-delay="100"
+									data-aos-duration="1000"
 								>
 									<div className="left-inner">
 										<p className="page-2-welcome  rochester">Welcome</p>
@@ -73,8 +73,8 @@ const Home: NextPage = () => {
 									className="right"
 									data-aos="fade-left"
 									data-aos-easing="ease-in-out"
-									data-aos-delay="50"
-									data-aos-duration="500"
+									data-aos-delay="100"
+									data-aos-duration="1000"
 								>
 									<div className="video">
 										<Image
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
 											className="btn mt-4 btn-warning fs-5 text-light fw-500"
 											data-aos="flip-left"
 											data-aos-easing="ease-in-out"
-											data-aos-delay="40"
+											data-aos-delay="50"
 											data-aos-duration="700"
 											data-aos-offset="-5"
 										>
@@ -145,7 +145,12 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section data-aos="zoom-in" data-aos-delay="80" data-aos-duration="800">
+				<section
+					data-aos="zoom-in"
+					data-aos-delay="120"
+					data-aos-duration="1500"
+					data-aos-offset="100"
+				>
 					<CommunityCardComp />
 				</section>
 				<section>
@@ -157,10 +162,9 @@ const Home: NextPage = () => {
 								<div
 									className="playlet-list"
 									data-aos="zoom-in-up"
-									data-aos-duration="800"
+									data-aos-duration="1000"
 									data-aos-delay="30"
 									data-aos-easing="ease-in-out"
-									data-aos-offset="-10"
 								>
 									<Link href="/">
 										<a className="samon">Watch Sermon</a>
@@ -181,10 +185,9 @@ const Home: NextPage = () => {
 									<a
 										className="more-samon"
 										data-aos="zoom-in-up"
-										data-aos-duration="800"
-										data-aos-delay="30"
+										data-aos-duration="1500"
+										data-aos-delay="200"
 										data-aos-easing="ease-in-out"
-										data-aos-offset="-10"
 									>
 										More Sermons
 									</a>
@@ -200,7 +203,7 @@ const Home: NextPage = () => {
 								<div
 									className="left"
 									data-aos="flip-up"
-									data-aos-duration="800"
+									data-aos-duration="1000"
 									data-aos-delay="90"
 									data-aos-easing="ease-in-out"
 								>
@@ -232,7 +235,7 @@ const Home: NextPage = () => {
 								<div
 									className="right"
 									data-aos="zoom-in"
-									data-aos-duration="800"
+									data-aos-duration="1000"
 									data-aos-delay="90"
 									data-aos-easing="ease-in-out"
 								>
@@ -256,7 +259,14 @@ const Home: NextPage = () => {
 						<div className="container">
 							<div className="branch-content">
 								<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
-								<div className="branch-holder">
+								<div
+									className="branch-holder"
+									data-aos="zoom-in"
+									data-aos-easing="ease-in-out"
+									data-aos-duration="900"
+									data-aos-delay="30"
+									data-aos-offset="-5"
+								>
 									<div className="children-branch">
 										<Image
 											src="/images/children.png"
@@ -290,14 +300,7 @@ const Home: NextPage = () => {
 							<div className="donation-content">
 								<h4 className="rochester ">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
-								<div
-									className="donate"
-									data-aos="zoom-in"
-									data-aos-easing="ease-in-out"
-									data-aos-duration="800"
-									data-aos-delay="20"
-									data-aos-offset="-5"
-								>
+								<div className="donate">
 									<Image
 										src="/images/donate.png"
 										layout="intrinsic"

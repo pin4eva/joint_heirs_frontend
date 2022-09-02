@@ -512,7 +512,6 @@
 						font-size: 2rem;
 						font-weight: 400;
 						color: $secondary;
-						margin: 0;
 					}
 
 					.text-start {
@@ -523,6 +522,16 @@
 						justify-content: flex-end;
 					}
 				}
+			}
+		}
+		.swiper-pagination-bullet {
+			border: 1px solid $warning;
+			opacity: 1;
+			background: none;
+			margin: 1rem;
+			&-active {
+				background: $dark-blue;
+				border: 1px solid $dark-blue;
 			}
 		}
 	}
