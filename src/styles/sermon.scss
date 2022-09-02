@@ -32,12 +32,14 @@
 				font-size: 3rem;
 				// line-height: 73px;
 			}
+
 			@media screen and (max-width: $md) {
 				.top-text {
 					font-size: 2.7rem;
 					font-weight: 600;
 					line-height: 48px;
 				}
+
 				.text-style {
 					font-size: 2.7rem;
 				}
@@ -49,16 +51,12 @@
 		background-color: $light-gray;
 
 		.sermon-navigation-wrapper {
-			width: 90%;
 			padding: 2rem 0;
-			margin: 0 auto;
 			height: 8rem;
 			display: flex;
-			justify-content: flex-end;
-			@media screen and (max-width: 400px) {
-				justify-content: flex-start;
-				width: 95%;
-			}
+			justify-content: space-between;
+
+
 
 			.sermon-toggle {
 				display: flex;
@@ -66,19 +64,23 @@
 				justify-content: space-between;
 				width: 60%;
 
-				.sermon-toggle-flex {
+				.tab {
 					display: flex;
 					align-items: flex-start;
 					gap: 0.5rem;
 
-					i {
+
+
+					a {
 						font-size: 18px;
 						padding: 0.4rem 1.2rem;
 						background-color: #ffffff;
 						border-radius: 3px;
 						transition: ease-in-out 0.3s;
+						color: inherit;
 						cursor: pointer;
 
+						&.active,
 						&:hover {
 							background-color: $primary;
 							color: #ffffff;
@@ -187,6 +189,7 @@
 					}
 				}
 			}
+
 			@media screen and (max-width: $md) {
 				.sermon-toggle {
 					.sermon-search {
@@ -194,6 +197,7 @@
 						right: 10%;
 						width: 80%;
 					}
+
 					.sermon-sort {
 						top: 47%;
 						right: 5%;
@@ -204,26 +208,31 @@
 
 			@media screen and (max-width: 400px) {
 				justify-content: flex-start;
+
 				.sermon-toggle {
 					justify-content: space-around;
 					width: 100%;
+
 					.sermon-toggle-flex {
 						i {
 							font-size: 16px;
 							padding: 0.3rem 1.1rem;
 						}
 					}
+
 					.sermon-navi-search {
 						i {
 							font-size: 16px;
 							padding: 0.3rem 1.1rem;
 						}
 					}
+
 					.sermon-search {
 						top: 48%;
 						right: 10%;
 						width: 80%;
 					}
+
 					.sermon-sort {
 						top: 48%;
 						right: 5%;
@@ -245,17 +254,17 @@
 			font-size: 48px;
 			line-height: 73px;
 			color: $warning;
+
 			@media screen and (max-width: $md) {
 				font-size: 40px;
 			}
 		}
 
 		&-wrapper {
-			width: 80%;
-			margin: 3rem auto;
-			@media screen and (max-width: $md) {
-				width: 90%;
-			}
+
+			margin-top: 3rem;
+
+
 
 			&-months {
 				margin: 3rem 0;
@@ -338,11 +347,14 @@
 							}
 						}
 					}
+
 					@media screen and (max-width: $md) {
 						grid-template-columns: repeat(2, 1fr);
+
 						.videos-poster {
 							width: 360px;
 							height: 322px;
+
 							.overlay {
 								.overlay-text-word {
 									font-size: 14px;
@@ -350,14 +362,18 @@
 							}
 						}
 					}
+
 					@media screen and (max-width: $mobile) {
 						grid-template-columns: repeat(1, 1fr);
+
 						.videos-poster {
 							width: 100%;
 						}
 					}
+
 					@media screen and (max-width: 400px) {
 						grid-template-columns: repeat(1, 1fr);
+
 						.videos-poster {
 							width: 100%;
 							height: 300px;
@@ -379,6 +395,7 @@
 			line-height: 73px;
 			color: $warning;
 			background-color: $light-gray;
+
 			@media screen and (max-width: $md) {
 				font-size: 40px;
 			}
@@ -470,26 +487,32 @@
 							}
 						}
 					}
+
 					@media screen and (max-width: $md) {
 						.written-container-left {
 							padding: 2rem 1rem;
 							width: 30%;
+
 							h6 {
 								font-size: 25px;
 							}
+
 							p {
 								font-size: 16px;
 							}
 						}
+
 						.written-container-right {
 							.written-bold {
 								font-size: 25px;
 								line-height: 30px;
 							}
+
 							.written-bibletext {
 								.written-bibletext-blue {
 									font-size: 16px;
 								}
+
 								.written-bibletext-verse {
 									font-size: 14px;
 									line-height: 25px;
@@ -497,31 +520,39 @@
 							}
 						}
 					}
+
 					@media screen and (max-width: $mobile) {
 						.written-container-left {
 							padding: 2rem 1rem;
 							width: 35%;
+
 							h6 {
 								font-size: 25px;
 							}
+
 							p {
 								font-size: 16px;
 							}
 						}
+
 						.written-container-right {
 							padding: 2rem 1.3rem;
+
 							.written-bold {
 								font-size: 22px;
 								line-height: 30px;
 							}
 						}
 					}
+
 					@media screen and (max-width: 400px) {
 						.written-container-left {
 							display: none;
 						}
+
 						.written-container-right {
 							width: 100%;
+
 							.written-bold {
 								font-size: 17px;
 								line-height: 30px;
@@ -546,6 +577,7 @@
 			font-weight: 400;
 			font-size: 48px;
 			color: $warning;
+
 			@media screen and (max-width: $md) {
 				font-size: 40px;
 			}
@@ -575,6 +607,7 @@
 					border-radius: 20px;
 					padding: 1.5rem 3rem;
 					margin-bottom: 1rem;
+
 					@media screen and (max-width: 400px) {
 						padding: 1.5rem 1rem;
 						height: 160px;
@@ -616,18 +649,22 @@
 									color: $dark-blue;
 								}
 							}
+
 							@media screen and (max-width: $mobile) {
 								margin-bottom: 2rem;
+
 								.record-text {
 									.record-text-title {
 										font-size: 22px;
 									}
 								}
 							}
+
 							@media screen and (max-width: 400px) {
 								i {
 									display: none;
 								}
+
 								.record-text {
 									.record-text-title {
 										font-size: 14px;
@@ -650,6 +687,7 @@
 								cursor: pointer;
 
 								padding: 0.9rem 1.2rem;
+
 								i {
 									font-size: 18px;
 									color: $primary;
@@ -699,16 +737,20 @@
 									}
 								}
 							}
+
 							@media screen and (max-width: 400px) {
 								gap: 1rem;
+
 								.record-space-icon {
 									width: 40px;
 									height: 40px;
 									padding: 0.8rem 1.1rem;
+
 									i {
 										font-size: 16px;
 									}
 								}
+
 								.record-space-cont {
 									gap: 1rem;
 								}

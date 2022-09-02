@@ -5,16 +5,12 @@ import VideoComp from "./videoComp";
 import { useState } from "react";
 import RecordedComp from "./recordededComp";
 import FrontLayout from "layouts/FrontLayout";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const SermonsPage = () => {
-	const [videos, setVideos] = useState(true);
-	const handleVideos = () => setVideos(!videos);
-
-	const [audios, setAudios] = useState(false);
-	const handleAudios = () => setAudios(!audios);
-
-	const [recordings, setRecording] = useState(false);
-	const handleRecordings = () => setRecording(!recordings);
+	const router = useRouter();
+	const activeTab = router.query?.tab || "videos";
 
 	const [search, setSearch] = useState(false);
 	const handleSearch = () => setSearch(!search);
@@ -32,15 +28,15 @@ const SermonsPage = () => {
 				</header>
 
 				<div className="sermon-navigation">
-					<div className="sermon-navigation-wrapper">
-						<div className="sermon-toggle">
-							<div className="sermon-toggle-flex">
-								<i onClick={handleVideos} className="fa-solid fa-video"></i>
-
-								<i onClick={handleRecordings} className="fa-solid fa-microphone"></i>
-
-								<i onClick={handleAudios} className="fa-solid fa-book-open"></i>
+					<div className="sermon-navigation-wrapper container">
+						<div></div>
+						<div className="sermon-toggle ">
+							<div className="tab">
+								<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
+								<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
+								<TabComp isActive={activeTab === SermonTabEnum.TEXT} tab={SermonTabEnum.TEXT} />
 							</div>
+
 							<div className="sermon-navi-search">
 								<i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
 
@@ -68,12 +64,34 @@ const SermonsPage = () => {
 						</div>
 					</div>
 				</div>
-				{videos && <VideoComp />}
-				{audios && <WrittenComp />}
-				{recordings && <RecordedComp />}
+				{activeTab === SermonTabEnum.VIDEOS && <VideoComp />}
+				{activeTab === SermonTabEnum.TEXT && <WrittenComp />}
+				{activeTab === SermonTabEnum.AUDIO && <RecordedComp />}
 			</div>
 		</FrontLayout>
 	);
 };
 
 export default SermonsPage;
+
+enum SermonTabEnum {
+	VIDEOS = "videos",
+	AUDIO = "audio",
+	TEXT = "text",
+}
+
+const TabComp: React.FC<{ tab: SermonTabEnum; isActive: boolean }> = ({ tab, isActive }) => {
+	return (
+		<Link href={`/sermons?tab=${tab}`}>
+			<a className={`sermon-tab-item ${isActive ? "active" : ""}`}>
+				{tab === SermonTabEnum.VIDEOS ? (
+					<i className="fa-solid fa-video "></i>
+				) : tab === SermonTabEnum.AUDIO ? (
+					<i className="fa-solid fa-microphone"></i>
+				) : (
+					<i className="fa-solid fa-book-open"></i>
+				)}
+			</a>
+		</Link>
+	);
+};

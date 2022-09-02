@@ -3,11 +3,9 @@ import Link from "next/link";
 
 const VideoComp = () => {
 	return (
-		<div className="videos">
-			<p className="video-text" style={{ paddingLeft: "2rem" }}>
-				All Sermon Videos
-			</p>
-			<div className="videos-wrapper">
+		<div className="videos container">
+			<p className="video-text">All Sermon Videos</p>
+			<div className="videos-wrapper ">
 				{sermonDatas.map((sermonData, id) => (
 					<div className="videos-wrapper-months" key={id}>
 						<p className="videos-wrapper-months-txt">{sermonData.month}, 2020</p>
