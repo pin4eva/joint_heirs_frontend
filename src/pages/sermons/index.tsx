@@ -27,10 +27,11 @@ const SermonsPage = () => {
 					</div>
 				</header>
 
-				<div className="sermon-navigation">
-					<div className="sermon-navigation-wrapper container">
+				<div className="sermon-navigation ">
+					<div className="sermon-navigation-wrapper">
 						<div></div>
-						<div className="sermon-toggle ">
+						<div className="sermon-toggle container ">
+							<div className="empty"></div>
 							<div className="tab">
 								<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
 								<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
@@ -38,29 +39,32 @@ const SermonsPage = () => {
 							</div>
 
 							<div className="sermon-navi-search">
-								<i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
-
-								<i onClick={handleFilter} className="fa-solid fa-sliders"></i>
-							</div>
-							{search && (
-								<form action="" className="sermon-search">
-									<input type="text" placeholder="search here... " />
-									<i onClick={handleSearch} className="fa-solid fa-search"></i>
-								</form>
-							)}
-							{filter && (
-								<div className="sermon-sort">
-									<div className="sort-close">
-										<span>Sort</span>
-										<i onClick={handleFilter} className="fa-solid fa-times "></i>
+								{search && (
+									<form action="" className="sermon-search">
+										<input type="text" placeholder="search here... " />
+										<i onClick={handleSearch} className="fa-solid fa-search "></i>
+									</form>
+								)}
+								<i
+									onClick={handleSearch}
+									className={`fa-solid fa-magnifying-glass ${search ? "bg-none" : "bg-blue"}`}
+								></i>
+								{filter && (
+									<div className="sermon-sort">
+										<div className="sort-close">
+											<span>Sort</span>
+											<i onClick={handleFilter} className="fa-solid fa-times "></i>
+										</div>
+										<ul onClick={handleFilter}>
+											<li>Names</li>
+											<li>Date</li>
+											<li>Size</li>
+										</ul>
 									</div>
-									<ul onClick={handleFilter}>
-										<li>Names</li>
-										<li>Date</li>
-										<li>Size</li>
-									</ul>
-								</div>
-							)}
+								)}
+
+								<i onClick={handleFilter} className="fa-solid fa-sliders bg-blue"></i>
+							</div>
 						</div>
 					</div>
 				</div>

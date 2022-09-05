@@ -1,74 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import ReactPlayer from "react-player/lazy";
 
 const VideoComp = () => {
 	return (
 		<div className="videos container">
 			<p className="video-text">All Sermon Videos</p>
-			<div className="videos-wrapper ">
+			<div className="videos-wrapper">
 				{sermonDatas.map((sermonData, id) => (
 					<div className="videos-wrapper-months" key={id}>
 						<p className="videos-wrapper-months-txt">{sermonData.month}, 2020</p>
-						<div className="months-container">
+						<div className="months-container container">
+							{/* <ReactPlayer
+								url="https://www.youtube.com/watch?v=BFqFNIanMJI"
+								width="392px"
+								height="300px"
+								light="/images/pst-thomas.png"
+							
+							/> */}
+
 							<div className="videos-poster">
 								<div className="overlay">
 									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
+										<i className="fa-solid fa-play"></i>
 									</div>
 
 									<div className="overlay-text">
 										<p className="bold">{sermonData.topic}</p>
 										<p className="overlay-text-word">{sermonData.text}</p>
-									</div>
-									<p className="overlay-text-word">{sermonData.name}</p>
-									<p className="overlay-text-word">{sermonData.date}</p>
-								</div>
-							</div>
-							<div className="videos-poster">
-								<div className="overlay">
-									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
-									</div>
-
-									<div className="overlay-text">
-										<p className="bold">{sermonData.topic}</p>
-										<p className="overlay-text-word">{sermonData.text}</p>
-									</div>
-									<p className="overlay-text-word">{sermonData.name}</p>
-									<p className="overlay-text-word">{sermonData.date}</p>
-								</div>
-							</div>
-							<div className="videos-poster">
-								<div className="overlay">
-									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
-									</div>
-
-									<div className="overlay-text">
-										<p className="bold">{sermonData.topic}</p>
-										<p className="overlay-text-word">{sermonData.text}</p>
-									</div>
-									<p className="overlay-text-word">{sermonData.name}</p>
-									<p className="overlay-text-word">{sermonData.date}</p>
-								</div>
-							</div>
-							<div className="videos-poster">
-								<div className="overlay">
-									<div className="image">
-										<Link href="https://www.youtube.com/watch?v=i0Ks7yIeXFA" target="_blank">
-											<i className="fa-solid fa-play"></i>
-										</Link>
-									</div>
-
-									<div className="overlay-text">
-										<p className="bold">{sermonData.topic}</p>
-										<p>{sermonData.text}</p>
 									</div>
 									<p className="overlay-text-word">{sermonData.name}</p>
 									<p className="overlay-text-word">{sermonData.date}</p>

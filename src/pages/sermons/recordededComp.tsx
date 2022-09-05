@@ -3,18 +3,15 @@ import React from "react";
 const RecordedComp = () => {
 	return (
 		<div className="recording">
-			<p className="text-style" style={{ paddingLeft: "2rem" }}>
-				All Recorded Sermons
-			</p>
-
-			<div className="recording-container">
+			<div className="recording-container container">
+				<p className="text-style">All Recorded Sermons</p>
 				{recordDatas.map((recordData, id) => (
-					<div className="recording-container-wrapper" key={id}>
+					<div className="recording-container-wrapper " key={id}>
 						<p className="month-text">{recordData.month}</p>
-						<div className="record">
+						<div className="record ">
 							<div className="record-wrapper">
 								<div className="record-icon">
-									<i className="fa-solid fa-microphone"></i>
+									<i className="fa-solid fa-microphone record-mic"></i>
 
 									<div className="record-text">
 										<p className="record-text-pastor">{recordData.pastor}</p>
@@ -22,47 +19,15 @@ const RecordedComp = () => {
 									</div>
 								</div>
 								<div className="record-space">
-									<div className="record-space-icon">
-										<i className="fa-solid fa-pause"></i>
-									</div>
+									<i className="fa-solid fa-pause record-pause"></i>
+
 									<div className="record-space-cont">
 										<p className="record-space-time">{recordData.time}</p>
 										<input type="range" name="" id="" />
 
 										<p className="record-space-time">{recordData.duration}</p>
 
-										<i className="fa-solid fa-volume-high"></i>
-
-										<div className="record-space-shortline">
-											<div className="blue-rgb"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="record">
-							<div className="record-wrapper">
-								<div className="record-icon">
-									<i className="fa-solid fa-microphone"></i>
-
-									<div className="record-text">
-										<p className="pastor">Sermon By Pastor Eric</p>
-										<p className="record-text-title">
-											Feb 5 -The Ressurrection of Jesus (Part One)
-										</p>
-									</div>
-								</div>
-								<div className="record-space">
-									<div className="record-space-icon">
-										<i className="fa-solid fa-pause"></i>
-									</div>
-									<div className="record-space-cont">
-										<p className="record-space-time">55:13</p>
-										<input type="range" name="" id="" />
-
-										<p className="record-space-time">1:39:13</p>
-
-										<i className="fa-solid fa-volume-high"></i>
+										<i className="fa-solid fa-volume-high record-vol"></i>
 
 										<div className="record-space-shortline">
 											<div className="blue-rgb"></div>

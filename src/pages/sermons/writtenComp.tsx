@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const WrittenComp = () => {
 	return (
-		<div className="written">
-			<p className="text-style" style={{ paddingLeft: "2rem" }}>
-				All Written Sermons
-			</p>
-			<div className="written-container">
+		<div className="written ">
+			<div className="written-main  ">
+				<p className="text-style container">All Written Sermons</p>
+			</div>
+			<div className="written-container  container ">
 				{audioDatas.map((audioData, id) => (
-					<div className="written-container-wrapper" key={id}>
+					<div className="written-container-wrapper  " key={id}>
 						<p className="month-text">{audioData.month}</p>
-						<div className="written-container-flex">
+						<div className="written-container-flex ">
 							<div className="written-container-left">
 								<h6>Bible Text</h6>
 								<p>{audioData.txet}</p>
@@ -19,7 +19,7 @@ const WrittenComp = () => {
 							</div>
 
 							<div className="written-container-right">
-								<p className="written-bold">{audioData.title}</p>
+								<h6 className="written-bold">{audioData.title}</h6>
 
 								<div className="written-bibletext">
 									<p className="written-bibletext-blue">{audioData.txet}</p>
