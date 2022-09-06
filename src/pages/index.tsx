@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 							</h1>
 							<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
 							<Link href="/">
-								<a className="btn">I&apos;m New Here</a>
+								<a className="btn button-animation">I&apos;m New Here</a>
 							</Link>
 						</div>
 					</div>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
 								<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
 							</div>
 							<Link href="/">
-								<a className="sermon-link">Sermon Details</a>
+								<a className="sermon-link button-animation">Sermon Details</a>
 							</Link>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
 											Heirs Assembly guide our decisions as a church.
 										</p>
 										<Link href="/">
-											<a className="btn btn-warning">Learn More</a>
+											<a className="btn btn-warning button-animation">Learn More</a>
 										</Link>
 									</div>
 								</div>
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
 									</h1>
 									<Link href="/">
 										<a
-											className="btn mt-4 btn-warning fs-5 text-light fw-500"
+											className="btn mt-4 btn-warning fs-5 text-light fw-500 button-animation"
 											data-aos="flip-left"
 											data-aos-easing="ease-in-out"
 											data-aos-delay="50"
@@ -162,22 +162,22 @@ const Home: NextPage = () => {
 								<p className="resurrection-text-big">The Resurrection of Jesus</p>
 								<div className="playlet-list">
 									<Link href="/">
-										<a className="samon">Watch Sermon</a>
+										<a className="samon button-animation">Watch Sermon</a>
 									</Link>
 									<Link href="/">
 										<a>
-											<i className="fa-solid fa-microphone"></i>
+											<i className="fa-solid fa-microphone button-animation"></i>
 										</a>
 									</Link>
 									<Link href="/">
 										<a>
-											<img src="/images/book.png"></img>
+											<img src="/images/book.png " className="button-animation"></img>
 										</a>
 									</Link>
 								</div>
 
 								<Link href="/">
-									<a className="more-samon">More Sermons</a>
+									<a className="more-samon button-animation">More Sermons</a>
 								</Link>
 							</div>
 						</div>
@@ -206,7 +206,7 @@ const Home: NextPage = () => {
 									</p>
 									<div>
 										<Link href="/">
-											<a>About Us</a>
+											<a className="button-animation">About Us</a>
 										</Link>
 									</div>
 								</div>
@@ -322,7 +322,7 @@ const Home: NextPage = () => {
 																<hr />
 															</div>
 															<Link href="/">
-																<a>Donate</a>
+																<a className="button-animation">Donate</a>
 															</Link>
 														</div>
 													</div>
@@ -413,7 +413,10 @@ const Home: NextPage = () => {
 											worship God by remembering the <br /> gospel through preaching, teaching,
 											singing, praying and celebrating baptism and communion.
 										</p>
-										<button className="btn btn-warning text-light mt-3" type="submit">
+										<button
+											className="btn btn-warning text-light mt-3 button-animation"
+											type="submit"
+										>
 											Send
 										</button>
 									</form>

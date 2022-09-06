@@ -16,7 +16,9 @@ const FooterComp = () => {
 							</div>
 							<form>
 								<input type="text" placeholder="Enter Email" className="form-control" />
-								<button className="btn btn-warning text-light">Subscribe Now</button>
+								<button className="btn btn-warning text-light button-animation">
+									Subscribe Now
+								</button>
 							</form>
 						</div>
 					</div>

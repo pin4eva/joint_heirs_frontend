@@ -92,7 +92,7 @@ const SermonAudioComp = () => {
 			</div>
 
 			<Link href="/">
-				<a className=" pd-2 text-decoration-none">View More</a>
+				<a className=" pd-2 text-decoration-none button-animation">View More</a>
 			</Link>
 		</div>
 	);
