@@ -16,7 +16,7 @@ const CommunityCardComp = () => {
 						))}
 					</div>
 					<Link href="/events">
-						<a className="event-btn button-animation">More Events</a>
+						<a className="event-btn btn button-animation">More Events</a>
 					</Link>
 				</div>
 			</div>

@@ -39,7 +39,7 @@ const Home: NextPage = () => {
 								<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
 							</div>
 							<Link href="/">
-								<a className="sermon-link button-animation">Sermon Details</a>
+								<a className="btn button-animation">Sermon Details</a>
 							</Link>
 						</div>
 					</div>
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
 								<p className="resurrection-text-big">The Resurrection of Jesus</p>
 								<div className="playlet-list">
 									<Link href="/">
-										<a className="samon button-animation">Watch Sermon</a>
+										<a className="samon btn button-animation">Watch Sermon</a>
 									</Link>
 									<Link href="/">
 										<a>
@@ -186,7 +186,7 @@ const Home: NextPage = () => {
 								</div>
 
 								<Link href="/">
-									<a className="more-samon button-animation">More Sermons</a>
+									<a className="more-samon btn button-animation">More Sermons</a>
 								</Link>
 							</div>
 						</div>
@@ -208,14 +208,14 @@ const Home: NextPage = () => {
 								<div className="right">
 									<p className="belief-text rochester">Beliefs</p>
 									<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
-									<p className="text-secondary mt-4 mb-4 ">
+									<p className="text-secondary mt-4 mb-0">
 										We are called to eat, drink, speak, think and work to the glory of God. We
 										worship God by remembering the gospel through preaching, teaching, singing,
 										praying and celebrating baptism and communion.
 									</p>
 									<div>
 										<Link href="/">
-											<a className="button-animation">About Us</a>
+											<a className="button-animation btn">About Us</a>
 										</Link>
 									</div>
 								</div>
@@ -331,7 +331,7 @@ const Home: NextPage = () => {
 																<hr />
 															</div>
 															<Link href="/">
-																<a className="button-animation">Donate</a>
+																<a className="button-animation btn">Donate</a>
 															</Link>
 														</div>
 													</div>
