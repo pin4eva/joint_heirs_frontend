@@ -66,7 +66,7 @@ const Home: NextPage = () => {
 											Heirs Assembly guide our decisions as a church.
 										</p>
 										<Link href="/">
-											<a className="btn btn-warning button-animation">Learn More</a>
+											<a className="btn button-animation">Learn More</a>
 										</Link>
 									</div>
 								</div>
@@ -140,7 +140,7 @@ const Home: NextPage = () => {
 									</h1>
 									<Link href="/">
 										<a
-											className="btn mt-4 btn-warning fs-5 text-light fw-500 button-animation"
+											className="btn mt-4 button-animation"
 											data-aos="flip-left"
 											data-aos-easing="ease-in-out"
 											data-aos-delay="50"

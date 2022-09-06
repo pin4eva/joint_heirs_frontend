@@ -29,12 +29,11 @@
 			}
 
 			.btn {
-				padding: 1rem 1.5rem;
+				padding: 0.7rem 1.5rem;
 				background: #f66800;
-				width: 13rem;
 				border-radius: 10px;
 				font-weight: 600;
-				font-size: 20px;
+				font-size: 1.25rem;
 				color: #fff;
 				border: none;
 				text-decoration: none;
@@ -59,7 +58,7 @@
 				font-size: 1.25rem;
 				text-decoration: none;
 				color: #fff;
-				padding: 1rem 1.5rem;
+				padding: 0.7rem 1.5rem;
 				border-radius: 10px;
 				background: $warning;
 				border: none;
@@ -118,12 +117,13 @@
 					margin-bottom: 1.5rem;
 				}
 
-				a {
+				.btn {
 					text-align: center;
 					margin-top: 1rem;
 					font-weight: 600;
 					font-size: 1.25rem;
 					color: #fff;
+					background-color: $warning;
 				}
 			}
 
@@ -171,6 +171,12 @@
 		min-height: 60vh;
 		display: grid;
 		align-items: center;
+		.btn {
+			background-color: $warning;
+			font-size: 1.25rem;
+			font-weight: 600;
+			color: #fff;
+		}
 	}
 
 	.joint-heirs_community {
