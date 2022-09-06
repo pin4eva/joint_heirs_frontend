@@ -282,7 +282,7 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section>
-					{/* <div className="donation-page">
+					<div className="donation-page">
 						<div className="container">
 							<div className="donation-content">
 								<h4 className="rochester ">Donate</h4>
@@ -296,7 +296,7 @@ const Home: NextPage = () => {
 									loopFillGroupWithBlank={true}
 									autoplay={{
 										delay: 3000,
-										disableOnInteraction: true,
+										disableOnInteraction: false,
 									}}
 								>
 									{donations.map((item, i) => {
@@ -333,7 +333,7 @@ const Home: NextPage = () => {
 								</Swiper>
 							</div>
 						</div>
-					</div> */}
+					</div>
 				</section>
 				<section>
 					<div className="contact-us">

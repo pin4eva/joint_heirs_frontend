@@ -17,7 +17,7 @@ const BibleVersComp = () => {
 				loopFillGroupWithBlank={true}
 				autoplay={{
 					delay: 3000,
-					disableOnInteraction: true,
+					disableOnInteraction: false,
 				}}
 			>
 				{bibleData.map((b, i) => {
