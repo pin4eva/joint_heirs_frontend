@@ -240,7 +240,9 @@
 		padding: 2rem 0;
 		display: grid;
 		align-items: center;
-
+		@media screen and (max-width: $mobile) {
+			background-attachment: scroll;
+		}
 		.resurect-content {
 			display: flex;
 			flex-direction: column;
@@ -782,6 +784,9 @@
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
+			@media screen and (max-width: $mobile) {
+				background-attachment: scroll;
+			}
 			.top-inner {
 				position: relative;
 				.bottom-container {
