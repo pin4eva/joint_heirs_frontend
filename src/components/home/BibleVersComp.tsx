@@ -10,7 +10,7 @@ const BibleVersComp = () => {
 		<div className="biles-pages">
 			<Swiper
 				modules={[Autoplay, Navigation, Pagination]}
-				spaceBetween={50}
+				spaceBetween={5}
 				slidesPerView={1}
 				pagination={{ clickable: true }}
 				loop={true}

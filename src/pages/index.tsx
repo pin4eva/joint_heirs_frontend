@@ -13,6 +13,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "animate.css";
 const Home: NextPage = () => {
 	return (
 		<FrontLayout title="Joint Heirs Assembly Int'l">
@@ -232,13 +233,13 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 				<section>
-					{/* <div className="bible-vers">
+					<div className="bible-vers">
 						<div className="container">
 							<div className="text-center">
 								<BibleVersComp />
 							</div>
 						</div>
-					</div> */}
+					</div>
 				</section>
 				<section>
 					<div className="church-branchs">
