@@ -23,3 +23,11 @@
 		animation-iteration-count: 5;
 	}
 }
+
+.image-shake {
+	&:hover {
+		animation: tada;
+		animation-duration: 1.5s;
+		animation-iteration-count: 5;
+	}
+}

@@ -83,13 +83,20 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Watch and listen to <br /> Sermons
 										</p>
 									</div>
 									<div className="dates">
-										<Image src="/images/svg/date.svg" layout="intrinsic" width={100} height={100} />
+										<Image
+											src="/images/svg/date.svg"
+											layout="intrinsic"
+											width={100}
+											height={100}
+											className="image-shake"
+										/>
 										<p className="text-secondary">
 											Make <br /> Donations
 										</p>
@@ -100,6 +107,7 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Church Up coming <br /> Events
@@ -111,6 +119,7 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Find a Church <br /> Location/Branch
