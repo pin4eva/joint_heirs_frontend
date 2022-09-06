@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { log } from "console";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -23,7 +24,7 @@ const HeaderComp = () => {
 						</Link>
 
 						<ul className={open ? "nav active" : "nav"}>
-							{navList.map((nav, i) => (
+							{filteredNavList.map((nav, i) => (
 								<li className="nav-item" key={i}>
 									<Link href={nav.link}>
 										<a
@@ -61,3 +62,5 @@ export const navList = [
 	{ name: "About", link: "/about" },
 	{ name: "Contact", link: "/contact" },
 ];
+
+const filteredNavList = navList.filter((item) => item.name !== "About" && item.name !== "Contact");
