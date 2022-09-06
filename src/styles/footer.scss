@@ -37,12 +37,12 @@ footer {
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@media screen and (max-width: 900px) {
+		@media screen and (max-width: $md) {
 			height: auto;
 		}
 
 		.footer-main-content {
-			@media screen and (max-width: 900px) {
+			@media screen and (max-width: $md) {
 				height: auto;
 			}
 
@@ -59,7 +59,7 @@ footer {
 
 				width: 100%;
 
-				@media screen and (max-width: 900px) {
+				@media screen and (max-width: $md) {
 					height: auto;
 					flex-direction: column-reverse;
 					justify-content: space-between;
@@ -73,7 +73,7 @@ footer {
 					display: flex;
 					align-items: center;
 
-					@media screen and (max-width: 900px) {
+					@media screen and (max-width: $md) {
 						margin-bottom: 2rem;
 						display: flex;
 						justify-content: center;
@@ -109,6 +109,9 @@ footer {
 				justify-content: center;
 				align-items: center;
 				gap: 2rem;
+				@media screen and (max-width: 450px) {
+					flex-direction: column;
+				}
 			}
 
 			.footer-icons {

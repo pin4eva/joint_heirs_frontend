@@ -84,7 +84,7 @@
 			display: none;
 		}
 
-		@media screen and (max-width: 920px) {
+		@media screen and (max-width: $md) {
 			.nav-inner {
 				.nav {
 					display: flex;
