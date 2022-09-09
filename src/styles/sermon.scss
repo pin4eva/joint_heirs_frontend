@@ -3,7 +3,7 @@
 		background-image: url("/images/PreacherBg.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 40vh;
+		min-height: 45vh;
 		display: grid;
 		align-items: center;
 		justify-content: center;
@@ -56,8 +56,6 @@
 			display: flex;
 			justify-content: space-between;
 
-
-
 			.sermon-toggle {
 				display: flex;
 				// margin-top: 2rem;
@@ -68,8 +66,6 @@
 					display: flex;
 					align-items: flex-start;
 					gap: 0.5rem;
-
-
 
 					a {
 						font-size: 18px;
@@ -261,10 +257,7 @@
 		}
 
 		&-wrapper {
-
 			margin-top: 3rem;
-
-
 
 			&-months {
 				margin: 3rem 0;

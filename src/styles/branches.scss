@@ -5,7 +5,7 @@
 		background-image: url("/images/branches-img.png");
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 40vh;
+		min-height: 45vh;
 		display: grid;
 		align-items: center;
 	}
@@ -13,8 +13,6 @@
 	.branches-inner {
 		display: grid;
 		place-items: center;
-
-
 	}
 }
 
@@ -36,7 +34,6 @@
 
 	@media screen and (max-width: 900px) {
 		flex-direction: column;
-
 	}
 
 	&-ken {

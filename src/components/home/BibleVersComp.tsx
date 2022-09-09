@@ -10,14 +10,14 @@ const BibleVersComp = () => {
 		<div className="biles-pages">
 			<Swiper
 				modules={[Autoplay, Navigation, Pagination]}
-				spaceBetween={50}
+				spaceBetween={5}
 				slidesPerView={1}
 				pagination={{ clickable: true }}
 				loop={true}
 				loopFillGroupWithBlank={true}
 				autoplay={{
-					delay: 30000,
-					disableOnInteraction: true,
+					delay: 3000,
+					disableOnInteraction: false,
 				}}
 			>
 				{bibleData.map((b, i) => {

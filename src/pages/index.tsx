@@ -7,38 +7,39 @@ import CommunityCardComp from "../components/cards/CommunityCardComp";
 import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
 import FrontLayout from "../layouts/FrontLayout";
-
+import { donations } from "components/home/donate.data";
+//animations
+import { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "animate.css";
 const Home: NextPage = () => {
 	return (
 		<FrontLayout title="Joint Heirs Assembly Int'l">
 			<div className="home">
 				<div className="hero">
-					<div className="container hero-inner text-center">
-						<div className="welcome-text" data-aos="fade-up" data-aos-duration="800">
+					<div className="container hero-inner text-center animate__animated animate__backInDown">
+						<div className="welcome-text">
 							<h1 className=" text-light">
 								Welcome To Our <br /> Church
 							</h1>
 							<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
 							<Link href="/">
-								<a className="btn">Im New Here</a>
+								<a className="btn button-animation">I&apos;m New Here</a>
 							</Link>
 						</div>
 					</div>
 				</div>
 				<section className="sermon-section">
-					<div
-						className="container"
-						data-aos="zoom-in-up"
-						data-aos-offset="-10"
-						data-aos-duration="800"
-					>
+					<div className="container">
 						<div className="sermon-text">
 							<div className="text-start">
 								<p className="text-dark fw-semibold mb-0">Upcoming Sermon</p>
 								<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
 							</div>
 							<Link href="/">
-								<a className="sermon-link">Sermon Details</a>
+								<a className="btn button-animation">Sermon Details</a>
 							</Link>
 						</div>
 					</div>
@@ -65,7 +66,7 @@ const Home: NextPage = () => {
 											Heirs Assembly guide our decisions as a church.
 										</p>
 										<Link href="/">
-											<a className="btn btn-warning">Learn More</a>
+											<a className="btn button-animation">Learn More</a>
 										</Link>
 									</div>
 								</div>
@@ -82,13 +83,20 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Watch and listen to <br /> Sermons
 										</p>
 									</div>
 									<div className="dates">
-										<Image src="/images/svg/date.svg" layout="intrinsic" width={100} height={100} />
+										<Image
+											src="/images/svg/date.svg"
+											layout="intrinsic"
+											width={100}
+											height={100}
+											className="image-shake"
+										/>
 										<p className="text-secondary">
 											Make <br /> Donations
 										</p>
@@ -99,6 +107,7 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Church Up coming <br /> Events
@@ -110,6 +119,7 @@ const Home: NextPage = () => {
 											layout="intrinsic"
 											width={100}
 											height={100}
+											className="image-shake"
 										/>
 										<p className="text-secondary">
 											Find a Church <br /> Location/Branch
@@ -130,7 +140,7 @@ const Home: NextPage = () => {
 									</h1>
 									<Link href="/">
 										<a
-											className="btn mt-4 btn-warning fs-5 text-light fw-500"
+											className="btn mt-4 button-animation"
 											data-aos="flip-left"
 											data-aos-easing="ease-in-out"
 											data-aos-delay="50"
@@ -156,41 +166,27 @@ const Home: NextPage = () => {
 				<section>
 					<div className="resurrection">
 						<div className="container">
-							<div className="resurect-content">
+							<div className="resurect-content ">
 								<p className="text-light">Latest Sermon</p>
 								<p className="resurrection-text-big">The Resurrection of Jesus</p>
-								<div
-									className="playlet-list"
-									data-aos="zoom-in-up"
-									data-aos-duration="1000"
-									data-aos-delay="30"
-									data-aos-easing="ease-in-out"
-								>
+								<div className="playlet-list">
 									<Link href="/">
-										<a className="samon">Watch Sermon</a>
+										<a className="samon btn button-animation">Watch Sermon</a>
 									</Link>
 									<Link href="/">
 										<a>
-											<i className="fa-solid fa-microphone"></i>
+											<i className="fa-solid fa-microphone button-animation"></i>
 										</a>
 									</Link>
 									<Link href="/">
 										<a>
-											<img src="/images/book.png"></img>
+											<img src="/images/book.png " className="button-animation"></img>
 										</a>
 									</Link>
 								</div>
 
 								<Link href="/">
-									<a
-										className="more-samon"
-										data-aos="zoom-in-up"
-										data-aos-duration="1500"
-										data-aos-delay="200"
-										data-aos-easing="ease-in-out"
-									>
-										More Sermons
-									</a>
+									<a className="more-samon btn button-animation">More Sermons</a>
 								</Link>
 							</div>
 						</div>
@@ -212,14 +208,14 @@ const Home: NextPage = () => {
 								<div className="right">
 									<p className="belief-text rochester">Beliefs</p>
 									<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
-									<p className="text-secondary mt-4 mb-4 ">
+									<p className="text-secondary mt-4 mb-0">
 										We are called to eat, drink, speak, think and work to the glory of God. We
 										worship God by remembering the gospel through preaching, teaching, singing,
 										praying and celebrating baptism and communion.
 									</p>
 									<div>
 										<Link href="/">
-											<a>About Us</a>
+											<a className="button-animation btn">About Us</a>
 										</Link>
 									</div>
 								</div>
@@ -300,34 +296,50 @@ const Home: NextPage = () => {
 							<div className="donation-content">
 								<h4 className="rochester ">Donate</h4>
 								<h1 className="fw-bold text-secondary text-center m-0">Support The Mission</h1>
-								<div className="donate">
-									<Image
-										src="/images/donate.png"
-										layout="intrinsic"
-										width={646}
-										height={419}
-										className="branch-img"
-									/>
-									<div className="donate-content">
-										<h3 className="donate-heading">Your Generousity is Making a Difference</h3>
-										<div className="donate-text">
-											<p>
-												We are happy to get any support from members of this assemblly and the
-												community at large!
-											</p>
-											<p>Thank you so much for staying with us, and for all your help, Donations</p>
-										</div>
-										<div className="price-donate">
-											<div>
-												<h2>$ 75.00</h2>
-												<hr />
-											</div>
-											<Link href="/">
-												<a>Donate</a>
-											</Link>
-										</div>
-									</div>
-								</div>
+								<Swiper
+									modules={[Autoplay, Navigation, Pagination]}
+									spaceBetween={0}
+									slidesPerView={1}
+									pagination={{ clickable: true }}
+									loop={true}
+									loopFillGroupWithBlank={true}
+									autoplay={{
+										delay: 3000,
+										disableOnInteraction: false,
+									}}
+								>
+									{donations.map((item, i) => {
+										return (
+											<SwiperSlide key={i}>
+												<div className="donate">
+													<Image
+														src={item.image}
+														layout="intrinsic"
+														width={646}
+														height={419}
+														className="branch-img"
+													/>
+													<div className="donate-content">
+														<h3 className="donate-heading">{item.title}</h3>
+														<div className="donate-text">
+															<p>{item.text1}</p>
+															<p>{item.text2}</p>
+														</div>
+														<div className="price-donate">
+															<div>
+																<h2>{item.price}</h2>
+																<hr />
+															</div>
+															<Link href="/">
+																<a className="button-animation btn">Donate</a>
+															</Link>
+														</div>
+													</div>
+												</div>
+											</SwiperSlide>
+										);
+									})}
+								</Swiper>
 							</div>
 						</div>
 					</div>
@@ -335,117 +347,123 @@ const Home: NextPage = () => {
 				<section>
 					<div className="contact-us">
 						<div className="top">
-							<div className="container">
-								<h1 className="text-light fw-bold text-center mb-3">Get in Contact with Us</h1>
-								<p className="text-light text-center ">
-									We are called to eat, drink, speak, think and work to the glory of God. We worship
-									God by remembering the <br /> gospel through preaching, teaching, singing, praying
-									and celebrating baptism and communion.
-								</p>
+							<div className="container top-inner">
+								<div className="container">
+									<h1 className="text-light fw-bold text-center mb-3">Get in Contact with Us</h1>
+									<p className="text-light text-center ">
+										We are called to eat, drink, speak, think and work to the glory of God. We
+										worship God by remembering the <br /> gospel through preaching, teaching,
+										singing, praying and celebrating baptism and communion.
+									</p>
+								</div>
+								<div className="bottom-container">
+									<form>
+										<div className="form-split form-group">
+											<div className="form-group">
+												<label className="mt-4 mb-2" htmlFor="name">
+													Your Name*
+												</label>
+												<input
+													name="name"
+													type="text"
+													placeholder="Enter your name"
+													className="form-control shadow-none"
+												/>
+											</div>
+											<div className="form-group">
+												<label className="mt-4 mb-2" htmlFor="email">
+													Contact Email*
+												</label>
+												<input
+													name="email"
+													type="text"
+													placeholder="bentucker43@gmail.com"
+													className="form-control shadow-none"
+												/>
+											</div>
+										</div>
+										<div className="form-split form-group">
+											<div className="form-group">
+												<label className="mt-4 mb-2" htmlFor="phoneNo">
+													Phone no*
+												</label>
+												<input
+													name="phoneNo"
+													type="text"
+													placeholder="9012624162"
+													className="form-control shadow-none"
+												/>
+											</div>
+											<div className="form-group">
+												<label className="mt-4 mb-2" htmlFor="branch">
+													Church Branch*
+												</label>
+												<select name="branch" className="form-select">
+													<option value=""></option>
+													<option value="">First</option>
+													<option value="">First</option>
+													<option value="">First</option>
+													<option value="">First</option>
+												</select>
+											</div>
+										</div>
+										<div className="form-group">
+											<label className="mt-4 mb-3" htmlFor="message">
+												Your Message*
+											</label>
+											<textarea
+												className="form-control message-box"
+												placeholder="Type your Message"
+												name="message"
+											/>
+										</div>
+										<p className="mt-4">
+											We are called to eat, drink, speak, think and work to the glory of God. We
+											worship God by remembering the <br /> gospel through preaching, teaching,
+											singing, praying and celebrating baptism and communion.
+										</p>
+										<button
+											className="btn btn-warning text-light mt-3 button-animation"
+											type="submit"
+										>
+											Send
+										</button>
+									</form>
+									<div className="botom">
+										<div className="message">
+											<Link href="/">
+												<a>
+													<i className="fa-solid fa-envelope mb-2"></i>
+													<p className="text-secondary fw-bold m-0">Email Us</p>
+												</a>
+											</Link>
+											<p className="text-center">
+												Email us for general Queries including mentorship and spiritual counselling
+											</p>
+											<Link href="https://jointheirs5@gmail.com">
+												<a>jointheirs5@gmail.com</a>
+											</Link>
+										</div>
+										<div className="call">
+											<Link href="/">
+												<a>
+													<img src="/images/phone.png" alt="" />
+													<p className="text-secondary fw-bold m-0">Call Us</p>
+												</a>
+											</Link>
+											<p className="text-center">
+												You can also call us for general Queries including mentorship and spiritual
+												counselling
+											</p>
+											<Link href="https://jointheirs5@gmail.com">
+												<a>jointheirs5@gmail.com</a>
+											</Link>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div className="container">
-							<form>
-								<div className="form-split form-group">
-									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="name">
-											Your Name*
-										</label>
-										<input
-											name="name"
-											type="text"
-											placeholder="Enter your name"
-											className="form-control shadow-none"
-										/>
-									</div>
-									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="email">
-											Contact Email*
-										</label>
-										<input
-											name="email"
-											type="text"
-											placeholder="bentucker43@gmail.com"
-											className="form-control shadow-none"
-										/>
-									</div>
-								</div>
-								<div className="form-split form-group">
-									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="phoneNo">
-											Phone no*
-										</label>
-										<input
-											name="phoneNo"
-											type="text"
-											placeholder="9012624162"
-											className="form-control shadow-none"
-										/>
-									</div>
-									<div className="form-group">
-										<label className="mt-4 mb-2" htmlFor="branch">
-											Church Branch*
-										</label>
-										<select name="branch" className="form-select">
-											<option value=""></option>
-											<option value="">First</option>
-											<option value="">First</option>
-											<option value="">First</option>
-											<option value="">First</option>
-										</select>
-									</div>
-								</div>
-								<div className="form-group">
-									<label className="mt-4 mb-3" htmlFor="message">
-										Your Message*
-									</label>
-									<textarea
-										className="form-control message-box"
-										placeholder="Type your Message"
-										name="message"
-									/>
-								</div>
-								<p className="mt-4">
-									We are called to eat, drink, speak, think and work to the glory of God. We worship
-									God by remembering the <br /> gospel through preaching, teaching, singing, praying
-									and celebrating baptism and communion.
-								</p>
-								<button className="btn btn-warning text-light mt-3" type="submit">
-									Send
-								</button>
-							</form>
-							<div className="botom">
-								<div className="message">
-									<Link href="/">
-										<a>
-											<i className="fa-solid fa-envelope mb-2"></i>
-											<p className="text-secondary fw-bold m-0">Email Us</p>
-										</a>
-									</Link>
-									<p className="text-center">
-										Email us for general Queries including mentorship and spiritual counselling
-									</p>
-									<Link href="https://jointheirs5@gmail.com">
-										<a>jointheirs5@gmail.com</a>
-									</Link>
-								</div>
-								<div className="call">
-									<Link href="/">
-										<a>
-											<img src="/images/phone.png" alt="" />
-											<p className="text-secondary fw-bold m-0">Call Us</p>
-										</a>
-									</Link>
-									<p className="text-center">
-										You can also call us for general Queries including mentorship and spiritual
-										counselling
-									</p>
-									<Link href="https://jointheirs5@gmail.com">
-										<a>jointheirs5@gmail.com</a>
-									</Link>
-								</div>
-							</div>
-						</div>
+						<div className="placeholder"></div>
 					</div>
 				</section>
 				<section>
