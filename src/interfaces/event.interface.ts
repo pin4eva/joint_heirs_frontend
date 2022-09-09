@@ -6,6 +6,6 @@ export interface IEvent {
 	venue: string;
 	category: string;
 	description: string;
-	image: string;
+	image: string; //Iimage
 	isSingleDate?: boolean;
 }
