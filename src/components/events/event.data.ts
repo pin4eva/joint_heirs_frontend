@@ -1,17 +1,20 @@
-export const events = [
+import { IEvent } from "interfaces/event.interface";
+
+export const events: IEvent[] = [
 	{
-		date: "May 27th",
+		startDate: "May 27th",
 		title: "Children Day Celeberation",
 		category: "children",
 		image: "/images/children.png",
 		description: `Men only we welcome all men who
 wish to spend the breakfast time eating
 delicious homemade food and talk
-about important things like news
+about important things like news,
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "Friday 15th - 20th August",
+		startDate: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
 		category: "men",
 		image: "/images/men.png",
@@ -20,9 +23,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "May 5th",
+		startDate: "May 5th",
 		title: "Singles All Night",
 		category: "youth",
 		image: "/images/singles.png",
@@ -31,9 +35,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "May 27th",
+		startDate: "May 27th",
 		title: "Children Day Celeberation",
 		category: "children",
 		image: "/images/children.png",
@@ -42,9 +47,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "Friday 15th - 20th August",
+		startDate: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
 		category: "men",
 		image: "/images/men.png",
@@ -53,9 +59,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "May 5th",
+		startDate: "May 5th",
 		title: "Singles All Night",
 		category: "youth",
 		image: "/images/singles.png",
@@ -64,9 +71,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "May 27th",
+		startDate: "May 27th",
 		title: "Children Day Celeberation",
 		category: "children",
 		image: "/images/children.png",
@@ -75,9 +83,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "Friday 15th - 20th August",
+		startDate: "Friday 15th - 20th August",
 		title: "Mens Prayer Week",
 		category: "men",
 		image: "/images/men.png",
@@ -86,9 +95,10 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 	{
-		date: "May 5th",
+		startDate: "May 5th",
 		title: "Singles All Night",
 		category: "youth",
 		image: "/images/singles.png",
@@ -97,5 +107,6 @@ wish to spend the breakfast time eating
 delicious homemade food and talk
 about important things like news
 `,
+		venue: "Join Heirs Assembly",
 	},
 ];

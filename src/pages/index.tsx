@@ -1,19 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import { donations } from "components/home/donate.data";
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import CommunityCardComp from "../components/cards/CommunityCardComp";
 import BibleVersComp from "../components/home/BibleVersComp";
 import SermonAudioComp from "../components/home/SermonAudioComp";
 import FrontLayout from "../layouts/FrontLayout";
-import { donations } from "components/home/donate.data";
 //animations
+import "animate.css";
+import { events } from "components/events/event.data";
+import EventCard from "components/events/EventCard";
 import { Autoplay, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "animate.css";
+import { Swiper, SwiperSlide } from "swiper/react";
 const Home: NextPage = () => {
 	return (
 		<FrontLayout title="Joint Heirs Assembly Int'l">
@@ -161,7 +162,22 @@ const Home: NextPage = () => {
 					data-aos-duration="1500"
 					data-aos-offset="100"
 				>
-					<CommunityCardComp />
+					<div className="joint-heirs_community">
+						<div className="container community-inner">
+							<div className="text-center">
+								<p className="upcoming rochester">Upcoming Events</p>
+								<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
+								<div className="cards">
+									{events?.splice(0, 3)?.map((event, i) => (
+										<EventCard key={i} event={event} />
+									))}
+								</div>
+								<Link href="/events">
+									<a className="event-btn btn button-animation">More Events</a>
+								</Link>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section>
 					<div className="resurrection">
