@@ -1,3 +1,13 @@
+.loader {
+	min-height: 100vh;
+	// background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// &-component {
+	// }
+}
+
 .home {
 	display: flex;
 	flex-direction: column;
@@ -8,12 +18,18 @@
 	}
 
 	.hero {
-		background-image: url("/images/preaching.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 80vh;
 		display: grid;
 		align-items: center;
+
+		position: relative;
+		min-height: 80vh;
+
+		.hero-bg {
+			position: absolute;
+			top: 0;
+
+			z-index: -1;
+		}
 
 		.welcome-text {
 			display: flex;
