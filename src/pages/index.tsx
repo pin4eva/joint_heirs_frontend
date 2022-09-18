@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<div className="loader" style={{ display: loaded ? "none" : "flex" }}>
-				<ClipLoader className="loader-component" color="#030ce0" size={80} />
+				<ClipLoader className="loader-component" color="#030ce0" size={90} />
 			</div>
 			<div style={{ display: loaded ? "block" : "none" }}>
 				<FrontLayout title="Joint Heirs Assembly Int'l">
