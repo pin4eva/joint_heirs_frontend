@@ -1,19 +1,35 @@
+.loader {
+	min-height: 100vh;
+	background: #010203;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .home {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+
 	.btn {
 		font-style: 1.25rem;
 		font-weight: 600;
 	}
 
 	.hero {
-		background-image: url("/images/preaching.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 80vh;
 		display: grid;
 		align-items: center;
+
+		position: relative;
+		min-height: 80vh;
+
+
+		.hero-bg {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
 
 		.welcome-text {
 			display: flex;
@@ -22,6 +38,7 @@
 			align-items: center;
 			gap: 1rem;
 			margin-top: 1rem;
+
 			h1 {
 				font-size: 3rem;
 				font-weight: 700;
@@ -169,6 +186,7 @@
 		min-height: 60vh;
 		display: grid;
 		align-items: center;
+
 		.btn {
 			background-color: $warning;
 			color: #fff;
@@ -237,9 +255,11 @@
 		padding: 2rem 0;
 		display: grid;
 		align-items: center;
+
 		@media screen and (max-width: $mobile) {
 			background-attachment: scroll;
 		}
+
 		.resurect-content {
 			display: flex;
 			flex-direction: column;
@@ -384,6 +404,7 @@
 				@media screen and (max-width: $md) {
 					margin-inline: 0 auto;
 				}
+
 				@media screen and (max-width: $mobile) {
 					margin-inline: auto;
 				}
@@ -427,6 +448,7 @@
 							border-radius: 10px;
 							background: #ccceff;
 							margin-block: 0.3rem;
+
 							a {
 								&:hover {
 									animation: tada;
@@ -470,6 +492,7 @@
 
 		@media screen and (max-width: $md) {
 			height: auto;
+
 			@media screen and (max-width: 576px) {
 				width: 100vw;
 			}
@@ -493,9 +516,11 @@
 					border-radius: 2rem;
 					user-select: none;
 					background: #ccceff;
+
 					@media screen and (max-width: 576px) {
 						padding: 3rem 1rem;
 					}
+
 					.caps {
 						color: $warning;
 						font-size: 2.5rem;
@@ -535,17 +560,20 @@
 				}
 			}
 		}
+
 		.swiper {
 			.swiper-pagination-bullet {
 				border: 1px solid $warning;
 				opacity: 1;
 				background: none;
 				margin: 1rem;
+
 				&-active {
 					background: $dark-blue;
 					border: 1px solid $dark-blue;
 				}
 			}
+
 			@media screen and (max-width: 576px) {
 				width: 90%;
 			}
@@ -605,9 +633,11 @@
 		min-height: 60vh;
 		background: #ffffff;
 		padding: 2rem 0;
+
 		@media screen and (max-width: 576px) {
 			width: 100vw;
 		}
+
 		.donation-content {
 			display: flex;
 			flex-direction: column;
@@ -619,18 +649,22 @@
 				font-size: 2.5rem;
 				color: $warning;
 			}
+
 			.swiper {
 				width: 100%;
+
 				.swiper-pagination-bullet {
 					border: 1px solid $warning;
 					opacity: 1;
 					background: none;
 					margin: 1rem;
+
 					&-active {
 						background: $warning;
 					}
 				}
 			}
+
 			.donate {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
@@ -724,25 +758,31 @@
 			background-size: cover;
 			background-position: center;
 			background-attachment: fixed;
+
 			@media screen and (max-width: $mobile) {
 				background-attachment: scroll;
 			}
+
 			.top-inner {
 				position: relative;
+
 				.bottom-container {
 					position: absolute;
 					left: 0;
+
 					form {
 						z-index: 2;
 						width: 100%;
 						background: #ffffff;
 						padding: 2rem 3rem;
 						border-radius: 20px;
+
 						@media screen and (max-width: 580px) {
 							width: 90%;
 							margin-inline: auto;
 							padding: 2rem;
 						}
+
 						.form-split {
 							display: flex;
 							gap: 1.5rem;
@@ -771,12 +811,14 @@
 					.btn {
 						padding: 0.4rem 2rem;
 					}
+
 					.botom {
 						display: flex;
 						align-items: center;
 						justify-content: space-around;
 						gap: 3rem;
 						height: 40vh;
+
 						@media screen and (max-width: 580px) {
 							gap: 1rem;
 							width: 90%;
@@ -785,6 +827,7 @@
 							height: auto;
 							margin-top: 0.8rem;
 						}
+
 						.message {
 							display: flex;
 							flex-direction: column;
@@ -796,6 +839,7 @@
 							@media screen and (max-width: $md) {
 								width: 100%;
 								gap: 0.2rem;
+
 								.text-center {
 									margin: 0;
 								}
@@ -844,6 +888,7 @@
 
 		.placeholder {
 			height: 52rem;
+
 			@media screen and (max-width: 580px) {
 				height: 66rem;
 			}
