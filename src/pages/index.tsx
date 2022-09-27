@@ -356,37 +356,35 @@ const Home: NextPage = () => {
 												disableOnInteraction: false,
 											}}
 										>
-											{donations.map((item, i) => {
-												return (
-													<SwiperSlide key={i}>
-														<div className="donate">
-															<Image
-																src={item.image}
-																layout="intrinsic"
-																width={646}
-																height={419}
-																className="branch-img"
-															/>
-															<div className="donate-content">
-																<h3 className="donate-heading">{item.title}</h3>
-																<div className="donate-text">
-																	<p>{item.text1}</p>
-																	<p>{item.text2}</p>
+											{donations.map((item, i) => (
+												<SwiperSlide key={i}>
+													<div className="donate">
+														<Image
+															src={item.image}
+															layout="intrinsic"
+															width={646}
+															height={419}
+															className="branch-img"
+														/>
+														<div className="donate-content">
+															<h3 className="donate-heading">{item.title}</h3>
+															<div className="donate-text">
+																<p>{item.text1}</p>
+																<p>{item.text2}</p>
+															</div>
+															<div className="price-donate">
+																<div>
+																	<h2>{item.price}</h2>
+																	<hr />
 																</div>
-																<div className="price-donate">
-																	<div>
-																		<h2>{item.price}</h2>
-																		<hr />
-																	</div>
-																	<Link href="/">
-																		<a className="button-animation btn">Donate</a>
-																	</Link>
-																</div>
+																<Link href="/">
+																	<a className="button-animation btn">Donate</a>
+																</Link>
 															</div>
 														</div>
-													</SwiperSlide>
-												);
-											})}
+													</div>
+												</SwiperSlide>
+											))}
 										</Swiper>
 									</div>
 								</div>
