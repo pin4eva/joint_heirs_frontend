@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 			<div style={{ display: loaded ? "block" : "none" }}>
 				<FrontLayout title="Joint Heirs Assembly Int'l">
 					<div className="home">
-						<div className="hero" style={{ border: "3px solid red" }}>
+						<div className="hero">
 							<Image
 								src="/images/preaching.png"
 								alt="hero bg img"
