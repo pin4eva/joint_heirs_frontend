@@ -48,8 +48,17 @@ const Home: NextPage = () => {
 			<div style={{ display: loaded ? "block" : "none" }}>
 				<FrontLayout title="Joint Heirs Assembly Int'l">
 					<div className="home">
-						<div className="hero">
-							<img src="/images/preaching.png" alt="hero bg img" className="hero-bg" />
+						<div className="hero" style={{ border: "3px solid red" }}>
+							<Image
+								src="/images/preaching.png"
+								alt="hero bg img"
+								className="hero-bg"
+								width={100}
+								height={100}
+								layout="fill"
+								placeholder="blur"
+								blurDataURL="/images/preaching.png"
+							/>
 							<div className="container hero-inner text-center animate__animated animate__backInDown">
 								<div className="welcome-text">
 									<h1 className=" text-light">
