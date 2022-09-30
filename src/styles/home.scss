@@ -40,8 +40,11 @@
 			margin-top: 1rem;
 
 			h1 {
-				font-size: 4rem;
+				font-size: 3rem;
 				font-weight: 700;
+				@media screen and (min-width: 993px) {
+					font-size: 4rem;
+				}
 			}
 
 			.jhai-text {

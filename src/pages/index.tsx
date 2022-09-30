@@ -53,11 +53,7 @@ const Home: NextPage = () => {
 								src="/images/preaching.png"
 								alt="hero bg img"
 								className="hero-bg"
-								width={100}
-								height={100}
 								layout="fill"
-								placeholder="blur"
-								blurDataURL="/images/preaching.png"
 							/>
 							<div className="container hero-inner text-center animate__animated animate__backInDown">
 								<div className="welcome-text">
