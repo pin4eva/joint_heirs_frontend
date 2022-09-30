@@ -49,12 +49,7 @@ const Home: NextPage = () => {
 				<FrontLayout title="Joint Heirs Assembly Int'l">
 					<div className="home">
 						<div className="hero">
-							<Image
-								src="/images/preaching.png"
-								alt="hero bg img"
-								className="hero-bg"
-								layout="fill"
-							/>
+							<img src="/images/preaching.png" alt="hero bg img" className="hero-bg" />
 							<div className="container hero-inner text-center animate__animated animate__backInDown">
 								<div className="welcome-text">
 									<h1 className=" text-light">
