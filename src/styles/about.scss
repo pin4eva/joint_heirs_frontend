@@ -1,0 +1,335 @@
+.about-page {
+	position: relative;
+
+	.top-section {
+		background-image: url("../assets/background.png");
+		min-height: 45vh;
+		display: grid;
+		place-items: center;
+		justify-content: center;
+		gap: 0.6rem;
+		text-align: center;
+
+		.top-section-inner {
+			padding-top: 3rem;
+
+			h1 {
+				font-weight: $poppins;
+				font-weight: 700;
+				font-size: 4rem;
+
+				color: $light-gray;
+			}
+
+			p {
+				font-family: $rochester;
+				font-weight: 400;
+				font-size: 3rem;
+				color: #ffffff;
+			}
+
+			.img {
+				position: absolute;
+				right: 0;
+				overflow: hidden;
+				z-index: -1;
+				opacity: 0.4;
+			}
+		}
+	}
+
+	//========END OF SECTION ONE=======
+
+	.section-two {
+		text-align: center;
+		padding-block: 2.5rem;
+
+		.huge-text {
+			@media screen and (min-width: $md) {
+				width: 70%;
+				margin: 1rem auto;
+			}
+		}
+
+		.section-two-image {
+			margin-top: 1.5rem;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		article {
+			margin-top: 1rem;
+			font-weight: 400;
+			font-size: 1rem;
+			font-family: $poppins;
+
+			@media screen and (min-width: $md) {
+				width: 90%;
+				margin: 1.5rem auto;
+			}
+		}
+	}
+
+	//===============END OF SECTION TWO==============
+
+	.section-three {
+		background: $light-gray;
+		padding-block: 2.5rem;
+
+		.section-three-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			text-align: center;
+
+			@media screen and (min-width: $md) {
+				grid-template-columns: 45% 45%;
+				justify-content: space-between;
+			}
+
+			.section-three-inner_left {
+				width: 100%;
+				height: 55vh;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.section-three-inner_right {
+				article {
+					font-weight: 400;
+					font-size: 1rem;
+					line-height: 1.5rem;
+
+					@media screen and (min-width: 1200px) {
+						margin-top: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	//==========END OF SECTION THREE==============
+
+	.section-four {
+		.section-four-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 2rem;
+			text-align: center;
+			padding-block: 2.5rem;
+
+			@media screen and (min-width: $md) {
+				grid-template-columns: 55% 45%;
+				gap: 2rem;
+			}
+
+			.section-four-inner_left {
+				display: grid;
+				gap: 1.5rem;
+
+				@media screen and (min-width: $md) {
+					grid-template-columns: 48% 48%;
+					justify-content: space-between;
+				}
+
+				.section-four-image_container {
+					width: 100%;
+					background: $light-gray;
+
+					.section-four-inner-image {
+						position: relative;
+						width: inherit;
+
+						img {
+							width: inherit;
+						}
+
+						.overlay {
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: #022162;
+							width: 100%;
+							height: 100%;
+							opacity: 0;
+							transition: all 400ms ease;
+							display: flex;
+							gap: 1rem;
+
+							span {
+								margin: auto auto;
+								display: flex;
+								gap: 2rem;
+								text-align: center;
+								color: #ffffff;
+								cursor: pointer;
+								margin-bottom: 3rem;
+
+								@media screen and (min-width: $md) {
+									// font-size: 2rem;
+									// padding: 1rem;
+									margin-bottom: 1rem;
+								}
+
+								i {
+									border: 2px solid white;
+									border-radius: 50%;
+									padding: 1rem;
+									font-size: 2rem;
+
+									@media screen and (min-width: $md) {
+										font-size: 1rem;
+									}
+								}
+							}
+
+							&:hover {
+								opacity: 0.78;
+								transition: all 400ms ease;
+							}
+						}
+					}
+
+					.section-four-image_caption {
+						background: $light-gray;
+
+						& > p:first-child {
+							font-weight: 500;
+							font-size: 1.5rem;
+						}
+
+						& > p:nth-child(2) {
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+
+			.section-four-inner_right {
+				@media screen and (min-width: $md) {
+					width: 90%;
+				}
+
+				.team-desc,
+				.btn {
+					@media screen and (min-width: 1400px) {
+						margin-top: 2rem;
+					}
+				}
+
+				.btn {
+					background: $warning;
+					border: none;
+					color: #ffffff;
+					margin-top: 1rem;
+					padding: 1rem 1.5rem;
+
+					&:hover {
+						background: transparent;
+						outline: $warning;
+						color: #000;
+						border: 1px solid $warning;
+					}
+				}
+			}
+		}
+	}
+
+	//=============END OF SECTION FOUR===========
+	.section-five {
+		background: #ccceff;
+
+		.section-five-inner {
+			display: grid;
+			grid-template-columns: 1fr;
+			text-align: center;
+			padding-block: 2rem;
+
+			@media screen and (min-width: $md) {
+				grid-template-columns: 50% 45%;
+				justify-content: space-between;
+			}
+
+			.section-five-inner_left {
+				width: 100%;
+			}
+
+			.section-five-inner_right {
+				width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	//===========END OF SECTION FIVE============
+
+	.section-six {
+		.section-six-text {
+			text-align: center;
+
+			.description {
+				width: 90%;
+				margin: 0.8rem auto;
+			}
+		}
+
+		.section-six-images {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+			text-align: center;
+			margin-top: 1rem;
+
+			@media screen and (min-width: $md) {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			.image {
+				width: 100%;
+				border-top-left-radius: 7px;
+				border-top-right-radius: 7px;
+
+				img {
+					width: 100%;
+				}
+
+				span {
+					display: none;
+				}
+
+				.title {
+					font-weight: 500;
+					font-size: 1.5rem;
+					line-height: 44px;
+				}
+
+				.image-description {
+					width: 100%;
+					padding: 2rem;
+					text-align: center;
+					transform: all 400ms ease;
+					line-height: 1.5rem;
+					font-weight: 400;
+					background: $light-gray;
+
+					&:hover {
+						background: $warning;
+						color: white;
+						transition: all 400ms ease;
+					}
+				}
+			}
+		}
+	}
+
+	//========END OF SECTION SIX============
+}

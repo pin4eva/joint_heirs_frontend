@@ -1,6 +1,11 @@
 @import "./variables";
 
-header {
+.app-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+
 	.navbar {
 		background: rgba(3, 12, 224, 0.3);
 		backdrop-filter: blur(33px);
@@ -15,7 +20,6 @@ header {
 			color: #fff;
 
 			.logo {
-
 				text-decoration: none;
 				align-items: center;
 				gap: 0.5rem;
@@ -48,11 +52,14 @@ header {
 						text-decoration: none;
 						color: inherit;
 						transition: all 0.4s ease-in-out;
+						border-radius: 5px;
 
 						&:hover {
+							color: $warning;
+						}
+						&.active {
 							background-color: $warning;
-							padding: 10px 15px;
-							border-radius: 5px;
+							color: #fff;
 						}
 					}
 				}
@@ -63,8 +70,6 @@ header {
 					color: $warning;
 					text-decoration: none;
 				}
-
-
 			}
 		}
 
@@ -79,7 +84,7 @@ header {
 			display: none;
 		}
 
-		@media screen and (max-width: 920px) {
+		@media screen and (max-width: $md) {
 			.nav-inner {
 				.nav {
 					display: flex;
@@ -88,11 +93,11 @@ header {
 					align-items: flex-start;
 					flex: 1;
 					width: 70%;
-					height: 69vh;
 					position: absolute;
-					top: 81px;
+					top: 56px;
 					left: -100%;
 					transition: all 0.5s ease;
+					height: 100vh;
 
 					li {
 						margin: 2rem 1rem 0 1rem;
@@ -100,18 +105,19 @@ header {
 				}
 
 				.nav.active {
-					height: 68vh;
 					background: rgba(3, 12, 224, 0.3);
 					backdrop-filter: blur(33px);
 					left: 0;
 					opacity: 1;
-					transition: all 0.5s ease;
+				}
+
+				.nav-active {
+					margin: 0.7rem 0 0 1.8rem;
 				}
 			}
 
 			.fa-bars,
 			.fa-times {
-				margin-top: 5px;
 				display: block;
 				font-size: 30px;
 				color: white;

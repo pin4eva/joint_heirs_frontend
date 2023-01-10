@@ -1,0 +1,33 @@
+.rochester {
+	font-family: "Rochester", cursive;
+}
+
+.huge-text {
+	font-family: $poppins;
+	font-weight: 700;
+	font-size: 3rem;
+	color: $secondary;
+}
+
+.justify-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+}
+
+.button-animation {
+	&:hover {
+		animation: pulse;
+		animation-duration: 1.5s;
+		animation-iteration-count: 5;
+	}
+}
+
+.image-shake {
+	&:hover {
+		animation: tada;
+		animation-duration: 1.5s;
+		animation-iteration-count: 5;
+	}
+}
