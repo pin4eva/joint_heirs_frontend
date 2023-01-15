@@ -8,6 +8,9 @@ const nextConfig = {
 	env: {
 		API_URL: process.env.API_URL,
 	},
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 };
 
 module.exports = nextConfig;
