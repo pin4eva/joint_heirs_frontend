@@ -19,7 +19,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Home: NextPage = () => {
-	const [loaded] = useState(false);
+	const [loaded] = useState(true); // turn it back to false
 
 	// useEffect(() => {
 	// 	// toggle loaded if document is ready
