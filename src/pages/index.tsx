@@ -17,6 +17,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 const Home: NextPage = () => {
 	const [loaded, setLoaded] = useState(false);
 
@@ -111,7 +112,6 @@ const Home: NextPage = () => {
 											<div className="video">
 												<Image
 													src="/images/svg/video.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
@@ -124,7 +124,6 @@ const Home: NextPage = () => {
 											<div className="dates">
 												<Image
 													src="/images/svg/date.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
@@ -137,7 +136,6 @@ const Home: NextPage = () => {
 											<div className="events">
 												<Image
 													src="/images/svg/events.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
@@ -150,7 +148,6 @@ const Home: NextPage = () => {
 											<div className="tracker">
 												<Image
 													src="/images/svg/tracker.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
@@ -203,7 +200,7 @@ const Home: NextPage = () => {
 											Join Our Community
 										</h1>
 										<div className="cards">
-											{events?.splice(0, 3)?.map((event, i) => (
+											{[...events]?.splice(0, 3)?.map((event, i) => (
 												<EventCard key={i} event={event} />
 											))}
 										</div>
@@ -250,13 +247,7 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image
-												src="/images/girl.png"
-												layout="intrinsic"
-												width={529}
-												height={379}
-												alt="girl-image"
-											/>
+											<Image src="/images/girl.png" width={529} height={379} alt="girl-image" />
 										</div>
 										<div className="right">
 											<p className="belief-text rochester">Beliefs</p>
@@ -288,13 +279,7 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image
-												src="/images/man.png"
-												layout="intrinsic"
-												width={438}
-												height={603}
-												alt="man-image"
-											/>
+											<Image src="/images/man.png" width={438} height={603} alt="man-image" />
 										</div>
 									</div>
 								</div>
@@ -325,7 +310,6 @@ const Home: NextPage = () => {
 											<div className="children-branch">
 												<Image
 													src="/images/children.png"
-													layout="intrinsic"
 													width={450}
 													height={420}
 													className="branch-img"
@@ -337,7 +321,6 @@ const Home: NextPage = () => {
 											<div className="men-branch">
 												<Image
 													src="/images/men.png"
-													layout="intrinsic"
 													width={450}
 													height={420}
 													className="branch-img"
@@ -374,7 +357,6 @@ const Home: NextPage = () => {
 													<div className="donate">
 														<Image
 															src={item.image}
-															layout="intrinsic"
 															width={646}
 															height={419}
 															className="branch-img"
