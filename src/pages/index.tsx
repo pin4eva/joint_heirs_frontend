@@ -11,34 +11,35 @@ import FrontLayout from "../layouts/FrontLayout";
 import "animate.css";
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-const Home: NextPage = () => {
-	const [loaded, setLoaded] = useState(false);
 
-	useEffect(() => {
-		// toggle loaded if document is ready
-		if (document.readyState === "complete") {
-			setLoaded(true);
-			console.log("document loaded");
-		} else {
-			if (typeof window !== undefined) {
-				window?.addEventListener("load", () => {
-					const images = document?.getElementsByTagName("img");
-					const imageLength = images.length;
-					let loadedImages = 0;
-					Array.from(images).forEach((image) => {
-						if (image?.complete && image?.naturalHeight != 0) loadedImages += 1;
-					});
-					if (loadedImages === imageLength) setLoaded(true);
-				});
-			}
-		}
-	}, []);
+const Home: NextPage = () => {
+	const [loaded] = useState(true); // turn it back to false
+
+	// useEffect(() => {
+	// 	// toggle loaded if document is ready
+	// 	if (document.readyState === "complete") {
+	// 		setLoaded(true);
+	// 		console.log("document loaded");
+	// 	} else {
+	// 		if (typeof window !== undefined) {
+	// 			window?.addEventListener("load", () => {
+	// 				const images = document?.getElementsByTagName("img");
+	// 				const imageLength = images.length;
+	// 				let loadedImages = 0;
+	// 				Array.from(images).forEach((image) => {
+	// 					if (image?.complete && image?.naturalHeight != 0) loadedImages += 1;
+	// 				});
+	// 				if (loadedImages === imageLength) setLoaded(true);
+	// 			});
+	// 		}
+	// 	}
+	// }, []);
 
 	return (
 		<>
@@ -111,11 +112,11 @@ const Home: NextPage = () => {
 											<div className="video">
 												<Image
 													src="/images/svg/video.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
 													alt="video-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Watch and listen to <br /> Sermons
@@ -124,11 +125,11 @@ const Home: NextPage = () => {
 											<div className="dates">
 												<Image
 													src="/images/svg/date.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
 													alt="date-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Make <br /> Donations
@@ -137,11 +138,11 @@ const Home: NextPage = () => {
 											<div className="events">
 												<Image
 													src="/images/svg/events.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
 													alt="event-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Church Up coming <br /> Events
@@ -150,11 +151,11 @@ const Home: NextPage = () => {
 											<div className="tracker">
 												<Image
 													src="/images/svg/tracker.svg"
-													layout="intrinsic"
 													width={100}
 													height={100}
 													className="image-shake"
 													alt="tracker-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Find a Church <br /> Location/Branch
@@ -203,7 +204,7 @@ const Home: NextPage = () => {
 											Join Our Community
 										</h1>
 										<div className="cards">
-											{events?.splice(0, 3)?.map((event, i) => (
+											{[...events]?.splice(0, 3)?.map((event, i) => (
 												<EventCard key={i} event={event} />
 											))}
 										</div>
@@ -252,10 +253,10 @@ const Home: NextPage = () => {
 										>
 											<Image
 												src="/images/girl.png"
-												layout="intrinsic"
 												width={529}
 												height={379}
 												alt="girl-image"
+												style={{ width: "auto", height: "auto" }}
 											/>
 										</div>
 										<div className="right">
@@ -290,10 +291,10 @@ const Home: NextPage = () => {
 										>
 											<Image
 												src="/images/man.png"
-												layout="intrinsic"
 												width={438}
 												height={603}
 												alt="man-image"
+												style={{ width: "auto", height: "auto" }}
 											/>
 										</div>
 									</div>
@@ -325,10 +326,10 @@ const Home: NextPage = () => {
 											<div className="children-branch">
 												<Image
 													src="/images/children.png"
-													layout="intrinsic"
 													width={450}
 													height={420}
 													className="branch-img"
+													style={{ width: "auto", height: "auto" }}
 													alt="children-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
@@ -337,7 +338,6 @@ const Home: NextPage = () => {
 											<div className="men-branch">
 												<Image
 													src="/images/men.png"
-													layout="intrinsic"
 													width={450}
 													height={420}
 													className="branch-img"
@@ -374,7 +374,6 @@ const Home: NextPage = () => {
 													<div className="donate">
 														<Image
 															src={item.image}
-															layout="intrinsic"
 															width={646}
 															height={419}
 															className="branch-img"
