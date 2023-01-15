@@ -10,8 +10,8 @@ const EventCard: React.FC<{ event: IEvent }> = ({ event }) => {
 				<h4 className="text-dark fs-5 mb-4">{event?.title}</h4>
 				<div className="content-box">
 					<p className="text-secondary mb-3">{event?.description}</p>
-					<Link href="/">
-						<a className="mb-4 mt-2">Read More</a>
+					<Link href="/" className="mb-4 mt-2">
+						Read More
 					</Link>
 				</div>
 			</div>

@@ -97,8 +97,11 @@ export default EventsPage;
 const TabNav: React.FC<{ isActive: boolean; tab: string }> = ({ isActive, tab }) => {
 	return (
 		<li>
-			<Link href={`/events?tab=${tab}`}>
-				<a className={`event-navlink text-capitalize ${isActive ? "active" : ""}`}>{tab}</a>
+			<Link
+				href={`/events?tab=${tab}`}
+				className={`event-navlink text-capitalize ${isActive ? "active" : ""}`}
+			>
+				{tab}
 			</Link>
 		</li>
 	);

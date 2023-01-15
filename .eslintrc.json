@@ -26,6 +26,6 @@
 		"react/jsx-uses-react": "off",
 		"react/react-in-jsx-scope": "off",
 		// "no-unused-vars": "warn",
-		"no-unused-expressions": "warn"
+		"no-unused-expressions": "error"
 	}
 }
