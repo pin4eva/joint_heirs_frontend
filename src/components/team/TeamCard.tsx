@@ -11,8 +11,8 @@ const TeamCard: React.FC<{ team: TeamCardI }> = ({ team }) => {
 			</div>
 			<div className="team-card-desc">
 				<h5>
-					<Link href={`/team/${team?.id}`}>
-						<a className="link-dark text-decoration-none">{team?.name}</a>
+					<Link href={`/team/${team?.id}`} className="link-dark text-decoration-none">
+						{team?.name}
 					</Link>
 				</h5>
 				<h6>{team?.position}</h6>

@@ -11,21 +11,15 @@ const SermonAudioComp = () => {
 				<div className="audio-hold">
 					<div className="audio-play-icons">
 						<Link href="/">
-							<a>
-								<img src="/images/SAplay.png" alt="" />
-							</a>
+							<img src="/images/SAplay.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAvoice.png" alt="" />
-							</a>
+							<img src="/images/SAvoice.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAread.png" alt="" />
-							</a>
+							<img src="/images/SAread.png" alt="" />
 						</Link>
 					</div>
 					<div className="audio-playing">
@@ -38,21 +32,15 @@ const SermonAudioComp = () => {
 				<div className="audio-hold">
 					<div className="audio-play-icons">
 						<Link href="/">
-							<a>
-								<img src="/images/SAplay.png" alt="" />
-							</a>
+							<img src="/images/SAplay.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAvoice.png" alt="" />
-							</a>
+							<img src="/images/SAvoice.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAread.png" alt="" />
-							</a>
+							<img src="/images/SAread.png" alt="" />
 						</Link>
 					</div>
 					<div className="audio-playing">
@@ -65,21 +53,15 @@ const SermonAudioComp = () => {
 				<div className="audio-hold">
 					<div className="audio-play-icons">
 						<Link href="/">
-							<a>
-								<img src="/images/SAplay.png" alt="" />
-							</a>
+							<img src="/images/SAplay.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAvoice.png" alt="" />
-							</a>
+							<img src="/images/SAvoice.png" alt="" />
 						</Link>
 						<hr />
 						<Link href="/">
-							<a>
-								<img src="/images/SAread.png" alt="" />
-							</a>
+							<img src="/images/SAread.png" alt="" />
 						</Link>
 					</div>
 					<div className="audio-playing">
@@ -91,8 +73,8 @@ const SermonAudioComp = () => {
 				</div>
 			</div>
 
-			<Link href="/">
-				<a className=" pd-2 text-decoration-none btn button-animation">View More</a>
+			<Link href="/" className=" pd-2 text-decoration-none btn button-animation">
+				View More
 			</Link>
 		</div>
 	);

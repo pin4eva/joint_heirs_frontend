@@ -84,15 +84,6 @@ const VideoComp = () => {
 
 export default VideoComp;
 
-interface ISermon {
-	img: string;
-	topic: string;
-	text: string;
-	name: string;
-	date: string;
-	month: string;
-}
-
 const sermonDatas = [
 	{
 		id: 1,

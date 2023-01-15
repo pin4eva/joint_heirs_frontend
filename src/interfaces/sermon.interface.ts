@@ -1,12 +1,8 @@
-import { Iimage } from "./image.interface";
-
 export interface ISermon {
-	id?: string;
 	title: string;
-	date: Date | string;
-	body?: string;
-	thumbnail: Iimage;
-	audioLink: string;
-	videoLink: string;
-	sermonBy: string;
+	youtubeLink: string;
+	body: string;
+	thumbnail: string;
+	date: Date;
+	author: string;
 }

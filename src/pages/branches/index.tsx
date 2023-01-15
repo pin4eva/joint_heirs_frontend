@@ -1,8 +1,5 @@
-import Link from "next/link";
-import React from "react";
 import PastorBranchComp from "../../components/branches/PastorBranchComp";
 
-import HeaderComp from "../../components/HeaderComp";
 import FrontLayout from "../../layouts/FrontLayout";
 
 const OurBranch = () => {

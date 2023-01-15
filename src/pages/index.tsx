@@ -11,12 +11,12 @@ import FrontLayout from "../layouts/FrontLayout";
 import "animate.css";
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
+import { useEffect, useState } from "react";
+import { ClipLoader } from "react-spinners";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useEffect, useState } from "react";
-import { ClipLoader } from "react-spinners";
 const Home: NextPage = () => {
 	const [loaded, setLoaded] = useState(false);
 
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 			console.log("document loaded");
 		} else {
 			if (typeof window !== undefined) {
-				window?.addEventListener("load", (e) => {
+				window?.addEventListener("load", () => {
 					const images = document?.getElementsByTagName("img");
 					const imageLength = images.length;
 					let loadedImages = 0;
@@ -56,8 +56,8 @@ const Home: NextPage = () => {
 										Welcome To Our <br /> Church
 									</h1>
 									<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
-									<Link href="/">
-										<a className="btn button-animation">I&apos;m New Here</a>
+									<Link href="/" className="btn button-animation">
+										I&apos;m New Here
 									</Link>
 								</div>
 							</div>
@@ -69,8 +69,8 @@ const Home: NextPage = () => {
 										<p className="text-dark fw-semibold mb-0">Upcoming Sermon</p>
 										<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
 									</div>
-									<Link href="/">
-										<a className="btn button-animation">Sermon Details</a>
+									<Link href="/" className="btn button-animation">
+										Sermon Details
 									</Link>
 								</div>
 							</div>
@@ -96,8 +96,8 @@ const Home: NextPage = () => {
 													aspects of our faith. Firmly rooted in Scripture, the <br /> beliefs of
 													Joint Heirs Assembly guide our decisions as a church.
 												</p>
-												<Link href="/">
-													<a className="btn button-animation">Learn More</a>
+												<Link href="/" className="btn button-animation">
+													Learn More
 												</Link>
 											</div>
 										</div>
@@ -115,6 +115,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="video-icon"
 												/>
 												<p className="text-secondary">
 													Watch and listen to <br /> Sermons
@@ -127,6 +128,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="date-icon"
 												/>
 												<p className="text-secondary">
 													Make <br /> Donations
@@ -139,6 +141,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="event-icon"
 												/>
 												<p className="text-secondary">
 													Church Up coming <br /> Events
@@ -151,6 +154,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="tracker-icon"
 												/>
 												<p className="text-secondary">
 													Find a Church <br /> Location/Branch
@@ -169,17 +173,16 @@ const Home: NextPage = () => {
 											<h1 className="text-light huge-text">
 												Need <br /> Prayers ?
 											</h1>
-											<Link href="/">
-												<a
-													className="btn mt-4 button-animation"
-													data-aos="flip-left"
-													data-aos-easing="ease-in-out"
-													data-aos-delay="50"
-													data-aos-duration="700"
-													data-aos-offset="-5"
-												>
-													Request
-												</a>
+											<Link
+												href="/"
+												className="btn mt-4 button-animation"
+												data-aos="flip-left"
+												data-aos-easing="ease-in-out"
+												data-aos-delay="50"
+												data-aos-duration="700"
+												data-aos-offset="-5"
+											>
+												Request
 											</Link>
 										</div>
 									</div>
@@ -204,8 +207,8 @@ const Home: NextPage = () => {
 												<EventCard key={i} event={event} />
 											))}
 										</div>
-										<Link href="/events">
-											<a className="event-btn btn button-animation">More Events</a>
+										<Link href="/events" className="event-btn btn button-animation">
+											More Events
 										</Link>
 									</div>
 								</div>
@@ -218,23 +221,19 @@ const Home: NextPage = () => {
 										<p className="text-light">Latest Sermon</p>
 										<p className="resurrection-text-big">The Resurrection of Jesus</p>
 										<div className="playlet-list">
-											<Link href="/">
-												<a className="samon btn button-animation">Watch Sermon</a>
+											<Link href="/" className="samon btn button-animation">
+												Watch Sermon
 											</Link>
 											<Link href="/">
-												<a>
-													<i className="fa-solid fa-microphone button-animation"></i>
-												</a>
+												<i className="fa-solid fa-microphone button-animation"></i>
 											</Link>
 											<Link href="/">
-												<a>
-													<img src="/images/book.png " className="button-animation"></img>
-												</a>
+												<img src="/images/book.png " className="button-animation"></img>
 											</Link>
 										</div>
 
-										<Link href="/">
-											<a className="more-samon btn button-animation">More Sermons</a>
+										<Link href="/" className="more-samon btn button-animation">
+											More Sermons
 										</Link>
 									</div>
 								</div>
@@ -251,7 +250,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/girl.png" layout="intrinsic" width={529} height={379} />
+											<Image
+												src="/images/girl.png"
+												layout="intrinsic"
+												width={529}
+												height={379}
+												alt="girl-image"
+											/>
 										</div>
 										<div className="right">
 											<p className="belief-text rochester">Beliefs</p>
@@ -262,8 +267,8 @@ const Home: NextPage = () => {
 												praying and celebrating baptism and communion.
 											</p>
 											<div>
-												<Link href="/">
-													<a className="button-animation btn">About Us</a>
+												<Link href="/" className="button-animation btn">
+													About Us
 												</Link>
 											</div>
 										</div>
@@ -283,7 +288,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/man.png" layout="intrinsic" width={438} height={603} />
+											<Image
+												src="/images/man.png"
+												layout="intrinsic"
+												width={438}
+												height={603}
+												alt="man-image"
+											/>
 										</div>
 									</div>
 								</div>
@@ -318,6 +329,7 @@ const Home: NextPage = () => {
 													width={450}
 													height={420}
 													className="branch-img"
+													alt="children-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
 												<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
@@ -329,6 +341,7 @@ const Home: NextPage = () => {
 													width={450}
 													height={420}
 													className="branch-img"
+													alt="men-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
 												<p className="mb-0 text-secondary">Airforce Branch</p>
@@ -365,6 +378,7 @@ const Home: NextPage = () => {
 															width={646}
 															height={419}
 															className="branch-img"
+															alt="branch-image"
 														/>
 														<div className="donate-content">
 															<h3 className="donate-heading">{item.title}</h3>
@@ -377,8 +391,8 @@ const Home: NextPage = () => {
 																	<h2>{item.price}</h2>
 																	<hr />
 																</div>
-																<Link href="/">
-																	<a className="button-animation btn">Donate</a>
+																<Link href="/" className="button-animation btn">
+																	Donate
 																</Link>
 															</div>
 														</div>
@@ -480,33 +494,25 @@ const Home: NextPage = () => {
 											<div className="botom">
 												<div className="message">
 													<Link href="/">
-														<a>
-															<i className="fa-solid fa-envelope mb-2"></i>
-															<p className="text-secondary fw-bold m-0">Email Us</p>
-														</a>
+														<i className="fa-solid fa-envelope mb-2"></i>
+														<p className="text-secondary fw-bold m-0">Email Us</p>
 													</Link>
 													<p className="text-center">
 														Email us for general Queries including mentorship and spiritual
 														counselling
 													</p>
-													<Link href="https://jointheirs5@gmail.com">
-														<a>jointheirs5@gmail.com</a>
-													</Link>
+													<Link href="https://jointheirs5@gmail.com">jointheirsng@gmail.com</Link>
 												</div>
 												<div className="call">
 													<Link href="/">
-														<a>
-															<img src="/images/phone.png" alt="" />
-															<p className="text-secondary fw-bold m-0">Call Us</p>
-														</a>
+														<img src="/images/phone.png" alt="" />
+														<p className="text-secondary fw-bold m-0">Call Us</p>
 													</Link>
 													<p className="text-center">
 														You can also call us for general Queries including mentorship and
 														spiritual counselling
 													</p>
-													<Link href="https://jointheirs5@gmail.com">
-														<a>jointheirs5@gmail.com</a>
-													</Link>
+													<Link href="https://jointheirs5@gmail.com">jointheirs5@gmail.com</Link>
 												</div>
 											</div>
 										</div>
