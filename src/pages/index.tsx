@@ -116,6 +116,7 @@ const Home: NextPage = () => {
 													height={100}
 													className="image-shake"
 													alt="video-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Watch and listen to <br /> Sermons
@@ -128,6 +129,7 @@ const Home: NextPage = () => {
 													height={100}
 													className="image-shake"
 													alt="date-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Make <br /> Donations
@@ -140,6 +142,7 @@ const Home: NextPage = () => {
 													height={100}
 													className="image-shake"
 													alt="event-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Church Up coming <br /> Events
@@ -152,6 +155,7 @@ const Home: NextPage = () => {
 													height={100}
 													className="image-shake"
 													alt="tracker-icon"
+													style={{ width: "auto", height: "auto" }}
 												/>
 												<p className="text-secondary">
 													Find a Church <br /> Location/Branch
@@ -247,7 +251,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/girl.png" width={529} height={379} alt="girl-image" />
+											<Image
+												src="/images/girl.png"
+												width={529}
+												height={379}
+												alt="girl-image"
+												style={{ width: "auto", height: "auto" }}
+											/>
 										</div>
 										<div className="right">
 											<p className="belief-text rochester">Beliefs</p>
@@ -279,7 +289,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/man.png" width={438} height={603} alt="man-image" />
+											<Image
+												src="/images/man.png"
+												width={438}
+												height={603}
+												alt="man-image"
+												style={{ width: "auto", height: "auto" }}
+											/>
 										</div>
 									</div>
 								</div>
@@ -313,6 +329,7 @@ const Home: NextPage = () => {
 													width={450}
 													height={420}
 													className="branch-img"
+													style={{ width: "auto", height: "auto" }}
 													alt="children-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
