@@ -64,7 +64,7 @@ export const audioDatas = [
 			<p>
 				20 When the uproar had ended, Paul sent for the disciples and, after encouraging them, said
 				goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words of
-				encouragement to the people, <Link href="#"> Read more</Link>.
+				encouragement to the people, <Link href="/"> Read more</Link>.
 			</p>
 		),
 	},
@@ -77,7 +77,7 @@ export const audioDatas = [
 			<p>
 				When the uproar had ended, Paul sent for the disciples and, after encouraging them, said
 				goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words of
-				encouragement to the people, <Link href="#"> Read more</Link>.
+				encouragement to the people, <Link href="/"> Read more</Link>.
 			</p>
 		),
 	},
@@ -90,7 +90,7 @@ export const audioDatas = [
 			<p>
 				When the uproar had ended, Paul sent for the disciples and, after encouraging them, said
 				goodbye and set out for Macedonia. 2 He traveled through that area, speaking many words of
-				encouragement to the people, <Link href="#"> Read more</Link>.
+				encouragement to the people, <Link href="/"> Read more</Link>.
 			</p>
 		),
 	},

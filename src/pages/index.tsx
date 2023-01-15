@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 			console.log("document loaded");
 		} else {
 			if (typeof window !== undefined) {
-				window?.addEventListener("load", (e) => {
+				window?.addEventListener("load", () => {
 					const images = document?.getElementsByTagName("img");
 					const imageLength = images.length;
 					let loadedImages = 0;
@@ -115,6 +115,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="video-icon"
 												/>
 												<p className="text-secondary">
 													Watch and listen to <br /> Sermons
@@ -127,6 +128,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="date-icon"
 												/>
 												<p className="text-secondary">
 													Make <br /> Donations
@@ -139,6 +141,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="event-icon"
 												/>
 												<p className="text-secondary">
 													Church Up coming <br /> Events
@@ -151,6 +154,7 @@ const Home: NextPage = () => {
 													width={100}
 													height={100}
 													className="image-shake"
+													alt="tracker-icon"
 												/>
 												<p className="text-secondary">
 													Find a Church <br /> Location/Branch
@@ -246,7 +250,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/girl.png" layout="intrinsic" width={529} height={379} />
+											<Image
+												src="/images/girl.png"
+												layout="intrinsic"
+												width={529}
+												height={379}
+												alt="girl-image"
+											/>
 										</div>
 										<div className="right">
 											<p className="belief-text rochester">Beliefs</p>
@@ -278,7 +288,13 @@ const Home: NextPage = () => {
 											data-aos-delay="90"
 											data-aos-easing="ease-in-out"
 										>
-											<Image src="/images/man.png" layout="intrinsic" width={438} height={603} />
+											<Image
+												src="/images/man.png"
+												layout="intrinsic"
+												width={438}
+												height={603}
+												alt="man-image"
+											/>
 										</div>
 									</div>
 								</div>
@@ -313,6 +329,7 @@ const Home: NextPage = () => {
 													width={450}
 													height={420}
 													className="branch-img"
+													alt="children-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
 												<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
@@ -324,6 +341,7 @@ const Home: NextPage = () => {
 													width={450}
 													height={420}
 													className="branch-img"
+													alt="men-image"
 												/>
 												<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
 												<p className="mb-0 text-secondary">Airforce Branch</p>
@@ -360,6 +378,7 @@ const Home: NextPage = () => {
 															width={646}
 															height={419}
 															className="branch-img"
+															alt="branch-image"
 														/>
 														<div className="donate-content">
 															<h3 className="donate-heading">{item.title}</h3>
