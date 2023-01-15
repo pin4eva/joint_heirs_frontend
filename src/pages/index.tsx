@@ -11,7 +11,7 @@ import FrontLayout from "../layouts/FrontLayout";
 import "animate.css";
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -19,27 +19,27 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Home: NextPage = () => {
-	const [loaded, setLoaded] = useState(false);
+	const [loaded] = useState(false);
 
-	useEffect(() => {
-		// toggle loaded if document is ready
-		if (document.readyState === "complete") {
-			setLoaded(true);
-			console.log("document loaded");
-		} else {
-			if (typeof window !== undefined) {
-				window?.addEventListener("load", () => {
-					const images = document?.getElementsByTagName("img");
-					const imageLength = images.length;
-					let loadedImages = 0;
-					Array.from(images).forEach((image) => {
-						if (image?.complete && image?.naturalHeight != 0) loadedImages += 1;
-					});
-					if (loadedImages === imageLength) setLoaded(true);
-				});
-			}
-		}
-	}, []);
+	// useEffect(() => {
+	// 	// toggle loaded if document is ready
+	// 	if (document.readyState === "complete") {
+	// 		setLoaded(true);
+	// 		console.log("document loaded");
+	// 	} else {
+	// 		if (typeof window !== undefined) {
+	// 			window?.addEventListener("load", () => {
+	// 				const images = document?.getElementsByTagName("img");
+	// 				const imageLength = images.length;
+	// 				let loadedImages = 0;
+	// 				Array.from(images).forEach((image) => {
+	// 					if (image?.complete && image?.naturalHeight != 0) loadedImages += 1;
+	// 				});
+	// 				if (loadedImages === imageLength) setLoaded(true);
+	// 			});
+	// 		}
+	// 	}
+	// }, []);
 
 	return (
 		<>
