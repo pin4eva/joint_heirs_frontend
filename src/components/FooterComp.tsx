@@ -31,16 +31,14 @@ const FooterComp = () => {
 							<ul className="nav">
 								{navList.map((nav, i) => (
 									<li className="nav-item" key={i}>
-										<Link href={nav.link}>
-											<a className="nav-link fw-500">{nav.name}</a>
+										<Link href={nav.link} className="nav-link fw-500">
+											{nav.name}
 										</Link>
 									</li>
 								))}
 							</ul>
 							<div className="nav-active">
-								<Link href="/">
-									<a>JOIN US</a>
-								</Link>
+								<Link href="/">JOIN US</Link>
 							</div>
 						</div>
 						<div className="text-center d-flex">
@@ -55,25 +53,17 @@ const FooterComp = () => {
 							<button className="btn btn-outline-light fw-bold">TESTIMONY</button>
 						</div>
 						<div className="footer-icons">
-							<Link href="/">
-								<a className="facebook">
-									<i className="fa-brands fa-facebook-f"></i>
-								</a>
+							<Link href="/" className="facebook">
+								<i className="fa-brands fa-facebook-f"></i>
 							</Link>
-							<Link href="/">
-								<a className="twitter">
-									<i className="fa-brands fa-twitter"></i>
-								</a>
+							<Link href="/" className="twitter">
+								<i className="fa-brands fa-twitter"></i>
 							</Link>
-							<Link href="/">
-								<a className="insta">
-									<i className="fa-brands fa-instagram"></i>
-								</a>
+							<Link href="/" className="insta">
+								<i className="fa-brands fa-instagram"></i>
 							</Link>
-							<Link href="/">
-								<a className="youtube">
-									<i className="fa-brands fa-youtube"></i>
-								</a>
+							<Link href="/" className="youtube">
+								<i className="fa-brands fa-youtube"></i>
 							</Link>
 						</div>
 					</div>

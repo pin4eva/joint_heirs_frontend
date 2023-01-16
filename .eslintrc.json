@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": [
+		"next/core-web-vitals",
+		"plugin:@next/next/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"plugins": ["react", "react-hooks", "@typescript-eslint"],
+	"parser": "@typescript-eslint/parser",
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx"],
+			"parserOptions": {
+				"project": "./tsconfig.json"
+			}
+		}
+	],
+	"rules": {
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["invalidHref", "preferButton"]
+			}
+		],
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		"no-unused-vars": "error",
+		"no-unused-expressions": "error"
+	}
 }
