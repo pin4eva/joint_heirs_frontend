@@ -57,8 +57,8 @@ const Home: NextPage = () => {
 										Welcome To Our <br /> Church
 									</h1>
 									<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
-									<Link href="/" className="btn button-animation">
-										I&apos;m New Here
+									<Link href="/sermons" className="btn button-animation">
+										Check Sermons
 									</Link>
 								</div>
 							</div>
@@ -67,8 +67,10 @@ const Home: NextPage = () => {
 							<div className="container">
 								<div className="sermon-text">
 									<div className="text-start">
-										<p className="text-dark fw-semibold mb-0">Upcoming Sermon</p>
-										<h4 className="text-secondary fw-bold">“The Law of Giving” -Rev. Joe Simeon</h4>
+										<p className="text-dark fw-semibold mb-0">Recent Sermon</p>
+										<h4 className="text-secondary fw-bold">
+											“The Law of Giving” - Apst. Edirhin Eta
+										</h4>
 									</div>
 									<Link href="/" className="btn button-animation">
 										Sermon Details
@@ -174,8 +176,8 @@ const Home: NextPage = () => {
 											<h1 className="text-light huge-text">
 												Need <br /> Prayers ?
 											</h1>
-											<Link
-												href="/"
+											<a
+												href="/#contact-us"
 												className="btn mt-4 button-animation"
 												data-aos="flip-left"
 												data-aos-easing="ease-in-out"
@@ -183,8 +185,8 @@ const Home: NextPage = () => {
 												data-aos-duration="700"
 												data-aos-offset="-5"
 											>
-												Request
-											</Link>
+												Share It
+											</a>
 										</div>
 									</div>
 								</div>
@@ -404,7 +406,7 @@ const Home: NextPage = () => {
 							</div>
 						</section>
 						<section>
-							<div className="contact-us">
+							<div className="contact-us" id="contact-us">
 								<div className="top">
 									<div className="container top-inner">
 										<div className="container">
