@@ -16,7 +16,7 @@
 	}
 }
 
-.branch-pastor {
+.branch-pastors {
 	margin-bottom: 7rem;
 	margin-top: 5rem;
 
@@ -36,31 +36,18 @@
 		flex-direction: column;
 	}
 
-	&-ken {
+	&-item {
 		background-color: #ededed;
 		width: 30rem;
 		height: 45rem;
 
 		&-img {
-			background-image: url("/images/pst-ken.png");
 			background-repeat: no-repeat;
 			min-width: 30rem;
 			width: 100%;
 			min-height: 24rem;
-		}
-	}
-
-	&-john {
-		background-color: #ededed;
-		width: 30rem;
-		height: 45rem;
-
-		&-img {
-			background-image: url("/images/pst-john.png");
-			background-repeat: no-repeat;
-			min-width: 30rem;
-			width: 100%;
-			min-height: 24rem;
+			background-size: cover;
+			background-position: 0;
 		}
 	}
 }
