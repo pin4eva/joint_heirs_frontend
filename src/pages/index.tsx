@@ -335,7 +335,7 @@ const Home: NextPage = () => {
 													style={{ width: "auto", height: "auto" }}
 													alt="children-image"
 												/>
-												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
+												<h4 className="mb-0 text-dark">Pastor Whyte Eta</h4>
 												<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
 											</div>
 											<div className="men-branch">
@@ -346,8 +346,8 @@ const Home: NextPage = () => {
 													className="branch-img"
 													alt="men-image"
 												/>
-												<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
-												<p className="mb-0 text-secondary">Airforce Branch</p>
+												<h4 className="mb-0 text-dark">Evang. OZ</h4>
+												<p className="mb-0 text-secondary">Eneka Branch</p>
 											</div>
 										</div>
 									</div>
