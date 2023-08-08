@@ -70,8 +70,8 @@ const FooterComp = () => {
 					<hr className="text-light mt-4" />
 					<div className="text-center">
 						<p className="text-light mb-0 ">
-							<big className="fw-bold">JointHeirs</big> {new Date().getFullYear()}. All Rights
-							Reserved
+							<big className="fw-bold">Joint Heirs Assembly International </big>{" "}
+							{new Date().getFullYear()}. All Rights Reserved
 						</p>
 					</div>
 				</div>
