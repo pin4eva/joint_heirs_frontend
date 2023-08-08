@@ -415,9 +415,10 @@ const Home: NextPage = () => {
 												Get in Contact with Us
 											</h1>
 											<p className="text-light text-center ">
-												We are called to eat, drink, speak, think and work to the glory of God. We
-												worship God by remembering the <br /> gospel through preaching, teaching,
-												singing, praying and celebrating baptism and communion.
+												To reach out and reconcile the people to God through Christ, to reach in and
+												develop the people to spiritual, emotional, and social maturity, to reach up
+												in intercession for the people and the nation to reach down in love and help
+												those in need
 											</p>
 										</div>
 										<div className="bottom-container">
