@@ -265,9 +265,11 @@ const Home: NextPage = () => {
 											<p className="belief-text rochester">Beliefs</p>
 											<p className="text-secondary fs-700 fw-bold mission-text">Our Mission</p>
 											<p className="text-secondary mt-4 mb-0">
-											To reach out and reconcile the people to God through Christ, to reach in and develop the people to spiritual, emotional, and social maturity, to reach up in intercession for the people and the nation
-
-to reach down in love and help those in need
+												To reach out and reconcile the people to God through Christ, to reach in and
+												develop the people to spiritual, emotional, and social maturity, to reach up
+												in intercession for the people and the nation to reach down in love and help
+												those in need{" "}
+											</p>
 											<div>
 												<Link href="/" className="button-animation btn">
 													About Us
