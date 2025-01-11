@@ -21,26 +21,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Home: NextPage = () => {
 	const [loaded] = useState(true); // turn it back to false
 
-	// useEffect(() => {
-	// 	// toggle loaded if document is ready
-	// 	if (document.readyState === "complete") {
-	// 		setLoaded(true);
-	// 		console.log("document loaded");
-	// 	} else {
-	// 		if (typeof window !== undefined) {
-	// 			window?.addEventListener("load", () => {
-	// 				const images = document?.getElementsByTagName("img");
-	// 				const imageLength = images.length;
-	// 				let loadedImages = 0;
-	// 				Array.from(images).forEach((image) => {
-	// 					if (image?.complete && image?.naturalHeight != 0) loadedImages += 1;
-	// 				});
-	// 				if (loadedImages === imageLength) setLoaded(true);
-	// 			});
-	// 		}
-	// 	}
-	// }, []);
-
 	return (
 		<>
 			<div className="loader" style={{ display: loaded ? "none" : "flex" }}>
@@ -54,7 +34,7 @@ const Home: NextPage = () => {
 							<div className="container hero-inner text-center animate__animated animate__backInDown">
 								<div className="welcome-text">
 									<h1 className=" text-light">
-										Welcome To Our <br /> Church
+										Welcome To Life
 									</h1>
 									<h4 className="rochester jhai-text">Joint Heirs Assembly...</h4>
 									<Link href="/sermons" className="btn button-animation">
