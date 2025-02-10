@@ -1,50 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import { events } from "components/events/event.data";
-import EventCard from "components/events/EventCard";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useMemo } from "react";
+import EventContent from "components/events/EventContent";
 import FrontLayout from "../../layouts/FrontLayout";
 
 const EventsPage = () => {
-	const router = useRouter();
-	const activeTab = router.query?.tab || ("General" as string | undefined);
-
-	const categoriesObj = new Set(events.map((event) => event.category));
-
-	const tabItems = ["General", ...Array.from(categoriesObj)];
-	const stateEvents = useMemo(() => {
-		if (activeTab === "General") return events;
-		else return events.filter((event) => event.category === String(activeTab)?.toLowerCase());
-	}, [activeTab]);
-
 	return (
 		<FrontLayout title="Events">
-			<div className="events">
-				<section className="events-hero">
+			<section className="events">
+				<div className="events-hero">
 					<div className="container events-hero-inner">
 						<h1>Our Annual Events</h1>
 						<h4 className="rochester">Joint Heirs Assembly...</h4>
 					</div>
-				</section>
-				<section className="events-content">
-					<nav className="events-content-nav">
-						<ul className="container">
-							{tabItems.map((tab) => (
-								<TabNav key={tab} isActive={Boolean(activeTab === tab)} tab={tab} />
-							))}
-						</ul>
-					</nav>
-					<div className="events-content-cards container">
-						{stateEvents.length > 0 ? (
-							stateEvents?.map((item, i) => <EventCard key={i} event={item} />)
-						) : (
-							<p className="fallback-text text-uppercase">
-								THERE ARE NO UPCOMING EVENTS FOR {activeTab}
-							</p>
-						)}
-					</div>
-				</section>
+				</div>
+				<div className="events-content">
+					<EventContent />
+				</div>
 				<section className="events-location">
 					<div className="events-location-inner container">
 						<div className="events-location-inner_text">
@@ -87,22 +57,9 @@ const EventsPage = () => {
 						<img src="/images/events-location-img.png" alt="" className="circle-img" />
 					</div>
 				</section>
-			</div>
+			</section>
 		</FrontLayout>
 	);
 };
 
 export default EventsPage;
-
-const TabNav: React.FC<{ isActive: boolean; tab: string }> = ({ isActive, tab }) => {
-	return (
-		<li>
-			<Link
-				href={`/events?tab=${tab}`}
-				className={`event-navlink text-capitalize ${isActive ? "active" : ""}`}
-			>
-				{tab}
-			</Link>
-		</li>
-	);
-};

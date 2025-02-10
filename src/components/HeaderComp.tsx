@@ -1,12 +1,16 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import ClickAwayListener from "react-click-away-listener";
 
 const HeaderComp = () => {
 	const [open, setOpen] = useState(false);
-	const router = useRouter();
+	// const router = useRouter();
+	const pathname = usePathname();
+	//   const searchParams = useSearchParams()
 	const handleClickAway = () => {
 		setOpen(false);
 	};
@@ -26,7 +30,7 @@ const HeaderComp = () => {
 									<Link
 										href={nav.link}
 										className={`nav-link fw-500 text-uppercase ${
-											router.pathname === nav.link ? "active" : ""
+											pathname === nav.link ? "active" : ""
 										}`}
 										onClick={() => setOpen(false)}
 									>

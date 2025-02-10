@@ -1,29 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import { departmentsData } from "components/team/team-data";
-import { TeamCardI } from "components/team/team-interfaces";
 import TeamHero from "components/team/TeamHero";
 import FrontLayout from "layouts/FrontLayout";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
 
-const SingleTeam = () => {
-	const query = useRouter().query;
-	const [team, setTeam] = useState<TeamCardI>();
-
-	useEffect(() => {
-		if (query?.id) {
-			const team = departmentsData.find((department) => department?.id === Number(query?.id));
-			setTeam(team);
-		}
-	}, [query?.id]);
-
-	if (!team) return <p>loading...</p>;
+const SingleTeam = async ({ params }: { params: Promise<{ id?: string }> }) => {
+	const id = await params;
+	let team;
+	if (id.id) {
+		const data = departmentsData.find((department) => department?.id === Number(id.id));
+		team = data;
+	}
 
 	return (
 		<FrontLayout title="Team">
 			<div className="team">
 				<div className="single-team">
-					<TeamHero heroTitle={team?.name} />
+					{/* <TeamHero heroTitle={team?.name} /> */}
+					<TeamHero heroTitle={""} />
 
 					<section className="single-team-info p-5">
 						<div className="img">

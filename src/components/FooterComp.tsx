@@ -29,13 +29,25 @@ const FooterComp = () => {
 					<div className="footer-main-content">
 						<div className="text-centa">
 							<ul className="nav">
-								{navList.map((nav, i) => (
-									<li className="nav-item" key={i}>
-										<Link href={nav.link} className="nav-link fw-500">
-											{nav.name}
-										</Link>
-									</li>
-								))}
+								{/* {navList &&
+									navList?.map((nav, i) => (
+										<li className="nav-item" key={i}>
+											<Link href={nav.link} className="nav-link fw-500">
+												{nav.name}
+											</Link>
+										</li>
+									))} */}
+								{Array.isArray(navList) && navList.length > 0 ? (
+									navList.map((nav, i) => (
+										<li className="nav-item" key={i}>
+											<Link href={nav.link} className="nav-link fw-500">
+												{nav.name}
+											</Link>
+										</li>
+									))
+								) : (
+									<p>No navigation items available.</p>
+								)}
 							</ul>
 							<div className="nav-active">
 								<Link href="/">JOIN US</Link>
