@@ -1,39 +1,36 @@
-import FrontLayout from "layouts/FrontLayout";
+import { SermonTabEnum, TabComp } from "components/sermons/TabComp";
 import RecordedComp from "./recordededComp";
 import VideoComp from "./videoComp";
 import WrittenComp from "./writtenComp";
-import { SermonTabEnum, TabComp } from "components/sermons/TabComp";
 
 const SermonsPage = async ({ searchParams }: { searchParams: Promise<{ tab?: string }> }) => {
 	const params = await searchParams;
 	const activeTab = params.tab || "videos";
 	return (
-		<FrontLayout title="Sermon">
-			<div id="sermon">
-				<header className="sermon-header">
-					<div className="sermon-header-inner">
-						<p className="top-text">Our Sermons</p>
-						<p className=" text-style">Joint Heirs Assembly...</p>
-					</div>
-				</header>
+		<div id="sermon">
+			<header className="sermon-header">
+				<div className="sermon-header-inner">
+					<p className="top-text">Our Sermons</p>
+					<p className=" text-style">Joint Heirs Assembly...</p>
+				</div>
+			</header>
 
-				<div className="sermon-navigation">
-					<div className="sermon-navigation-wrapper container">
-						<div></div>
-						<div className="sermon-toggle ">
-							<div className="tab">
-								<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
-								<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
-								<TabComp isActive={activeTab === SermonTabEnum.TEXT} tab={SermonTabEnum.TEXT} />
-							</div>
+			<div className="sermon-navigation">
+				<div className="sermon-navigation-wrapper container">
+					<div></div>
+					<div className="sermon-toggle ">
+						<div className="tab">
+							<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
+							<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
+							<TabComp isActive={activeTab === SermonTabEnum.TEXT} tab={SermonTabEnum.TEXT} />
 						</div>
 					</div>
 				</div>
-				{activeTab === SermonTabEnum.VIDEOS && <VideoComp />}
-				{activeTab === SermonTabEnum.TEXT && <WrittenComp />}
-				{activeTab === SermonTabEnum.AUDIO && <RecordedComp />}
 			</div>
-		</FrontLayout>
+			{activeTab === SermonTabEnum.VIDEOS && <VideoComp />}
+			{activeTab === SermonTabEnum.TEXT && <WrittenComp />}
+			{activeTab === SermonTabEnum.AUDIO && <RecordedComp />}
+		</div>
 	);
 };
 
