@@ -1,9 +1,6 @@
-import AOSInit from "components/AOSInit";
-import ApolloProviderWrapper from "components/apolloProvider";
-import NProgress from "components/NProgress";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "../styles/index.scss";
 import "../styles/custom.scss";
+import "../styles/index.scss";
 
 export const metadata = {
 	title: "Next.js",
@@ -13,14 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			{/* <body>{children}</body> */}
-			<body>
-				<ApolloProviderWrapper>
-					<AOSInit />
-					<NProgress />
-					{children}
-				</ApolloProviderWrapper>
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
