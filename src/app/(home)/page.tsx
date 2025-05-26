@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import BibleVersComp from "../../components/home/BibleVersComp";
 import SermonAudioComp from "../../components/home/SermonAudioComp";
-//animations
 import "animate.css";
 import { events } from "components/events/event.data";
 import EventCard from "components/events/EventCard";
@@ -54,10 +53,6 @@ const Home = () => {
 						<div className="wraper">
 							<div
 								className="left"
-								data-aos="fade-right"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="100"
-								data-aos-duration="1000"
 							>
 								<div className="left-inner">
 									<p className="page-2-welcome  rochester">Welcome</p>
@@ -76,10 +71,6 @@ const Home = () => {
 							</div>
 							<div
 								className="right"
-								data-aos="fade-left"
-								data-aos-easing="ease-in-out"
-								data-aos-delay="100"
-								data-aos-duration="1000"
 							>
 								<div className="video">
 									<Image
@@ -149,11 +140,6 @@ const Home = () => {
 								<a
 									href="/#contact-us"
 									className="btn mt-4 button-animation"
-									data-aos="flip-left"
-									data-aos-easing="ease-in-out"
-									data-aos-delay="50"
-									data-aos-duration="700"
-									data-aos-offset="-5"
 								>
 									Share It
 								</a>
@@ -162,12 +148,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section
-				data-aos="zoom-in"
-				data-aos-delay="120"
-				data-aos-duration="1500"
-				data-aos-offset="100"
-			>
+			<section>
 				<div className="joint-heirs_community">
 					<div className="container community-inner">
 						<div className="text-center">
@@ -220,10 +201,6 @@ const Home = () => {
 						<div className="mission-content">
 							<div
 								className="left"
-								data-aos="flip-up"
-								data-aos-duration="1000"
-								data-aos-delay="90"
-								data-aos-easing="ease-in-out"
 							>
 								<Image
 									src="/images/girl.png"
@@ -259,10 +236,6 @@ const Home = () => {
 							<SermonAudioComp />
 							<div
 								className="right"
-								data-aos="zoom-in"
-								data-aos-duration="1000"
-								data-aos-delay="90"
-								data-aos-easing="ease-in-out"
 							>
 								<Image
 									src="/images/man.png"
@@ -292,11 +265,6 @@ const Home = () => {
 							<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
 							<div
 								className="branch-holder"
-								data-aos="zoom-in"
-								data-aos-easing="ease-in-out"
-								data-aos-duration="900"
-								data-aos-delay="30"
-								data-aos-offset="-5"
 							>
 								<div className="children-branch">
 									<Image

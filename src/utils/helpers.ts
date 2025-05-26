@@ -1,10 +1,8 @@
-import { ApolloError } from '@apollo/client';
-
 export const formatError = (error: unknown) => {
-	const err = error as ApolloError;
+	const err = error as any;
 
-	if (err && err?.graphQLErrors) {
-		const errors = err.graphQLErrors?.map((e) => e.message);
+	if (err && err?.errors) {
+		const errors = err.errors?.map((e: any) => e.message);
 		console.log(errors);
 		return errors;
 	}
