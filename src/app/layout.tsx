@@ -1,7 +1,6 @@
 import AOSInit from "components/AOSInit";
 import ApolloProviderWrapper from "components/apolloProvider";
 import NProgress from "components/NProgress";
-// import StyledComponentsRegistry from "lib/styledRegistry";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/index.scss";
 import "../styles/custom.scss";
@@ -17,11 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			{/* <body>{children}</body> */}
 			<body>
 				<ApolloProviderWrapper>
-					{/* <StyledComponentsRegistry> */}
 					<AOSInit />
 					<NProgress />
 					{children}
-					{/* </StyledComponentsRegistry> */}
 				</ApolloProviderWrapper>
 			</body>
 		</html>
