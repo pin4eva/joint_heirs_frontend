@@ -3,11 +3,14 @@ import { departmentsData } from "components/team/team-data";
 import { DepartmentsEnum } from "components/team/team-interfaces";
 import TeamCard from "components/team/TeamCard";
 import TeamHero from "components/team/TeamHero";
+import { Suspense } from "react";
 
 const TeamPage = () => {
 	return (
 		<div className="team">
-			<TeamHero heroTitle="Our Team" />
+			<Suspense fallback={<div className="container text-center py-5">Loading team information...</div>}>
+				<TeamHero heroTitle="Our Team" />
+			</Suspense>
 
 			<main className="container-fluid team-categories">
 				<div className="strokes">

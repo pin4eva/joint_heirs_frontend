@@ -2,6 +2,7 @@
 import EventContent from "components/events/EventContent";
 import { Metadata } from "next";
 import { generatePageMetadata } from "utils/metadata";
+import { Suspense } from "react";
 
 export const metadata: Metadata = generatePageMetadata("Events - Joint Heirs Assembly");
 
@@ -15,7 +16,9 @@ const EventsPage = () => {
 				</div>
 			</div>
 			<div className="events-content">
-				<EventContent />
+				<Suspense fallback={<div className="container text-center py-5">Loading events...</div>}>
+					<EventContent />
+				</Suspense>
 			</div>
 			<section className="events-location">
 				<div className="events-location-inner container">

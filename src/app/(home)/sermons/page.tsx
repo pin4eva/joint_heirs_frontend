@@ -1,4 +1,5 @@
 import { SermonTabEnum, TabComp } from "components/sermons/TabComp";
+import { Suspense } from "react";
 import RecordedComp from "./recordededComp";
 import VideoComp from "./videoComp";
 import WrittenComp from "./writtenComp";
@@ -7,30 +8,32 @@ const SermonsPage = async ({ searchParams }: { searchParams: Promise<{ tab?: str
 	const params = await searchParams;
 	const activeTab = params.tab || "videos";
 	return (
-		<div id="sermon">
-			<header className="sermon-header">
-				<div className="sermon-header-inner">
-					<p className="top-text">Our Sermons</p>
-					<p className=" text-style">Joint Heirs Assembly...</p>
-				</div>
-			</header>
+		<Suspense fallback={<div>loading...</div>}>
+			<div id="sermon">
+				<header className="sermon-header">
+					<div className="sermon-header-inner">
+						<p className="top-text">Our Sermons</p>
+						<p className=" text-style">Joint Heirs Assembly...</p>
+					</div>
+				</header>
 
-			<div className="sermon-navigation">
-				<div className="sermon-navigation-wrapper container">
-					<div></div>
-					<div className="sermon-toggle ">
-						<div className="tab">
-							<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
-							<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
-							<TabComp isActive={activeTab === SermonTabEnum.TEXT} tab={SermonTabEnum.TEXT} />
+				<div className="sermon-navigation">
+					<div className="sermon-navigation-wrapper container">
+						<div></div>
+						<div className="sermon-toggle ">
+							<div className="tab">
+								<TabComp isActive={activeTab === SermonTabEnum.VIDEOS} tab={SermonTabEnum.VIDEOS} />
+								<TabComp isActive={activeTab === SermonTabEnum.AUDIO} tab={SermonTabEnum.AUDIO} />
+								<TabComp isActive={activeTab === SermonTabEnum.TEXT} tab={SermonTabEnum.TEXT} />
+							</div>
 						</div>
 					</div>
 				</div>
+				{activeTab === SermonTabEnum.VIDEOS && <VideoComp />}
+				{activeTab === SermonTabEnum.TEXT && <WrittenComp />}
+				{activeTab === SermonTabEnum.AUDIO && <RecordedComp />}
 			</div>
-			{activeTab === SermonTabEnum.VIDEOS && <VideoComp />}
-			{activeTab === SermonTabEnum.TEXT && <WrittenComp />}
-			{activeTab === SermonTabEnum.AUDIO && <RecordedComp />}
-		</div>
+		</Suspense>
 	);
 };
 
