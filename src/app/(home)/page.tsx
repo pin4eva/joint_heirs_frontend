@@ -51,9 +51,7 @@ const Home = () => {
 				<div className="page-2">
 					<div className="container">
 						<div className="wraper">
-							<div
-								className="left"
-							>
+							<div className="left">
 								<div className="left-inner">
 									<p className="page-2-welcome  rochester">Welcome</p>
 									<p className="text-secondary  page-2-large-text">
@@ -69,9 +67,7 @@ const Home = () => {
 									</Link>
 								</div>
 							</div>
-							<div
-								className="right"
-							>
+							<div className="right">
 								<div className="video">
 									<Image
 										src="/images/svg/video.svg"
@@ -137,10 +133,7 @@ const Home = () => {
 								<h1 className="text-light huge-text">
 									Need <br /> Prayers ?
 								</h1>
-								<a
-									href="/#contact-us"
-									className="btn mt-4 button-animation"
-								>
+								<a href="/#contact-us" className="btn mt-4 button-animation">
 									Share It
 								</a>
 							</div>
@@ -155,7 +148,9 @@ const Home = () => {
 							<p className="upcoming rochester">Upcoming Events</p>
 							<h1 className="text-secondary fw-bold community-text-bold">Join Our Community</h1>
 							<div className="cards">
-								{[...events]?.splice(0, 3)?.map((event, i) => <EventCard key={i} event={event} />)}
+								{[...events]?.splice(0, 3)?.map((event, i) => (
+									<EventCard key={i} event={event} />
+								))}
 							</div>
 							<Link href="/events" className="event-btn btn button-animation">
 								More Events
@@ -199,9 +194,7 @@ const Home = () => {
 				<div className="bible-mission">
 					<div className="container">
 						<div className="mission-content">
-							<div
-								className="left"
-							>
+							<div className="left">
 								<Image
 									src="/images/girl.png"
 									width={529}
@@ -234,9 +227,7 @@ const Home = () => {
 					<div className="container">
 						<div className="sermon-content">
 							<SermonAudioComp />
-							<div
-								className="right"
-							>
+							<div className="right">
 								<Image
 									src="/images/man.png"
 									width={438}
@@ -263,9 +254,7 @@ const Home = () => {
 					<div className="container">
 						<div className="branch-content">
 							<h1 className="text-secondary fw-bold mb-3">Church Branches</h1>
-							<div
-								className="branch-holder"
-							>
+							<div className="branch-holder">
 								<div className="children-branch">
 									<Image
 										src="/images/children.png"
@@ -309,114 +298,17 @@ const Home = () => {
 				<div className="contact-us" id="contact-us">
 					<div className="top">
 						<div className="container top-inner">
-							<div className="container">
+							<div className="wrapper">
 								<h1 className="text-light fw-bold text-center mb-3">Get in Contact with Us</h1>
 								<p className="text-light text-center ">
-									We are called to eat, drink, speak, think and work to the glory of God. We worship
-									God by remembering the <br /> gospel through preaching, teaching, singing, praying
-									and celebrating baptism and communion.
+									To reach out and reconcile the people to God through Christ, to reach in and
+									develop the people to spiritual, emotional, and social maturity, to reach up in
+									intercession for the people and the nation to reach down in love and help those in
+									need
 								</p>
-							</div>
-							<div className="bottom-container">
-								<form>
-									<div className="form-split form-group">
-										<div className="form-group">
-											<label className="mt-4 mb-2" htmlFor="name">
-												Your Name*
-											</label>
-											<input
-												name="name"
-												type="text"
-												placeholder="Enter your name"
-												className="form-control shadow-none"
-											/>
-										</div>
-										<div className="form-group">
-											<label className="mt-4 mb-2" htmlFor="email">
-												Contact Email*
-											</label>
-											<input
-												name="email"
-												type="text"
-												placeholder="bentucker43@gmail.com"
-												className="form-control shadow-none"
-											/>
-										</div>
-									</div>
-									<div className="form-split form-group">
-										<div className="form-group">
-											<label className="mt-4 mb-2" htmlFor="phoneNo">
-												Phone no*
-											</label>
-											<input
-												name="phoneNo"
-												type="text"
-												placeholder="9012624162"
-												className="form-control shadow-none"
-											/>
-										</div>
-										<div className="form-group">
-											<label className="mt-4 mb-2" htmlFor="branch">
-												Church Branch*
-											</label>
-											<select name="branch" className="form-select">
-												<option value=""></option>
-												<option value="">First</option>
-												<option value="">First</option>
-												<option value="">First</option>
-												<option value="">First</option>
-											</select>
-										</div>
-									</div>
-									<div className="form-group">
-										<label className="mt-4 mb-3" htmlFor="message">
-											Your Message*
-										</label>
-										<textarea
-											className="form-control message-box"
-											placeholder="Type your Message"
-											name="message"
-										/>
-									</div>
-									<p className="mt-4">
-										We are called to eat, drink, speak, think and work to the glory of God. We
-										worship God by remembering the <br /> gospel through preaching, teaching,
-										singing, praying and celebrating baptism and communion.
-									</p>
-									<button
-										className="btn btn-warning text-light mt-3 button-animation"
-										type="submit"
-									>
-										Send
-									</button>
-								</form>
-								<div className="botom">
-									<div className="message">
-										<Link href="/">
-											<i className="fa-solid fa-envelope mb-2"></i>
-											<p className="text-secondary fw-bold m-0">Email Us</p>
-										</Link>
-										<p className="text-center">
-											Email us for general Queries including mentorship and spiritual counselling
-										</p>
-										<Link href="https://jointheirs5@gmail.com">jointheirsng@gmail.com</Link>
-									</div>
-									<div className="call">
-										<Link href="/">
-											<Image height={40} width={50} src="/images/phone.png" alt="phone-icon" />
-											<p className="text-secondary fw-bold m-0">Call Us</p>
-										</Link>
-										<p className="text-center">
-											You can also call us for general Queries including mentorship and spiritual
-											counselling
-										</p>
-										<Link href="https://jointheirs5@gmail.com">jointheirs5@gmail.com</Link>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
-					<div className="placeholder"></div>
 				</div>
 			</section>
 			<section>
