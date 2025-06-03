@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-import styled from "styled-components";
 
 const PastorBranchComp = () => {
 	return (
@@ -38,7 +38,7 @@ const SinglePastor: React.FC<IPastorProp> = ({
 	designation,
 }) => {
 	return (
-		<Wrapper className="branch-pastors-item">
+		<div className="branch-pastors-item">
 			<div className="branch-pastors-item-img" style={{ backgroundImage: `url(${image})` }}></div>
 			<h3 className="text-center mt-4">{pastorsName}</h3>
 			<small className="text-center fw-bold text-primary d-block">{designation}</small>
@@ -49,11 +49,9 @@ const SinglePastor: React.FC<IPastorProp> = ({
 			<div className="text-center mt-4">
 				<button className="btn btn-warning text-light">Contact Branch</button>
 			</div>
-		</Wrapper>
+		</div>
 	);
 };
-
-const Wrapper = styled.div``;
 
 const pastors: IPastorProp[] = [
 	{
