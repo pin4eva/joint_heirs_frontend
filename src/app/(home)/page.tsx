@@ -58,9 +58,9 @@ const Home = () => {
 										You Matter To God. You Matter to Us
 									</p>
 									<p className="text-dark">
-										See how we view God, Jesus, the Bible, man, and many <br /> significant aspects
-										of our faith. Firmly rooted in Scripture, the <br /> beliefs of Joint Heirs
-										Assembly guide our decisions as a church.
+										At Joint Heirs Assembly International, we believe in building a community where
+										every individual finds purpose, experiences God&apos;s love, and grows in faith
+										together as one family.
 									</p>
 									<Link href="/" className="btn button-animation">
 										Learn More
@@ -264,7 +264,7 @@ const Home = () => {
 										style={{ width: "auto", height: "auto" }}
 										alt="children-image"
 									/>
-									<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
+									<h4 className="mb-0 text-dark">Pastor Whyte Eta</h4>
 									<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
 								</div>
 								<div className="men-branch">
@@ -275,8 +275,8 @@ const Home = () => {
 										className="branch-img"
 										alt="men-image"
 									/>
-									<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
-									<p className="mb-0 text-secondary">Airforce Branch</p>
+									<h4 className="mb-0 text-dark">Evang. OZ</h4>
+									<p className="mb-0 text-secondary">Eneka Branch</p>
 								</div>
 							</div>
 						</div>

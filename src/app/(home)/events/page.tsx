@@ -26,10 +26,9 @@ const EventsPage = () => {
 						<h3 className="rochester text-warning">Our Location</h3>
 						<h3 className="inner-text-heading">Plan a Visit</h3>
 						<p className="text-dark">
-							Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
-							magna a ut tempus odio. In dictum tmetus. Proin ut tempus odio. In dictum tincidunt
-							egestm elit, in commodo sem pretium eu.tmetus. Proin ut tempus odio. In dictum
-							tincidunt egestm elit, in commodo sem pretium e
+							Come worship with us at Joint Heirs Assembly! Experience powerful fellowship,
+							inspiring messages, and a warm community that welcomes everyone seeking spiritual
+							growth and connection.
 						</p>
 						<div className="location-info">
 							<div className="address">
@@ -37,7 +36,7 @@ const EventsPage = () => {
 								<div className="info-text">
 									<h6>Address:</h6>
 									<p>
-										23, Aggrey Road, Aba <br /> Port Harcourt, Rivers State.
+										23, Ordu Avenue ELiowhani <br /> Port Harcourt, Rivers State.
 									</p>
 								</div>
 							</div>
@@ -45,8 +44,8 @@ const EventsPage = () => {
 								<img src="/images/location.png" alt="" />
 								<div className="info-text">
 									<h6>Service Time:</h6>
-									<p>Saturdays - 5:30 pm </p>
-									<p>Sundays - 9:00 & 10:30 am</p>
+									<p>Thursdays - 5:00 pm </p>
+									<p>Sundays - 9:00am</p>
 								</div>
 							</div>
 						</div>

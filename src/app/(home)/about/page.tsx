@@ -98,9 +98,10 @@ const AboutPage = () => {
 						<p className="rochester">Our Team</p>
 						<h2 className="huge-text">Desciples</h2>
 						<p className="team-desc">
-							Aliquam fringilla, turpis et tempor molestie, urna nunc commodo ex, et finibus diam
-							magna a metus. Proin ut tempus odio. In dictum tincidunt egestas. Quisque egestas enim
-							elit, in commodo sem pretium eu.
+							Our dedicated team of pastors and ministry leaders are committed to serving God and
+							guiding our community in spiritual growth. Each member brings unique gifts and
+							experiences to help foster an environment where faith can flourish and disciples are
+							made.
 						</p>
 						<button className="btn btn-$warning">view Our Team</button>
 					</div>
