@@ -315,7 +315,7 @@ const Home: NextPage = () => {
 													style={{ width: "auto", height: "auto" }}
 													alt="children-image"
 												/>
-												<h4 className="mb-0 text-dark">Pastor TJ Okoye</h4>
+												<h4 className="mb-0 text-dark">Pastor Whyte Eta</h4>
 												<p className="mb-0 text-secondary">Rumuokrwusi Branch</p>
 											</div>
 											<div className="men-branch">
@@ -326,8 +326,8 @@ const Home: NextPage = () => {
 													className="branch-img"
 													alt="men-image"
 												/>
-												<h4 className="mb-0 text-dark">Pastor Haygan Paul</h4>
-												<p className="mb-0 text-secondary">Airforce Branch</p>
+												<h4 className="mb-0 text-dark">Evang. OZ</h4>
+												<p className="mb-0 text-secondary">Eneka Branch</p>
 											</div>
 										</div>
 									</div>
@@ -395,9 +395,10 @@ const Home: NextPage = () => {
 												Get in Contact with Us
 											</h1>
 											<p className="text-light text-center ">
-												We are called to eat, drink, speak, think and work to the glory of God. We
-												worship God by remembering the <br /> gospel through preaching, teaching,
-												singing, praying and celebrating baptism and communion.
+												To reach out and reconcile the people to God through Christ, to reach in and
+												develop the people to spiritual, emotional, and social maturity, to reach up
+												in intercession for the people and the nation to reach down in love and help
+												those in need
 											</p>
 										</div>
 										<div className="bottom-container">
@@ -462,9 +463,10 @@ const Home: NextPage = () => {
 													/>
 												</div>
 												<p className="mt-4">
-													We are called to eat, drink, speak, think and work to the glory of God. We
-													worship God by remembering the <br /> gospel through preaching, teaching,
-													singing, praying and celebrating baptism and communion.
+													To reach out and reconcile the people to God through Christ, to reach in
+													and develop the people to spiritual, emotional, and social maturity, to
+													reach up in intercession for the people and the nation to reach down in
+													love and help those in need
 												</p>
 												<button
 													className="btn btn-warning text-light mt-3 button-animation"

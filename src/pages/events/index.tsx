@@ -62,7 +62,8 @@ const EventsPage = () => {
 									<div className="info-text">
 										<h6>Address:</h6>
 										<p>
-											23, Aggrey Road, Aba <br /> Port Harcourt, Rivers State.
+											23, Ordu Avenue Rumuodara, Off Power Encounter East West road, <br /> Port
+											Harcourt, Rivers State.
 										</p>
 									</div>
 								</div>
