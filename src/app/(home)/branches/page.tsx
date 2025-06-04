@@ -5,8 +5,8 @@ const OurBranch = () => {
 		<div className="branches">
 			<div className="branches-hero">
 				<div className="branches-inner ">
-					<h1 className="text-white">Our Branches</h1>
-					<h4 className="rochester text-white">Joint Heirs Assembly...</h4>
+					<h1 className="text-light">Our Branches</h1>
+					<h4 className="rochester text-light">Joint Heirs Assembly...</h4>
 					{/* <div className="branches-inner-text">
 
 				</div> */}

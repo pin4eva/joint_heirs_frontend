@@ -15,9 +15,12 @@
 		"@tailwindcss/postcss": "^4.1.8",
 		"animate.css": "^4.1.1",
 		"bootstrap": "^5.2.3",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
 		"cookie": "^0.5.0",
 		"google-maps-react": "^2.0.6",
 		"js-cookie": "^3.0.1",
+		"lucide-react": "^0.513.0",
 		"next": "^15.1.6",
 		"postcss": "^8.5.4",
 		"react": "^19.0.0",
@@ -26,6 +29,7 @@
 		"react-spinners": "^0.13.4",
 		"sass": "^1.84.0",
 		"swiper": "^8.3.2",
+		"tailwind-merge": "^3.3.0",
 		"tailwindcss": "^4.1.8"
 	},
 	"devDependencies": {
@@ -38,6 +42,7 @@
 		"@typescript-eslint/parser": "^5.47.1",
 		"eslint": "^8.30.0",
 		"eslint-config-next": "12.2.5",
+		"tw-animate-css": "^1.3.4",
 		"typescript": "4.9.4"
 	}
 }

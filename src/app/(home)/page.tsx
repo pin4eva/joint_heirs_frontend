@@ -35,7 +35,7 @@ const Home = () => {
 				<div className="container-modern hero-content">
 					<div className="hero-inner text-center animate__animated animate__backInDown">
 						<div className="welcome-text">
-							<h1 className="text-white">Welcome To Life</h1>
+							<h1 className="text-light">Welcome To Life</h1>
 							<h4 className="rochester jhai-text" aria-label="Joint Heirs Assembly International">
 								Joint Heirs Assembly...
 							</h4>
@@ -148,7 +148,7 @@ const Home = () => {
 					<div className=" page-3-inner">
 						<div className="prayer container-modern">
 							<div>
-								<h1 className="text-white huge-text">
+								<h1 className="text-light huge-text">
 									Need <br /> Prayers ?
 								</h1>
 								<a href="/#contact-us" className="btn mt-4 button-animation">
@@ -216,8 +216,8 @@ const Home = () => {
 					<div className="top">
 						<div className="container-modern top-inner">
 							<div className="w-full max-w-4xl mx-auto">
-								<h1 className="text-white font-bold text-center text-4xl mb-3">Get in Touch</h1>
-								<p className="text-white text-center text-lg">
+								<h1 className="text-light font-bold text-center text-4xl mb-3">Get in Touch</h1>
+								<p className="text-light text-center text-lg">
 									To reach out and reconcile the people to God through Christ, to reach in and
 									develop the people to spiritual, emotional, and social maturity, to reach up in
 									intercession for the people and the nation to reach down in love and help those in
@@ -228,19 +228,19 @@ const Home = () => {
 								<form>
 									<div className="form-split mb-6">
 										<div className="mb-6">
-											<label className="block text-white font-semibold text-sm mb-2" htmlFor="name">
+											<label className="block text-light font-semibold text-sm mb-2" htmlFor="name">
 												Your Name*
 											</label>
 											<input
 												name="name"
 												type="text"
 												placeholder="Enter your name"
-												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-white placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
+												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-light placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
 											/>
 										</div>
 										<div className="mb-6">
 											<label
-												className="block text-white font-semibold text-sm mb-2"
+												className="block text-light font-semibold text-sm mb-2"
 												htmlFor="email"
 											>
 												Contact Email*
@@ -249,14 +249,14 @@ const Home = () => {
 												name="email"
 												type="email"
 												placeholder="bentucker43@gmail.com"
-												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-white placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
+												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-light placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
 											/>
 										</div>
 									</div>
 									<div className="form-split mb-6">
 										<div className="mb-6">
 											<label
-												className="block text-white font-semibold text-sm mb-2"
+												className="block text-light font-semibold text-sm mb-2"
 												htmlFor="phoneNo"
 											>
 												Phone no*
@@ -265,19 +265,19 @@ const Home = () => {
 												name="phoneNo"
 												type="tel"
 												placeholder="9012624162"
-												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-white placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
+												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-light placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
 											/>
 										</div>
 										<div className="mb-6">
 											<label
-												className="block text-white font-semibold text-sm mb-2"
+												className="block text-light font-semibold text-sm mb-2"
 												htmlFor="branch"
 											>
 												Church Branch*
 											</label>
 											<select
 												name="branch"
-												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-white focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
+												className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-light focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300"
 											>
 												<option value="" className="text-gray-800">
 													Select a branch
@@ -299,25 +299,25 @@ const Home = () => {
 									</div>
 									<div className="mb-6">
 										<label
-											className="block text-white font-semibold text-sm mb-2"
+											className="block text-light font-semibold text-sm mb-2"
 											htmlFor="message"
 										>
 											Your Message*
 										</label>
 										<textarea
-											className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-white placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300 min-h-[120px] resize-y"
+											className="w-full px-4 py-3 rounded-lg bg-white/10 border-2 border-white/20 text-light placeholder-white/70 focus:outline-none focus:border-orange-500 focus:bg-white/15 transition-all duration-300 min-h-[120px] resize-y"
 											placeholder="Type your Message"
 											name="message"
 											rows={5}
 										/>
 									</div>
-									<p className="text-white/90 text-sm leading-relaxed mb-6">
+									<p className="text-light/90 text-sm leading-relaxed mb-6">
 										We are called to eat, drink, speak, think and work to the glory of God. We
 										worship God by remembering the gospel through preaching, teaching, singing,
 										praying and celebrating baptism and communion.
 									</p>
 									<button
-										className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg button-animation"
+										className="bg-orange-500 hover:bg-orange-600 text-light font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg button-animation"
 										type="submit"
 									>
 										Send Message
@@ -327,12 +327,12 @@ const Home = () => {
 									<div className="message">
 										<Link
 											href="/"
-											className="block text-center text-white hover:text-orange-500 transition-colors duration-300"
+											className="block text-center text-light hover:text-orange-500 transition-colors duration-300"
 										>
 											<i className="fa-solid fa-envelope text-2xl text-orange-500 mb-2"></i>
-											<p className="text-white font-bold text-lg mb-3">Email Us</p>
+											<p className="text-light font-bold text-lg mb-3">Email Us</p>
 										</Link>
-										<p className="text-white/80 text-center text-sm mb-4 leading-relaxed">
+										<p className="text-light/80 text-center text-sm mb-4 leading-relaxed">
 											Email us for general Queries including mentorship and spiritual counselling
 										</p>
 										<Link
@@ -345,7 +345,7 @@ const Home = () => {
 									<div className="call">
 										<Link
 											href="/"
-											className="block text-center text-white hover:text-orange-500 transition-colors duration-300"
+											className="block text-center text-light hover:text-orange-500 transition-colors duration-300"
 										>
 											<Image
 												height={40}
@@ -354,9 +354,9 @@ const Home = () => {
 												alt="phone-icon"
 												className="mx-auto mb-2"
 											/>
-											<p className="text-white font-bold text-lg mb-3">Call Us</p>
+											<p className="text-light font-bold text-lg mb-3">Call Us</p>
 										</Link>
-										<p className="text-white/80 text-center text-sm mb-4 leading-relaxed">
+										<p className="text-light/80 text-center text-sm mb-4 leading-relaxed">
 											You can also call us for general Queries including mentorship and spiritual
 											counselling
 										</p>

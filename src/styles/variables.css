@@ -95,15 +95,3 @@
 		--border-color: #404040;
 	}
 }
-
-@theme {
-	/* Theme-specific overrides */
-	--color-primary: var(--primary-gold);
-	--color-secondary: var(--dark-blue);
-	--color-background: var(--white);
-	--color-surface: var(--background-light);
-	--color-on-primary: var(--white);
-	--color-on-secondary: var(--white);
-	--color-on-background: var(--dark-text);
-	--color-on-surface: var(--dark-text);
-}
