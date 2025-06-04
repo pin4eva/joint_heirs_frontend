@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const VideoComp = () => {
 	return (
-		<div className="videos container">
+		<div className="videos container-modern">
 			<p className="video-text">All Sermon Videos</p>
 			<div className="videos-wrapper ">
 				{sermonDatas.map((sermonData, id) => (

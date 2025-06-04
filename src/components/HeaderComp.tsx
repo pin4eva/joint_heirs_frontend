@@ -18,7 +18,7 @@ const HeaderComp = () => {
 		<header className="app-header">
 			<ClickAwayListener onClickAway={handleClickAway}>
 				<nav className="navbar">
-					<div className="container nav-inner">
+					<div className="container-modern nav-inner">
 						<Link href="/" className="d-flex logo">
 							<img src="/images/logo.png" alt="" />
 							<span className=" mb-0 ">Joint Heirs Assembly International</span>

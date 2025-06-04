@@ -1,6 +1,5 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "../styles/custom.scss";
-import "../styles/index.scss";
+import "../styles/globals.css";
 
 export const metadata = {
 	title: "Next.js",

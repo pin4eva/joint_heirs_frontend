@@ -19,13 +19,13 @@ export default function EventContent() {
 	return (
 		<>
 			<nav className="events-content-nav">
-				<ul className="container">
+				<ul className="container-modern">
 					{tabItems.map((tab) => (
 						<TabNav key={tab} isActive={Boolean(activeTab === tab)} tab={tab} />
 					))}
 				</ul>
 			</nav>
-			<div className="events-content-cards container">
+			<div className="events-content-cards container-modern">
 				{stateEvents.length > 0 ? (
 					stateEvents?.map((item, i) => <EventCard key={i} event={item} />)
 				) : (

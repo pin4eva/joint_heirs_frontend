@@ -4,7 +4,7 @@ import React from "react";
 const PastorBranchComp = () => {
 	return (
 		<div>
-			<div className="branch-pastors container">
+			<div className="branch-pastors container-modern">
 				{pastors.map((pastor) => (
 					<SinglePastor
 						key={pastor.pastorsName}

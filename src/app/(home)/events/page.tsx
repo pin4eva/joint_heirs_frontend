@@ -10,18 +10,20 @@ const EventsPage = () => {
 	return (
 		<section className="events">
 			<div className="events-hero">
-				<div className="container events-hero-inner">
+				<div className="container-modern events-hero-inner">
 					<h1>Our Annual Events</h1>
 					<h4 className="rochester">Joint Heirs Assembly...</h4>
 				</div>
 			</div>
 			<div className="events-content">
-				<Suspense fallback={<div className="container text-center py-5">Loading events...</div>}>
+				<Suspense
+					fallback={<div className="container-modern text-center py-5">Loading events...</div>}
+				>
 					<EventContent />
 				</Suspense>
 			</div>
 			<section className="events-location">
-				<div className="events-location-inner container">
+				<div className="events-location-inner container-modern">
 					<div className="events-location-inner_text">
 						<h3 className="rochester text-warning">Our Location</h3>
 						<h3 className="inner-text-heading">Plan a Visit</h3>

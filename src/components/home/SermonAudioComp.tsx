@@ -3,80 +3,118 @@
 import Link from "next/link";
 import React from "react";
 
+interface SermonItem {
+	id: number;
+	title: string;
+	date: string;
+	pastor: string;
+	duration: string;
+}
+
+const sermonItems: SermonItem[] = [
+	{
+		id: 1,
+		title: "The Law of Giving",
+		date: "28.05.24",
+		pastor: "Apostle Edirhin Eta",
+		duration: "45:32",
+	},
+	{
+		id: 2,
+		title: "Walking in Divine Purpose",
+		date: "21.05.24",
+		pastor: "Pastor John Emmanuel",
+		duration: "52:18",
+	},
+	{
+		id: 3,
+		title: "The Power of Faith",
+		date: "14.05.24",
+		pastor: "Pastor Sarah Whyte",
+		duration: "38:47",
+	},
+];
+
 const SermonAudioComp = () => {
 	return (
-		<div className="left">
-			<h1 className="text-dark text-center mt-4 fw-bold">Sermons</h1>
-			<div className="audios">
-				<div className="audio-hold">
-					<div className="audio-play-icons">
-						<Link href="/">
-							<img src="/images/SAplay.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAvoice.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAread.png" alt="" />
-						</Link>
-					</div>
-					<div className="audio-playing">
-						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
-						<p className="mb-0 ms-2">
-							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Apostle Edirhin Eta
-						</p>
-					</div>
-				</div>
-				<div className="audio-hold">
-					<div className="audio-play-icons">
-						<Link href="/">
-							<img src="/images/SAplay.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAvoice.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAread.png" alt="" />
-						</Link>
-					</div>
-					<div className="audio-playing">
-						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
-						<p className="mb-0 ms-2">
-							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Apostle Edirhin Eta
-						</p>
-					</div>
-				</div>
-				<div className="audio-hold">
-					<div className="audio-play-icons">
-						<Link href="/">
-							<img src="/images/SAplay.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAvoice.png" alt="" />
-						</Link>
-						<hr />
-						<Link href="/">
-							<img src="/images/SAread.png" alt="" />
-						</Link>
-					</div>
-					<div className="audio-playing">
-						<h6 className="text-secondary fw-semibold mb-0 ms-2">The Death of Jesus - Part One</h6>
-						<p className="mb-0 ms-2">
-							<big className="fs-6 fw-bold text-dark pe-2">20.05.28</big>Apostle Edirhin Eta
-						</p>
-					</div>
-				</div>
+		<section className="left sermon-audio-wrapper" aria-labelledby="sermons-heading">
+			<div className="sermon-header">
+				<h1 id="sermons-heading" className="sermon-title">
+					Recent Sermons
+				</h1>
+				<p className="sermon-subtitle">Listen to our latest messages and grow in faith</p>
 			</div>
 
-			<Link href="/" className=" pd-2 text-decoration-none btn button-animation">
-				View More
+			<div className="sermon-list" role="list">
+				{sermonItems.map((sermon) => (
+					<article key={sermon.id} className="sermon-item" role="listitem">
+						<div
+							className="sermon-controls"
+							role="group"
+							aria-label={`Controls for ${sermon.title}`}
+						>
+							<Link
+								href={`/sermons/${sermon.id}`}
+								className="control-btn play-btn"
+								aria-label={`Play ${sermon.title} by ${sermon.pastor}`}
+								title="Play sermon"
+							>
+								<img src="/images/SAplay.png" alt="" role="presentation" />
+							</Link>
+							<Link
+								href={`/sermons/${sermon.id}?tab=audio`}
+								className="control-btn audio-btn"
+								aria-label={`Listen to audio version of ${sermon.title}`}
+								title="Audio version"
+							>
+								<img src="/images/SAvoice.png" alt="" role="presentation" />
+							</Link>
+							<Link
+								href={`/sermons/${sermon.id}?tab=transcript`}
+								className="control-btn read-btn"
+								aria-label={`Read transcript of ${sermon.title}`}
+								title="Read transcript"
+							>
+								<img src="/images/SAread.png" alt="" role="presentation" />
+							</Link>
+						</div>
+
+						<div className="sermon-content">
+							<h3 className="sermon-content-title">{sermon.title}</h3>
+							<div className="sermon-meta">
+								<time className="sermon-date" dateTime={sermon.date.replace(/\./g, "-")}>
+									{sermon.date}
+								</time>
+								<span className="sermon-pastor">{sermon.pastor}</span>
+								<span className="sermon-duration" aria-label={`Duration: ${sermon.duration}`}>
+									{sermon.duration}
+								</span>
+							</div>
+						</div>
+					</article>
+				))}
+			</div>
+
+			<Link href="/sermons" className="view-more-btn" aria-label="View all sermons">
+				<span>View All Sermons</span>
+				<svg
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					aria-hidden="true"
+				>
+					<path
+						d="M5 12H19M19 12L12 5M19 12L12 19"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					/>
+				</svg>
 			</Link>
-		</div>
+		</section>
 	);
 };
 

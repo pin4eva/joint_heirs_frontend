@@ -18,7 +18,7 @@ const SermonsPage = async ({ searchParams }: { searchParams: Promise<{ tab?: str
 				</header>
 
 				<div className="sermon-navigation">
-					<div className="sermon-navigation-wrapper container">
+					<div className="sermon-navigation-wrapper container-modern">
 						<div></div>
 						<div className="sermon-toggle ">
 							<div className="tab">

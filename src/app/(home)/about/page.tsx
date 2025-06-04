@@ -9,7 +9,7 @@ const AboutPage = () => {
 	return (
 		<div className="about-page">
 			<div className="top-section">
-				<div className="top-section-inner container">
+				<div className="top-section-inner container-modern">
 					<h1>About Us</h1>
 					<p>Joint Heirs Assembly</p>
 					<img src="images/ellipse.png" className="img d-sm-none d-md-block" alt="" />
@@ -17,7 +17,7 @@ const AboutPage = () => {
 			</div>
 			{/* ==============SECTION TwO=================== */}
 
-			<div className="section-two container">
+			<div className="section-two container-modern">
 				<p className="rochester">Welcome</p>
 				<h2 className="huge-text">We exist to connect people to Jesus and each other</h2>
 
@@ -39,7 +39,7 @@ const AboutPage = () => {
 
 			{/* ===============SECTION THREE=============== */}
 			<div className="section-three">
-				<div className="section-three-inner container">
+				<div className="section-three-inner container-modern">
 					<div className="section-three-inner_left">
 						<img src="images/Rectangle78.png" alt="" />
 					</div>
@@ -59,7 +59,7 @@ const AboutPage = () => {
 
 			{/* ===============SECTION FOUR================ */}
 			<div className="section-four">
-				<div className="section-four-inner container">
+				<div className="section-four-inner container-modern">
 					<div className="section-four-inner_left">
 						<div className="section-four-image_container">
 							<div className="section-four-inner-image">
@@ -96,14 +96,14 @@ const AboutPage = () => {
 
 					<div className="section-four-inner_right">
 						<p className="rochester">Our Team</p>
-						<h2 className="huge-text">Desciples</h2>
+						<h2 className="huge-text">Disciples</h2>
 						<p className="team-desc">
 							Our dedicated team of pastors and ministry leaders are committed to serving God and
 							guiding our community in spiritual growth. Each member brings unique gifts and
 							experiences to help foster an environment where faith can flourish and disciples are
 							made.
 						</p>
-						<button className="btn btn-$warning">view Our Team</button>
+						<button className="btn btn-warning">View Our Team</button>
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@ const AboutPage = () => {
 			{/* ===============SECTION FIVE=========== */}
 
 			<div className="section-five ">
-				<div className="section-five-inner container">
+				<div className="section-five-inner container-modern">
 					<div className="section-five-inner_left">
 						<p className="rochester">Sunday</p>
 						<h2 className="huge-text">Gatherings</h2>
@@ -128,7 +128,7 @@ const AboutPage = () => {
 			</div>
 
 			{/* =============SECTION SIX============ */}
-			<div className="section-six container">
+			<div className="section-six container-modern">
 				<div className="section-six-text">
 					<p className="rochester">Whats Next?</p>
 					<h2 className="huge-text">Next Steps</h2>
@@ -154,7 +154,7 @@ const AboutPage = () => {
 					</div>
 					<div className="image">
 						<img src="images/Rectangle28.png" alt="" />
-						<span>1</span>
+						<span>2</span>
 						<div className="image-description">
 							<h6 className="title">Attend Services</h6>
 							<p>
@@ -166,7 +166,7 @@ const AboutPage = () => {
 					</div>
 					<div className="image">
 						<img src="images/Rectangle29.png" alt="" />
-						<span>1</span>
+						<span>3</span>
 						<div className="image-description">
 							<h6 className="title">Questions</h6>
 							<p>
@@ -181,7 +181,7 @@ const AboutPage = () => {
 
 			<section>
 				<div className="footer-subscribe">
-					<div className="container">
+					<div className="container-modern">
 						<div className="footer-sub">
 							<div className="sub-text">
 								<h2 className="text-secondary mb-0">Subscribe</h2>

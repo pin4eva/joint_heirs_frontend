@@ -8,7 +8,11 @@ import { Suspense } from "react";
 const TeamPage = () => {
 	return (
 		<div className="team">
-			<Suspense fallback={<div className="container text-center py-5">Loading team information...</div>}>
+			<Suspense
+				fallback={
+					<div className="container-modern text-center py-5">Loading team information...</div>
+				}
+			>
 				<TeamHero heroTitle="Our Team" />
 			</Suspense>
 
